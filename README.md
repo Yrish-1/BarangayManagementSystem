@@ -10,18 +10,18 @@
 
 ## 📋 Table of Contents
 
-- [About the Project](#about-the-project)
-- [Features](#features)
-  [Tech Stack](#tech-stack)
-- [OOP Design Principle](#oop-design-principle)
-- [System Architecture](#system-architecture)
-- [Forms and UI](#forms-and-ui)
-- [Getting Started](#getting-started)
-- [Database Setup](#database-setup)
-- [User Roles](#user-roles)
-- [Development Timeline](#development-timeline)
-- [Team](#teaam) 
-- [Acknowledgement](#acknowledgement)
+- About the Project
+- Features
+  Tech Stack
+- OOP Design Principle
+- System Architecture
+- Forms and UI
+- Getting Started
+- Database Setup
+- User Roles
+- Development Timeline
+- Team
+- Acknowledgement
 
 ---
 
