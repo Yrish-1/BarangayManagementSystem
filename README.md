@@ -2,7 +2,12 @@
   <img src="https://github.com/Yrish-1/BarangayManagementSystem/blob/main/EJC_Logo.png" alt="Every Juan Counts Logo" width="300"/>
 </p>
 
-<p align="center" ># 🏠 Every Juan Counts</p>
+<p align="center" > 
+  
+  ##🏠 Every Juan Counts
+
+</p>
+
 ### A Barangay-Level Census Data Collection and Management System
 
 > *"You Count. We Count. Everyone Counts."*
