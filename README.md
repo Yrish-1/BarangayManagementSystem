@@ -3,10 +3,8 @@
 </p>
 
 <h1 align="center" >  🏠 Every Juan Counts </h1>
-
-### A Barangay-Level Census Data Collection and Management System
-
-> *"You Count. We Count. Everyone Counts."*
+<p align="center" >A Barangay-Level Census Data Collection and Management System</p>
+<p align="center"> *"You Count. We Count. Everyone Counts."*</p>
 ---
 
 ## 📋 Table of Contents
