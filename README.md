@@ -12,16 +12,16 @@
 
 - [About the Project](#about-the-project)
 - [Features](#features)
-- [Tech Stack](#tech-stack)
-- [OOP Design Principles](#oop-design-principles)
+  [Tech Stack](#tech-stack)
+- [OOP Design Principle](#oop-design-principle)
 - [System Architecture](#system-architecture)
 - [Forms and UI](#forms-and-ui)
 - [Getting Started](#getting-started)
 - [Database Setup](#database-setup)
 - [User Roles](#user-roles)
 - [Development Timeline](#development-timeline)
-- [Team](#team)
-- [License](#license)
+- [Team](#teaam) 
+- [Acknowledgement](#acknowledgement)
 
 ---
 
@@ -269,7 +269,7 @@ The system is composed of **six interconnected Windows Forms**:
 
 ---
 
-## 📄 License
+## 📄 Acknowledgement 
 
 This project was developed as an academic requirement for **CS 222 – Advanced Object-Oriented Programming**, Computer Science Department, 2nd Semester AY 2025–2026. All rights reserved by the Powerpuff Gurls team.
 
