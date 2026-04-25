@@ -79,5 +79,10 @@ namespace EveryJuanCount
         {
 
         }
+
+        private void bt5Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

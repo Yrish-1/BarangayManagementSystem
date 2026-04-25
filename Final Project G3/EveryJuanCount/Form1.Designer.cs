@@ -42,6 +42,7 @@
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             panel4 = new Panel();
+            bt5Exit = new Button();
             bt4RegNow = new Button();
             panel7 = new Panel();
             panel6 = new Panel();
@@ -203,6 +204,7 @@
             // panel4
             // 
             panel4.BackColor = SystemColors.ControlLightLight;
+            panel4.Controls.Add(bt5Exit);
             panel4.Controls.Add(bt4RegNow);
             panel4.Controls.Add(panel7);
             panel4.Controls.Add(panel6);
@@ -222,16 +224,34 @@
             panel4.Size = new Size(562, 701);
             panel4.TabIndex = 2;
             // 
+            // bt5Exit
+            // 
+            bt5Exit.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
+            bt5Exit.FlatAppearance.BorderSize = 0;
+            bt5Exit.FlatStyle = FlatStyle.Flat;
+            bt5Exit.Font = new Font("Verdana", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            bt5Exit.ForeColor = Color.Maroon;
+            bt5Exit.Location = new Point(508, 8);
+            bt5Exit.Name = "bt5Exit";
+            bt5Exit.Size = new Size(42, 30);
+            bt5Exit.TabIndex = 22;
+            bt5Exit.Text = "X";
+            bt5Exit.UseVisualStyleBackColor = true;
+            bt5Exit.Click += bt5Exit_Click;
+            // 
             // bt4RegNow
             // 
+            bt4RegNow.BackColor = Color.Goldenrod;
+            bt4RegNow.FlatAppearance.BorderSize = 0;
             bt4RegNow.FlatStyle = FlatStyle.Flat;
-            bt4RegNow.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            bt4RegNow.Location = new Point(131, 555);
+            bt4RegNow.Font = new Font("Segoe UI Black", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            bt4RegNow.ForeColor = Color.Transparent;
+            bt4RegNow.Location = new Point(151, 555);
             bt4RegNow.Name = "bt4RegNow";
-            bt4RegNow.Size = new Size(300, 44);
+            bt4RegNow.Size = new Size(260, 44);
             bt4RegNow.TabIndex = 21;
             bt4RegNow.Text = "Register Now!";
-            bt4RegNow.UseVisualStyleBackColor = true;
+            bt4RegNow.UseVisualStyleBackColor = false;
             bt4RegNow.Click += button1_Click;
             // 
             // panel7
@@ -268,7 +288,8 @@
             // bt3LogIn
             // 
             bt3LogIn.BackColor = Color.WhiteSmoke;
-            bt3LogIn.Font = new Font("Segoe UI Variable Text", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            bt3LogIn.FlatAppearance.BorderSize = 0;
+            bt3LogIn.Font = new Font("Segoe UI Variable Text", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             bt3LogIn.Location = new Point(96, 401);
             bt3LogIn.Name = "bt3LogIn";
             bt3LogIn.Size = new Size(370, 59);
@@ -279,7 +300,8 @@
             // 
             // bt1ShowPass
             // 
-            bt1ShowPass.BackColor = Color.Goldenrod;
+            bt1ShowPass.BackColor = SystemColors.ScrollBar;
+            bt1ShowPass.FlatAppearance.BorderSize = 0;
             bt1ShowPass.FlatStyle = FlatStyle.Flat;
             bt1ShowPass.Image = (Image)resources.GetObject("bt1ShowPass.Image");
             bt1ShowPass.Location = new Point(459, 340);
@@ -291,7 +313,8 @@
             // 
             // bt2HidePass
             // 
-            bt2HidePass.BackColor = Color.Goldenrod;
+            bt2HidePass.BackColor = SystemColors.ScrollBar;
+            bt2HidePass.FlatAppearance.BorderSize = 0;
             bt2HidePass.FlatStyle = FlatStyle.Flat;
             bt2HidePass.Image = (Image)resources.GetObject("bt2HidePass.Image");
             bt2HidePass.Location = new Point(459, 340);
@@ -439,5 +462,6 @@
         private Label lb10dhaA;
         private Panel panel7;
         private Button bt4RegNow;
+        private Button bt5Exit;
     }
 }
