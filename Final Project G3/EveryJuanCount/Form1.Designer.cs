@@ -43,7 +43,7 @@
             pictureBox1 = new PictureBox();
             panel4 = new Panel();
             bt5Exit = new Button();
-            bt4RegNow = new Button();
+            bt4Reg = new Button();
             panel7 = new Panel();
             panel6 = new Panel();
             lb10dhaA = new Label();
@@ -205,7 +205,7 @@
             // 
             panel4.BackColor = SystemColors.ControlLightLight;
             panel4.Controls.Add(bt5Exit);
-            panel4.Controls.Add(bt4RegNow);
+            panel4.Controls.Add(bt4Reg);
             panel4.Controls.Add(panel7);
             panel4.Controls.Add(panel6);
             panel4.Controls.Add(lb10dhaA);
@@ -239,20 +239,20 @@
             bt5Exit.UseVisualStyleBackColor = true;
             bt5Exit.Click += bt5Exit_Click;
             // 
-            // bt4RegNow
+            // bt4Reg
             // 
-            bt4RegNow.BackColor = Color.Goldenrod;
-            bt4RegNow.FlatAppearance.BorderSize = 0;
-            bt4RegNow.FlatStyle = FlatStyle.Flat;
-            bt4RegNow.Font = new Font("Segoe UI Black", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            bt4RegNow.ForeColor = Color.Transparent;
-            bt4RegNow.Location = new Point(151, 555);
-            bt4RegNow.Name = "bt4RegNow";
-            bt4RegNow.Size = new Size(260, 44);
-            bt4RegNow.TabIndex = 21;
-            bt4RegNow.Text = "Register Now!";
-            bt4RegNow.UseVisualStyleBackColor = false;
-            bt4RegNow.Click += button1_Click;
+            bt4Reg.BackColor = Color.Goldenrod;
+            bt4Reg.FlatAppearance.BorderSize = 0;
+            bt4Reg.FlatStyle = FlatStyle.Flat;
+            bt4Reg.Font = new Font("Segoe UI Black", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            bt4Reg.ForeColor = Color.Transparent;
+            bt4Reg.Location = new Point(151, 555);
+            bt4Reg.Name = "bt4Reg";
+            bt4Reg.Size = new Size(260, 44);
+            bt4Reg.TabIndex = 21;
+            bt4Reg.Text = "Register Now!";
+            bt4Reg.UseVisualStyleBackColor = false;
+            bt4Reg.Click += button1_Click;
             // 
             // panel7
             // 
@@ -415,13 +415,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Goldenrod;
             ClientSize = new Size(1068, 709);
+            ControlBox = false;
             Controls.Add(panel4);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
             Name = "LogInForm1";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Login Form 1";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -461,7 +462,7 @@
         private Panel panel6;
         private Label lb10dhaA;
         private Panel panel7;
-        private Button bt4RegNow;
+        private Button bt4Reg;
         private Button bt5Exit;
     }
 }

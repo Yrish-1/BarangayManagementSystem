@@ -77,7 +77,16 @@ namespace EveryJuanCount
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            //hide Form 1
+            this.Hide();
+            //create an instance of Form 2
+            SignUp f2 = new SignUp();
+            //show Form 2
+            f2.ShowDialog();
+            //dispose Form 2 after it is closed
+            f2 = null;
+            //show form1 again
+            this.Show();
         }
 
         private void bt5Exit_Click(object sender, EventArgs e)

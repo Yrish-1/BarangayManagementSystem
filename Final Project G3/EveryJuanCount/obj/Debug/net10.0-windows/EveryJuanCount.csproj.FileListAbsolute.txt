@@ -15,3 +15,4 @@ C:\Users\Admin\OneDrive\Documents\Final Project G3\EveryJuanCount\obj\Debug\net1
 C:\Users\Admin\OneDrive\Documents\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\ref\EveryJuanCount.dll
 C:\Users\Admin\OneDrive\Documents\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.Properties.Resources.resources
 C:\Users\Admin\OneDrive\Documents\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.LogInForm1.resources
+C:\Users\Admin\OneDrive\Documents\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.SignUp.resources
