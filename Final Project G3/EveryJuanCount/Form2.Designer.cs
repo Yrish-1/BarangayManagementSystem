@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             panel1 = new Panel();
             panel2 = new Panel();
             Lb5Evr1_Fr2 = new Label();
@@ -43,7 +42,35 @@
             pb1Logo = new PictureBox();
             panel3 = new Panel();
             tC1Reg_Fr2 = new TabControl();
-            tabPage1 = new TabPage();
+            tabResident = new TabPage();
+            numericUpDownHM_Restb = new NumericUpDown();
+            lb22Acc_Restb = new Label();
+            flowLayoutPanel3 = new FlowLayoutPanel();
+            lb21MembersNo_Restb = new Label();
+            cb4HouseRole_Restb = new ComboBox();
+            lb20HouseRole_Restb = new Label();
+            textBox1 = new TextBox();
+            lb18PostalCode_Restb = new Label();
+            cb3ResStat_Restb = new ComboBox();
+            lb19ResStat_Restb = new Label();
+            txtb11Province_Restb = new TextBox();
+            lb17Province_Restb = new Label();
+            txtb10city_Restb = new TextBox();
+            lb16City_Restb = new Label();
+            txtb9Brgy_Restb = new TextBox();
+            lb15Brgy_Restb = new Label();
+            txtb8Purok_Restb = new TextBox();
+            lb14Purok_Restb = new Label();
+            txtb7House_Restb = new TextBox();
+            lb13House_Restb = new Label();
+            lb12Address_Restb = new Label();
+            flowLayoutPanel2 = new FlowLayoutPanel();
+            txtb6EA_Restb = new TextBox();
+            lb11Email_Restb = new Label();
+            txtb5CN_Restb = new TextBox();
+            lb10ContactN_Restb = new Label();
+            cb2Sex_Restb = new ComboBox();
+            lb9Sex_Restb = new Label();
             cb1CivilSt_Restb = new ComboBox();
             lb8CivilSt_Restb = new Label();
             txtb4Age_Residenttb = new TextBox();
@@ -65,14 +92,6 @@
             panel5 = new Panel();
             Lb6Reg_Fr2 = new Label();
             bt1ExitForm2 = new Button();
-            cb2Sex_Restb = new ComboBox();
-            lb9Sex_Restb = new Label();
-            txtb5CN_Restb = new TextBox();
-            lb10ContactN_Restb = new Label();
-            txtb6EA_Restb = new TextBox();
-            lb11Email_Restb = new Label();
-            lb12Address_Restb = new Label();
-            flowLayoutPanel2 = new FlowLayoutPanel();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pb3stars).BeginInit();
@@ -81,7 +100,8 @@
             ((System.ComponentModel.ISupportInitialize)pb1Logo).BeginInit();
             panel3.SuspendLayout();
             tC1Reg_Fr2.SuspendLayout();
-            tabPage1.SuspendLayout();
+            tabResident.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownHM_Restb).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -233,7 +253,7 @@
             // 
             // tC1Reg_Fr2
             // 
-            tC1Reg_Fr2.Controls.Add(tabPage1);
+            tC1Reg_Fr2.Controls.Add(tabResident);
             tC1Reg_Fr2.Controls.Add(tabPage2);
             tC1Reg_Fr2.Controls.Add(tabPage3);
             tC1Reg_Fr2.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -248,45 +268,376 @@
             tC1Reg_Fr2.SizeMode = TabSizeMode.Fixed;
             tC1Reg_Fr2.TabIndex = 26;
             // 
-            // tabPage1
+            // tabResident
             // 
-            tabPage1.AutoScroll = true;
-            tabPage1.AutoScrollMinSize = new Size(0, 1500);
-            tabPage1.BackColor = Color.WhiteSmoke;
-            tabPage1.BackgroundImageLayout = ImageLayout.Center;
-            tabPage1.Controls.Add(lb12Address_Restb);
-            tabPage1.Controls.Add(flowLayoutPanel2);
-            tabPage1.Controls.Add(txtb6EA_Restb);
-            tabPage1.Controls.Add(lb11Email_Restb);
-            tabPage1.Controls.Add(txtb5CN_Restb);
-            tabPage1.Controls.Add(lb10ContactN_Restb);
-            tabPage1.Controls.Add(cb2Sex_Restb);
-            tabPage1.Controls.Add(lb9Sex_Restb);
-            tabPage1.Controls.Add(cb1CivilSt_Restb);
-            tabPage1.Controls.Add(lb8CivilSt_Restb);
-            tabPage1.Controls.Add(txtb4Age_Residenttb);
-            tabPage1.Controls.Add(lb7Age_Restb);
-            tabPage1.Controls.Add(dateTimePicker1_Restb);
-            tabPage1.Controls.Add(lb6DOB_Restb);
-            tabPage1.Controls.Add(txtb3LN_Residenttb);
-            tabPage1.Controls.Add(lb5LN_Restb);
-            tabPage1.Controls.Add(txtb2MN_Residenttb);
-            tabPage1.Controls.Add(lb4MN_Restb);
-            tabPage1.Controls.Add(txtb1FN_Residenttb);
-            tabPage1.Controls.Add(lb3FN_Restb);
-            tabPage1.Controls.Add(lb2PerInRestab_Fr2);
-            tabPage1.Controls.Add(flowLayoutPanel1);
-            tabPage1.Controls.Add(lb1RegAs_Fr2);
-            tabPage1.Controls.Add(P1Restab_Form2);
-            tabPage1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tabPage1.ForeColor = SystemColors.ControlText;
-            tabPage1.Location = new Point(4, 46);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(600, 504);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Resident";
-            tabPage1.Click += tabPage1_Click;
+            tabResident.AutoScroll = true;
+            tabResident.AutoScrollMinSize = new Size(0, 1500);
+            tabResident.BackColor = Color.WhiteSmoke;
+            tabResident.BackgroundImageLayout = ImageLayout.Center;
+            tabResident.Controls.Add(numericUpDownHM_Restb);
+            tabResident.Controls.Add(lb22Acc_Restb);
+            tabResident.Controls.Add(flowLayoutPanel3);
+            tabResident.Controls.Add(lb21MembersNo_Restb);
+            tabResident.Controls.Add(cb4HouseRole_Restb);
+            tabResident.Controls.Add(lb20HouseRole_Restb);
+            tabResident.Controls.Add(textBox1);
+            tabResident.Controls.Add(lb18PostalCode_Restb);
+            tabResident.Controls.Add(cb3ResStat_Restb);
+            tabResident.Controls.Add(lb19ResStat_Restb);
+            tabResident.Controls.Add(txtb11Province_Restb);
+            tabResident.Controls.Add(lb17Province_Restb);
+            tabResident.Controls.Add(txtb10city_Restb);
+            tabResident.Controls.Add(lb16City_Restb);
+            tabResident.Controls.Add(txtb9Brgy_Restb);
+            tabResident.Controls.Add(lb15Brgy_Restb);
+            tabResident.Controls.Add(txtb8Purok_Restb);
+            tabResident.Controls.Add(lb14Purok_Restb);
+            tabResident.Controls.Add(txtb7House_Restb);
+            tabResident.Controls.Add(lb13House_Restb);
+            tabResident.Controls.Add(lb12Address_Restb);
+            tabResident.Controls.Add(flowLayoutPanel2);
+            tabResident.Controls.Add(txtb6EA_Restb);
+            tabResident.Controls.Add(lb11Email_Restb);
+            tabResident.Controls.Add(txtb5CN_Restb);
+            tabResident.Controls.Add(lb10ContactN_Restb);
+            tabResident.Controls.Add(cb2Sex_Restb);
+            tabResident.Controls.Add(lb9Sex_Restb);
+            tabResident.Controls.Add(cb1CivilSt_Restb);
+            tabResident.Controls.Add(lb8CivilSt_Restb);
+            tabResident.Controls.Add(txtb4Age_Residenttb);
+            tabResident.Controls.Add(lb7Age_Restb);
+            tabResident.Controls.Add(dateTimePicker1_Restb);
+            tabResident.Controls.Add(lb6DOB_Restb);
+            tabResident.Controls.Add(txtb3LN_Residenttb);
+            tabResident.Controls.Add(lb5LN_Restb);
+            tabResident.Controls.Add(txtb2MN_Residenttb);
+            tabResident.Controls.Add(lb4MN_Restb);
+            tabResident.Controls.Add(txtb1FN_Residenttb);
+            tabResident.Controls.Add(lb3FN_Restb);
+            tabResident.Controls.Add(lb2PerInRestab_Fr2);
+            tabResident.Controls.Add(flowLayoutPanel1);
+            tabResident.Controls.Add(lb1RegAs_Fr2);
+            tabResident.Controls.Add(P1Restab_Form2);
+            tabResident.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tabResident.ForeColor = SystemColors.ControlText;
+            tabResident.Location = new Point(4, 46);
+            tabResident.Name = "tabResident";
+            tabResident.Padding = new Padding(3);
+            tabResident.Size = new Size(600, 504);
+            tabResident.TabIndex = 0;
+            tabResident.Text = "Resident";
+            tabResident.Click += tabPage1_Click;
+            // 
+            // numericUpDownHM_Restb
+            // 
+            numericUpDownHM_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            numericUpDownHM_Restb.Location = new Point(381, 715);
+            numericUpDownHM_Restb.Name = "numericUpDownHM_Restb";
+            numericUpDownHM_Restb.Size = new Size(150, 27);
+            numericUpDownHM_Restb.TabIndex = 45;
+            // 
+            // lb22Acc_Restb
+            // 
+            lb22Acc_Restb.BackColor = Color.Gainsboro;
+            lb22Acc_Restb.Font = new Font("Franklin Gothic Book", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lb22Acc_Restb.ForeColor = SystemColors.ActiveCaptionText;
+            lb22Acc_Restb.Location = new Point(29, 790);
+            lb22Acc_Restb.Name = "lb22Acc_Restb";
+            lb22Acc_Restb.Padding = new Padding(1, 5, 1, 1);
+            lb22Acc_Restb.Size = new Size(526, 38);
+            lb22Acc_Restb.TabIndex = 44;
+            lb22Acc_Restb.Text = " Account Credentials";
+            // 
+            // flowLayoutPanel3
+            // 
+            flowLayoutPanel3.BackColor = Color.MidnightBlue;
+            flowLayoutPanel3.Location = new Point(24, 790);
+            flowLayoutPanel3.Name = "flowLayoutPanel3";
+            flowLayoutPanel3.Size = new Size(7, 38);
+            flowLayoutPanel3.TabIndex = 43;
+            flowLayoutPanel3.Paint += flowLayoutPanel3_Paint;
+            // 
+            // lb21MembersNo_Restb
+            // 
+            lb21MembersNo_Restb.AutoSize = true;
+            lb21MembersNo_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb21MembersNo_Restb.Location = new Point(377, 689);
+            lb21MembersNo_Restb.Name = "lb21MembersNo_Restb";
+            lb21MembersNo_Restb.Size = new Size(146, 23);
+            lb21MembersNo_Restb.TabIndex = 42;
+            lb21MembersNo_Restb.Text = "Household Members";
+            // 
+            // cb4HouseRole_Restb
+            // 
+            cb4HouseRole_Restb.BackColor = SystemColors.Control;
+            cb4HouseRole_Restb.DropDownStyle = ComboBoxStyle.DropDownList;
+            cb4HouseRole_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cb4HouseRole_Restb.FormattingEnabled = true;
+            cb4HouseRole_Restb.Items.AddRange(new object[] { "Head of Household", "Spouse", "Child", "Other Relative", "Boarder / Tenant" });
+            cb4HouseRole_Restb.Location = new Point(43, 715);
+            cb4HouseRole_Restb.Name = "cb4HouseRole_Restb";
+            cb4HouseRole_Restb.Size = new Size(321, 29);
+            cb4HouseRole_Restb.TabIndex = 40;
+            // 
+            // lb20HouseRole_Restb
+            // 
+            lb20HouseRole_Restb.AutoSize = true;
+            lb20HouseRole_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb20HouseRole_Restb.Location = new Point(37, 689);
+            lb20HouseRole_Restb.Name = "lb20HouseRole_Restb";
+            lb20HouseRole_Restb.Size = new Size(113, 23);
+            lb20HouseRole_Restb.TabIndex = 39;
+            lb20HouseRole_Restb.Text = "Household Role";
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = SystemColors.ControlDark;
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.CharacterCasing = CharacterCasing.Upper;
+            textBox1.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(204, 649);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = " 4200";
+            textBox1.Size = new Size(144, 28);
+            textBox1.TabIndex = 38;
+            // 
+            // lb18PostalCode_Restb
+            // 
+            lb18PostalCode_Restb.AutoSize = true;
+            lb18PostalCode_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb18PostalCode_Restb.Location = new Point(198, 623);
+            lb18PostalCode_Restb.Name = "lb18PostalCode_Restb";
+            lb18PostalCode_Restb.Size = new Size(89, 23);
+            lb18PostalCode_Restb.TabIndex = 37;
+            lb18PostalCode_Restb.Text = "Postal Code";
+            // 
+            // cb3ResStat_Restb
+            // 
+            cb3ResStat_Restb.BackColor = SystemColors.Control;
+            cb3ResStat_Restb.DropDownStyle = ComboBoxStyle.DropDownList;
+            cb3ResStat_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cb3ResStat_Restb.FormattingEnabled = true;
+            cb3ResStat_Restb.Items.AddRange(new object[] { "Permanent Resident", "Temporary Resident", "Relocating" });
+            cb3ResStat_Restb.Location = new Point(364, 649);
+            cb3ResStat_Restb.Name = "cb3ResStat_Restb";
+            cb3ResStat_Restb.Size = new Size(167, 29);
+            cb3ResStat_Restb.TabIndex = 36;
+            // 
+            // lb19ResStat_Restb
+            // 
+            lb19ResStat_Restb.AutoSize = true;
+            lb19ResStat_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb19ResStat_Restb.Location = new Point(361, 623);
+            lb19ResStat_Restb.Name = "lb19ResStat_Restb";
+            lb19ResStat_Restb.Size = new Size(122, 23);
+            lb19ResStat_Restb.TabIndex = 35;
+            lb19ResStat_Restb.Text = "Residency Status";
+            // 
+            // txtb11Province_Restb
+            // 
+            txtb11Province_Restb.BackColor = SystemColors.ControlDark;
+            txtb11Province_Restb.BorderStyle = BorderStyle.None;
+            txtb11Province_Restb.CharacterCasing = CharacterCasing.Upper;
+            txtb11Province_Restb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb11Province_Restb.Location = new Point(43, 649);
+            txtb11Province_Restb.Multiline = true;
+            txtb11Province_Restb.Name = "txtb11Province_Restb";
+            txtb11Province_Restb.PlaceholderText = " BATANGAS";
+            txtb11Province_Restb.Size = new Size(144, 28);
+            txtb11Province_Restb.TabIndex = 34;
+            // 
+            // lb17Province_Restb
+            // 
+            lb17Province_Restb.AutoSize = true;
+            lb17Province_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb17Province_Restb.Location = new Point(37, 623);
+            lb17Province_Restb.Name = "lb17Province_Restb";
+            lb17Province_Restb.Size = new Size(65, 23);
+            lb17Province_Restb.TabIndex = 33;
+            lb17Province_Restb.Text = "Province";
+            // 
+            // txtb10city_Restb
+            // 
+            txtb10city_Restb.BackColor = SystemColors.ControlDark;
+            txtb10city_Restb.BorderStyle = BorderStyle.None;
+            txtb10city_Restb.CharacterCasing = CharacterCasing.Upper;
+            txtb10city_Restb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb10city_Restb.Location = new Point(364, 580);
+            txtb10city_Restb.Multiline = true;
+            txtb10city_Restb.Name = "txtb10city_Restb";
+            txtb10city_Restb.PlaceholderText = " BATANGAS CITY";
+            txtb10city_Restb.Size = new Size(167, 28);
+            txtb10city_Restb.TabIndex = 32;
+            // 
+            // lb16City_Restb
+            // 
+            lb16City_Restb.AutoSize = true;
+            lb16City_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb16City_Restb.Location = new Point(360, 554);
+            lb16City_Restb.Name = "lb16City_Restb";
+            lb16City_Restb.Size = new Size(130, 23);
+            lb16City_Restb.TabIndex = 31;
+            lb16City_Restb.Text = "Municipality / City";
+            // 
+            // txtb9Brgy_Restb
+            // 
+            txtb9Brgy_Restb.BackColor = SystemColors.ControlDark;
+            txtb9Brgy_Restb.BorderStyle = BorderStyle.None;
+            txtb9Brgy_Restb.CharacterCasing = CharacterCasing.Upper;
+            txtb9Brgy_Restb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb9Brgy_Restb.Location = new Point(204, 580);
+            txtb9Brgy_Restb.Multiline = true;
+            txtb9Brgy_Restb.Name = "txtb9Brgy_Restb";
+            txtb9Brgy_Restb.PlaceholderText = " ALANGILAN";
+            txtb9Brgy_Restb.Size = new Size(144, 28);
+            txtb9Brgy_Restb.TabIndex = 30;
+            txtb9Brgy_Restb.TextChanged += textBox1_TextChanged_2;
+            // 
+            // lb15Brgy_Restb
+            // 
+            lb15Brgy_Restb.AutoSize = true;
+            lb15Brgy_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb15Brgy_Restb.Location = new Point(198, 554);
+            lb15Brgy_Restb.Name = "lb15Brgy_Restb";
+            lb15Brgy_Restb.Size = new Size(71, 23);
+            lb15Brgy_Restb.TabIndex = 29;
+            lb15Brgy_Restb.Text = "Barangay";
+            // 
+            // txtb8Purok_Restb
+            // 
+            txtb8Purok_Restb.BackColor = SystemColors.ControlDark;
+            txtb8Purok_Restb.BorderStyle = BorderStyle.None;
+            txtb8Purok_Restb.CharacterCasing = CharacterCasing.Upper;
+            txtb8Purok_Restb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb8Purok_Restb.Location = new Point(43, 580);
+            txtb8Purok_Restb.Multiline = true;
+            txtb8Purok_Restb.Name = "txtb8Purok_Restb";
+            txtb8Purok_Restb.PlaceholderText = " PUROK 1";
+            txtb8Purok_Restb.Size = new Size(144, 28);
+            txtb8Purok_Restb.TabIndex = 28;
+            // 
+            // lb14Purok_Restb
+            // 
+            lb14Purok_Restb.AutoSize = true;
+            lb14Purok_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb14Purok_Restb.Location = new Point(37, 554);
+            lb14Purok_Restb.Name = "lb14Purok_Restb";
+            lb14Purok_Restb.Size = new Size(93, 23);
+            lb14Purok_Restb.TabIndex = 27;
+            lb14Purok_Restb.Text = "Purok / Sitio";
+            // 
+            // txtb7House_Restb
+            // 
+            txtb7House_Restb.BackColor = SystemColors.ControlDark;
+            txtb7House_Restb.BorderStyle = BorderStyle.None;
+            txtb7House_Restb.CharacterCasing = CharacterCasing.Upper;
+            txtb7House_Restb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb7House_Restb.Location = new Point(43, 514);
+            txtb7House_Restb.Multiline = true;
+            txtb7House_Restb.Name = "txtb7House_Restb";
+            txtb7House_Restb.PlaceholderText = " 123 SITIO CALUMPANG";
+            txtb7House_Restb.Size = new Size(488, 28);
+            txtb7House_Restb.TabIndex = 26;
+            txtb7House_Restb.TextChanged += textBox1_TextChanged_1;
+            // 
+            // lb13House_Restb
+            // 
+            lb13House_Restb.AutoSize = true;
+            lb13House_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb13House_Restb.Location = new Point(39, 488);
+            lb13House_Restb.Name = "lb13House_Restb";
+            lb13House_Restb.Size = new Size(173, 23);
+            lb13House_Restb.TabIndex = 25;
+            lb13House_Restb.Text = "House / Unit No. / Street";
+            // 
+            // lb12Address_Restb
+            // 
+            lb12Address_Restb.BackColor = Color.Gainsboro;
+            lb12Address_Restb.Font = new Font("Franklin Gothic Book", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lb12Address_Restb.ForeColor = SystemColors.ActiveCaptionText;
+            lb12Address_Restb.Location = new Point(29, 425);
+            lb12Address_Restb.Name = "lb12Address_Restb";
+            lb12Address_Restb.Padding = new Padding(1, 5, 1, 1);
+            lb12Address_Restb.Size = new Size(526, 38);
+            lb12Address_Restb.TabIndex = 24;
+            lb12Address_Restb.Text = " Address / Household";
+            // 
+            // flowLayoutPanel2
+            // 
+            flowLayoutPanel2.BackColor = Color.MidnightBlue;
+            flowLayoutPanel2.Location = new Point(24, 425);
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
+            flowLayoutPanel2.Size = new Size(7, 38);
+            flowLayoutPanel2.TabIndex = 23;
+            // 
+            // txtb6EA_Restb
+            // 
+            txtb6EA_Restb.BackColor = SystemColors.ControlDark;
+            txtb6EA_Restb.BorderStyle = BorderStyle.None;
+            txtb6EA_Restb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb6EA_Restb.Location = new Point(43, 350);
+            txtb6EA_Restb.Multiline = true;
+            txtb6EA_Restb.Name = "txtb6EA_Restb";
+            txtb6EA_Restb.PlaceholderText = "brandonjosefpine@email.com";
+            txtb6EA_Restb.Size = new Size(488, 28);
+            txtb6EA_Restb.TabIndex = 22;
+            // 
+            // lb11Email_Restb
+            // 
+            lb11Email_Restb.AutoSize = true;
+            lb11Email_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb11Email_Restb.Location = new Point(39, 324);
+            lb11Email_Restb.Name = "lb11Email_Restb";
+            lb11Email_Restb.Size = new Size(104, 23);
+            lb11Email_Restb.TabIndex = 21;
+            lb11Email_Restb.Text = "Email Address";
+            // 
+            // txtb5CN_Restb
+            // 
+            txtb5CN_Restb.BackColor = SystemColors.ControlDark;
+            txtb5CN_Restb.BorderStyle = BorderStyle.None;
+            txtb5CN_Restb.CharacterCasing = CharacterCasing.Upper;
+            txtb5CN_Restb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb5CN_Restb.Location = new Point(196, 283);
+            txtb5CN_Restb.Multiline = true;
+            txtb5CN_Restb.Name = "txtb5CN_Restb";
+            txtb5CN_Restb.PlaceholderText = " 09xxxxxxxxx";
+            txtb5CN_Restb.Size = new Size(335, 28);
+            txtb5CN_Restb.TabIndex = 20;
+            // 
+            // lb10ContactN_Restb
+            // 
+            lb10ContactN_Restb.AutoSize = true;
+            lb10ContactN_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb10ContactN_Restb.Location = new Point(192, 257);
+            lb10ContactN_Restb.Name = "lb10ContactN_Restb";
+            lb10ContactN_Restb.Size = new Size(117, 23);
+            lb10ContactN_Restb.TabIndex = 19;
+            lb10ContactN_Restb.Text = "Contact Number";
+            lb10ContactN_Restb.Click += label1_Click_2;
+            // 
+            // cb2Sex_Restb
+            // 
+            cb2Sex_Restb.BackColor = SystemColors.Control;
+            cb2Sex_Restb.DropDownStyle = ComboBoxStyle.DropDownList;
+            cb2Sex_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cb2Sex_Restb.FormattingEnabled = true;
+            cb2Sex_Restb.Items.AddRange(new object[] { "Male", "Female" });
+            cb2Sex_Restb.Location = new Point(39, 282);
+            cb2Sex_Restb.Name = "cb2Sex_Restb";
+            cb2Sex_Restb.Size = new Size(144, 29);
+            cb2Sex_Restb.TabIndex = 18;
+            // 
+            // lb9Sex_Restb
+            // 
+            lb9Sex_Restb.AutoSize = true;
+            lb9Sex_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb9Sex_Restb.Location = new Point(34, 257);
+            lb9Sex_Restb.Name = "lb9Sex_Restb";
+            lb9Sex_Restb.Size = new Size(33, 23);
+            lb9Sex_Restb.TabIndex = 17;
+            lb9Sex_Restb.Text = "Sex";
             // 
             // cb1CivilSt_Restb
             // 
@@ -374,7 +725,7 @@
             // 
             lb5LN_Restb.AutoSize = true;
             lb5LN_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb5LN_Restb.Location = new Point(358, 119);
+            lb5LN_Restb.Location = new Point(359, 119);
             lb5LN_Restb.Name = "lb5LN_Restb";
             lb5LN_Restb.Size = new Size(79, 23);
             lb5LN_Restb.TabIndex = 9;
@@ -386,18 +737,18 @@
             txtb2MN_Residenttb.BorderStyle = BorderStyle.None;
             txtb2MN_Residenttb.CharacterCasing = CharacterCasing.Upper;
             txtb2MN_Residenttb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtb2MN_Residenttb.Location = new Point(202, 147);
+            txtb2MN_Residenttb.Location = new Point(223, 147);
             txtb2MN_Residenttb.Multiline = true;
             txtb2MN_Residenttb.Name = "txtb2MN_Residenttb";
             txtb2MN_Residenttb.PlaceholderText = " VELEZ";
-            txtb2MN_Residenttb.Size = new Size(141, 28);
+            txtb2MN_Residenttb.Size = new Size(120, 28);
             txtb2MN_Residenttb.TabIndex = 8;
             // 
             // lb4MN_Restb
             // 
             lb4MN_Restb.AutoSize = true;
             lb4MN_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb4MN_Restb.Location = new Point(196, 119);
+            lb4MN_Restb.Location = new Point(219, 119);
             lb4MN_Restb.Name = "lb4MN_Restb";
             lb4MN_Restb.Size = new Size(99, 23);
             lb4MN_Restb.TabIndex = 7;
@@ -413,8 +764,8 @@
             txtb1FN_Residenttb.Location = new Point(38, 147);
             txtb1FN_Residenttb.Multiline = true;
             txtb1FN_Residenttb.Name = "txtb1FN_Residenttb";
-            txtb1FN_Residenttb.PlaceholderText = " MARK JOHN";
-            txtb1FN_Residenttb.Size = new Size(145, 28);
+            txtb1FN_Residenttb.PlaceholderText = " MARK BRANDON ";
+            txtb1FN_Residenttb.Size = new Size(173, 28);
             txtb1FN_Residenttb.TabIndex = 6;
             txtb1FN_Residenttb.TextChanged += textBox1_TextChanged;
             // 
@@ -536,95 +887,6 @@
             bt1ExitForm2.UseVisualStyleBackColor = true;
             bt1ExitForm2.Click += bt1ExitForm2_Click;
             // 
-            // cb2Sex_Restb
-            // 
-            cb2Sex_Restb.BackColor = SystemColors.Control;
-            cb2Sex_Restb.DropDownStyle = ComboBoxStyle.DropDownList;
-            cb2Sex_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cb2Sex_Restb.FormattingEnabled = true;
-            cb2Sex_Restb.Items.AddRange(new object[] { "Male", "Female" });
-            cb2Sex_Restb.Location = new Point(39, 282);
-            cb2Sex_Restb.Name = "cb2Sex_Restb";
-            cb2Sex_Restb.Size = new Size(144, 29);
-            cb2Sex_Restb.TabIndex = 18;
-            // 
-            // lb9Sex_Restb
-            // 
-            lb9Sex_Restb.AutoSize = true;
-            lb9Sex_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb9Sex_Restb.Location = new Point(34, 257);
-            lb9Sex_Restb.Name = "lb9Sex_Restb";
-            lb9Sex_Restb.Size = new Size(33, 23);
-            lb9Sex_Restb.TabIndex = 17;
-            lb9Sex_Restb.Text = "Sex";
-            // 
-            // txtb5CN_Restb
-            // 
-            txtb5CN_Restb.BackColor = SystemColors.ControlDark;
-            txtb5CN_Restb.BorderStyle = BorderStyle.None;
-            txtb5CN_Restb.CharacterCasing = CharacterCasing.Upper;
-            txtb5CN_Restb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtb5CN_Restb.Location = new Point(196, 283);
-            txtb5CN_Restb.Multiline = true;
-            txtb5CN_Restb.Name = "txtb5CN_Restb";
-            txtb5CN_Restb.PlaceholderText = " 09xxxxxxxxx";
-            txtb5CN_Restb.Size = new Size(335, 28);
-            txtb5CN_Restb.TabIndex = 20;
-            // 
-            // lb10ContactN_Restb
-            // 
-            lb10ContactN_Restb.AutoSize = true;
-            lb10ContactN_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb10ContactN_Restb.Location = new Point(192, 257);
-            lb10ContactN_Restb.Name = "lb10ContactN_Restb";
-            lb10ContactN_Restb.Size = new Size(117, 23);
-            lb10ContactN_Restb.TabIndex = 19;
-            lb10ContactN_Restb.Text = "Contact Number";
-            lb10ContactN_Restb.Click += label1_Click_2;
-            // 
-            // txtb6EA_Restb
-            // 
-            txtb6EA_Restb.BackColor = SystemColors.ControlDark;
-            txtb6EA_Restb.BorderStyle = BorderStyle.None;
-            txtb6EA_Restb.CharacterCasing = CharacterCasing.Upper;
-            txtb6EA_Restb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtb6EA_Restb.Location = new Point(43, 350);
-            txtb6EA_Restb.Multiline = true;
-            txtb6EA_Restb.Name = "txtb6EA_Restb";
-            txtb6EA_Restb.PlaceholderText = " markjohnpine@email.com";
-            txtb6EA_Restb.Size = new Size(488, 28);
-            txtb6EA_Restb.TabIndex = 22;
-            // 
-            // lb11Email_Restb
-            // 
-            lb11Email_Restb.AutoSize = true;
-            lb11Email_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb11Email_Restb.Location = new Point(39, 324);
-            lb11Email_Restb.Name = "lb11Email_Restb";
-            lb11Email_Restb.Size = new Size(104, 23);
-            lb11Email_Restb.TabIndex = 21;
-            lb11Email_Restb.Text = "Email Address";
-            // 
-            // lb12Address_Restb
-            // 
-            lb12Address_Restb.BackColor = Color.Gainsboro;
-            lb12Address_Restb.Font = new Font("Franklin Gothic Book", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb12Address_Restb.ForeColor = SystemColors.ActiveCaptionText;
-            lb12Address_Restb.Location = new Point(29, 425);
-            lb12Address_Restb.Name = "lb12Address_Restb";
-            lb12Address_Restb.Padding = new Padding(1, 5, 1, 1);
-            lb12Address_Restb.Size = new Size(526, 38);
-            lb12Address_Restb.TabIndex = 24;
-            lb12Address_Restb.Text = " Address / Household";
-            // 
-            // flowLayoutPanel2
-            // 
-            flowLayoutPanel2.BackColor = Color.MidnightBlue;
-            flowLayoutPanel2.Location = new Point(24, 425);
-            flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(7, 38);
-            flowLayoutPanel2.TabIndex = 23;
-            // 
             // SignUp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -648,14 +910,13 @@
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             tC1Reg_Fr2.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
-            tabPage1.PerformLayout();
+            tabResident.ResumeLayout(false);
+            tabResident.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownHM_Restb).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
@@ -672,7 +933,7 @@
         private PictureBox pb1Logo;
         private Label Lb6Reg_Fr2;
         private TabControl tC1Reg_Fr2;
-        private TabPage tabPage1;
+        private TabPage tabResident;
         private TabPage tabPage2;
         private TabPage tabPage3;
         private Panel panel5;
@@ -700,5 +961,25 @@
         private Label lb11Email_Restb;
         private Label lb12Address_Restb;
         private FlowLayoutPanel flowLayoutPanel2;
+        private TextBox txtb7House_Restb;
+        private Label lb13House_Restb;
+        private TextBox txtb8Purok_Restb;
+        private Label lb14Purok_Restb;
+        private TextBox txtb9Brgy_Restb;
+        private Label lb15Brgy_Restb;
+        private TextBox txtb10city_Restb;
+        private Label lb16City_Restb;
+        private TextBox txtb11Province_Restb;
+        private Label lb17Province_Restb;
+        private Label lb19ResStat_Restb;
+        private ComboBox cb3ResStat_Restb;
+        private Label lb20HouseRole_Restb;
+        private TextBox textBox1;
+        private Label lb18PostalCode_Restb;
+        private ComboBox cb4HouseRole_Restb;
+        private Label lb21MembersNo_Restb;
+        private Label lb22Acc_Restb;
+        private FlowLayoutPanel flowLayoutPanel3;
+        private NumericUpDown numericUpDownHM_Restb;
     }
 }
