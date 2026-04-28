@@ -1,0 +1,281 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Text;
+using System.Windows.Forms;
+using static System.Windows.Forms.DataFormats;
+
+namespace EveryJuanCount
+{
+    public partial class SignUp : Form
+    {
+        public SignUp()
+        {
+            InitializeComponent();
+        }
+
+        private void SignUp_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt1ExitForm2_Click(object sender, EventArgs e)
+        {
+            var form1 = Application.OpenForms.OfType<LogInForm1>().FirstOrDefault();
+            if (form1 != null)
+            {
+                form1.Show();
+                form1.BringToFront();
+            }
+            else
+            {
+                new LogInForm1().Show();
+            }
+            this.Close();
+        }
+
+        private void Lb4WeCount_Fr2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SignInLb6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lb2ResLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lb26Namereq_Restb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // Store the selected file path
+        private string selectedIDFilePath = "";
+        private void bt1Upload_Restb_Click(object sender, EventArgs e)
+        {
+            // Open the file picker
+            ofdID.Filter = "Image and PDF Files|*.jpg;*.jpeg;*.png;*.pdf";
+            ofdID.Title = "Select your Valid ID";
+
+            if (ofdID.ShowDialog() == DialogResult.OK)
+            {
+                selectedIDFilePath = ofdID.FileName;
+
+                // Get file info
+                FileInfo fileInfo = new FileInfo(selectedIDFilePath);
+                double fileSizeKB = fileInfo.Length / 1024.0;
+
+                // Check file size — max 5MB
+                if (fileInfo.Length > 5 * 1024 * 1024)
+                {
+                    MessageBox.Show(
+                        "File is too large. Maximum allowed size is 5MB.",
+                        "File Too Large",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning
+                    );
+                    selectedIDFilePath = "";
+                    return;
+                }
+                // Show file name and size
+                lblFileName.Text = fileInfo.Name +
+                                        " (" + fileSizeKB.ToString("F1") + " KB)";
+                lblFileName.ForeColor = Color.FromArgb(0, 45, 114);
+
+                // Check if it's an image or PDF
+                string ext = Path.GetExtension(selectedIDFilePath).ToLower();
+
+                if (ext == ".jpg" || ext == ".jpeg" || ext == ".png")
+                {
+                    // Show image preview
+                    picb1IDUploaded_Restb.Image = Image.FromFile(selectedIDFilePath);
+                    picb1IDUploaded_Restb.Visible = true;
+                    lblFileName.Text = "✔ " + lblFileName.Text;
+                }
+                else if (ext == ".pdf")
+                {
+                    // PDF — no image preview, show icon text instead
+                    picb1IDUploaded_Restb.Visible = false;
+                    lblFileName.Text = "📄 " + fileInfo.Name +
+                                           " (" + fileSizeKB.ToString("F1") + " KB)";
+                }
+
+                // Change button text to show file is selected
+                bt1Upload_Restb.Text = "✔ File Selected — Click to Replace";
+                bt1Upload_Restb.BackColor = Color.FromArgb(220, 240, 230);
+                bt1Upload_Restb.ForeColor = Color.FromArgb(0, 80, 64);
+            }
+        }
+
+        private void lb32Visibility_Restb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btSubmit_Restb_Click(object sender, EventArgs e)
+        {
+            // Check if declaration checkbox is checked
+            if (!chkb1Confirm_Restb.Checked)
+            {
+                MessageBox.Show(
+                    "Please confirm the declaration before submitting.",
+                    "Declaration Required",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+                return;
+            }
+
+            //Check if ID file was uploaded
+            if (string.IsNullOrEmpty(selectedIDFilePath))
+            {
+                MessageBox.Show(
+                    "Please upload a photo or file of your valid ID.",
+                    "ID Required",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+                return;
+            }
+
+            // Show success message
+            MessageBox.Show(
+                "Registration submitted successfully!\n\n" +
+                "Please wait for barangay admin approval.\n" +
+                "You will be notified once your account is activated.",
+                "Registration Submitted",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+
+            // Go back to Login Form
+            var form1 = Application.OpenForms.OfType<LogInForm1>().FirstOrDefault();
+            if (form1 != null)
+            {
+                form1.Show();
+                form1.BringToFront();
+            }
+            else
+            {
+                new LogInForm1().Show();
+            }
+            this.Close();
+        }
+
+        private void btSignInHere_Restb_Click(object sender, EventArgs e)
+        {
+            // Go back to Login Form
+            var form1 = Application.OpenForms.OfType<LogInForm1>().FirstOrDefault();
+            if (form1 != null)
+            {
+                form1.Show();
+                form1.BringToFront();
+            }
+            else
+            {
+                new LogInForm1().Show();
+            }
+            this.Close();
+        }
+
+        private void btShowPassword_Restb_Click(object sender, EventArgs e)
+        {
+            if (txtb14Password_Restb.PasswordChar == '*')
+            {
+                btHidePassword_Restb.BringToFront();
+                txtb14Password_Restb.PasswordChar = '\0';
+            }
+        }
+
+        private void btHidePassword_Restb_Click(object sender, EventArgs e)
+        {
+            if (txtb14Password_Restb.PasswordChar == '\0')
+            {
+                btShowPassword_Restb.BringToFront();
+                txtb14Password_Restb.PasswordChar = '*';
+            }
+
+        }
+
+        private void btShowPassConfirm_Restb_Click(object sender, EventArgs e)
+        {
+            if (txtb15ConfirmPass_Restb.PasswordChar == '*')
+            {
+                btHidePassConfirm_Restb.BringToFront();
+                txtb15ConfirmPass_Restb.PasswordChar = '\0';
+            }
+        }
+
+        private void btHidePassConfirm_Restb_Click(object sender, EventArgs e)
+        {
+            if (txtb15ConfirmPass_Restb.PasswordChar == '\0')
+            {
+                btShowPassConfirm_Restb.BringToFront();
+                txtb15ConfirmPass_Restb.PasswordChar = '*';
+            }
+        }
+    }
+}
