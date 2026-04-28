@@ -43,13 +43,44 @@
             panel3 = new Panel();
             tC1Reg_Fr2 = new TabControl();
             tabResident = new TabPage();
+            btShowPassConfirm_Restb = new Button();
+            btHidePassConfirm_Restb = new Button();
+            btShowPassword_Restb = new Button();
+            btHidePassword_Restb = new Button();
+            panel8 = new Panel();
+            btSignInHere_Restb = new Button();
+            lb33Already_Restb = new Label();
+            panel7 = new Panel();
+            panel6 = new Panel();
+            btSubmit_Restb = new Button();
+            chkb1Confirm_Restb = new CheckBox();
+            lb32Visibility_Restb = new Label();
+            plUpload_Restb = new Panel();
+            lblFileName = new Label();
+            lb32Drag_Restb = new Label();
+            lb31Accepted_Restb = new Label();
+            picb1IDUploaded_Restb = new PictureBox();
+            bt1Upload_Restb = new Button();
+            lb30UploadID_Restb = new Label();
+            textBox1 = new TextBox();
+            lb29IDNum_Restb = new Label();
+            cb5ValidIDType_Restb = new ComboBox();
+            lb28ValidIdType_Restb = new Label();
+            lb27PassReq_Restb = new Label();
+            lb26Namereq_Restb = new Label();
+            lb25ConfirmPass_Restb = new Label();
+            txtb15ConfirmPass_Restb = new TextBox();
+            lb24Password_Restb = new Label();
+            txtb14Password_Restb = new TextBox();
+            txtb13Username_Restb = new TextBox();
+            lb23Username_Restb = new Label();
             numericUpDownHM_Restb = new NumericUpDown();
             lb22Acc_Restb = new Label();
             flowLayoutPanel3 = new FlowLayoutPanel();
             lb21MembersNo_Restb = new Label();
             cb4HouseRole_Restb = new ComboBox();
             lb20HouseRole_Restb = new Label();
-            textBox1 = new TextBox();
+            txtb12Postal_Restb = new TextBox();
             lb18PostalCode_Restb = new Label();
             cb3ResStat_Restb = new ComboBox();
             lb19ResStat_Restb = new Label();
@@ -92,6 +123,7 @@
             panel5 = new Panel();
             Lb6Reg_Fr2 = new Label();
             bt1ExitForm2 = new Button();
+            ofdID = new OpenFileDialog();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pb3stars).BeginInit();
@@ -101,6 +133,8 @@
             panel3.SuspendLayout();
             tC1Reg_Fr2.SuspendLayout();
             tabResident.SuspendLayout();
+            plUpload_Restb.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picb1IDUploaded_Restb).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownHM_Restb).BeginInit();
             SuspendLayout();
             // 
@@ -271,16 +305,42 @@
             // tabResident
             // 
             tabResident.AutoScroll = true;
-            tabResident.AutoScrollMinSize = new Size(0, 1500);
+            tabResident.AutoScrollMinSize = new Size(0, 1550);
             tabResident.BackColor = Color.WhiteSmoke;
             tabResident.BackgroundImageLayout = ImageLayout.Center;
+            tabResident.Controls.Add(btShowPassConfirm_Restb);
+            tabResident.Controls.Add(btHidePassConfirm_Restb);
+            tabResident.Controls.Add(btShowPassword_Restb);
+            tabResident.Controls.Add(btHidePassword_Restb);
+            tabResident.Controls.Add(panel8);
+            tabResident.Controls.Add(btSignInHere_Restb);
+            tabResident.Controls.Add(lb33Already_Restb);
+            tabResident.Controls.Add(panel7);
+            tabResident.Controls.Add(panel6);
+            tabResident.Controls.Add(btSubmit_Restb);
+            tabResident.Controls.Add(chkb1Confirm_Restb);
+            tabResident.Controls.Add(lb32Visibility_Restb);
+            tabResident.Controls.Add(plUpload_Restb);
+            tabResident.Controls.Add(lb30UploadID_Restb);
+            tabResident.Controls.Add(textBox1);
+            tabResident.Controls.Add(lb29IDNum_Restb);
+            tabResident.Controls.Add(cb5ValidIDType_Restb);
+            tabResident.Controls.Add(lb28ValidIdType_Restb);
+            tabResident.Controls.Add(lb27PassReq_Restb);
+            tabResident.Controls.Add(lb26Namereq_Restb);
+            tabResident.Controls.Add(lb25ConfirmPass_Restb);
+            tabResident.Controls.Add(txtb15ConfirmPass_Restb);
+            tabResident.Controls.Add(lb24Password_Restb);
+            tabResident.Controls.Add(txtb14Password_Restb);
+            tabResident.Controls.Add(txtb13Username_Restb);
+            tabResident.Controls.Add(lb23Username_Restb);
             tabResident.Controls.Add(numericUpDownHM_Restb);
             tabResident.Controls.Add(lb22Acc_Restb);
             tabResident.Controls.Add(flowLayoutPanel3);
             tabResident.Controls.Add(lb21MembersNo_Restb);
             tabResident.Controls.Add(cb4HouseRole_Restb);
             tabResident.Controls.Add(lb20HouseRole_Restb);
-            tabResident.Controls.Add(textBox1);
+            tabResident.Controls.Add(txtb12Postal_Restb);
             tabResident.Controls.Add(lb18PostalCode_Restb);
             tabResident.Controls.Add(cb3ResStat_Restb);
             tabResident.Controls.Add(lb19ResStat_Restb);
@@ -327,6 +387,378 @@
             tabResident.TabIndex = 0;
             tabResident.Text = "Resident";
             tabResident.Click += tabPage1_Click;
+            // 
+            // btShowPassConfirm_Restb
+            // 
+            btShowPassConfirm_Restb.BackColor = SystemColors.ControlDark;
+            btShowPassConfirm_Restb.FlatAppearance.BorderSize = 0;
+            btShowPassConfirm_Restb.FlatStyle = FlatStyle.Flat;
+            btShowPassConfirm_Restb.Image = Properties.Resources.eyePass;
+            btShowPassConfirm_Restb.Location = new Point(495, 955);
+            btShowPassConfirm_Restb.Name = "btShowPassConfirm_Restb";
+            btShowPassConfirm_Restb.Size = new Size(36, 27);
+            btShowPassConfirm_Restb.TabIndex = 71;
+            btShowPassConfirm_Restb.UseVisualStyleBackColor = false;
+            btShowPassConfirm_Restb.Click += btShowPassConfirm_Restb_Click;
+            // 
+            // btHidePassConfirm_Restb
+            // 
+            btHidePassConfirm_Restb.BackColor = SystemColors.ControlDark;
+            btHidePassConfirm_Restb.BackgroundImage = Properties.Resources.hidePass;
+            btHidePassConfirm_Restb.FlatAppearance.BorderSize = 0;
+            btHidePassConfirm_Restb.FlatStyle = FlatStyle.Flat;
+            btHidePassConfirm_Restb.Image = Properties.Resources.hidePass;
+            btHidePassConfirm_Restb.Location = new Point(495, 955);
+            btHidePassConfirm_Restb.Name = "btHidePassConfirm_Restb";
+            btHidePassConfirm_Restb.Size = new Size(36, 27);
+            btHidePassConfirm_Restb.TabIndex = 70;
+            btHidePassConfirm_Restb.TextAlign = ContentAlignment.TopCenter;
+            btHidePassConfirm_Restb.UseVisualStyleBackColor = false;
+            btHidePassConfirm_Restb.Click += btHidePassConfirm_Restb_Click;
+            // 
+            // btShowPassword_Restb
+            // 
+            btShowPassword_Restb.BackColor = SystemColors.ControlDark;
+            btShowPassword_Restb.FlatAppearance.BorderSize = 0;
+            btShowPassword_Restb.FlatStyle = FlatStyle.Flat;
+            btShowPassword_Restb.Image = Properties.Resources.eyePass;
+            btShowPassword_Restb.Location = new Point(241, 955);
+            btShowPassword_Restb.Name = "btShowPassword_Restb";
+            btShowPassword_Restb.Size = new Size(36, 27);
+            btShowPassword_Restb.TabIndex = 68;
+            btShowPassword_Restb.UseVisualStyleBackColor = false;
+            btShowPassword_Restb.Click += btShowPassword_Restb_Click;
+            // 
+            // btHidePassword_Restb
+            // 
+            btHidePassword_Restb.BackColor = SystemColors.ControlDark;
+            btHidePassword_Restb.BackgroundImage = Properties.Resources.hidePass;
+            btHidePassword_Restb.FlatAppearance.BorderSize = 0;
+            btHidePassword_Restb.FlatStyle = FlatStyle.Flat;
+            btHidePassword_Restb.Image = Properties.Resources.hidePass;
+            btHidePassword_Restb.Location = new Point(241, 955);
+            btHidePassword_Restb.Name = "btHidePassword_Restb";
+            btHidePassword_Restb.Size = new Size(36, 27);
+            btHidePassword_Restb.TabIndex = 69;
+            btHidePassword_Restb.TextAlign = ContentAlignment.TopCenter;
+            btHidePassword_Restb.UseVisualStyleBackColor = false;
+            btHidePassword_Restb.Click += btHidePassword_Restb_Click;
+            // 
+            // panel8
+            // 
+            panel8.BackColor = Color.Goldenrod;
+            panel8.ForeColor = Color.FromArgb(0, 0, 64);
+            panel8.Location = new Point(20, 1514);
+            panel8.Margin = new Padding(0);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(530, 2);
+            panel8.TabIndex = 67;
+            // 
+            // btSignInHere_Restb
+            // 
+            btSignInHere_Restb.BackColor = Color.Goldenrod;
+            btSignInHere_Restb.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 64);
+            btSignInHere_Restb.FlatAppearance.BorderSize = 0;
+            btSignInHere_Restb.FlatStyle = FlatStyle.Flat;
+            btSignInHere_Restb.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btSignInHere_Restb.ForeColor = Color.Transparent;
+            btSignInHere_Restb.Location = new Point(19, 1460);
+            btSignInHere_Restb.Name = "btSignInHere_Restb";
+            btSignInHere_Restb.Size = new Size(531, 37);
+            btSignInHere_Restb.TabIndex = 66;
+            btSignInHere_Restb.Text = "SIGN IN HERE";
+            btSignInHere_Restb.UseVisualStyleBackColor = false;
+            btSignInHere_Restb.Click += btSignInHere_Restb_Click;
+            // 
+            // lb33Already_Restb
+            // 
+            lb33Already_Restb.AutoSize = true;
+            lb33Already_Restb.Font = new Font("Arial Narrow", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb33Already_Restb.ForeColor = SystemColors.ControlDark;
+            lb33Already_Restb.Location = new Point(198, 1423);
+            lb33Already_Restb.Name = "lb33Already_Restb";
+            lb33Already_Restb.Size = new Size(175, 22);
+            lb33Already_Restb.TabIndex = 65;
+            lb33Already_Restb.Text = "Already have an account?";
+            // 
+            // panel7
+            // 
+            panel7.BackColor = Color.Goldenrod;
+            panel7.ForeColor = Color.Goldenrod;
+            panel7.Location = new Point(380, 1433);
+            panel7.Margin = new Padding(0);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(170, 2);
+            panel7.TabIndex = 64;
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.Goldenrod;
+            panel6.ForeColor = Color.Goldenrod;
+            panel6.Location = new Point(19, 1433);
+            panel6.Margin = new Padding(0);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(170, 2);
+            panel6.TabIndex = 63;
+            // 
+            // btSubmit_Restb
+            // 
+            btSubmit_Restb.BackColor = Color.FromArgb(0, 0, 64);
+            btSubmit_Restb.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 64);
+            btSubmit_Restb.FlatAppearance.BorderSize = 0;
+            btSubmit_Restb.FlatStyle = FlatStyle.Flat;
+            btSubmit_Restb.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btSubmit_Restb.ForeColor = Color.Transparent;
+            btSubmit_Restb.Location = new Point(19, 1359);
+            btSubmit_Restb.Name = "btSubmit_Restb";
+            btSubmit_Restb.Size = new Size(531, 37);
+            btSubmit_Restb.TabIndex = 62;
+            btSubmit_Restb.Text = "SUBMIT REGISTRATION";
+            btSubmit_Restb.UseVisualStyleBackColor = false;
+            btSubmit_Restb.Click += btSubmit_Restb_Click;
+            // 
+            // chkb1Confirm_Restb
+            // 
+            chkb1Confirm_Restb.AutoSize = true;
+            chkb1Confirm_Restb.CheckAlign = ContentAlignment.TopLeft;
+            chkb1Confirm_Restb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            chkb1Confirm_Restb.Location = new Point(47, 1284);
+            chkb1Confirm_Restb.Name = "chkb1Confirm_Restb";
+            chkb1Confirm_Restb.Size = new Size(491, 36);
+            chkb1Confirm_Restb.TabIndex = 61;
+            chkb1Confirm_Restb.Text = "I confirm that all information I provided is accurate and truthful. I understand that false \r\ninformation may result in rejection of my registration.";
+            chkb1Confirm_Restb.UseVisualStyleBackColor = true;
+            // 
+            // lb32Visibility_Restb
+            // 
+            lb32Visibility_Restb.AutoSize = true;
+            lb32Visibility_Restb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb32Visibility_Restb.ForeColor = SystemColors.ControlDark;
+            lb32Visibility_Restb.Location = new Point(41, 1260);
+            lb32Visibility_Restb.Name = "lb32Visibility_Restb";
+            lb32Visibility_Restb.Size = new Size(482, 16);
+            lb32Visibility_Restb.TabIndex = 60;
+            lb32Visibility_Restb.Text = "ⓘ Upload a clear photo or scanned copy of your valid ID. Make sure all details are visible and legible.\r\n";
+            lb32Visibility_Restb.Click += lb32Visibility_Restb_Click;
+            // 
+            // plUpload_Restb
+            // 
+            plUpload_Restb.BackColor = Color.AliceBlue;
+            plUpload_Restb.BorderStyle = BorderStyle.FixedSingle;
+            plUpload_Restb.Controls.Add(lblFileName);
+            plUpload_Restb.Controls.Add(lb32Drag_Restb);
+            plUpload_Restb.Controls.Add(lb31Accepted_Restb);
+            plUpload_Restb.Controls.Add(picb1IDUploaded_Restb);
+            plUpload_Restb.Controls.Add(bt1Upload_Restb);
+            plUpload_Restb.Location = new Point(43, 1103);
+            plUpload_Restb.Name = "plUpload_Restb";
+            plUpload_Restb.Size = new Size(488, 154);
+            plUpload_Restb.TabIndex = 59;
+            // 
+            // lblFileName
+            // 
+            lblFileName.AutoSize = true;
+            lblFileName.Font = new Font("Arial Narrow", 6.8F);
+            lblFileName.ForeColor = SystemColors.ControlDark;
+            lblFileName.Location = new Point(12, 123);
+            lblFileName.Name = "lblFileName";
+            lblFileName.Size = new Size(0, 16);
+            lblFileName.TabIndex = 56;
+            // 
+            // lb32Drag_Restb
+            // 
+            lb32Drag_Restb.AutoSize = true;
+            lb32Drag_Restb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb32Drag_Restb.ForeColor = SystemColors.ControlDark;
+            lb32Drag_Restb.Location = new Point(165, 80);
+            lb32Drag_Restb.Name = "lb32Drag_Restb";
+            lb32Drag_Restb.Size = new Size(156, 16);
+            lb32Drag_Restb.TabIndex = 55;
+            lb32Drag_Restb.Text = "or drag and drop your file here ";
+            // 
+            // lb31Accepted_Restb
+            // 
+            lb31Accepted_Restb.AutoSize = true;
+            lb31Accepted_Restb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb31Accepted_Restb.ForeColor = SystemColors.ControlDark;
+            lb31Accepted_Restb.Location = new Point(139, 99);
+            lb31Accepted_Restb.Name = "lb31Accepted_Restb";
+            lb31Accepted_Restb.Size = new Size(213, 16);
+            lb31Accepted_Restb.TabIndex = 54;
+            lb31Accepted_Restb.Text = "Accepted: JPG, PNG, PDF · Max size: 5MB\r\n";
+            // 
+            // picb1IDUploaded_Restb
+            // 
+            picb1IDUploaded_Restb.Location = new Point(12, 33);
+            picb1IDUploaded_Restb.Name = "picb1IDUploaded_Restb";
+            picb1IDUploaded_Restb.Size = new Size(78, 82);
+            picb1IDUploaded_Restb.SizeMode = PictureBoxSizeMode.Zoom;
+            picb1IDUploaded_Restb.TabIndex = 1;
+            picb1IDUploaded_Restb.TabStop = false;
+            picb1IDUploaded_Restb.Visible = false;
+            // 
+            // bt1Upload_Restb
+            // 
+            bt1Upload_Restb.FlatAppearance.BorderColor = Color.AliceBlue;
+            bt1Upload_Restb.FlatStyle = FlatStyle.Flat;
+            bt1Upload_Restb.Font = new Font("Sans Serif Collection", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            bt1Upload_Restb.ForeColor = Color.Navy;
+            bt1Upload_Restb.Location = new Point(3, 3);
+            bt1Upload_Restb.Name = "bt1Upload_Restb";
+            bt1Upload_Restb.Padding = new Padding(3);
+            bt1Upload_Restb.Size = new Size(480, 146);
+            bt1Upload_Restb.TabIndex = 0;
+            bt1Upload_Restb.Text = "Click to Upload ";
+            bt1Upload_Restb.UseVisualStyleBackColor = true;
+            bt1Upload_Restb.Click += bt1Upload_Restb_Click;
+            // 
+            // lb30UploadID_Restb
+            // 
+            lb30UploadID_Restb.AutoSize = true;
+            lb30UploadID_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb30UploadID_Restb.Location = new Point(43, 1077);
+            lb30UploadID_Restb.Name = "lb30UploadID_Restb";
+            lb30UploadID_Restb.Size = new Size(75, 23);
+            lb30UploadID_Restb.TabIndex = 58;
+            lb30UploadID_Restb.Text = "Upload ID";
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = SystemColors.ControlDark;
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(229, 1036);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = " Enter your ID Number";
+            textBox1.Size = new Size(302, 28);
+            textBox1.TabIndex = 57;
+            // 
+            // lb29IDNum_Restb
+            // 
+            lb29IDNum_Restb.AutoSize = true;
+            lb29IDNum_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb29IDNum_Restb.Location = new Point(225, 1009);
+            lb29IDNum_Restb.Name = "lb29IDNum_Restb";
+            lb29IDNum_Restb.Size = new Size(80, 23);
+            lb29IDNum_Restb.TabIndex = 56;
+            lb29IDNum_Restb.Text = "ID Number";
+            // 
+            // cb5ValidIDType_Restb
+            // 
+            cb5ValidIDType_Restb.BackColor = SystemColors.Control;
+            cb5ValidIDType_Restb.DropDownStyle = ComboBoxStyle.DropDownList;
+            cb5ValidIDType_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cb5ValidIDType_Restb.FormattingEnabled = true;
+            cb5ValidIDType_Restb.Items.AddRange(new object[] { "PhilSys National ID", "Barangay ID", "Voter's ID", "Driver's License", "Passport", "SSS / GSIS ID", "PhilHealth ID" });
+            cb5ValidIDType_Restb.Location = new Point(43, 1035);
+            cb5ValidIDType_Restb.Name = "cb5ValidIDType_Restb";
+            cb5ValidIDType_Restb.Size = new Size(167, 29);
+            cb5ValidIDType_Restb.TabIndex = 55;
+            // 
+            // lb28ValidIdType_Restb
+            // 
+            lb28ValidIdType_Restb.AutoSize = true;
+            lb28ValidIdType_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb28ValidIdType_Restb.Location = new Point(41, 1009);
+            lb28ValidIdType_Restb.Name = "lb28ValidIdType_Restb";
+            lb28ValidIdType_Restb.Size = new Size(93, 23);
+            lb28ValidIdType_Restb.TabIndex = 54;
+            lb28ValidIdType_Restb.Text = "Valid ID Type";
+            // 
+            // lb27PassReq_Restb
+            // 
+            lb27PassReq_Restb.AutoSize = true;
+            lb27PassReq_Restb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb27PassReq_Restb.ForeColor = SystemColors.ControlDark;
+            lb27PassReq_Restb.Location = new Point(41, 985);
+            lb27PassReq_Restb.Name = "lb27PassReq_Restb";
+            lb27PassReq_Restb.Size = new Size(242, 16);
+            lb27PassReq_Restb.TabIndex = 53;
+            lb27PassReq_Restb.Text = "Min. 8 strong characters with numbers and symbol";
+            // 
+            // lb26Namereq_Restb
+            // 
+            lb26Namereq_Restb.AutoSize = true;
+            lb26Namereq_Restb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb26Namereq_Restb.ForeColor = SystemColors.ControlDark;
+            lb26Namereq_Restb.Location = new Point(42, 909);
+            lb26Namereq_Restb.Name = "lb26Namereq_Restb";
+            lb26Namereq_Restb.Size = new Size(135, 16);
+            lb26Namereq_Restb.TabIndex = 52;
+            lb26Namereq_Restb.Text = "6-20 characters, no spaces";
+            lb26Namereq_Restb.Click += lb26Namereq_Restb_Click;
+            // 
+            // lb25ConfirmPass_Restb
+            // 
+            lb25ConfirmPass_Restb.AutoSize = true;
+            lb25ConfirmPass_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb25ConfirmPass_Restb.Location = new Point(294, 929);
+            lb25ConfirmPass_Restb.Name = "lb25ConfirmPass_Restb";
+            lb25ConfirmPass_Restb.Size = new Size(129, 23);
+            lb25ConfirmPass_Restb.TabIndex = 51;
+            lb25ConfirmPass_Restb.Text = "Confirm Password";
+            // 
+            // txtb15ConfirmPass_Restb
+            // 
+            txtb15ConfirmPass_Restb.BackColor = SystemColors.ControlDark;
+            txtb15ConfirmPass_Restb.BorderStyle = BorderStyle.None;
+            txtb15ConfirmPass_Restb.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtb15ConfirmPass_Restb.ForeColor = SystemColors.ActiveCaptionText;
+            txtb15ConfirmPass_Restb.Location = new Point(297, 955);
+            txtb15ConfirmPass_Restb.Multiline = true;
+            txtb15ConfirmPass_Restb.Name = "txtb15ConfirmPass_Restb";
+            txtb15ConfirmPass_Restb.PasswordChar = '*';
+            txtb15ConfirmPass_Restb.RightToLeft = RightToLeft.No;
+            txtb15ConfirmPass_Restb.Size = new Size(234, 27);
+            txtb15ConfirmPass_Restb.TabIndex = 50;
+            // 
+            // lb24Password_Restb
+            // 
+            lb24Password_Restb.AutoSize = true;
+            lb24Password_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb24Password_Restb.Location = new Point(40, 929);
+            lb24Password_Restb.Name = "lb24Password_Restb";
+            lb24Password_Restb.Size = new Size(73, 23);
+            lb24Password_Restb.TabIndex = 49;
+            lb24Password_Restb.Text = "Password";
+            // 
+            // txtb14Password_Restb
+            // 
+            txtb14Password_Restb.BackColor = SystemColors.ControlDark;
+            txtb14Password_Restb.BorderStyle = BorderStyle.None;
+            txtb14Password_Restb.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtb14Password_Restb.ForeColor = SystemColors.ActiveCaptionText;
+            txtb14Password_Restb.Location = new Point(43, 955);
+            txtb14Password_Restb.Multiline = true;
+            txtb14Password_Restb.Name = "txtb14Password_Restb";
+            txtb14Password_Restb.PasswordChar = '*';
+            txtb14Password_Restb.RightToLeft = RightToLeft.No;
+            txtb14Password_Restb.Size = new Size(234, 27);
+            txtb14Password_Restb.TabIndex = 48;
+            // 
+            // txtb13Username_Restb
+            // 
+            txtb13Username_Restb.BackColor = SystemColors.ControlDark;
+            txtb13Username_Restb.BorderStyle = BorderStyle.None;
+            txtb13Username_Restb.CharacterCasing = CharacterCasing.Lower;
+            txtb13Username_Restb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb13Username_Restb.Location = new Point(43, 881);
+            txtb13Username_Restb.Multiline = true;
+            txtb13Username_Restb.Name = "txtb13Username_Restb";
+            txtb13Username_Restb.PlaceholderText = " markbrandon";
+            txtb13Username_Restb.Size = new Size(488, 28);
+            txtb13Username_Restb.TabIndex = 47;
+            // 
+            // lb23Username_Restb
+            // 
+            lb23Username_Restb.AutoSize = true;
+            lb23Username_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb23Username_Restb.Location = new Point(39, 853);
+            lb23Username_Restb.Name = "lb23Username_Restb";
+            lb23Username_Restb.Size = new Size(77, 23);
+            lb23Username_Restb.TabIndex = 46;
+            lb23Username_Restb.Text = "Username";
             // 
             // numericUpDownHM_Restb
             // 
@@ -378,6 +810,7 @@
             cb4HouseRole_Restb.Name = "cb4HouseRole_Restb";
             cb4HouseRole_Restb.Size = new Size(321, 29);
             cb4HouseRole_Restb.TabIndex = 40;
+            cb4HouseRole_Restb.Tag = "";
             // 
             // lb20HouseRole_Restb
             // 
@@ -389,18 +822,18 @@
             lb20HouseRole_Restb.TabIndex = 39;
             lb20HouseRole_Restb.Text = "Household Role";
             // 
-            // textBox1
+            // txtb12Postal_Restb
             // 
-            textBox1.BackColor = SystemColors.ControlDark;
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.CharacterCasing = CharacterCasing.Upper;
-            textBox1.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(204, 649);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = " 4200";
-            textBox1.Size = new Size(144, 28);
-            textBox1.TabIndex = 38;
+            txtb12Postal_Restb.BackColor = SystemColors.ControlDark;
+            txtb12Postal_Restb.BorderStyle = BorderStyle.None;
+            txtb12Postal_Restb.CharacterCasing = CharacterCasing.Upper;
+            txtb12Postal_Restb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb12Postal_Restb.Location = new Point(204, 649);
+            txtb12Postal_Restb.Multiline = true;
+            txtb12Postal_Restb.Name = "txtb12Postal_Restb";
+            txtb12Postal_Restb.PlaceholderText = " 4200";
+            txtb12Postal_Restb.Size = new Size(144, 28);
+            txtb12Postal_Restb.TabIndex = 38;
             // 
             // lb18PostalCode_Restb
             // 
@@ -887,6 +1320,10 @@
             bt1ExitForm2.UseVisualStyleBackColor = true;
             bt1ExitForm2.Click += bt1ExitForm2_Click;
             // 
+            // ofdID
+            // 
+            ofdID.FileName = "openFileDialog_Restb";
+            // 
             // SignUp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -912,6 +1349,9 @@
             tC1Reg_Fr2.ResumeLayout(false);
             tabResident.ResumeLayout(false);
             tabResident.PerformLayout();
+            plUpload_Restb.ResumeLayout(false);
+            plUpload_Restb.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picb1IDUploaded_Restb).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownHM_Restb).EndInit();
             ResumeLayout(false);
         }
@@ -974,12 +1414,44 @@
         private Label lb19ResStat_Restb;
         private ComboBox cb3ResStat_Restb;
         private Label lb20HouseRole_Restb;
-        private TextBox textBox1;
+        private TextBox txtb12Postal_Restb;
         private Label lb18PostalCode_Restb;
         private ComboBox cb4HouseRole_Restb;
         private Label lb21MembersNo_Restb;
         private Label lb22Acc_Restb;
         private FlowLayoutPanel flowLayoutPanel3;
         private NumericUpDown numericUpDownHM_Restb;
+        private TextBox txtb13Username_Restb;
+        private Label lb23Username_Restb;
+        private Label lb24Password_Restb;
+        private TextBox txtb14Password_Restb;
+        private Label lb25ConfirmPass_Restb;
+        private TextBox txtb15ConfirmPass_Restb;
+        private Label lb26Namereq_Restb;
+        private Label lb27PassReq_Restb;
+        private ComboBox cb5ValidIDType_Restb;
+        private Label lb28ValidIdType_Restb;
+        private TextBox textBox1;
+        private Label lb29IDNum_Restb;
+        private Label lb30UploadID_Restb;
+        private Panel plUpload_Restb;
+        private Button bt1Upload_Restb;
+        private PictureBox picb1IDUploaded_Restb;
+        private Label lb32Drag_Restb;
+        private Label lb31Accepted_Restb;
+        private OpenFileDialog ofdID;
+        private Label lblFileName;
+        private Label lb32Visibility_Restb;
+        private CheckBox chkb1Confirm_Restb;
+        private Button btSubmit_Restb;
+        private Label lb33Already_Restb;
+        private Panel panel7;
+        private Panel panel6;
+        private Button btSignInHere_Restb;
+        private Panel panel8;
+        private Button btHidePassword_Restb;
+        private Button btShowPassword_Restb;
+        private Button btShowPassConfirm_Restb;
+        private Button btHidePassConfirm_Restb;
     }
 }

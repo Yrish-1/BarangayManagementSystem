@@ -398,6 +398,7 @@
             SignInLb6.Size = new Size(159, 49);
             SignInLb6.TabIndex = 9;
             SignInLb6.Text = "SIGN IN";
+            SignInLb6.Click += SignInLb6_Click;
             // 
             // panel5
             // 

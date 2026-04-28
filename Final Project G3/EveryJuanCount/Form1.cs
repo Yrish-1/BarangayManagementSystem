@@ -93,5 +93,10 @@ namespace EveryJuanCount
         {
             Application.Exit();
         }
+
+        private void SignInLb6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
