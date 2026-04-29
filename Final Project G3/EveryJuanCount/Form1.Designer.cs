@@ -402,7 +402,7 @@
             // 
             // panel5
             // 
-            panel5.BackColor = Color.Maroon;
+            panel5.BackColor = Color.Goldenrod;
             panel5.ForeColor = Color.Goldenrod;
             panel5.Location = new Point(34, 109);
             panel5.Margin = new Padding(0);
@@ -421,6 +421,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            HelpButton = true;
             MaximizeBox = false;
             Name = "LogInForm1";
             StartPosition = FormStartPosition.CenterScreen;

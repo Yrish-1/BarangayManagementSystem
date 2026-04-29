@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUp));
             panel1 = new Panel();
             panel2 = new Panel();
             Lb5Evr1_Fr2 = new Label();
@@ -41,8 +42,9 @@
             pb2Stars = new PictureBox();
             pb1Logo = new PictureBox();
             panel3 = new Panel();
-            tC1Reg_Fr2 = new TabControl();
-            tabResident = new TabPage();
+            lb1RegDes = new Label();
+            tabControlRegistration = new TabControl();
+            tab1Resident = new TabPage();
             btShowPassConfirm_Restb = new Button();
             btHidePassConfirm_Restb = new Button();
             btShowPassword_Restb = new Button();
@@ -60,7 +62,7 @@
             lb32Drag_Restb = new Label();
             lb31Accepted_Restb = new Label();
             picb1IDUploaded_Restb = new PictureBox();
-            bt1Upload_Restb = new Button();
+            btIDUpload_Restb = new Button();
             lb30UploadID_Restb = new Label();
             textBox1 = new TextBox();
             lb29IDNum_Restb = new Label();
@@ -118,7 +120,77 @@
             flowLayoutPanel1 = new FlowLayoutPanel();
             lb1RegAs_Fr2 = new Label();
             P1Restab_Form2 = new FlowLayoutPanel();
-            tabPage2 = new TabPage();
+            tab2BarangayStaff = new TabPage();
+            panel9 = new Panel();
+            btSignInHere_BrgyStftb = new Button();
+            label1 = new Label();
+            panel10 = new Panel();
+            panel11 = new Panel();
+            btSubmit_BrgyStftb = new Button();
+            chkb1Confirm_BrgyStftb = new CheckBox();
+            label2 = new Label();
+            panel12 = new Panel();
+            lb1FileName_BrgyStftb = new Label();
+            label3 = new Label();
+            lb27dragorDrop_BrgyStftb = new Label();
+            lb28Accepted_BrgyStftb = new Label();
+            picb1ID_BrgyStftb = new PictureBox();
+            btUploadID_BrgyStftb = new Button();
+            bt3ConShowPass_BrgyStftb = new Button();
+            bt4ConHidePass_BrgyStftb = new Button();
+            bt1ShowPass_BrgyStftb = new Button();
+            bt2HidePass_BrgyStftb = new Button();
+            lb27UploadID_BrgyStftb = new Label();
+            txtb14IDNum_BrgyStftb = new TextBox();
+            lb26IDNum_BrgyStftb = new Label();
+            cb4ValidIDType_BrgyStftb = new ComboBox();
+            lb25ValidType_BrgyStftb = new Label();
+            lb24Min_BrgyStftb = new Label();
+            lb21characters_BrgyStftb = new Label();
+            lb23ConfirmPass_BrgyStftb = new Label();
+            txtb13ConfimPass_BrgyStftb = new TextBox();
+            lb22Password_BrgyStftb = new Label();
+            txtb12Password_BrgyStftb = new TextBox();
+            txtb11Username_BrgyStftb = new TextBox();
+            lb20Username_BrgyStftb = new Label();
+            lb19AccCred_BrgyStftb = new Label();
+            flowLayoutPanel7 = new FlowLayoutPanel();
+            lb18OfficialEm_BrgyStftb = new Label();
+            txtb10OfficialEm_BrgyStftb = new TextBox();
+            txtb9OfficeNo_BrgyStftb = new TextBox();
+            dateTimePicker2DOA_BrgyStftb = new DateTimePicker();
+            cb3Department_BrgyStftb = new ComboBox();
+            lb17OfficeNo_BrgyStftb = new Label();
+            txtb8Position_BrgyStftb = new TextBox();
+            lb14Position_BrgyStftb = new Label();
+            lb16DateOAppoint_BrgyStftb = new Label();
+            lb15Department_BrgyStftb = new Label();
+            txtb7EmpID_BrgyStftb = new TextBox();
+            lb13EmpID_BrgyStftb = new Label();
+            lb12EmpDit_BrgyStftb = new Label();
+            flowLayoutPanel6 = new FlowLayoutPanel();
+            txtb6EmailAdd_BrgyStftb = new TextBox();
+            lb11EmailAdd_BrgyStftb = new Label();
+            txtb5ContactN_BrgyStftb = new TextBox();
+            lb10ContactN_BrgyStftb = new Label();
+            cb2Sex_BrgyStftb = new ComboBox();
+            lb9Sex_BrgyStftb = new Label();
+            cb1CivilStat_BrgyStftb = new ComboBox();
+            lb8CivilStat_BrgyStftb = new Label();
+            txtb4Age_BrgyStftb = new TextBox();
+            lb7Age_BrgyStftb = new Label();
+            dateTimePicker1DOB_BrgyStftb = new DateTimePicker();
+            lb6DOB_BrgyStftb = new Label();
+            txtb3LN_BrgyStftb = new TextBox();
+            lb5LN_BrgyStftb = new Label();
+            txtb2MN_BrgyStftb = new TextBox();
+            lb4MN_BrgyStftb = new Label();
+            txtb1FN_BrgyStftb = new TextBox();
+            lb3FN_BrgyStftb = new Label();
+            lb2PersonalInfo_BrgyStftb = new Label();
+            flowLayoutPanel5 = new FlowLayoutPanel();
+            lb1RegisterAs_BrgyStftb = new Label();
+            flowLayoutPanel4 = new FlowLayoutPanel();
             tabPage3 = new TabPage();
             panel5 = new Panel();
             Lb6Reg_Fr2 = new Label();
@@ -131,11 +203,14 @@
             ((System.ComponentModel.ISupportInitialize)pb2Stars).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pb1Logo).BeginInit();
             panel3.SuspendLayout();
-            tC1Reg_Fr2.SuspendLayout();
-            tabResident.SuspendLayout();
+            tabControlRegistration.SuspendLayout();
+            tab1Resident.SuspendLayout();
             plUpload_Restb.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picb1IDUploaded_Restb).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownHM_Restb).BeginInit();
+            tab2BarangayStaff.SuspendLayout();
+            panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picb1ID_BrgyStftb).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -276,7 +351,8 @@
             // panel3
             // 
             panel3.BackColor = Color.WhiteSmoke;
-            panel3.Controls.Add(tC1Reg_Fr2);
+            panel3.Controls.Add(lb1RegDes);
+            panel3.Controls.Add(tabControlRegistration);
             panel3.Controls.Add(panel5);
             panel3.Controls.Add(Lb6Reg_Fr2);
             panel3.Controls.Add(bt1ExitForm2);
@@ -285,108 +361,119 @@
             panel3.Size = new Size(618, 701);
             panel3.TabIndex = 1;
             // 
-            // tC1Reg_Fr2
+            // lb1RegDes
             // 
-            tC1Reg_Fr2.Controls.Add(tabResident);
-            tC1Reg_Fr2.Controls.Add(tabPage2);
-            tC1Reg_Fr2.Controls.Add(tabPage3);
-            tC1Reg_Fr2.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            tC1Reg_Fr2.HotTrack = true;
-            tC1Reg_Fr2.ImeMode = ImeMode.NoControl;
-            tC1Reg_Fr2.ItemSize = new Size(195, 42);
-            tC1Reg_Fr2.Location = new Point(7, 139);
-            tC1Reg_Fr2.Name = "tC1Reg_Fr2";
-            tC1Reg_Fr2.Padding = new Point(0, 0);
-            tC1Reg_Fr2.SelectedIndex = 0;
-            tC1Reg_Fr2.Size = new Size(608, 554);
-            tC1Reg_Fr2.SizeMode = TabSizeMode.Fixed;
-            tC1Reg_Fr2.TabIndex = 26;
+            lb1RegDes.AutoSize = true;
+            lb1RegDes.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb1RegDes.ForeColor = SystemColors.ControlDark;
+            lb1RegDes.Location = new Point(15, 84);
+            lb1RegDes.Name = "lb1RegDes";
+            lb1RegDes.Size = new Size(575, 32);
+            lb1RegDes.TabIndex = 53;
+            lb1RegDes.Text = resources.GetString("lb1RegDes.Text");
             // 
-            // tabResident
+            // tabControlRegistration
             // 
-            tabResident.AutoScroll = true;
-            tabResident.AutoScrollMinSize = new Size(0, 1550);
-            tabResident.BackColor = Color.WhiteSmoke;
-            tabResident.BackgroundImageLayout = ImageLayout.Center;
-            tabResident.Controls.Add(btShowPassConfirm_Restb);
-            tabResident.Controls.Add(btHidePassConfirm_Restb);
-            tabResident.Controls.Add(btShowPassword_Restb);
-            tabResident.Controls.Add(btHidePassword_Restb);
-            tabResident.Controls.Add(panel8);
-            tabResident.Controls.Add(btSignInHere_Restb);
-            tabResident.Controls.Add(lb33Already_Restb);
-            tabResident.Controls.Add(panel7);
-            tabResident.Controls.Add(panel6);
-            tabResident.Controls.Add(btSubmit_Restb);
-            tabResident.Controls.Add(chkb1Confirm_Restb);
-            tabResident.Controls.Add(lb32Visibility_Restb);
-            tabResident.Controls.Add(plUpload_Restb);
-            tabResident.Controls.Add(lb30UploadID_Restb);
-            tabResident.Controls.Add(textBox1);
-            tabResident.Controls.Add(lb29IDNum_Restb);
-            tabResident.Controls.Add(cb5ValidIDType_Restb);
-            tabResident.Controls.Add(lb28ValidIdType_Restb);
-            tabResident.Controls.Add(lb27PassReq_Restb);
-            tabResident.Controls.Add(lb26Namereq_Restb);
-            tabResident.Controls.Add(lb25ConfirmPass_Restb);
-            tabResident.Controls.Add(txtb15ConfirmPass_Restb);
-            tabResident.Controls.Add(lb24Password_Restb);
-            tabResident.Controls.Add(txtb14Password_Restb);
-            tabResident.Controls.Add(txtb13Username_Restb);
-            tabResident.Controls.Add(lb23Username_Restb);
-            tabResident.Controls.Add(numericUpDownHM_Restb);
-            tabResident.Controls.Add(lb22Acc_Restb);
-            tabResident.Controls.Add(flowLayoutPanel3);
-            tabResident.Controls.Add(lb21MembersNo_Restb);
-            tabResident.Controls.Add(cb4HouseRole_Restb);
-            tabResident.Controls.Add(lb20HouseRole_Restb);
-            tabResident.Controls.Add(txtb12Postal_Restb);
-            tabResident.Controls.Add(lb18PostalCode_Restb);
-            tabResident.Controls.Add(cb3ResStat_Restb);
-            tabResident.Controls.Add(lb19ResStat_Restb);
-            tabResident.Controls.Add(txtb11Province_Restb);
-            tabResident.Controls.Add(lb17Province_Restb);
-            tabResident.Controls.Add(txtb10city_Restb);
-            tabResident.Controls.Add(lb16City_Restb);
-            tabResident.Controls.Add(txtb9Brgy_Restb);
-            tabResident.Controls.Add(lb15Brgy_Restb);
-            tabResident.Controls.Add(txtb8Purok_Restb);
-            tabResident.Controls.Add(lb14Purok_Restb);
-            tabResident.Controls.Add(txtb7House_Restb);
-            tabResident.Controls.Add(lb13House_Restb);
-            tabResident.Controls.Add(lb12Address_Restb);
-            tabResident.Controls.Add(flowLayoutPanel2);
-            tabResident.Controls.Add(txtb6EA_Restb);
-            tabResident.Controls.Add(lb11Email_Restb);
-            tabResident.Controls.Add(txtb5CN_Restb);
-            tabResident.Controls.Add(lb10ContactN_Restb);
-            tabResident.Controls.Add(cb2Sex_Restb);
-            tabResident.Controls.Add(lb9Sex_Restb);
-            tabResident.Controls.Add(cb1CivilSt_Restb);
-            tabResident.Controls.Add(lb8CivilSt_Restb);
-            tabResident.Controls.Add(txtb4Age_Residenttb);
-            tabResident.Controls.Add(lb7Age_Restb);
-            tabResident.Controls.Add(dateTimePicker1_Restb);
-            tabResident.Controls.Add(lb6DOB_Restb);
-            tabResident.Controls.Add(txtb3LN_Residenttb);
-            tabResident.Controls.Add(lb5LN_Restb);
-            tabResident.Controls.Add(txtb2MN_Residenttb);
-            tabResident.Controls.Add(lb4MN_Restb);
-            tabResident.Controls.Add(txtb1FN_Residenttb);
-            tabResident.Controls.Add(lb3FN_Restb);
-            tabResident.Controls.Add(lb2PerInRestab_Fr2);
-            tabResident.Controls.Add(flowLayoutPanel1);
-            tabResident.Controls.Add(lb1RegAs_Fr2);
-            tabResident.Controls.Add(P1Restab_Form2);
-            tabResident.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tabResident.ForeColor = SystemColors.ControlText;
-            tabResident.Location = new Point(4, 46);
-            tabResident.Name = "tabResident";
-            tabResident.Padding = new Padding(3);
-            tabResident.Size = new Size(600, 504);
-            tabResident.TabIndex = 0;
-            tabResident.Text = "Resident";
-            tabResident.Click += tabPage1_Click;
+            tabControlRegistration.Controls.Add(tab1Resident);
+            tabControlRegistration.Controls.Add(tab2BarangayStaff);
+            tabControlRegistration.Controls.Add(tabPage3);
+            tabControlRegistration.Font = new Font("Microsoft Yi Baiti", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            tabControlRegistration.HotTrack = true;
+            tabControlRegistration.ImeMode = ImeMode.NoControl;
+            tabControlRegistration.ItemSize = new Size(195, 42);
+            tabControlRegistration.Location = new Point(7, 139);
+            tabControlRegistration.Name = "tabControlRegistration";
+            tabControlRegistration.Padding = new Point(0, 0);
+            tabControlRegistration.SelectedIndex = 0;
+            tabControlRegistration.Size = new Size(608, 554);
+            tabControlRegistration.SizeMode = TabSizeMode.Fixed;
+            tabControlRegistration.TabIndex = 26;
+            // 
+            // tab1Resident
+            // 
+            tab1Resident.AutoScroll = true;
+            tab1Resident.AutoScrollMinSize = new Size(0, 1550);
+            tab1Resident.BackColor = Color.WhiteSmoke;
+            tab1Resident.BackgroundImageLayout = ImageLayout.Center;
+            tab1Resident.Controls.Add(btShowPassConfirm_Restb);
+            tab1Resident.Controls.Add(btHidePassConfirm_Restb);
+            tab1Resident.Controls.Add(btShowPassword_Restb);
+            tab1Resident.Controls.Add(btHidePassword_Restb);
+            tab1Resident.Controls.Add(panel8);
+            tab1Resident.Controls.Add(btSignInHere_Restb);
+            tab1Resident.Controls.Add(lb33Already_Restb);
+            tab1Resident.Controls.Add(panel7);
+            tab1Resident.Controls.Add(panel6);
+            tab1Resident.Controls.Add(btSubmit_Restb);
+            tab1Resident.Controls.Add(chkb1Confirm_Restb);
+            tab1Resident.Controls.Add(lb32Visibility_Restb);
+            tab1Resident.Controls.Add(plUpload_Restb);
+            tab1Resident.Controls.Add(lb30UploadID_Restb);
+            tab1Resident.Controls.Add(textBox1);
+            tab1Resident.Controls.Add(lb29IDNum_Restb);
+            tab1Resident.Controls.Add(cb5ValidIDType_Restb);
+            tab1Resident.Controls.Add(lb28ValidIdType_Restb);
+            tab1Resident.Controls.Add(lb27PassReq_Restb);
+            tab1Resident.Controls.Add(lb26Namereq_Restb);
+            tab1Resident.Controls.Add(lb25ConfirmPass_Restb);
+            tab1Resident.Controls.Add(txtb15ConfirmPass_Restb);
+            tab1Resident.Controls.Add(lb24Password_Restb);
+            tab1Resident.Controls.Add(txtb14Password_Restb);
+            tab1Resident.Controls.Add(txtb13Username_Restb);
+            tab1Resident.Controls.Add(lb23Username_Restb);
+            tab1Resident.Controls.Add(numericUpDownHM_Restb);
+            tab1Resident.Controls.Add(lb22Acc_Restb);
+            tab1Resident.Controls.Add(flowLayoutPanel3);
+            tab1Resident.Controls.Add(lb21MembersNo_Restb);
+            tab1Resident.Controls.Add(cb4HouseRole_Restb);
+            tab1Resident.Controls.Add(lb20HouseRole_Restb);
+            tab1Resident.Controls.Add(txtb12Postal_Restb);
+            tab1Resident.Controls.Add(lb18PostalCode_Restb);
+            tab1Resident.Controls.Add(cb3ResStat_Restb);
+            tab1Resident.Controls.Add(lb19ResStat_Restb);
+            tab1Resident.Controls.Add(txtb11Province_Restb);
+            tab1Resident.Controls.Add(lb17Province_Restb);
+            tab1Resident.Controls.Add(txtb10city_Restb);
+            tab1Resident.Controls.Add(lb16City_Restb);
+            tab1Resident.Controls.Add(txtb9Brgy_Restb);
+            tab1Resident.Controls.Add(lb15Brgy_Restb);
+            tab1Resident.Controls.Add(txtb8Purok_Restb);
+            tab1Resident.Controls.Add(lb14Purok_Restb);
+            tab1Resident.Controls.Add(txtb7House_Restb);
+            tab1Resident.Controls.Add(lb13House_Restb);
+            tab1Resident.Controls.Add(lb12Address_Restb);
+            tab1Resident.Controls.Add(flowLayoutPanel2);
+            tab1Resident.Controls.Add(txtb6EA_Restb);
+            tab1Resident.Controls.Add(lb11Email_Restb);
+            tab1Resident.Controls.Add(txtb5CN_Restb);
+            tab1Resident.Controls.Add(lb10ContactN_Restb);
+            tab1Resident.Controls.Add(cb2Sex_Restb);
+            tab1Resident.Controls.Add(lb9Sex_Restb);
+            tab1Resident.Controls.Add(cb1CivilSt_Restb);
+            tab1Resident.Controls.Add(lb8CivilSt_Restb);
+            tab1Resident.Controls.Add(txtb4Age_Residenttb);
+            tab1Resident.Controls.Add(lb7Age_Restb);
+            tab1Resident.Controls.Add(dateTimePicker1_Restb);
+            tab1Resident.Controls.Add(lb6DOB_Restb);
+            tab1Resident.Controls.Add(txtb3LN_Residenttb);
+            tab1Resident.Controls.Add(lb5LN_Restb);
+            tab1Resident.Controls.Add(txtb2MN_Residenttb);
+            tab1Resident.Controls.Add(lb4MN_Restb);
+            tab1Resident.Controls.Add(txtb1FN_Residenttb);
+            tab1Resident.Controls.Add(lb3FN_Restb);
+            tab1Resident.Controls.Add(lb2PerInRestab_Fr2);
+            tab1Resident.Controls.Add(flowLayoutPanel1);
+            tab1Resident.Controls.Add(lb1RegAs_Fr2);
+            tab1Resident.Controls.Add(P1Restab_Form2);
+            tab1Resident.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tab1Resident.ForeColor = SystemColors.ControlText;
+            tab1Resident.Location = new Point(4, 46);
+            tab1Resident.Name = "tab1Resident";
+            tab1Resident.Padding = new Padding(3);
+            tab1Resident.Size = new Size(600, 504);
+            tab1Resident.TabIndex = 0;
+            tab1Resident.Text = "Resident";
+            tab1Resident.Click += tabPage1_Click;
             // 
             // btShowPassConfirm_Restb
             // 
@@ -503,7 +590,7 @@
             // 
             // btSubmit_Restb
             // 
-            btSubmit_Restb.BackColor = Color.FromArgb(0, 0, 64);
+            btSubmit_Restb.BackColor = Color.MidnightBlue;
             btSubmit_Restb.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 64);
             btSubmit_Restb.FlatAppearance.BorderSize = 0;
             btSubmit_Restb.FlatStyle = FlatStyle.Flat;
@@ -515,7 +602,7 @@
             btSubmit_Restb.TabIndex = 62;
             btSubmit_Restb.Text = "SUBMIT REGISTRATION";
             btSubmit_Restb.UseVisualStyleBackColor = false;
-            btSubmit_Restb.Click += btSubmit_Restb_Click;
+            btSubmit_Restb.Click += btSubmit_Restb_Click_1;
             // 
             // chkb1Confirm_Restb
             // 
@@ -528,6 +615,7 @@
             chkb1Confirm_Restb.TabIndex = 61;
             chkb1Confirm_Restb.Text = "I confirm that all information I provided is accurate and truthful. I understand that false \r\ninformation may result in rejection of my registration.";
             chkb1Confirm_Restb.UseVisualStyleBackColor = true;
+            chkb1Confirm_Restb.CheckedChanged += chkb1Confirm_Restb_CheckedChanged;
             // 
             // lb32Visibility_Restb
             // 
@@ -549,7 +637,7 @@
             plUpload_Restb.Controls.Add(lb32Drag_Restb);
             plUpload_Restb.Controls.Add(lb31Accepted_Restb);
             plUpload_Restb.Controls.Add(picb1IDUploaded_Restb);
-            plUpload_Restb.Controls.Add(bt1Upload_Restb);
+            plUpload_Restb.Controls.Add(btIDUpload_Restb);
             plUpload_Restb.Location = new Point(43, 1103);
             plUpload_Restb.Name = "plUpload_Restb";
             plUpload_Restb.Size = new Size(488, 154);
@@ -596,21 +684,22 @@
             picb1IDUploaded_Restb.TabIndex = 1;
             picb1IDUploaded_Restb.TabStop = false;
             picb1IDUploaded_Restb.Visible = false;
+            picb1IDUploaded_Restb.Click += picb1IDUploaded_Restb_Click;
             // 
-            // bt1Upload_Restb
+            // btIDUpload_Restb
             // 
-            bt1Upload_Restb.FlatAppearance.BorderColor = Color.AliceBlue;
-            bt1Upload_Restb.FlatStyle = FlatStyle.Flat;
-            bt1Upload_Restb.Font = new Font("Sans Serif Collection", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            bt1Upload_Restb.ForeColor = Color.Navy;
-            bt1Upload_Restb.Location = new Point(3, 3);
-            bt1Upload_Restb.Name = "bt1Upload_Restb";
-            bt1Upload_Restb.Padding = new Padding(3);
-            bt1Upload_Restb.Size = new Size(480, 146);
-            bt1Upload_Restb.TabIndex = 0;
-            bt1Upload_Restb.Text = "Click to Upload ";
-            bt1Upload_Restb.UseVisualStyleBackColor = true;
-            bt1Upload_Restb.Click += bt1Upload_Restb_Click;
+            btIDUpload_Restb.FlatAppearance.BorderColor = Color.AliceBlue;
+            btIDUpload_Restb.FlatStyle = FlatStyle.Flat;
+            btIDUpload_Restb.Font = new Font("Sans Serif Collection", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btIDUpload_Restb.ForeColor = Color.Navy;
+            btIDUpload_Restb.Location = new Point(3, 3);
+            btIDUpload_Restb.Name = "btIDUpload_Restb";
+            btIDUpload_Restb.Padding = new Padding(3);
+            btIDUpload_Restb.Size = new Size(480, 146);
+            btIDUpload_Restb.TabIndex = 72;
+            btIDUpload_Restb.Text = "Click to Upload ";
+            btIDUpload_Restb.UseVisualStyleBackColor = true;
+            btIDUpload_Restb.Click += btIDUpload_Restb_Click;
             // 
             // lb30UploadID_Restb
             // 
@@ -1057,7 +1146,7 @@
             cb2Sex_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb2Sex_Restb.FormattingEnabled = true;
             cb2Sex_Restb.Items.AddRange(new object[] { "Male", "Female" });
-            cb2Sex_Restb.Location = new Point(39, 282);
+            cb2Sex_Restb.Location = new Point(39, 283);
             cb2Sex_Restb.Name = "cb2Sex_Restb";
             cb2Sex_Restb.Size = new Size(144, 29);
             cb2Sex_Restb.TabIndex = 18;
@@ -1088,7 +1177,7 @@
             // 
             lb8CivilSt_Restb.AutoSize = true;
             lb8CivilSt_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb8CivilSt_Restb.Location = new Point(354, 190);
+            lb8CivilSt_Restb.Location = new Point(354, 194);
             lb8CivilSt_Restb.Name = "lb8CivilSt_Restb";
             lb8CivilSt_Restb.Size = new Size(83, 23);
             lb8CivilSt_Restb.TabIndex = 15;
@@ -1111,7 +1200,7 @@
             // 
             lb7Age_Restb.AutoSize = true;
             lb7Age_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb7Age_Restb.Location = new Point(223, 191);
+            lb7Age_Restb.Location = new Point(223, 194);
             lb7Age_Restb.Name = "lb7Age_Restb";
             lb7Age_Restb.Size = new Size(35, 23);
             lb7Age_Restb.TabIndex = 13;
@@ -1238,12 +1327,12 @@
             lb1RegAs_Fr2.AutoSize = true;
             lb1RegAs_Fr2.BackColor = Color.MidnightBlue;
             lb1RegAs_Fr2.BorderStyle = BorderStyle.Fixed3D;
-            lb1RegAs_Fr2.Font = new Font("Agency FB", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lb1RegAs_Fr2.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lb1RegAs_Fr2.ForeColor = SystemColors.Control;
             lb1RegAs_Fr2.Location = new Point(14, 8);
             lb1RegAs_Fr2.Name = "lb1RegAs_Fr2";
             lb1RegAs_Fr2.Padding = new Padding(1, 3, 1, 3);
-            lb1RegAs_Fr2.Size = new Size(138, 32);
+            lb1RegAs_Fr2.Size = new Size(176, 32);
             lb1RegAs_Fr2.TabIndex = 2;
             lb1RegAs_Fr2.Text = "Register As Resident";
             // 
@@ -1257,22 +1346,884 @@
             P1Restab_Form2.TabIndex = 1;
             P1Restab_Form2.Paint += flowLayoutPanel1_Paint;
             // 
-            // tabPage2
+            // tab2BarangayStaff
             // 
-            tabPage2.AutoScroll = true;
-            tabPage2.AutoScrollMinSize = new Size(0, 1000);
-            tabPage2.BackColor = Color.WhiteSmoke;
-            tabPage2.Location = new Point(4, 46);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(600, 504);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Barangay Staff";
+            tab2BarangayStaff.AutoScroll = true;
+            tab2BarangayStaff.AutoScrollMinSize = new Size(0, 1500);
+            tab2BarangayStaff.BackColor = Color.WhiteSmoke;
+            tab2BarangayStaff.Controls.Add(panel9);
+            tab2BarangayStaff.Controls.Add(btSignInHere_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(label1);
+            tab2BarangayStaff.Controls.Add(panel10);
+            tab2BarangayStaff.Controls.Add(panel11);
+            tab2BarangayStaff.Controls.Add(btSubmit_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(chkb1Confirm_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(label2);
+            tab2BarangayStaff.Controls.Add(panel12);
+            tab2BarangayStaff.Controls.Add(bt3ConShowPass_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(bt4ConHidePass_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(bt1ShowPass_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(bt2HidePass_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb27UploadID_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(txtb14IDNum_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb26IDNum_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(cb4ValidIDType_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb25ValidType_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb24Min_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb21characters_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb23ConfirmPass_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(txtb13ConfimPass_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb22Password_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(txtb12Password_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(txtb11Username_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb20Username_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb19AccCred_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(flowLayoutPanel7);
+            tab2BarangayStaff.Controls.Add(lb18OfficialEm_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(txtb10OfficialEm_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(txtb9OfficeNo_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(dateTimePicker2DOA_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(cb3Department_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb17OfficeNo_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(txtb8Position_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb14Position_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb16DateOAppoint_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb15Department_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(txtb7EmpID_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb13EmpID_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb12EmpDit_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(flowLayoutPanel6);
+            tab2BarangayStaff.Controls.Add(txtb6EmailAdd_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb11EmailAdd_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(txtb5ContactN_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb10ContactN_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(cb2Sex_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb9Sex_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(cb1CivilStat_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb8CivilStat_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(txtb4Age_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb7Age_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(dateTimePicker1DOB_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb6DOB_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(txtb3LN_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb5LN_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(txtb2MN_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb4MN_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(txtb1FN_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb3FN_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(lb2PersonalInfo_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(flowLayoutPanel5);
+            tab2BarangayStaff.Controls.Add(lb1RegisterAs_BrgyStftb);
+            tab2BarangayStaff.Controls.Add(flowLayoutPanel4);
+            tab2BarangayStaff.Location = new Point(4, 46);
+            tab2BarangayStaff.Name = "tab2BarangayStaff";
+            tab2BarangayStaff.Padding = new Padding(3);
+            tab2BarangayStaff.Size = new Size(600, 504);
+            tab2BarangayStaff.TabIndex = 1;
+            tab2BarangayStaff.Text = "Barangay Staff";
+            // 
+            // panel9
+            // 
+            panel9.BackColor = Color.Goldenrod;
+            panel9.ForeColor = Color.FromArgb(0, 0, 64);
+            panel9.Location = new Point(25, 1455);
+            panel9.Margin = new Padding(0);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(530, 2);
+            panel9.TabIndex = 99;
+            // 
+            // btSignInHere_BrgyStftb
+            // 
+            btSignInHere_BrgyStftb.BackColor = Color.Goldenrod;
+            btSignInHere_BrgyStftb.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 64);
+            btSignInHere_BrgyStftb.FlatAppearance.BorderSize = 0;
+            btSignInHere_BrgyStftb.FlatStyle = FlatStyle.Flat;
+            btSignInHere_BrgyStftb.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btSignInHere_BrgyStftb.ForeColor = Color.Transparent;
+            btSignInHere_BrgyStftb.Location = new Point(24, 1401);
+            btSignInHere_BrgyStftb.Name = "btSignInHere_BrgyStftb";
+            btSignInHere_BrgyStftb.Size = new Size(531, 37);
+            btSignInHere_BrgyStftb.TabIndex = 98;
+            btSignInHere_BrgyStftb.Text = "SIGN IN HERE";
+            btSignInHere_BrgyStftb.UseVisualStyleBackColor = false;
+            btSignInHere_BrgyStftb.Click += btSignInHere_BrgyStftb_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial Narrow", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.ControlDark;
+            label1.Location = new Point(203, 1364);
+            label1.Name = "label1";
+            label1.Size = new Size(175, 22);
+            label1.TabIndex = 97;
+            label1.Text = "Already have an account?";
+            // 
+            // panel10
+            // 
+            panel10.BackColor = Color.Goldenrod;
+            panel10.ForeColor = Color.Goldenrod;
+            panel10.Location = new Point(385, 1374);
+            panel10.Margin = new Padding(0);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(170, 2);
+            panel10.TabIndex = 96;
+            // 
+            // panel11
+            // 
+            panel11.BackColor = Color.Goldenrod;
+            panel11.ForeColor = Color.Goldenrod;
+            panel11.Location = new Point(24, 1374);
+            panel11.Margin = new Padding(0);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(170, 2);
+            panel11.TabIndex = 95;
+            // 
+            // btSubmit_BrgyStftb
+            // 
+            btSubmit_BrgyStftb.BackColor = Color.MidnightBlue;
+            btSubmit_BrgyStftb.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 64);
+            btSubmit_BrgyStftb.FlatAppearance.BorderSize = 0;
+            btSubmit_BrgyStftb.FlatStyle = FlatStyle.Flat;
+            btSubmit_BrgyStftb.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btSubmit_BrgyStftb.ForeColor = Color.Transparent;
+            btSubmit_BrgyStftb.Location = new Point(24, 1300);
+            btSubmit_BrgyStftb.Name = "btSubmit_BrgyStftb";
+            btSubmit_BrgyStftb.Size = new Size(531, 37);
+            btSubmit_BrgyStftb.TabIndex = 94;
+            btSubmit_BrgyStftb.Text = "SUBMIT REGISTRATION";
+            btSubmit_BrgyStftb.UseVisualStyleBackColor = false;
+            btSubmit_BrgyStftb.Click += btSubmit_BrgyStftb_Click;
+            // 
+            // chkb1Confirm_BrgyStftb
+            // 
+            chkb1Confirm_BrgyStftb.AutoSize = true;
+            chkb1Confirm_BrgyStftb.CheckAlign = ContentAlignment.TopLeft;
+            chkb1Confirm_BrgyStftb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            chkb1Confirm_BrgyStftb.Location = new Point(52, 1225);
+            chkb1Confirm_BrgyStftb.Name = "chkb1Confirm_BrgyStftb";
+            chkb1Confirm_BrgyStftb.Size = new Size(491, 36);
+            chkb1Confirm_BrgyStftb.TabIndex = 93;
+            chkb1Confirm_BrgyStftb.Text = "I confirm that all information I provided is accurate and truthful. I understand that false \r\ninformation may result in rejection of my registration.";
+            chkb1Confirm_BrgyStftb.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.ControlDark;
+            label2.Location = new Point(44, 1194);
+            label2.Name = "label2";
+            label2.Size = new Size(482, 16);
+            label2.TabIndex = 92;
+            label2.Text = "ⓘ Upload a clear photo or scanned copy of your valid ID. Make sure all details are visible and legible.\r\n";
+            // 
+            // panel12
+            // 
+            panel12.BackColor = Color.AliceBlue;
+            panel12.BorderStyle = BorderStyle.FixedSingle;
+            panel12.Controls.Add(lb1FileName_BrgyStftb);
+            panel12.Controls.Add(label3);
+            panel12.Controls.Add(lb27dragorDrop_BrgyStftb);
+            panel12.Controls.Add(lb28Accepted_BrgyStftb);
+            panel12.Controls.Add(picb1ID_BrgyStftb);
+            panel12.Controls.Add(btUploadID_BrgyStftb);
+            panel12.Location = new Point(43, 1032);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(488, 159);
+            panel12.TabIndex = 91;
+            // 
+            // lb1FileName_BrgyStftb
+            // 
+            lb1FileName_BrgyStftb.AutoSize = true;
+            lb1FileName_BrgyStftb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb1FileName_BrgyStftb.ForeColor = SystemColors.ControlDark;
+            lb1FileName_BrgyStftb.Location = new Point(12, 123);
+            lb1FileName_BrgyStftb.Name = "lb1FileName_BrgyStftb";
+            lb1FileName_BrgyStftb.Size = new Size(0, 16);
+            lb1FileName_BrgyStftb.TabIndex = 57;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Arial Narrow", 6.8F);
+            label3.ForeColor = SystemColors.ControlDark;
+            label3.Location = new Point(12, 123);
+            label3.Name = "label3";
+            label3.Size = new Size(0, 16);
+            label3.TabIndex = 56;
+            // 
+            // lb27dragorDrop_BrgyStftb
+            // 
+            lb27dragorDrop_BrgyStftb.AutoSize = true;
+            lb27dragorDrop_BrgyStftb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb27dragorDrop_BrgyStftb.ForeColor = SystemColors.ControlDark;
+            lb27dragorDrop_BrgyStftb.Location = new Point(165, 80);
+            lb27dragorDrop_BrgyStftb.Name = "lb27dragorDrop_BrgyStftb";
+            lb27dragorDrop_BrgyStftb.Size = new Size(156, 16);
+            lb27dragorDrop_BrgyStftb.TabIndex = 55;
+            lb27dragorDrop_BrgyStftb.Text = "or drag and drop your file here ";
+            // 
+            // lb28Accepted_BrgyStftb
+            // 
+            lb28Accepted_BrgyStftb.AutoSize = true;
+            lb28Accepted_BrgyStftb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb28Accepted_BrgyStftb.ForeColor = SystemColors.ControlDark;
+            lb28Accepted_BrgyStftb.Location = new Point(139, 99);
+            lb28Accepted_BrgyStftb.Name = "lb28Accepted_BrgyStftb";
+            lb28Accepted_BrgyStftb.Size = new Size(213, 16);
+            lb28Accepted_BrgyStftb.TabIndex = 54;
+            lb28Accepted_BrgyStftb.Text = "Accepted: JPG, PNG, PDF · Max size: 5MB\r\n";
+            // 
+            // picb1ID_BrgyStftb
+            // 
+            picb1ID_BrgyStftb.Location = new Point(12, 33);
+            picb1ID_BrgyStftb.Name = "picb1ID_BrgyStftb";
+            picb1ID_BrgyStftb.Size = new Size(78, 82);
+            picb1ID_BrgyStftb.SizeMode = PictureBoxSizeMode.Zoom;
+            picb1ID_BrgyStftb.TabIndex = 1;
+            picb1ID_BrgyStftb.TabStop = false;
+            picb1ID_BrgyStftb.Visible = false;
+            // 
+            // btUploadID_BrgyStftb
+            // 
+            btUploadID_BrgyStftb.FlatAppearance.BorderColor = Color.AliceBlue;
+            btUploadID_BrgyStftb.FlatStyle = FlatStyle.Flat;
+            btUploadID_BrgyStftb.Font = new Font("Sans Serif Collection", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btUploadID_BrgyStftb.ForeColor = Color.Navy;
+            btUploadID_BrgyStftb.Location = new Point(3, 8);
+            btUploadID_BrgyStftb.Name = "btUploadID_BrgyStftb";
+            btUploadID_BrgyStftb.Padding = new Padding(3);
+            btUploadID_BrgyStftb.Size = new Size(480, 146);
+            btUploadID_BrgyStftb.TabIndex = 0;
+            btUploadID_BrgyStftb.Text = "Click to Upload ";
+            btUploadID_BrgyStftb.UseVisualStyleBackColor = true;
+            btUploadID_BrgyStftb.Click += btUploadID_BrgyStftb_Click;
+            // 
+            // bt3ConShowPass_BrgyStftb
+            // 
+            bt3ConShowPass_BrgyStftb.BackColor = SystemColors.ControlDark;
+            bt3ConShowPass_BrgyStftb.FlatAppearance.BorderSize = 0;
+            bt3ConShowPass_BrgyStftb.FlatStyle = FlatStyle.Flat;
+            bt3ConShowPass_BrgyStftb.Image = Properties.Resources.eyePass;
+            bt3ConShowPass_BrgyStftb.Location = new Point(495, 884);
+            bt3ConShowPass_BrgyStftb.Name = "bt3ConShowPass_BrgyStftb";
+            bt3ConShowPass_BrgyStftb.Size = new Size(36, 27);
+            bt3ConShowPass_BrgyStftb.TabIndex = 90;
+            bt3ConShowPass_BrgyStftb.UseVisualStyleBackColor = false;
+            bt3ConShowPass_BrgyStftb.Click += bt3ConShowPass_BrgyStftb_Click;
+            // 
+            // bt4ConHidePass_BrgyStftb
+            // 
+            bt4ConHidePass_BrgyStftb.BackColor = SystemColors.ControlDark;
+            bt4ConHidePass_BrgyStftb.BackgroundImage = Properties.Resources.hidePass;
+            bt4ConHidePass_BrgyStftb.FlatAppearance.BorderSize = 0;
+            bt4ConHidePass_BrgyStftb.FlatStyle = FlatStyle.Flat;
+            bt4ConHidePass_BrgyStftb.Image = Properties.Resources.hidePass;
+            bt4ConHidePass_BrgyStftb.Location = new Point(495, 884);
+            bt4ConHidePass_BrgyStftb.Name = "bt4ConHidePass_BrgyStftb";
+            bt4ConHidePass_BrgyStftb.Size = new Size(36, 27);
+            bt4ConHidePass_BrgyStftb.TabIndex = 89;
+            bt4ConHidePass_BrgyStftb.TextAlign = ContentAlignment.TopCenter;
+            bt4ConHidePass_BrgyStftb.UseVisualStyleBackColor = false;
+            bt4ConHidePass_BrgyStftb.Click += bt4ConHidePass_BrgyStftb_Click;
+            // 
+            // bt1ShowPass_BrgyStftb
+            // 
+            bt1ShowPass_BrgyStftb.BackColor = SystemColors.ControlDark;
+            bt1ShowPass_BrgyStftb.FlatAppearance.BorderSize = 0;
+            bt1ShowPass_BrgyStftb.FlatStyle = FlatStyle.Flat;
+            bt1ShowPass_BrgyStftb.Image = Properties.Resources.eyePass;
+            bt1ShowPass_BrgyStftb.Location = new Point(241, 884);
+            bt1ShowPass_BrgyStftb.Name = "bt1ShowPass_BrgyStftb";
+            bt1ShowPass_BrgyStftb.Size = new Size(36, 27);
+            bt1ShowPass_BrgyStftb.TabIndex = 87;
+            bt1ShowPass_BrgyStftb.UseVisualStyleBackColor = false;
+            bt1ShowPass_BrgyStftb.Click += bt1ShowPass_BrgyStftb_Click;
+            // 
+            // bt2HidePass_BrgyStftb
+            // 
+            bt2HidePass_BrgyStftb.BackColor = SystemColors.ControlDark;
+            bt2HidePass_BrgyStftb.BackgroundImage = Properties.Resources.hidePass;
+            bt2HidePass_BrgyStftb.FlatAppearance.BorderSize = 0;
+            bt2HidePass_BrgyStftb.FlatStyle = FlatStyle.Flat;
+            bt2HidePass_BrgyStftb.Image = Properties.Resources.hidePass;
+            bt2HidePass_BrgyStftb.Location = new Point(241, 884);
+            bt2HidePass_BrgyStftb.Name = "bt2HidePass_BrgyStftb";
+            bt2HidePass_BrgyStftb.Size = new Size(36, 27);
+            bt2HidePass_BrgyStftb.TabIndex = 88;
+            bt2HidePass_BrgyStftb.TextAlign = ContentAlignment.TopCenter;
+            bt2HidePass_BrgyStftb.UseVisualStyleBackColor = false;
+            bt2HidePass_BrgyStftb.Click += bt2HidePass_BrgyStftb_Click;
+            // 
+            // lb27UploadID_BrgyStftb
+            // 
+            lb27UploadID_BrgyStftb.AutoSize = true;
+            lb27UploadID_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb27UploadID_BrgyStftb.Location = new Point(46, 1006);
+            lb27UploadID_BrgyStftb.Name = "lb27UploadID_BrgyStftb";
+            lb27UploadID_BrgyStftb.Size = new Size(75, 23);
+            lb27UploadID_BrgyStftb.TabIndex = 86;
+            lb27UploadID_BrgyStftb.Text = "Upload ID";
+            // 
+            // txtb14IDNum_BrgyStftb
+            // 
+            txtb14IDNum_BrgyStftb.BackColor = SystemColors.ControlDark;
+            txtb14IDNum_BrgyStftb.BorderStyle = BorderStyle.None;
+            txtb14IDNum_BrgyStftb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb14IDNum_BrgyStftb.Location = new Point(229, 964);
+            txtb14IDNum_BrgyStftb.Multiline = true;
+            txtb14IDNum_BrgyStftb.Name = "txtb14IDNum_BrgyStftb";
+            txtb14IDNum_BrgyStftb.PlaceholderText = " Enter your ID Number";
+            txtb14IDNum_BrgyStftb.Size = new Size(302, 28);
+            txtb14IDNum_BrgyStftb.TabIndex = 85;
+            // 
+            // lb26IDNum_BrgyStftb
+            // 
+            lb26IDNum_BrgyStftb.AutoSize = true;
+            lb26IDNum_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb26IDNum_BrgyStftb.Location = new Point(225, 938);
+            lb26IDNum_BrgyStftb.Name = "lb26IDNum_BrgyStftb";
+            lb26IDNum_BrgyStftb.Size = new Size(80, 23);
+            lb26IDNum_BrgyStftb.TabIndex = 84;
+            lb26IDNum_BrgyStftb.Text = "ID Number";
+            // 
+            // cb4ValidIDType_BrgyStftb
+            // 
+            cb4ValidIDType_BrgyStftb.BackColor = SystemColors.Control;
+            cb4ValidIDType_BrgyStftb.DropDownStyle = ComboBoxStyle.DropDownList;
+            cb4ValidIDType_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cb4ValidIDType_BrgyStftb.FormattingEnabled = true;
+            cb4ValidIDType_BrgyStftb.Items.AddRange(new object[] { "PhilSys National ID", "Barangay ID", "Voter's ID", "Driver's License", "Passport", "SSS / GSIS ID", "PhilHealth ID" });
+            cb4ValidIDType_BrgyStftb.Location = new Point(43, 964);
+            cb4ValidIDType_BrgyStftb.Name = "cb4ValidIDType_BrgyStftb";
+            cb4ValidIDType_BrgyStftb.Size = new Size(167, 29);
+            cb4ValidIDType_BrgyStftb.TabIndex = 83;
+            // 
+            // lb25ValidType_BrgyStftb
+            // 
+            lb25ValidType_BrgyStftb.AutoSize = true;
+            lb25ValidType_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb25ValidType_BrgyStftb.Location = new Point(41, 938);
+            lb25ValidType_BrgyStftb.Name = "lb25ValidType_BrgyStftb";
+            lb25ValidType_BrgyStftb.Size = new Size(93, 23);
+            lb25ValidType_BrgyStftb.TabIndex = 82;
+            lb25ValidType_BrgyStftb.Text = "Valid ID Type";
+            // 
+            // lb24Min_BrgyStftb
+            // 
+            lb24Min_BrgyStftb.AutoSize = true;
+            lb24Min_BrgyStftb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb24Min_BrgyStftb.ForeColor = SystemColors.ControlDark;
+            lb24Min_BrgyStftb.Location = new Point(40, 913);
+            lb24Min_BrgyStftb.Name = "lb24Min_BrgyStftb";
+            lb24Min_BrgyStftb.Size = new Size(242, 16);
+            lb24Min_BrgyStftb.TabIndex = 81;
+            lb24Min_BrgyStftb.Text = "Min. 8 strong characters with numbers and symbol";
+            // 
+            // lb21characters_BrgyStftb
+            // 
+            lb21characters_BrgyStftb.AutoSize = true;
+            lb21characters_BrgyStftb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb21characters_BrgyStftb.ForeColor = SystemColors.ControlDark;
+            lb21characters_BrgyStftb.Location = new Point(41, 836);
+            lb21characters_BrgyStftb.Name = "lb21characters_BrgyStftb";
+            lb21characters_BrgyStftb.Size = new Size(135, 16);
+            lb21characters_BrgyStftb.TabIndex = 80;
+            lb21characters_BrgyStftb.Text = "6-20 characters, no spaces";
+            // 
+            // lb23ConfirmPass_BrgyStftb
+            // 
+            lb23ConfirmPass_BrgyStftb.AutoSize = true;
+            lb23ConfirmPass_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb23ConfirmPass_BrgyStftb.Location = new Point(297, 858);
+            lb23ConfirmPass_BrgyStftb.Name = "lb23ConfirmPass_BrgyStftb";
+            lb23ConfirmPass_BrgyStftb.Size = new Size(129, 23);
+            lb23ConfirmPass_BrgyStftb.TabIndex = 79;
+            lb23ConfirmPass_BrgyStftb.Text = "Confirm Password";
+            // 
+            // txtb13ConfimPass_BrgyStftb
+            // 
+            txtb13ConfimPass_BrgyStftb.BackColor = SystemColors.ControlDark;
+            txtb13ConfimPass_BrgyStftb.BorderStyle = BorderStyle.None;
+            txtb13ConfimPass_BrgyStftb.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtb13ConfimPass_BrgyStftb.ForeColor = SystemColors.ActiveCaptionText;
+            txtb13ConfimPass_BrgyStftb.Location = new Point(297, 884);
+            txtb13ConfimPass_BrgyStftb.Multiline = true;
+            txtb13ConfimPass_BrgyStftb.Name = "txtb13ConfimPass_BrgyStftb";
+            txtb13ConfimPass_BrgyStftb.PasswordChar = '*';
+            txtb13ConfimPass_BrgyStftb.RightToLeft = RightToLeft.No;
+            txtb13ConfimPass_BrgyStftb.Size = new Size(234, 27);
+            txtb13ConfimPass_BrgyStftb.TabIndex = 78;
+            // 
+            // lb22Password_BrgyStftb
+            // 
+            lb22Password_BrgyStftb.AutoSize = true;
+            lb22Password_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb22Password_BrgyStftb.Location = new Point(40, 858);
+            lb22Password_BrgyStftb.Name = "lb22Password_BrgyStftb";
+            lb22Password_BrgyStftb.Size = new Size(73, 23);
+            lb22Password_BrgyStftb.TabIndex = 77;
+            lb22Password_BrgyStftb.Text = "Password";
+            // 
+            // txtb12Password_BrgyStftb
+            // 
+            txtb12Password_BrgyStftb.BackColor = SystemColors.ControlDark;
+            txtb12Password_BrgyStftb.BorderStyle = BorderStyle.None;
+            txtb12Password_BrgyStftb.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtb12Password_BrgyStftb.ForeColor = SystemColors.ActiveCaptionText;
+            txtb12Password_BrgyStftb.Location = new Point(43, 884);
+            txtb12Password_BrgyStftb.Multiline = true;
+            txtb12Password_BrgyStftb.Name = "txtb12Password_BrgyStftb";
+            txtb12Password_BrgyStftb.PasswordChar = '*';
+            txtb12Password_BrgyStftb.RightToLeft = RightToLeft.No;
+            txtb12Password_BrgyStftb.Size = new Size(234, 27);
+            txtb12Password_BrgyStftb.TabIndex = 76;
+            // 
+            // txtb11Username_BrgyStftb
+            // 
+            txtb11Username_BrgyStftb.BackColor = SystemColors.ControlDark;
+            txtb11Username_BrgyStftb.BorderStyle = BorderStyle.None;
+            txtb11Username_BrgyStftb.CharacterCasing = CharacterCasing.Lower;
+            txtb11Username_BrgyStftb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb11Username_BrgyStftb.Location = new Point(43, 805);
+            txtb11Username_BrgyStftb.Multiline = true;
+            txtb11Username_BrgyStftb.Name = "txtb11Username_BrgyStftb";
+            txtb11Username_BrgyStftb.PlaceholderText = " markbrandon";
+            txtb11Username_BrgyStftb.Size = new Size(488, 28);
+            txtb11Username_BrgyStftb.TabIndex = 75;
+            // 
+            // lb20Username_BrgyStftb
+            // 
+            lb20Username_BrgyStftb.AutoSize = true;
+            lb20Username_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb20Username_BrgyStftb.Location = new Point(39, 782);
+            lb20Username_BrgyStftb.Name = "lb20Username_BrgyStftb";
+            lb20Username_BrgyStftb.Size = new Size(77, 23);
+            lb20Username_BrgyStftb.TabIndex = 74;
+            lb20Username_BrgyStftb.Text = "Username";
+            // 
+            // lb19AccCred_BrgyStftb
+            // 
+            lb19AccCred_BrgyStftb.BackColor = Color.Gainsboro;
+            lb19AccCred_BrgyStftb.Font = new Font("Franklin Gothic Book", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lb19AccCred_BrgyStftb.ForeColor = SystemColors.ActiveCaptionText;
+            lb19AccCred_BrgyStftb.Location = new Point(29, 719);
+            lb19AccCred_BrgyStftb.Name = "lb19AccCred_BrgyStftb";
+            lb19AccCred_BrgyStftb.Padding = new Padding(1, 5, 1, 1);
+            lb19AccCred_BrgyStftb.Size = new Size(526, 38);
+            lb19AccCred_BrgyStftb.TabIndex = 73;
+            lb19AccCred_BrgyStftb.Text = " Account Credentials";
+            // 
+            // flowLayoutPanel7
+            // 
+            flowLayoutPanel7.BackColor = Color.Maroon;
+            flowLayoutPanel7.Location = new Point(24, 719);
+            flowLayoutPanel7.Name = "flowLayoutPanel7";
+            flowLayoutPanel7.Size = new Size(7, 38);
+            flowLayoutPanel7.TabIndex = 72;
+            // 
+            // lb18OfficialEm_BrgyStftb
+            // 
+            lb18OfficialEm_BrgyStftb.AutoSize = true;
+            lb18OfficialEm_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb18OfficialEm_BrgyStftb.Location = new Point(243, 623);
+            lb18OfficialEm_BrgyStftb.Name = "lb18OfficialEm_BrgyStftb";
+            lb18OfficialEm_BrgyStftb.Size = new Size(97, 23);
+            lb18OfficialEm_BrgyStftb.TabIndex = 69;
+            lb18OfficialEm_BrgyStftb.Text = "Official Email";
+            // 
+            // txtb10OfficialEm_BrgyStftb
+            // 
+            txtb10OfficialEm_BrgyStftb.BackColor = SystemColors.ControlDark;
+            txtb10OfficialEm_BrgyStftb.BorderStyle = BorderStyle.None;
+            txtb10OfficialEm_BrgyStftb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb10OfficialEm_BrgyStftb.Location = new Point(247, 649);
+            txtb10OfficialEm_BrgyStftb.Multiline = true;
+            txtb10OfficialEm_BrgyStftb.Name = "txtb10OfficialEm_BrgyStftb";
+            txtb10OfficialEm_BrgyStftb.PlaceholderText = " brandonbernal@gmail.com";
+            txtb10OfficialEm_BrgyStftb.Size = new Size(284, 28);
+            txtb10OfficialEm_BrgyStftb.TabIndex = 68;
+            // 
+            // txtb9OfficeNo_BrgyStftb
+            // 
+            txtb9OfficeNo_BrgyStftb.BackColor = SystemColors.ControlDark;
+            txtb9OfficeNo_BrgyStftb.BorderStyle = BorderStyle.None;
+            txtb9OfficeNo_BrgyStftb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb9OfficeNo_BrgyStftb.Location = new Point(43, 649);
+            txtb9OfficeNo_BrgyStftb.Multiline = true;
+            txtb9OfficeNo_BrgyStftb.Name = "txtb9OfficeNo_BrgyStftb";
+            txtb9OfficeNo_BrgyStftb.PlaceholderText = " 09XXXXXXXXX";
+            txtb9OfficeNo_BrgyStftb.Size = new Size(183, 28);
+            txtb9OfficeNo_BrgyStftb.TabIndex = 67;
+            // 
+            // dateTimePicker2DOA_BrgyStftb
+            // 
+            dateTimePicker2DOA_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dateTimePicker2DOA_BrgyStftb.Format = DateTimePickerFormat.Short;
+            dateTimePicker2DOA_BrgyStftb.Location = new Point(314, 582);
+            dateTimePicker2DOA_BrgyStftb.Name = "dateTimePicker2DOA_BrgyStftb";
+            dateTimePicker2DOA_BrgyStftb.Size = new Size(217, 27);
+            dateTimePicker2DOA_BrgyStftb.TabIndex = 66;
+            // 
+            // cb3Department_BrgyStftb
+            // 
+            cb3Department_BrgyStftb.BackColor = SystemColors.Control;
+            cb3Department_BrgyStftb.DropDownStyle = ComboBoxStyle.DropDownList;
+            cb3Department_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cb3Department_BrgyStftb.FormattingEnabled = true;
+            cb3Department_BrgyStftb.Items.AddRange(new object[] { "Census & Records", "Health Services", "Social Welfare", "Peace & Order", "Barangay Officials", "Sangguniang Kabataan" });
+            cb3Department_BrgyStftb.Location = new Point(43, 580);
+            cb3Department_BrgyStftb.Name = "cb3Department_BrgyStftb";
+            cb3Department_BrgyStftb.Size = new Size(254, 29);
+            cb3Department_BrgyStftb.TabIndex = 59;
+            // 
+            // lb17OfficeNo_BrgyStftb
+            // 
+            lb17OfficeNo_BrgyStftb.AutoSize = true;
+            lb17OfficeNo_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb17OfficeNo_BrgyStftb.Location = new Point(37, 623);
+            lb17OfficeNo_BrgyStftb.Name = "lb17OfficeNo_BrgyStftb";
+            lb17OfficeNo_BrgyStftb.Size = new Size(128, 23);
+            lb17OfficeNo_BrgyStftb.TabIndex = 56;
+            lb17OfficeNo_BrgyStftb.Text = "Office Contact No.";
+            // 
+            // txtb8Position_BrgyStftb
+            // 
+            txtb8Position_BrgyStftb.BackColor = SystemColors.ControlDark;
+            txtb8Position_BrgyStftb.BorderStyle = BorderStyle.None;
+            txtb8Position_BrgyStftb.CharacterCasing = CharacterCasing.Upper;
+            txtb8Position_BrgyStftb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb8Position_BrgyStftb.Location = new Point(314, 514);
+            txtb8Position_BrgyStftb.Multiline = true;
+            txtb8Position_BrgyStftb.Name = "txtb8Position_BrgyStftb";
+            txtb8Position_BrgyStftb.PlaceholderText = " e.g. Data Encoder";
+            txtb8Position_BrgyStftb.Size = new Size(217, 28);
+            txtb8Position_BrgyStftb.TabIndex = 55;
+            // 
+            // lb14Position_BrgyStftb
+            // 
+            lb14Position_BrgyStftb.AutoSize = true;
+            lb14Position_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb14Position_BrgyStftb.Location = new Point(310, 488);
+            lb14Position_BrgyStftb.Name = "lb14Position_BrgyStftb";
+            lb14Position_BrgyStftb.Size = new Size(156, 23);
+            lb14Position_BrgyStftb.TabIndex = 54;
+            lb14Position_BrgyStftb.Text = "Position / Designation";
+            // 
+            // lb16DateOAppoint_BrgyStftb
+            // 
+            lb16DateOAppoint_BrgyStftb.AutoSize = true;
+            lb16DateOAppoint_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb16DateOAppoint_BrgyStftb.Location = new Point(311, 554);
+            lb16DateOAppoint_BrgyStftb.Name = "lb16DateOAppoint_BrgyStftb";
+            lb16DateOAppoint_BrgyStftb.Size = new Size(146, 23);
+            lb16DateOAppoint_BrgyStftb.TabIndex = 52;
+            lb16DateOAppoint_BrgyStftb.Text = "Date of Appointment";
+            // 
+            // lb15Department_BrgyStftb
+            // 
+            lb15Department_BrgyStftb.AutoSize = true;
+            lb15Department_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb15Department_BrgyStftb.Location = new Point(37, 554);
+            lb15Department_BrgyStftb.Name = "lb15Department_BrgyStftb";
+            lb15Department_BrgyStftb.Size = new Size(89, 23);
+            lb15Department_BrgyStftb.TabIndex = 50;
+            lb15Department_BrgyStftb.Text = "Department";
+            // 
+            // txtb7EmpID_BrgyStftb
+            // 
+            txtb7EmpID_BrgyStftb.BackColor = SystemColors.ControlDark;
+            txtb7EmpID_BrgyStftb.BorderStyle = BorderStyle.None;
+            txtb7EmpID_BrgyStftb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb7EmpID_BrgyStftb.Location = new Point(43, 514);
+            txtb7EmpID_BrgyStftb.Multiline = true;
+            txtb7EmpID_BrgyStftb.Name = "txtb7EmpID_BrgyStftb";
+            txtb7EmpID_BrgyStftb.PlaceholderText = " BRGY-2201-XXXX";
+            txtb7EmpID_BrgyStftb.Size = new Size(254, 28);
+            txtb7EmpID_BrgyStftb.TabIndex = 49;
+            // 
+            // lb13EmpID_BrgyStftb
+            // 
+            lb13EmpID_BrgyStftb.AutoSize = true;
+            lb13EmpID_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb13EmpID_BrgyStftb.Location = new Point(39, 488);
+            lb13EmpID_BrgyStftb.Name = "lb13EmpID_BrgyStftb";
+            lb13EmpID_BrgyStftb.Size = new Size(91, 23);
+            lb13EmpID_BrgyStftb.TabIndex = 48;
+            lb13EmpID_BrgyStftb.Text = "Employee ID";
+            // 
+            // lb12EmpDit_BrgyStftb
+            // 
+            lb12EmpDit_BrgyStftb.BackColor = Color.Gainsboro;
+            lb12EmpDit_BrgyStftb.Font = new Font("Franklin Gothic Book", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lb12EmpDit_BrgyStftb.ForeColor = SystemColors.ActiveCaptionText;
+            lb12EmpDit_BrgyStftb.Location = new Point(29, 425);
+            lb12EmpDit_BrgyStftb.Name = "lb12EmpDit_BrgyStftb";
+            lb12EmpDit_BrgyStftb.Padding = new Padding(1, 5, 1, 1);
+            lb12EmpDit_BrgyStftb.Size = new Size(526, 38);
+            lb12EmpDit_BrgyStftb.TabIndex = 47;
+            lb12EmpDit_BrgyStftb.Text = " Employment Details";
+            // 
+            // flowLayoutPanel6
+            // 
+            flowLayoutPanel6.BackColor = Color.Maroon;
+            flowLayoutPanel6.Location = new Point(24, 425);
+            flowLayoutPanel6.Name = "flowLayoutPanel6";
+            flowLayoutPanel6.Size = new Size(7, 38);
+            flowLayoutPanel6.TabIndex = 46;
+            // 
+            // txtb6EmailAdd_BrgyStftb
+            // 
+            txtb6EmailAdd_BrgyStftb.BackColor = SystemColors.ControlDark;
+            txtb6EmailAdd_BrgyStftb.BorderStyle = BorderStyle.None;
+            txtb6EmailAdd_BrgyStftb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb6EmailAdd_BrgyStftb.Location = new Point(50, 354);
+            txtb6EmailAdd_BrgyStftb.Multiline = true;
+            txtb6EmailAdd_BrgyStftb.Name = "txtb6EmailAdd_BrgyStftb";
+            txtb6EmailAdd_BrgyStftb.PlaceholderText = "brandonjosefpine@email.com";
+            txtb6EmailAdd_BrgyStftb.Size = new Size(488, 28);
+            txtb6EmailAdd_BrgyStftb.TabIndex = 40;
+            // 
+            // lb11EmailAdd_BrgyStftb
+            // 
+            lb11EmailAdd_BrgyStftb.AutoSize = true;
+            lb11EmailAdd_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb11EmailAdd_BrgyStftb.Location = new Point(46, 328);
+            lb11EmailAdd_BrgyStftb.Name = "lb11EmailAdd_BrgyStftb";
+            lb11EmailAdd_BrgyStftb.Size = new Size(104, 23);
+            lb11EmailAdd_BrgyStftb.TabIndex = 39;
+            lb11EmailAdd_BrgyStftb.Text = "Email Address";
+            // 
+            // txtb5ContactN_BrgyStftb
+            // 
+            txtb5ContactN_BrgyStftb.BackColor = SystemColors.ControlDark;
+            txtb5ContactN_BrgyStftb.BorderStyle = BorderStyle.None;
+            txtb5ContactN_BrgyStftb.CharacterCasing = CharacterCasing.Upper;
+            txtb5ContactN_BrgyStftb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb5ContactN_BrgyStftb.Location = new Point(203, 287);
+            txtb5ContactN_BrgyStftb.Multiline = true;
+            txtb5ContactN_BrgyStftb.Name = "txtb5ContactN_BrgyStftb";
+            txtb5ContactN_BrgyStftb.PlaceholderText = " 09xxxxxxxxx";
+            txtb5ContactN_BrgyStftb.Size = new Size(335, 28);
+            txtb5ContactN_BrgyStftb.TabIndex = 38;
+            // 
+            // lb10ContactN_BrgyStftb
+            // 
+            lb10ContactN_BrgyStftb.AutoSize = true;
+            lb10ContactN_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb10ContactN_BrgyStftb.Location = new Point(199, 261);
+            lb10ContactN_BrgyStftb.Name = "lb10ContactN_BrgyStftb";
+            lb10ContactN_BrgyStftb.Size = new Size(117, 23);
+            lb10ContactN_BrgyStftb.TabIndex = 37;
+            lb10ContactN_BrgyStftb.Text = "Contact Number";
+            // 
+            // cb2Sex_BrgyStftb
+            // 
+            cb2Sex_BrgyStftb.BackColor = SystemColors.Control;
+            cb2Sex_BrgyStftb.DropDownStyle = ComboBoxStyle.DropDownList;
+            cb2Sex_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cb2Sex_BrgyStftb.FormattingEnabled = true;
+            cb2Sex_BrgyStftb.Items.AddRange(new object[] { "Male", "Female" });
+            cb2Sex_BrgyStftb.Location = new Point(46, 286);
+            cb2Sex_BrgyStftb.Name = "cb2Sex_BrgyStftb";
+            cb2Sex_BrgyStftb.Size = new Size(144, 29);
+            cb2Sex_BrgyStftb.TabIndex = 36;
+            // 
+            // lb9Sex_BrgyStftb
+            // 
+            lb9Sex_BrgyStftb.AutoSize = true;
+            lb9Sex_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb9Sex_BrgyStftb.Location = new Point(41, 261);
+            lb9Sex_BrgyStftb.Name = "lb9Sex_BrgyStftb";
+            lb9Sex_BrgyStftb.Size = new Size(33, 23);
+            lb9Sex_BrgyStftb.TabIndex = 35;
+            lb9Sex_BrgyStftb.Text = "Sex";
+            // 
+            // cb1CivilStat_BrgyStftb
+            // 
+            cb1CivilStat_BrgyStftb.BackColor = SystemColors.Control;
+            cb1CivilStat_BrgyStftb.DropDownStyle = ComboBoxStyle.DropDownList;
+            cb1CivilStat_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cb1CivilStat_BrgyStftb.FormattingEnabled = true;
+            cb1CivilStat_BrgyStftb.Items.AddRange(new object[] { "Single", "Married", "Widowed", "Seperated", "Divorced", "Common-Law/Live-in" });
+            cb1CivilStat_BrgyStftb.Location = new Point(359, 218);
+            cb1CivilStat_BrgyStftb.Name = "cb1CivilStat_BrgyStftb";
+            cb1CivilStat_BrgyStftb.Size = new Size(172, 29);
+            cb1CivilStat_BrgyStftb.TabIndex = 34;
+            // 
+            // lb8CivilStat_BrgyStftb
+            // 
+            lb8CivilStat_BrgyStftb.AutoSize = true;
+            lb8CivilStat_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb8CivilStat_BrgyStftb.Location = new Point(354, 194);
+            lb8CivilStat_BrgyStftb.Name = "lb8CivilStat_BrgyStftb";
+            lb8CivilStat_BrgyStftb.Size = new Size(83, 23);
+            lb8CivilStat_BrgyStftb.TabIndex = 33;
+            lb8CivilStat_BrgyStftb.Text = "Civil Status";
+            // 
+            // txtb4Age_BrgyStftb
+            // 
+            txtb4Age_BrgyStftb.BackColor = SystemColors.ControlDark;
+            txtb4Age_BrgyStftb.BorderStyle = BorderStyle.None;
+            txtb4Age_BrgyStftb.CharacterCasing = CharacterCasing.Upper;
+            txtb4Age_BrgyStftb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb4Age_BrgyStftb.Location = new Point(225, 218);
+            txtb4Age_BrgyStftb.Multiline = true;
+            txtb4Age_BrgyStftb.Name = "txtb4Age_BrgyStftb";
+            txtb4Age_BrgyStftb.PlaceholderText = " 25";
+            txtb4Age_BrgyStftb.Size = new Size(118, 28);
+            txtb4Age_BrgyStftb.TabIndex = 32;
+            // 
+            // lb7Age_BrgyStftb
+            // 
+            lb7Age_BrgyStftb.AutoSize = true;
+            lb7Age_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb7Age_BrgyStftb.Location = new Point(223, 194);
+            lb7Age_BrgyStftb.Name = "lb7Age_BrgyStftb";
+            lb7Age_BrgyStftb.Size = new Size(35, 23);
+            lb7Age_BrgyStftb.TabIndex = 31;
+            lb7Age_BrgyStftb.Text = "Age";
+            // 
+            // dateTimePicker1DOB_BrgyStftb
+            // 
+            dateTimePicker1DOB_BrgyStftb.CalendarMonthBackground = SystemColors.ButtonFace;
+            dateTimePicker1DOB_BrgyStftb.CustomFormat = "";
+            dateTimePicker1DOB_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dateTimePicker1DOB_BrgyStftb.Format = DateTimePickerFormat.Short;
+            dateTimePicker1DOB_BrgyStftb.ImeMode = ImeMode.NoControl;
+            dateTimePicker1DOB_BrgyStftb.Location = new Point(39, 218);
+            dateTimePicker1DOB_BrgyStftb.Name = "dateTimePicker1DOB_BrgyStftb";
+            dateTimePicker1DOB_BrgyStftb.Size = new Size(172, 28);
+            dateTimePicker1DOB_BrgyStftb.TabIndex = 30;
+            dateTimePicker1DOB_BrgyStftb.Value = new DateTime(2026, 4, 26, 0, 0, 0, 0);
+            // 
+            // lb6DOB_BrgyStftb
+            // 
+            lb6DOB_BrgyStftb.AutoSize = true;
+            lb6DOB_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb6DOB_BrgyStftb.Location = new Point(34, 194);
+            lb6DOB_BrgyStftb.Name = "lb6DOB_BrgyStftb";
+            lb6DOB_BrgyStftb.Size = new Size(92, 21);
+            lb6DOB_BrgyStftb.TabIndex = 29;
+            lb6DOB_BrgyStftb.Text = "Date Of Birth";
+            // 
+            // txtb3LN_BrgyStftb
+            // 
+            txtb3LN_BrgyStftb.BackColor = SystemColors.ControlDark;
+            txtb3LN_BrgyStftb.BorderStyle = BorderStyle.None;
+            txtb3LN_BrgyStftb.CharacterCasing = CharacterCasing.Upper;
+            txtb3LN_BrgyStftb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb3LN_BrgyStftb.Location = new Point(364, 147);
+            txtb3LN_BrgyStftb.Multiline = true;
+            txtb3LN_BrgyStftb.Name = "txtb3LN_BrgyStftb";
+            txtb3LN_BrgyStftb.PlaceholderText = " PINE";
+            txtb3LN_BrgyStftb.Size = new Size(167, 28);
+            txtb3LN_BrgyStftb.TabIndex = 28;
+            // 
+            // lb5LN_BrgyStftb
+            // 
+            lb5LN_BrgyStftb.AutoSize = true;
+            lb5LN_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb5LN_BrgyStftb.Location = new Point(359, 119);
+            lb5LN_BrgyStftb.Name = "lb5LN_BrgyStftb";
+            lb5LN_BrgyStftb.Size = new Size(79, 23);
+            lb5LN_BrgyStftb.TabIndex = 27;
+            lb5LN_BrgyStftb.Text = "Last Name";
+            // 
+            // txtb2MN_BrgyStftb
+            // 
+            txtb2MN_BrgyStftb.BackColor = SystemColors.ControlDark;
+            txtb2MN_BrgyStftb.BorderStyle = BorderStyle.None;
+            txtb2MN_BrgyStftb.CharacterCasing = CharacterCasing.Upper;
+            txtb2MN_BrgyStftb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb2MN_BrgyStftb.Location = new Point(223, 147);
+            txtb2MN_BrgyStftb.Multiline = true;
+            txtb2MN_BrgyStftb.Name = "txtb2MN_BrgyStftb";
+            txtb2MN_BrgyStftb.PlaceholderText = " VELEZ";
+            txtb2MN_BrgyStftb.Size = new Size(120, 28);
+            txtb2MN_BrgyStftb.TabIndex = 26;
+            // 
+            // lb4MN_BrgyStftb
+            // 
+            lb4MN_BrgyStftb.AutoSize = true;
+            lb4MN_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb4MN_BrgyStftb.Location = new Point(219, 119);
+            lb4MN_BrgyStftb.Name = "lb4MN_BrgyStftb";
+            lb4MN_BrgyStftb.Size = new Size(99, 23);
+            lb4MN_BrgyStftb.TabIndex = 25;
+            lb4MN_BrgyStftb.Text = "Middle Name";
+            // 
+            // txtb1FN_BrgyStftb
+            // 
+            txtb1FN_BrgyStftb.BackColor = SystemColors.ControlDark;
+            txtb1FN_BrgyStftb.BorderStyle = BorderStyle.None;
+            txtb1FN_BrgyStftb.CharacterCasing = CharacterCasing.Upper;
+            txtb1FN_BrgyStftb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb1FN_BrgyStftb.Location = new Point(38, 147);
+            txtb1FN_BrgyStftb.Multiline = true;
+            txtb1FN_BrgyStftb.Name = "txtb1FN_BrgyStftb";
+            txtb1FN_BrgyStftb.PlaceholderText = " MARK BRANDON ";
+            txtb1FN_BrgyStftb.Size = new Size(173, 28);
+            txtb1FN_BrgyStftb.TabIndex = 24;
+            // 
+            // lb3FN_BrgyStftb
+            // 
+            lb3FN_BrgyStftb.AutoSize = true;
+            lb3FN_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb3FN_BrgyStftb.Location = new Point(34, 119);
+            lb3FN_BrgyStftb.Name = "lb3FN_BrgyStftb";
+            lb3FN_BrgyStftb.Size = new Size(81, 23);
+            lb3FN_BrgyStftb.TabIndex = 23;
+            lb3FN_BrgyStftb.Text = "First Name";
+            // 
+            // lb2PersonalInfo_BrgyStftb
+            // 
+            lb2PersonalInfo_BrgyStftb.BackColor = Color.Gainsboro;
+            lb2PersonalInfo_BrgyStftb.Font = new Font("Franklin Gothic Book", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lb2PersonalInfo_BrgyStftb.ForeColor = SystemColors.ActiveCaptionText;
+            lb2PersonalInfo_BrgyStftb.Location = new Point(30, 55);
+            lb2PersonalInfo_BrgyStftb.Name = "lb2PersonalInfo_BrgyStftb";
+            lb2PersonalInfo_BrgyStftb.Padding = new Padding(1, 5, 1, 1);
+            lb2PersonalInfo_BrgyStftb.Size = new Size(526, 38);
+            lb2PersonalInfo_BrgyStftb.TabIndex = 6;
+            lb2PersonalInfo_BrgyStftb.Text = " Personal Information                    ";
+            // 
+            // flowLayoutPanel5
+            // 
+            flowLayoutPanel5.BackColor = Color.Maroon;
+            flowLayoutPanel5.Location = new Point(25, 55);
+            flowLayoutPanel5.Name = "flowLayoutPanel5";
+            flowLayoutPanel5.Size = new Size(7, 38);
+            flowLayoutPanel5.TabIndex = 5;
+            // 
+            // lb1RegisterAs_BrgyStftb
+            // 
+            lb1RegisterAs_BrgyStftb.AutoSize = true;
+            lb1RegisterAs_BrgyStftb.BackColor = Color.Maroon;
+            lb1RegisterAs_BrgyStftb.BorderStyle = BorderStyle.Fixed3D;
+            lb1RegisterAs_BrgyStftb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lb1RegisterAs_BrgyStftb.ForeColor = SystemColors.Control;
+            lb1RegisterAs_BrgyStftb.Location = new Point(14, 8);
+            lb1RegisterAs_BrgyStftb.Name = "lb1RegisterAs_BrgyStftb";
+            lb1RegisterAs_BrgyStftb.Padding = new Padding(1, 3, 1, 3);
+            lb1RegisterAs_BrgyStftb.Size = new Size(222, 32);
+            lb1RegisterAs_BrgyStftb.TabIndex = 3;
+            lb1RegisterAs_BrgyStftb.Text = "Register As Barangay Staff";
+            // 
+            // flowLayoutPanel4
+            // 
+            flowLayoutPanel4.BackColor = Color.Maroon;
+            flowLayoutPanel4.BorderStyle = BorderStyle.Fixed3D;
+            flowLayoutPanel4.Location = new Point(7, 6);
+            flowLayoutPanel4.Name = "flowLayoutPanel4";
+            flowLayoutPanel4.Size = new Size(7, 38);
+            flowLayoutPanel4.TabIndex = 2;
             // 
             // tabPage3
             // 
             tabPage3.AutoScroll = true;
-            tabPage3.AutoScrollMinSize = new Size(0, 1000);
+            tabPage3.AutoScrollMinSize = new Size(0, 1500);
             tabPage3.BackColor = Color.WhiteSmoke;
             tabPage3.BackgroundImageLayout = ImageLayout.None;
             tabPage3.Location = new Point(4, 46);
@@ -1284,12 +2235,12 @@
             // 
             // panel5
             // 
-            panel5.BackColor = Color.Maroon;
+            panel5.BackColor = Color.MidnightBlue;
             panel5.ForeColor = Color.Goldenrod;
             panel5.Location = new Point(18, 73);
             panel5.Margin = new Padding(0);
             panel5.Name = "panel5";
-            panel5.Size = new Size(102, 4);
+            panel5.Size = new Size(150, 4);
             panel5.TabIndex = 25;
             // 
             // Lb6Reg_Fr2
@@ -1346,13 +2297,18 @@
             ((System.ComponentModel.ISupportInitialize)pb1Logo).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
-            tC1Reg_Fr2.ResumeLayout(false);
-            tabResident.ResumeLayout(false);
-            tabResident.PerformLayout();
+            tabControlRegistration.ResumeLayout(false);
+            tab1Resident.ResumeLayout(false);
+            tab1Resident.PerformLayout();
             plUpload_Restb.ResumeLayout(false);
             plUpload_Restb.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)picb1IDUploaded_Restb).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownHM_Restb).EndInit();
+            tab2BarangayStaff.ResumeLayout(false);
+            tab2BarangayStaff.PerformLayout();
+            panel12.ResumeLayout(false);
+            panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picb1ID_BrgyStftb).EndInit();
             ResumeLayout(false);
         }
 
@@ -1372,9 +2328,9 @@
         private PictureBox pb2Stars;
         private PictureBox pb1Logo;
         private Label Lb6Reg_Fr2;
-        private TabControl tC1Reg_Fr2;
-        private TabPage tabResident;
-        private TabPage tabPage2;
+        private TabControl tabControlRegistration;
+        private TabPage tab1Resident;
+        private TabPage tab2BarangayStaff;
         private TabPage tabPage3;
         private Panel panel5;
         private FlowLayoutPanel P1Restab_Form2;
@@ -1435,7 +2391,6 @@
         private Label lb29IDNum_Restb;
         private Label lb30UploadID_Restb;
         private Panel plUpload_Restb;
-        private Button bt1Upload_Restb;
         private PictureBox picb1IDUploaded_Restb;
         private Label lb32Drag_Restb;
         private Label lb31Accepted_Restb;
@@ -1453,5 +2408,82 @@
         private Button btShowPassword_Restb;
         private Button btShowPassConfirm_Restb;
         private Button btHidePassConfirm_Restb;
+        private Label lb1RegisterAs_BrgyStftb;
+        private FlowLayoutPanel flowLayoutPanel4;
+        private Label lb2PersonalInfo_BrgyStftb;
+        private FlowLayoutPanel flowLayoutPanel5;
+        private Label lb1RegDes;
+        private TextBox txtb6EmailAdd_BrgyStftb;
+        private Label lb11EmailAdd_BrgyStftb;
+        private TextBox txtb5ContactN_BrgyStftb;
+        private Label lb10ContactN_BrgyStftb;
+        private ComboBox cb2Sex_BrgyStftb;
+        private Label lb9Sex_BrgyStftb;
+        private ComboBox cb1CivilStat_BrgyStftb;
+        private Label lb8CivilStat_BrgyStftb;
+        private TextBox txtb4Age_BrgyStftb;
+        private Label lb7Age_BrgyStftb;
+        private DateTimePicker dateTimePicker1DOB_BrgyStftb;
+        private Label lb6DOB_BrgyStftb;
+        private TextBox txtb3LN_BrgyStftb;
+        private Label lb5LN_BrgyStftb;
+        private TextBox txtb2MN_BrgyStftb;
+        private Label lb4MN_BrgyStftb;
+        private TextBox txtb1FN_BrgyStftb;
+        private Label lb3FN_BrgyStftb;
+        private NumericUpDown numericUpDown1;
+        private ComboBox comboBox1;
+        private TextBox textBox2;
+        private ComboBox cb3Department_BrgyStftb;
+        private TextBox textBox3;
+        private Label lb17OfficeNo_BrgyStftb;
+        private TextBox txtb8Position_BrgyStftb;
+        private Label lb14Position_BrgyStftb;
+        private Label lb16DateOAppoint_BrgyStftb;
+        private Label lb15Department_BrgyStftb;
+        private TextBox txtb7EmpID_BrgyStftb;
+        private Label lb13EmpID_BrgyStftb;
+        private Label lb12EmpDit_BrgyStftb;
+        private FlowLayoutPanel flowLayoutPanel6;
+        private DateTimePicker dateTimePicker2DOA_BrgyStftb;
+        private Label lb18OfficialEm_BrgyStftb;
+        private TextBox txtb10OfficialEm_BrgyStftb;
+        private TextBox txtb9OfficeNo_BrgyStftb;
+        private Button bt3ConShowPass_BrgyStftb;
+        private Button bt4ConHidePass_BrgyStftb;
+        private Button bt1ShowPass_BrgyStftb;
+        private Button bt2HidePass_BrgyStftb;
+        private Label lb27UploadID_BrgyStftb;
+        private TextBox txtb14IDNum_BrgyStftb;
+        private Label lb26IDNum_BrgyStftb;
+        private ComboBox cb4ValidIDType_BrgyStftb;
+        private Label lb25ValidType_BrgyStftb;
+        private Label lb24Min_BrgyStftb;
+        private Label lb21characters_BrgyStftb;
+        private Label lb23ConfirmPass_BrgyStftb;
+        private TextBox txtb13ConfimPass_BrgyStftb;
+        private Label lb22Password_BrgyStftb;
+        private TextBox txtb12Password_BrgyStftb;
+        private TextBox txtb11Username_BrgyStftb;
+        private Label lb20Username_BrgyStftb;
+        private Label lb19AccCred_BrgyStftb;
+        private FlowLayoutPanel flowLayoutPanel7;
+        private Panel panel9;
+        private Button btSignInHere_BrgyStftb;
+        private Label label1;
+        private Panel panel10;
+        private Button btUploadID_BrgyStftb;
+        private Panel panel11;
+        private Button btSubmit_BrgyStftb;
+        private CheckBox chkb1Confirm_BrgyStftb;
+        private Label label2;
+        private Panel panel12;
+        private Label label3;
+        private Label lb27dragorDrop_BrgyStftb;
+        private Label lb28Accepted_BrgyStftb;
+        private PictureBox picb1ID_BrgyStftb;
+        private Button btSubmit_Restb_Click;
+        private Button btIDUpload_Restb;
+        private Label lb1FileName_BrgyStftb;
     }
 }
