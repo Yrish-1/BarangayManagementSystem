@@ -455,5 +455,164 @@ namespace EveryJuanCount
             }
             this.Close();
         }
+
+        private void bt1ShowPassword_Admintb_Click(object sender, EventArgs e)
+        {
+            if (txtb15Passwors_Admintb.PasswordChar == '*')
+            {
+                bt2HidePassword_Admintb.BringToFront();
+                txtb15Passwors_Admintb.PasswordChar = '\0';
+            }
+
+        }
+
+        private void bt2HidePassword_Admintb_Click(object sender, EventArgs e)
+        {
+            if (txtb15Passwors_Admintb.PasswordChar == '\0')
+            {
+                bt1ShowPassword_Admintb.BringToFront();
+                txtb15Passwors_Admintb.PasswordChar = '*';
+            }
+
+        }
+
+        private void bt3ConShowPass_Admintb_Click(object sender, EventArgs e)
+        {
+            if (txtb16ConPassword_Admintb.PasswordChar == '*')
+            {
+                bt4ConHidePass_Admintb.BringToFront();
+                txtb16ConPassword_Admintb.PasswordChar = '\0';
+            }
+        }
+
+        private void bt4ConHidePass_Admintb_Click(object sender, EventArgs e)
+        {
+            if (txtb16ConPassword_Admintb.PasswordChar == '\0')
+            {
+                bt3ConShowPass_Admintb.BringToFront();
+                txtb16ConPassword_Admintb.PasswordChar = '*';
+            }
+
+        }
+
+        private void btUploadID_Admintb_Click(object sender, EventArgs e)
+        {
+            // Open the file picker
+            ofdID.Filter = "Image and PDF Files|*.jpg;*.jpeg;*.png;*.pdf";
+            ofdID.Title = "Select your Valid ID";
+
+            if (ofdID.ShowDialog() == DialogResult.OK)
+            {
+                selectedIDFilePath = ofdID.FileName;
+
+                // Get file info
+                FileInfo fileInfo = new FileInfo(selectedIDFilePath);
+                double fileSizeKB = fileInfo.Length / 1024.0;
+
+                // Check file size — max 5MB
+                if (fileInfo.Length > 5 * 1024 * 1024)
+                {
+                    MessageBox.Show(
+                        "File is too large. Maximum allowed size is 5MB.",
+                        "File Too Large",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning
+                    );
+                    selectedIDFilePath = "";
+                    return;
+                }
+                // Show file name and size
+                lb35FileName_Admintb.Text = fileInfo.Name +
+                                        " (" + fileSizeKB.ToString("F1") + " KB)";
+                lb35FileName_Admintb.ForeColor = Color.FromArgb(0, 45, 114);
+
+                // Check if it's an image or PDF
+                string ext = Path.GetExtension(selectedIDFilePath).ToLower();
+
+                if (ext == ".jpg" || ext == ".jpeg" || ext == ".png")
+                {
+                    // Show image preview
+                    picbIDUpload_Admintb.Image = Image.FromFile(selectedIDFilePath);
+                    picbIDUpload_Admintb.Visible = true;
+                    lb35FileName_Admintb.Text = "✔ " + lb35FileName_Admintb.Text;
+                }
+                else if (ext == ".pdf")
+                {
+                    // PDF — no image preview, show icon text instead
+                    picbIDUpload_Admintb.Visible = false;
+                    lb35FileName_Admintb.Text = "📄 " + fileInfo.Name +
+                                           " (" + fileSizeKB.ToString("F1") + " KB)";
+                }
+
+                // Change button text to show file is selected
+                btUploadID_Admintb.Text = "✔ File Selected — Click to Replace";
+                btUploadID_Admintb.BackColor = Color.FromArgb(220, 240, 230);
+                btUploadID_Admintb.ForeColor = Color.FromArgb(0, 80, 64);
+            }
+        }
+
+        private void btSubmit_Admintb_Click(object sender, EventArgs e)
+        {
+            // Check if declaration checkbox is checked
+            if (!chkbConfirm_Admintb.Checked)
+            {
+                MessageBox.Show(
+                    "Please confirm the declaration before submitting.",
+                    "Declaration Required",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+                return;
+            }
+
+            //Check if ID file was uploaded
+            if (string.IsNullOrEmpty(selectedIDFilePath))
+            {
+                MessageBox.Show(
+                    "Please upload a photo or file of your valid ID.",
+                    "ID Required",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+                return;
+            }
+
+            // Show success message
+            MessageBox.Show(
+                "Registration submitted successfully!",
+                "Registration Submitted",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+
+            // Go back to Login Form
+            var form1 = Application.OpenForms.OfType<LogInForm1>().FirstOrDefault();
+            if (form1 != null)
+            {
+                form1.Show();
+                form1.BringToFront();
+            }
+            else
+            {
+                new LogInForm1().Show();
+            }
+            this.Close();
+        }
+
+        private void btSignInHere_Adminbt_Click(object sender, EventArgs e)
+        {
+            // Go back to Login Form
+            var form1 = Application.OpenForms.OfType<LogInForm1>().FirstOrDefault();
+            if (form1 != null)
+            {
+                form1.Show();
+                form1.BringToFront();
+            }
+            else
+            {
+                new LogInForm1().Show();
+            }
+            this.Close();
+        }
     }
 }

@@ -192,6 +192,87 @@
             lb1RegisterAs_BrgyStftb = new Label();
             flowLayoutPanel4 = new FlowLayoutPanel();
             tabPage3 = new TabPage();
+            panel13 = new Panel();
+            btSignInHere_Adminbt = new Button();
+            lb34Already_Admintb = new Label();
+            panel14 = new Panel();
+            panel15 = new Panel();
+            btSubmit_Admintb = new Button();
+            chkbConfirm_Admintb = new CheckBox();
+            lb33Upload_Admintb = new Label();
+            panel16 = new Panel();
+            lb35FileName_Admintb = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            lb31DragorDrop_Admintb = new Label();
+            lb32Accepted_Admintb = new Label();
+            picbIDUpload_Admintb = new PictureBox();
+            btUploadID_Admintb = new Button();
+            bt3ConShowPass_Admintb = new Button();
+            bt4ConHidePass_Admintb = new Button();
+            bt1ShowPassword_Admintb = new Button();
+            bt2HidePassword_Admintb = new Button();
+            lb30UploadID_Admintb = new Label();
+            txtb17IDNum_Admintb = new TextBox();
+            lb29IDNum_Admintb = new Label();
+            comboBox1 = new ComboBox();
+            lb28ValidDType_Admintb = new Label();
+            lb32Min_Admintb = new Label();
+            lb31characters_Admintb = new Label();
+            lb27ConfirmPass_Admintb = new Label();
+            txtb16ConPassword_Admintb = new TextBox();
+            lb26Password_Admintb = new Label();
+            txtb15Passwors_Admintb = new TextBox();
+            txtb14Username_Admintb = new TextBox();
+            lb25Username_Admintb = new Label();
+            lb24AccountCre_Admintb = new Label();
+            flowLayoutPanel12 = new FlowLayoutPanel();
+            txtb13Term_Admintb = new TextBox();
+            cb4AccessLevel_Admintb = new ComboBox();
+            txtb12Appointedby_Admintb = new TextBox();
+            lb21AccessLevel_Admintb = new Label();
+            lb23Term_Admintb = new Label();
+            lb22AuthoBy_Admintb = new Label();
+            txtb11AdminCode_Admintb = new TextBox();
+            lb20AdminCode_Admintb = new Label();
+            lb19AdminAutho_Admintb = new Label();
+            flowLayoutPanel11 = new FlowLayoutPanel();
+            lb18OfficialEmail_Admintb = new Label();
+            txtb10OfficialEm_Admintb = new TextBox();
+            txtb9COntactNum_Admintb = new TextBox();
+            dateTimePicker2DOA_Admintb = new DateTimePicker();
+            cb3Dept_Admintb = new ComboBox();
+            lb17ContactNum_Admintb = new Label();
+            txtb8Position_admintb = new TextBox();
+            lb14Position_Admintb = new Label();
+            lb16DOA_Admintb = new Label();
+            lb15Dept_Admintb = new Label();
+            txtb7EmpID_Admintb = new TextBox();
+            lb13EmpID_Admintb = new Label();
+            lb12mpDet_Admintb = new Label();
+            flowLayoutPanel10 = new FlowLayoutPanel();
+            txtb6EmailAdd_Admintb = new TextBox();
+            lb11EmailAdd_Admintb = new Label();
+            txtb5ContactNum_Admintb = new TextBox();
+            lb10ContactNum_Admintb = new Label();
+            cb2Sex_Admintb = new ComboBox();
+            lb9Sex_Admintb = new Label();
+            cb1CivilStat_Admintb = new ComboBox();
+            lb8CivilStat_Admintb = new Label();
+            txtb4Age_Admintb = new TextBox();
+            lb7Age_Admintb = new Label();
+            dateTimePicker1DOB_Admintb = new DateTimePicker();
+            lb6DOB_Admintb = new Label();
+            txtb3LN_Admintb = new TextBox();
+            lb5LN_Admintb = new Label();
+            txtb2MN_Admintb = new TextBox();
+            lb4MN_Admintb = new Label();
+            txtb1FN_Admintb = new TextBox();
+            lb3FN_Admintb = new Label();
+            lb2PersonalInfo_Admintb = new Label();
+            flowLayoutPanel8 = new FlowLayoutPanel();
+            lb1RegisterAs_Admintb = new Label();
+            flowLayoutPanel9 = new FlowLayoutPanel();
             panel5 = new Panel();
             Lb6Reg_Fr2 = new Label();
             bt1ExitForm2 = new Button();
@@ -211,6 +292,9 @@
             tab2BarangayStaff.SuspendLayout();
             panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picb1ID_BrgyStftb).BeginInit();
+            tabPage3.SuspendLayout();
+            panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picbIDUpload_Admintb).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -1978,7 +2062,7 @@
             txtb6EmailAdd_BrgyStftb.BackColor = SystemColors.ControlDark;
             txtb6EmailAdd_BrgyStftb.BorderStyle = BorderStyle.None;
             txtb6EmailAdd_BrgyStftb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtb6EmailAdd_BrgyStftb.Location = new Point(50, 354);
+            txtb6EmailAdd_BrgyStftb.Location = new Point(43, 350);
             txtb6EmailAdd_BrgyStftb.Multiline = true;
             txtb6EmailAdd_BrgyStftb.Name = "txtb6EmailAdd_BrgyStftb";
             txtb6EmailAdd_BrgyStftb.PlaceholderText = "brandonjosefpine@email.com";
@@ -1989,7 +2073,7 @@
             // 
             lb11EmailAdd_BrgyStftb.AutoSize = true;
             lb11EmailAdd_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb11EmailAdd_BrgyStftb.Location = new Point(46, 328);
+            lb11EmailAdd_BrgyStftb.Location = new Point(39, 324);
             lb11EmailAdd_BrgyStftb.Name = "lb11EmailAdd_BrgyStftb";
             lb11EmailAdd_BrgyStftb.Size = new Size(104, 23);
             lb11EmailAdd_BrgyStftb.TabIndex = 39;
@@ -2001,7 +2085,7 @@
             txtb5ContactN_BrgyStftb.BorderStyle = BorderStyle.None;
             txtb5ContactN_BrgyStftb.CharacterCasing = CharacterCasing.Upper;
             txtb5ContactN_BrgyStftb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtb5ContactN_BrgyStftb.Location = new Point(203, 287);
+            txtb5ContactN_BrgyStftb.Location = new Point(196, 283);
             txtb5ContactN_BrgyStftb.Multiline = true;
             txtb5ContactN_BrgyStftb.Name = "txtb5ContactN_BrgyStftb";
             txtb5ContactN_BrgyStftb.PlaceholderText = " 09xxxxxxxxx";
@@ -2012,7 +2096,7 @@
             // 
             lb10ContactN_BrgyStftb.AutoSize = true;
             lb10ContactN_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb10ContactN_BrgyStftb.Location = new Point(199, 261);
+            lb10ContactN_BrgyStftb.Location = new Point(192, 257);
             lb10ContactN_BrgyStftb.Name = "lb10ContactN_BrgyStftb";
             lb10ContactN_BrgyStftb.Size = new Size(117, 23);
             lb10ContactN_BrgyStftb.TabIndex = 37;
@@ -2025,7 +2109,7 @@
             cb2Sex_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb2Sex_BrgyStftb.FormattingEnabled = true;
             cb2Sex_BrgyStftb.Items.AddRange(new object[] { "Male", "Female" });
-            cb2Sex_BrgyStftb.Location = new Point(46, 286);
+            cb2Sex_BrgyStftb.Location = new Point(39, 283);
             cb2Sex_BrgyStftb.Name = "cb2Sex_BrgyStftb";
             cb2Sex_BrgyStftb.Size = new Size(144, 29);
             cb2Sex_BrgyStftb.TabIndex = 36;
@@ -2034,7 +2118,7 @@
             // 
             lb9Sex_BrgyStftb.AutoSize = true;
             lb9Sex_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb9Sex_BrgyStftb.Location = new Point(41, 261);
+            lb9Sex_BrgyStftb.Location = new Point(34, 257);
             lb9Sex_BrgyStftb.Name = "lb9Sex_BrgyStftb";
             lb9Sex_BrgyStftb.Size = new Size(33, 23);
             lb9Sex_BrgyStftb.TabIndex = 35;
@@ -2223,15 +2307,1008 @@
             // tabPage3
             // 
             tabPage3.AutoScroll = true;
-            tabPage3.AutoScrollMinSize = new Size(0, 1500);
+            tabPage3.AutoScrollMinSize = new Size(0, 1730);
             tabPage3.BackColor = Color.WhiteSmoke;
             tabPage3.BackgroundImageLayout = ImageLayout.None;
+            tabPage3.Controls.Add(panel13);
+            tabPage3.Controls.Add(btSignInHere_Adminbt);
+            tabPage3.Controls.Add(lb34Already_Admintb);
+            tabPage3.Controls.Add(panel14);
+            tabPage3.Controls.Add(panel15);
+            tabPage3.Controls.Add(btSubmit_Admintb);
+            tabPage3.Controls.Add(chkbConfirm_Admintb);
+            tabPage3.Controls.Add(lb33Upload_Admintb);
+            tabPage3.Controls.Add(panel16);
+            tabPage3.Controls.Add(bt3ConShowPass_Admintb);
+            tabPage3.Controls.Add(bt4ConHidePass_Admintb);
+            tabPage3.Controls.Add(bt1ShowPassword_Admintb);
+            tabPage3.Controls.Add(bt2HidePassword_Admintb);
+            tabPage3.Controls.Add(lb30UploadID_Admintb);
+            tabPage3.Controls.Add(txtb17IDNum_Admintb);
+            tabPage3.Controls.Add(lb29IDNum_Admintb);
+            tabPage3.Controls.Add(comboBox1);
+            tabPage3.Controls.Add(lb28ValidDType_Admintb);
+            tabPage3.Controls.Add(lb32Min_Admintb);
+            tabPage3.Controls.Add(lb31characters_Admintb);
+            tabPage3.Controls.Add(lb27ConfirmPass_Admintb);
+            tabPage3.Controls.Add(txtb16ConPassword_Admintb);
+            tabPage3.Controls.Add(lb26Password_Admintb);
+            tabPage3.Controls.Add(txtb15Passwors_Admintb);
+            tabPage3.Controls.Add(txtb14Username_Admintb);
+            tabPage3.Controls.Add(lb25Username_Admintb);
+            tabPage3.Controls.Add(lb24AccountCre_Admintb);
+            tabPage3.Controls.Add(flowLayoutPanel12);
+            tabPage3.Controls.Add(txtb13Term_Admintb);
+            tabPage3.Controls.Add(cb4AccessLevel_Admintb);
+            tabPage3.Controls.Add(txtb12Appointedby_Admintb);
+            tabPage3.Controls.Add(lb21AccessLevel_Admintb);
+            tabPage3.Controls.Add(lb23Term_Admintb);
+            tabPage3.Controls.Add(lb22AuthoBy_Admintb);
+            tabPage3.Controls.Add(txtb11AdminCode_Admintb);
+            tabPage3.Controls.Add(lb20AdminCode_Admintb);
+            tabPage3.Controls.Add(lb19AdminAutho_Admintb);
+            tabPage3.Controls.Add(flowLayoutPanel11);
+            tabPage3.Controls.Add(lb18OfficialEmail_Admintb);
+            tabPage3.Controls.Add(txtb10OfficialEm_Admintb);
+            tabPage3.Controls.Add(txtb9COntactNum_Admintb);
+            tabPage3.Controls.Add(dateTimePicker2DOA_Admintb);
+            tabPage3.Controls.Add(cb3Dept_Admintb);
+            tabPage3.Controls.Add(lb17ContactNum_Admintb);
+            tabPage3.Controls.Add(txtb8Position_admintb);
+            tabPage3.Controls.Add(lb14Position_Admintb);
+            tabPage3.Controls.Add(lb16DOA_Admintb);
+            tabPage3.Controls.Add(lb15Dept_Admintb);
+            tabPage3.Controls.Add(txtb7EmpID_Admintb);
+            tabPage3.Controls.Add(lb13EmpID_Admintb);
+            tabPage3.Controls.Add(lb12mpDet_Admintb);
+            tabPage3.Controls.Add(flowLayoutPanel10);
+            tabPage3.Controls.Add(txtb6EmailAdd_Admintb);
+            tabPage3.Controls.Add(lb11EmailAdd_Admintb);
+            tabPage3.Controls.Add(txtb5ContactNum_Admintb);
+            tabPage3.Controls.Add(lb10ContactNum_Admintb);
+            tabPage3.Controls.Add(cb2Sex_Admintb);
+            tabPage3.Controls.Add(lb9Sex_Admintb);
+            tabPage3.Controls.Add(cb1CivilStat_Admintb);
+            tabPage3.Controls.Add(lb8CivilStat_Admintb);
+            tabPage3.Controls.Add(txtb4Age_Admintb);
+            tabPage3.Controls.Add(lb7Age_Admintb);
+            tabPage3.Controls.Add(dateTimePicker1DOB_Admintb);
+            tabPage3.Controls.Add(lb6DOB_Admintb);
+            tabPage3.Controls.Add(txtb3LN_Admintb);
+            tabPage3.Controls.Add(lb5LN_Admintb);
+            tabPage3.Controls.Add(txtb2MN_Admintb);
+            tabPage3.Controls.Add(lb4MN_Admintb);
+            tabPage3.Controls.Add(txtb1FN_Admintb);
+            tabPage3.Controls.Add(lb3FN_Admintb);
+            tabPage3.Controls.Add(lb2PersonalInfo_Admintb);
+            tabPage3.Controls.Add(flowLayoutPanel8);
+            tabPage3.Controls.Add(lb1RegisterAs_Admintb);
+            tabPage3.Controls.Add(flowLayoutPanel9);
             tabPage3.Location = new Point(4, 46);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
             tabPage3.Size = new Size(600, 504);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Admin";
+            // 
+            // panel13
+            // 
+            panel13.BackColor = Color.Goldenrod;
+            panel13.ForeColor = Color.FromArgb(0, 0, 64);
+            panel13.Location = new Point(25, 1690);
+            panel13.Margin = new Padding(0);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(530, 2);
+            panel13.TabIndex = 121;
+            // 
+            // btSignInHere_Adminbt
+            // 
+            btSignInHere_Adminbt.BackColor = Color.Goldenrod;
+            btSignInHere_Adminbt.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 64);
+            btSignInHere_Adminbt.FlatAppearance.BorderSize = 0;
+            btSignInHere_Adminbt.FlatStyle = FlatStyle.Flat;
+            btSignInHere_Adminbt.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btSignInHere_Adminbt.ForeColor = Color.Transparent;
+            btSignInHere_Adminbt.Location = new Point(24, 1636);
+            btSignInHere_Adminbt.Name = "btSignInHere_Adminbt";
+            btSignInHere_Adminbt.Size = new Size(531, 37);
+            btSignInHere_Adminbt.TabIndex = 120;
+            btSignInHere_Adminbt.Text = "SIGN IN HERE";
+            btSignInHere_Adminbt.UseVisualStyleBackColor = false;
+            btSignInHere_Adminbt.Click += btSignInHere_Adminbt_Click;
+            // 
+            // lb34Already_Admintb
+            // 
+            lb34Already_Admintb.AutoSize = true;
+            lb34Already_Admintb.Font = new Font("Arial Narrow", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb34Already_Admintb.ForeColor = SystemColors.ControlDark;
+            lb34Already_Admintb.Location = new Point(203, 1599);
+            lb34Already_Admintb.Name = "lb34Already_Admintb";
+            lb34Already_Admintb.Size = new Size(175, 22);
+            lb34Already_Admintb.TabIndex = 119;
+            lb34Already_Admintb.Text = "Already have an account?";
+            // 
+            // panel14
+            // 
+            panel14.BackColor = Color.Goldenrod;
+            panel14.ForeColor = Color.Goldenrod;
+            panel14.Location = new Point(385, 1609);
+            panel14.Margin = new Padding(0);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(170, 2);
+            panel14.TabIndex = 118;
+            // 
+            // panel15
+            // 
+            panel15.BackColor = Color.Goldenrod;
+            panel15.ForeColor = Color.Goldenrod;
+            panel15.Location = new Point(24, 1609);
+            panel15.Margin = new Padding(0);
+            panel15.Name = "panel15";
+            panel15.Size = new Size(170, 2);
+            panel15.TabIndex = 117;
+            // 
+            // btSubmit_Admintb
+            // 
+            btSubmit_Admintb.BackColor = Color.MidnightBlue;
+            btSubmit_Admintb.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 64);
+            btSubmit_Admintb.FlatAppearance.BorderSize = 0;
+            btSubmit_Admintb.FlatStyle = FlatStyle.Flat;
+            btSubmit_Admintb.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btSubmit_Admintb.ForeColor = Color.Transparent;
+            btSubmit_Admintb.Location = new Point(24, 1526);
+            btSubmit_Admintb.Name = "btSubmit_Admintb";
+            btSubmit_Admintb.Size = new Size(531, 37);
+            btSubmit_Admintb.TabIndex = 116;
+            btSubmit_Admintb.Text = "SUBMIT REGISTRATION";
+            btSubmit_Admintb.UseVisualStyleBackColor = false;
+            btSubmit_Admintb.Click += btSubmit_Admintb_Click;
+            // 
+            // chkbConfirm_Admintb
+            // 
+            chkbConfirm_Admintb.AutoSize = true;
+            chkbConfirm_Admintb.CheckAlign = ContentAlignment.TopLeft;
+            chkbConfirm_Admintb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            chkbConfirm_Admintb.Location = new Point(40, 1451);
+            chkbConfirm_Admintb.Name = "chkbConfirm_Admintb";
+            chkbConfirm_Admintb.Size = new Size(491, 36);
+            chkbConfirm_Admintb.TabIndex = 115;
+            chkbConfirm_Admintb.Text = "I confirm that all information I provided is accurate and truthful. I understand that false \r\ninformation may result in rejection of my registration.";
+            chkbConfirm_Admintb.UseVisualStyleBackColor = true;
+            // 
+            // lb33Upload_Admintb
+            // 
+            lb33Upload_Admintb.AutoSize = true;
+            lb33Upload_Admintb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb33Upload_Admintb.ForeColor = SystemColors.ControlDark;
+            lb33Upload_Admintb.Location = new Point(41, 1417);
+            lb33Upload_Admintb.Name = "lb33Upload_Admintb";
+            lb33Upload_Admintb.Size = new Size(482, 16);
+            lb33Upload_Admintb.TabIndex = 114;
+            lb33Upload_Admintb.Text = "ⓘ Upload a clear photo or scanned copy of your valid ID. Make sure all details are visible and legible.\r\n";
+            // 
+            // panel16
+            // 
+            panel16.BackColor = Color.AliceBlue;
+            panel16.BorderStyle = BorderStyle.FixedSingle;
+            panel16.Controls.Add(lb35FileName_Admintb);
+            panel16.Controls.Add(label6);
+            panel16.Controls.Add(label7);
+            panel16.Controls.Add(lb31DragorDrop_Admintb);
+            panel16.Controls.Add(lb32Accepted_Admintb);
+            panel16.Controls.Add(picbIDUpload_Admintb);
+            panel16.Controls.Add(btUploadID_Admintb);
+            panel16.Location = new Point(43, 1254);
+            panel16.Name = "panel16";
+            panel16.Size = new Size(488, 159);
+            panel16.TabIndex = 113;
+            // 
+            // lb35FileName_Admintb
+            // 
+            lb35FileName_Admintb.AutoSize = true;
+            lb35FileName_Admintb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb35FileName_Admintb.ForeColor = SystemColors.ControlDark;
+            lb35FileName_Admintb.Location = new Point(8, 119);
+            lb35FileName_Admintb.Name = "lb35FileName_Admintb";
+            lb35FileName_Admintb.Size = new Size(0, 16);
+            lb35FileName_Admintb.TabIndex = 58;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.ForeColor = SystemColors.ControlDark;
+            label6.Location = new Point(12, 123);
+            label6.Name = "label6";
+            label6.Size = new Size(0, 16);
+            label6.TabIndex = 57;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Arial Narrow", 6.8F);
+            label7.ForeColor = SystemColors.ControlDark;
+            label7.Location = new Point(12, 123);
+            label7.Name = "label7";
+            label7.Size = new Size(0, 16);
+            label7.TabIndex = 56;
+            // 
+            // lb31DragorDrop_Admintb
+            // 
+            lb31DragorDrop_Admintb.AutoSize = true;
+            lb31DragorDrop_Admintb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb31DragorDrop_Admintb.ForeColor = SystemColors.ControlDark;
+            lb31DragorDrop_Admintb.Location = new Point(165, 80);
+            lb31DragorDrop_Admintb.Name = "lb31DragorDrop_Admintb";
+            lb31DragorDrop_Admintb.Size = new Size(156, 16);
+            lb31DragorDrop_Admintb.TabIndex = 55;
+            lb31DragorDrop_Admintb.Text = "or drag and drop your file here ";
+            // 
+            // lb32Accepted_Admintb
+            // 
+            lb32Accepted_Admintb.AutoSize = true;
+            lb32Accepted_Admintb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb32Accepted_Admintb.ForeColor = SystemColors.ControlDark;
+            lb32Accepted_Admintb.Location = new Point(139, 99);
+            lb32Accepted_Admintb.Name = "lb32Accepted_Admintb";
+            lb32Accepted_Admintb.Size = new Size(213, 16);
+            lb32Accepted_Admintb.TabIndex = 54;
+            lb32Accepted_Admintb.Text = "Accepted: JPG, PNG, PDF · Max size: 5MB\r\n";
+            // 
+            // picbIDUpload_Admintb
+            // 
+            picbIDUpload_Admintb.Location = new Point(12, 33);
+            picbIDUpload_Admintb.Name = "picbIDUpload_Admintb";
+            picbIDUpload_Admintb.Size = new Size(78, 82);
+            picbIDUpload_Admintb.SizeMode = PictureBoxSizeMode.Zoom;
+            picbIDUpload_Admintb.TabIndex = 1;
+            picbIDUpload_Admintb.TabStop = false;
+            picbIDUpload_Admintb.Visible = false;
+            // 
+            // btUploadID_Admintb
+            // 
+            btUploadID_Admintb.FlatAppearance.BorderColor = Color.AliceBlue;
+            btUploadID_Admintb.FlatStyle = FlatStyle.Flat;
+            btUploadID_Admintb.Font = new Font("Sans Serif Collection", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btUploadID_Admintb.ForeColor = Color.Navy;
+            btUploadID_Admintb.Location = new Point(3, 8);
+            btUploadID_Admintb.Name = "btUploadID_Admintb";
+            btUploadID_Admintb.Padding = new Padding(3);
+            btUploadID_Admintb.Size = new Size(480, 146);
+            btUploadID_Admintb.TabIndex = 0;
+            btUploadID_Admintb.Text = "Click to Upload ";
+            btUploadID_Admintb.UseVisualStyleBackColor = true;
+            btUploadID_Admintb.Click += btUploadID_Admintb_Click;
+            // 
+            // bt3ConShowPass_Admintb
+            // 
+            bt3ConShowPass_Admintb.BackColor = SystemColors.ControlDark;
+            bt3ConShowPass_Admintb.FlatAppearance.BorderSize = 0;
+            bt3ConShowPass_Admintb.FlatStyle = FlatStyle.Flat;
+            bt3ConShowPass_Admintb.Image = Properties.Resources.eyePass;
+            bt3ConShowPass_Admintb.Location = new Point(495, 1100);
+            bt3ConShowPass_Admintb.Name = "bt3ConShowPass_Admintb";
+            bt3ConShowPass_Admintb.Size = new Size(36, 27);
+            bt3ConShowPass_Admintb.TabIndex = 112;
+            bt3ConShowPass_Admintb.UseVisualStyleBackColor = false;
+            bt3ConShowPass_Admintb.Click += bt3ConShowPass_Admintb_Click;
+            // 
+            // bt4ConHidePass_Admintb
+            // 
+            bt4ConHidePass_Admintb.BackColor = SystemColors.ControlDark;
+            bt4ConHidePass_Admintb.BackgroundImage = Properties.Resources.hidePass;
+            bt4ConHidePass_Admintb.FlatAppearance.BorderSize = 0;
+            bt4ConHidePass_Admintb.FlatStyle = FlatStyle.Flat;
+            bt4ConHidePass_Admintb.Image = Properties.Resources.hidePass;
+            bt4ConHidePass_Admintb.Location = new Point(495, 1100);
+            bt4ConHidePass_Admintb.Name = "bt4ConHidePass_Admintb";
+            bt4ConHidePass_Admintb.Size = new Size(36, 27);
+            bt4ConHidePass_Admintb.TabIndex = 111;
+            bt4ConHidePass_Admintb.TextAlign = ContentAlignment.TopCenter;
+            bt4ConHidePass_Admintb.UseVisualStyleBackColor = false;
+            bt4ConHidePass_Admintb.Click += bt4ConHidePass_Admintb_Click;
+            // 
+            // bt1ShowPassword_Admintb
+            // 
+            bt1ShowPassword_Admintb.BackColor = SystemColors.ControlDark;
+            bt1ShowPassword_Admintb.FlatAppearance.BorderSize = 0;
+            bt1ShowPassword_Admintb.FlatStyle = FlatStyle.Flat;
+            bt1ShowPassword_Admintb.Image = Properties.Resources.eyePass;
+            bt1ShowPassword_Admintb.Location = new Point(241, 1100);
+            bt1ShowPassword_Admintb.Name = "bt1ShowPassword_Admintb";
+            bt1ShowPassword_Admintb.Size = new Size(36, 27);
+            bt1ShowPassword_Admintb.TabIndex = 109;
+            bt1ShowPassword_Admintb.UseVisualStyleBackColor = false;
+            bt1ShowPassword_Admintb.Click += bt1ShowPassword_Admintb_Click;
+            // 
+            // bt2HidePassword_Admintb
+            // 
+            bt2HidePassword_Admintb.BackColor = SystemColors.ControlDark;
+            bt2HidePassword_Admintb.BackgroundImage = Properties.Resources.hidePass;
+            bt2HidePassword_Admintb.FlatAppearance.BorderSize = 0;
+            bt2HidePassword_Admintb.FlatStyle = FlatStyle.Flat;
+            bt2HidePassword_Admintb.Image = Properties.Resources.hidePass;
+            bt2HidePassword_Admintb.Location = new Point(241, 1100);
+            bt2HidePassword_Admintb.Name = "bt2HidePassword_Admintb";
+            bt2HidePassword_Admintb.Size = new Size(36, 27);
+            bt2HidePassword_Admintb.TabIndex = 110;
+            bt2HidePassword_Admintb.TextAlign = ContentAlignment.TopCenter;
+            bt2HidePassword_Admintb.UseVisualStyleBackColor = false;
+            bt2HidePassword_Admintb.Click += bt2HidePassword_Admintb_Click;
+            // 
+            // lb30UploadID_Admintb
+            // 
+            lb30UploadID_Admintb.AutoSize = true;
+            lb30UploadID_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb30UploadID_Admintb.Location = new Point(46, 1222);
+            lb30UploadID_Admintb.Name = "lb30UploadID_Admintb";
+            lb30UploadID_Admintb.Size = new Size(75, 23);
+            lb30UploadID_Admintb.TabIndex = 108;
+            lb30UploadID_Admintb.Text = "Upload ID";
+            // 
+            // txtb17IDNum_Admintb
+            // 
+            txtb17IDNum_Admintb.BackColor = SystemColors.ControlDark;
+            txtb17IDNum_Admintb.BorderStyle = BorderStyle.None;
+            txtb17IDNum_Admintb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb17IDNum_Admintb.Location = new Point(229, 1180);
+            txtb17IDNum_Admintb.Multiline = true;
+            txtb17IDNum_Admintb.Name = "txtb17IDNum_Admintb";
+            txtb17IDNum_Admintb.PlaceholderText = " Enter your ID Number";
+            txtb17IDNum_Admintb.Size = new Size(302, 28);
+            txtb17IDNum_Admintb.TabIndex = 107;
+            // 
+            // lb29IDNum_Admintb
+            // 
+            lb29IDNum_Admintb.AutoSize = true;
+            lb29IDNum_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb29IDNum_Admintb.Location = new Point(225, 1154);
+            lb29IDNum_Admintb.Name = "lb29IDNum_Admintb";
+            lb29IDNum_Admintb.Size = new Size(80, 23);
+            lb29IDNum_Admintb.TabIndex = 106;
+            lb29IDNum_Admintb.Text = "ID Number";
+            // 
+            // comboBox1
+            // 
+            comboBox1.BackColor = SystemColors.Control;
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "PhilSys National ID", "Barangay ID", "Voter's ID", "Driver's License", "Passport", "SSS / GSIS ID", "PhilHealth ID" });
+            comboBox1.Location = new Point(43, 1180);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(167, 29);
+            comboBox1.TabIndex = 105;
+            // 
+            // lb28ValidDType_Admintb
+            // 
+            lb28ValidDType_Admintb.AutoSize = true;
+            lb28ValidDType_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb28ValidDType_Admintb.Location = new Point(41, 1154);
+            lb28ValidDType_Admintb.Name = "lb28ValidDType_Admintb";
+            lb28ValidDType_Admintb.Size = new Size(93, 23);
+            lb28ValidDType_Admintb.TabIndex = 104;
+            lb28ValidDType_Admintb.Text = "Valid ID Type";
+            // 
+            // lb32Min_Admintb
+            // 
+            lb32Min_Admintb.AutoSize = true;
+            lb32Min_Admintb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb32Min_Admintb.ForeColor = SystemColors.ControlDark;
+            lb32Min_Admintb.Location = new Point(40, 1129);
+            lb32Min_Admintb.Name = "lb32Min_Admintb";
+            lb32Min_Admintb.Size = new Size(242, 16);
+            lb32Min_Admintb.TabIndex = 103;
+            lb32Min_Admintb.Text = "Min. 8 strong characters with numbers and symbol";
+            // 
+            // lb31characters_Admintb
+            // 
+            lb31characters_Admintb.AutoSize = true;
+            lb31characters_Admintb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb31characters_Admintb.ForeColor = SystemColors.ControlDark;
+            lb31characters_Admintb.Location = new Point(41, 1052);
+            lb31characters_Admintb.Name = "lb31characters_Admintb";
+            lb31characters_Admintb.Size = new Size(135, 16);
+            lb31characters_Admintb.TabIndex = 102;
+            lb31characters_Admintb.Text = "6-20 characters, no spaces";
+            // 
+            // lb27ConfirmPass_Admintb
+            // 
+            lb27ConfirmPass_Admintb.AutoSize = true;
+            lb27ConfirmPass_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb27ConfirmPass_Admintb.Location = new Point(297, 1074);
+            lb27ConfirmPass_Admintb.Name = "lb27ConfirmPass_Admintb";
+            lb27ConfirmPass_Admintb.Size = new Size(129, 23);
+            lb27ConfirmPass_Admintb.TabIndex = 101;
+            lb27ConfirmPass_Admintb.Text = "Confirm Password";
+            // 
+            // txtb16ConPassword_Admintb
+            // 
+            txtb16ConPassword_Admintb.BackColor = SystemColors.ControlDark;
+            txtb16ConPassword_Admintb.BorderStyle = BorderStyle.None;
+            txtb16ConPassword_Admintb.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtb16ConPassword_Admintb.ForeColor = SystemColors.ActiveCaptionText;
+            txtb16ConPassword_Admintb.Location = new Point(297, 1100);
+            txtb16ConPassword_Admintb.Multiline = true;
+            txtb16ConPassword_Admintb.Name = "txtb16ConPassword_Admintb";
+            txtb16ConPassword_Admintb.PasswordChar = '*';
+            txtb16ConPassword_Admintb.RightToLeft = RightToLeft.No;
+            txtb16ConPassword_Admintb.Size = new Size(234, 27);
+            txtb16ConPassword_Admintb.TabIndex = 100;
+            // 
+            // lb26Password_Admintb
+            // 
+            lb26Password_Admintb.AutoSize = true;
+            lb26Password_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb26Password_Admintb.Location = new Point(40, 1074);
+            lb26Password_Admintb.Name = "lb26Password_Admintb";
+            lb26Password_Admintb.Size = new Size(73, 23);
+            lb26Password_Admintb.TabIndex = 99;
+            lb26Password_Admintb.Text = "Password";
+            // 
+            // txtb15Passwors_Admintb
+            // 
+            txtb15Passwors_Admintb.BackColor = SystemColors.ControlDark;
+            txtb15Passwors_Admintb.BorderStyle = BorderStyle.None;
+            txtb15Passwors_Admintb.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtb15Passwors_Admintb.ForeColor = SystemColors.ActiveCaptionText;
+            txtb15Passwors_Admintb.Location = new Point(43, 1100);
+            txtb15Passwors_Admintb.Multiline = true;
+            txtb15Passwors_Admintb.Name = "txtb15Passwors_Admintb";
+            txtb15Passwors_Admintb.PasswordChar = '*';
+            txtb15Passwors_Admintb.RightToLeft = RightToLeft.No;
+            txtb15Passwors_Admintb.Size = new Size(234, 27);
+            txtb15Passwors_Admintb.TabIndex = 98;
+            // 
+            // txtb14Username_Admintb
+            // 
+            txtb14Username_Admintb.BackColor = SystemColors.ControlDark;
+            txtb14Username_Admintb.BorderStyle = BorderStyle.None;
+            txtb14Username_Admintb.CharacterCasing = CharacterCasing.Lower;
+            txtb14Username_Admintb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb14Username_Admintb.Location = new Point(43, 1021);
+            txtb14Username_Admintb.Multiline = true;
+            txtb14Username_Admintb.Name = "txtb14Username_Admintb";
+            txtb14Username_Admintb.PlaceholderText = " markbrandon";
+            txtb14Username_Admintb.Size = new Size(488, 28);
+            txtb14Username_Admintb.TabIndex = 97;
+            // 
+            // lb25Username_Admintb
+            // 
+            lb25Username_Admintb.AutoSize = true;
+            lb25Username_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb25Username_Admintb.Location = new Point(39, 998);
+            lb25Username_Admintb.Name = "lb25Username_Admintb";
+            lb25Username_Admintb.Size = new Size(77, 23);
+            lb25Username_Admintb.TabIndex = 96;
+            lb25Username_Admintb.Text = "Username";
+            // 
+            // lb24AccountCre_Admintb
+            // 
+            lb24AccountCre_Admintb.BackColor = Color.Gainsboro;
+            lb24AccountCre_Admintb.Font = new Font("Franklin Gothic Book", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lb24AccountCre_Admintb.ForeColor = SystemColors.ActiveCaptionText;
+            lb24AccountCre_Admintb.Location = new Point(29, 935);
+            lb24AccountCre_Admintb.Name = "lb24AccountCre_Admintb";
+            lb24AccountCre_Admintb.Padding = new Padding(1, 5, 1, 1);
+            lb24AccountCre_Admintb.Size = new Size(526, 38);
+            lb24AccountCre_Admintb.TabIndex = 95;
+            lb24AccountCre_Admintb.Text = " Account Credentials";
+            // 
+            // flowLayoutPanel12
+            // 
+            flowLayoutPanel12.BackColor = Color.Goldenrod;
+            flowLayoutPanel12.Location = new Point(24, 935);
+            flowLayoutPanel12.Name = "flowLayoutPanel12";
+            flowLayoutPanel12.Size = new Size(7, 38);
+            flowLayoutPanel12.TabIndex = 94;
+            // 
+            // txtb13Term_Admintb
+            // 
+            txtb13Term_Admintb.BackColor = SystemColors.ControlDark;
+            txtb13Term_Admintb.BorderStyle = BorderStyle.None;
+            txtb13Term_Admintb.CharacterCasing = CharacterCasing.Upper;
+            txtb13Term_Admintb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb13Term_Admintb.Location = new Point(314, 872);
+            txtb13Term_Admintb.Multiline = true;
+            txtb13Term_Admintb.Name = "txtb13Term_Admintb";
+            txtb13Term_Admintb.PlaceholderText = " e.g. 2025 - 206";
+            txtb13Term_Admintb.Size = new Size(217, 28);
+            txtb13Term_Admintb.TabIndex = 93;
+            // 
+            // cb4AccessLevel_Admintb
+            // 
+            cb4AccessLevel_Admintb.BackColor = SystemColors.Control;
+            cb4AccessLevel_Admintb.DropDownStyle = ComboBoxStyle.DropDownList;
+            cb4AccessLevel_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cb4AccessLevel_Admintb.FormattingEnabled = true;
+            cb4AccessLevel_Admintb.Items.AddRange(new object[] { "Full Access", "Report Only", "Read Only", "Technician" });
+            cb4AccessLevel_Admintb.Location = new Point(314, 805);
+            cb4AccessLevel_Admintb.Name = "cb4AccessLevel_Admintb";
+            cb4AccessLevel_Admintb.Size = new Size(217, 29);
+            cb4AccessLevel_Admintb.TabIndex = 92;
+            // 
+            // txtb12Appointedby_Admintb
+            // 
+            txtb12Appointedby_Admintb.BackColor = SystemColors.ControlDark;
+            txtb12Appointedby_Admintb.BorderStyle = BorderStyle.None;
+            txtb12Appointedby_Admintb.CharacterCasing = CharacterCasing.Upper;
+            txtb12Appointedby_Admintb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb12Appointedby_Admintb.Location = new Point(43, 872);
+            txtb12Appointedby_Admintb.Multiline = true;
+            txtb12Appointedby_Admintb.Name = "txtb12Appointedby_Admintb";
+            txtb12Appointedby_Admintb.PlaceholderText = " Name of Appointing Official";
+            txtb12Appointedby_Admintb.Size = new Size(254, 28);
+            txtb12Appointedby_Admintb.TabIndex = 91;
+            // 
+            // lb21AccessLevel_Admintb
+            // 
+            lb21AccessLevel_Admintb.AutoSize = true;
+            lb21AccessLevel_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb21AccessLevel_Admintb.Location = new Point(311, 780);
+            lb21AccessLevel_Admintb.Name = "lb21AccessLevel_Admintb";
+            lb21AccessLevel_Admintb.Size = new Size(91, 23);
+            lb21AccessLevel_Admintb.TabIndex = 90;
+            lb21AccessLevel_Admintb.Text = "Access Level";
+            // 
+            // lb23Term_Admintb
+            // 
+            lb23Term_Admintb.AutoSize = true;
+            lb23Term_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb23Term_Admintb.Location = new Point(311, 846);
+            lb23Term_Admintb.Name = "lb23Term_Admintb";
+            lb23Term_Admintb.Size = new Size(101, 23);
+            lb23Term_Admintb.TabIndex = 89;
+            lb23Term_Admintb.Text = "Term / Period";
+            // 
+            // lb22AuthoBy_Admintb
+            // 
+            lb22AuthoBy_Admintb.AutoSize = true;
+            lb22AuthoBy_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb22AuthoBy_Admintb.Location = new Point(37, 846);
+            lb22AuthoBy_Admintb.Name = "lb22AuthoBy_Admintb";
+            lb22AuthoBy_Admintb.Size = new Size(98, 23);
+            lb22AuthoBy_Admintb.TabIndex = 88;
+            lb22AuthoBy_Admintb.Text = "Appointed By";
+            // 
+            // txtb11AdminCode_Admintb
+            // 
+            txtb11AdminCode_Admintb.BackColor = SystemColors.ControlDark;
+            txtb11AdminCode_Admintb.BorderStyle = BorderStyle.None;
+            txtb11AdminCode_Admintb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb11AdminCode_Admintb.Location = new Point(43, 806);
+            txtb11AdminCode_Admintb.Multiline = true;
+            txtb11AdminCode_Admintb.Name = "txtb11AdminCode_Admintb";
+            txtb11AdminCode_Admintb.PlaceholderText = " Authorization Code";
+            txtb11AdminCode_Admintb.Size = new Size(254, 28);
+            txtb11AdminCode_Admintb.TabIndex = 87;
+            // 
+            // lb20AdminCode_Admintb
+            // 
+            lb20AdminCode_Admintb.AutoSize = true;
+            lb20AdminCode_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb20AdminCode_Admintb.Location = new Point(39, 780);
+            lb20AdminCode_Admintb.Name = "lb20AdminCode_Admintb";
+            lb20AdminCode_Admintb.Size = new Size(91, 23);
+            lb20AdminCode_Admintb.TabIndex = 86;
+            lb20AdminCode_Admintb.Text = "Admin Code";
+            // 
+            // lb19AdminAutho_Admintb
+            // 
+            lb19AdminAutho_Admintb.BackColor = Color.Gainsboro;
+            lb19AdminAutho_Admintb.Font = new Font("Franklin Gothic Book", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lb19AdminAutho_Admintb.ForeColor = SystemColors.ActiveCaptionText;
+            lb19AdminAutho_Admintb.Location = new Point(29, 717);
+            lb19AdminAutho_Admintb.Name = "lb19AdminAutho_Admintb";
+            lb19AdminAutho_Admintb.Padding = new Padding(1, 5, 1, 1);
+            lb19AdminAutho_Admintb.Size = new Size(526, 38);
+            lb19AdminAutho_Admintb.TabIndex = 85;
+            lb19AdminAutho_Admintb.Text = " Admin Authorization";
+            // 
+            // flowLayoutPanel11
+            // 
+            flowLayoutPanel11.BackColor = Color.Goldenrod;
+            flowLayoutPanel11.Location = new Point(24, 717);
+            flowLayoutPanel11.Name = "flowLayoutPanel11";
+            flowLayoutPanel11.Size = new Size(7, 38);
+            flowLayoutPanel11.TabIndex = 84;
+            // 
+            // lb18OfficialEmail_Admintb
+            // 
+            lb18OfficialEmail_Admintb.AutoSize = true;
+            lb18OfficialEmail_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb18OfficialEmail_Admintb.Location = new Point(243, 623);
+            lb18OfficialEmail_Admintb.Name = "lb18OfficialEmail_Admintb";
+            lb18OfficialEmail_Admintb.Size = new Size(97, 23);
+            lb18OfficialEmail_Admintb.TabIndex = 83;
+            lb18OfficialEmail_Admintb.Text = "Official Email";
+            // 
+            // txtb10OfficialEm_Admintb
+            // 
+            txtb10OfficialEm_Admintb.BackColor = SystemColors.ControlDark;
+            txtb10OfficialEm_Admintb.BorderStyle = BorderStyle.None;
+            txtb10OfficialEm_Admintb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb10OfficialEm_Admintb.Location = new Point(247, 649);
+            txtb10OfficialEm_Admintb.Multiline = true;
+            txtb10OfficialEm_Admintb.Name = "txtb10OfficialEm_Admintb";
+            txtb10OfficialEm_Admintb.PlaceholderText = " brandonbernal@gmail.com";
+            txtb10OfficialEm_Admintb.Size = new Size(284, 28);
+            txtb10OfficialEm_Admintb.TabIndex = 82;
+            // 
+            // txtb9COntactNum_Admintb
+            // 
+            txtb9COntactNum_Admintb.BackColor = SystemColors.ControlDark;
+            txtb9COntactNum_Admintb.BorderStyle = BorderStyle.None;
+            txtb9COntactNum_Admintb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb9COntactNum_Admintb.Location = new Point(43, 649);
+            txtb9COntactNum_Admintb.Multiline = true;
+            txtb9COntactNum_Admintb.Name = "txtb9COntactNum_Admintb";
+            txtb9COntactNum_Admintb.PlaceholderText = " 09XXXXXXXXX";
+            txtb9COntactNum_Admintb.Size = new Size(183, 28);
+            txtb9COntactNum_Admintb.TabIndex = 81;
+            // 
+            // dateTimePicker2DOA_Admintb
+            // 
+            dateTimePicker2DOA_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dateTimePicker2DOA_Admintb.Format = DateTimePickerFormat.Short;
+            dateTimePicker2DOA_Admintb.Location = new Point(314, 582);
+            dateTimePicker2DOA_Admintb.Name = "dateTimePicker2DOA_Admintb";
+            dateTimePicker2DOA_Admintb.Size = new Size(217, 27);
+            dateTimePicker2DOA_Admintb.TabIndex = 80;
+            // 
+            // cb3Dept_Admintb
+            // 
+            cb3Dept_Admintb.BackColor = SystemColors.Control;
+            cb3Dept_Admintb.DropDownStyle = ComboBoxStyle.DropDownList;
+            cb3Dept_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cb3Dept_Admintb.FormattingEnabled = true;
+            cb3Dept_Admintb.Items.AddRange(new object[] { "Census & Records", "Health Services", "Social Welfare", "Peace & Order", "Barangay Officials", "Sangguniang Kabataan" });
+            cb3Dept_Admintb.Location = new Point(43, 582);
+            cb3Dept_Admintb.Name = "cb3Dept_Admintb";
+            cb3Dept_Admintb.Size = new Size(254, 29);
+            cb3Dept_Admintb.TabIndex = 79;
+            // 
+            // lb17ContactNum_Admintb
+            // 
+            lb17ContactNum_Admintb.AutoSize = true;
+            lb17ContactNum_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb17ContactNum_Admintb.Location = new Point(37, 623);
+            lb17ContactNum_Admintb.Name = "lb17ContactNum_Admintb";
+            lb17ContactNum_Admintb.Size = new Size(128, 23);
+            lb17ContactNum_Admintb.TabIndex = 78;
+            lb17ContactNum_Admintb.Text = "Office Contact No.";
+            // 
+            // txtb8Position_admintb
+            // 
+            txtb8Position_admintb.BackColor = SystemColors.ControlDark;
+            txtb8Position_admintb.BorderStyle = BorderStyle.None;
+            txtb8Position_admintb.CharacterCasing = CharacterCasing.Upper;
+            txtb8Position_admintb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb8Position_admintb.Location = new Point(314, 514);
+            txtb8Position_admintb.Multiline = true;
+            txtb8Position_admintb.Name = "txtb8Position_admintb";
+            txtb8Position_admintb.PlaceholderText = " e.g. Data Encoder";
+            txtb8Position_admintb.Size = new Size(217, 28);
+            txtb8Position_admintb.TabIndex = 77;
+            // 
+            // lb14Position_Admintb
+            // 
+            lb14Position_Admintb.AutoSize = true;
+            lb14Position_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb14Position_Admintb.Location = new Point(310, 488);
+            lb14Position_Admintb.Name = "lb14Position_Admintb";
+            lb14Position_Admintb.Size = new Size(156, 23);
+            lb14Position_Admintb.TabIndex = 76;
+            lb14Position_Admintb.Text = "Position / Designation";
+            // 
+            // lb16DOA_Admintb
+            // 
+            lb16DOA_Admintb.AutoSize = true;
+            lb16DOA_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb16DOA_Admintb.Location = new Point(311, 554);
+            lb16DOA_Admintb.Name = "lb16DOA_Admintb";
+            lb16DOA_Admintb.Size = new Size(146, 23);
+            lb16DOA_Admintb.TabIndex = 75;
+            lb16DOA_Admintb.Text = "Date of Appointment";
+            // 
+            // lb15Dept_Admintb
+            // 
+            lb15Dept_Admintb.AutoSize = true;
+            lb15Dept_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb15Dept_Admintb.Location = new Point(37, 554);
+            lb15Dept_Admintb.Name = "lb15Dept_Admintb";
+            lb15Dept_Admintb.Size = new Size(89, 23);
+            lb15Dept_Admintb.TabIndex = 74;
+            lb15Dept_Admintb.Text = "Department";
+            // 
+            // txtb7EmpID_Admintb
+            // 
+            txtb7EmpID_Admintb.BackColor = SystemColors.ControlDark;
+            txtb7EmpID_Admintb.BorderStyle = BorderStyle.None;
+            txtb7EmpID_Admintb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb7EmpID_Admintb.Location = new Point(43, 514);
+            txtb7EmpID_Admintb.Multiline = true;
+            txtb7EmpID_Admintb.Name = "txtb7EmpID_Admintb";
+            txtb7EmpID_Admintb.PlaceholderText = " BRGY-2201-XXXX";
+            txtb7EmpID_Admintb.Size = new Size(254, 28);
+            txtb7EmpID_Admintb.TabIndex = 73;
+            // 
+            // lb13EmpID_Admintb
+            // 
+            lb13EmpID_Admintb.AutoSize = true;
+            lb13EmpID_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb13EmpID_Admintb.Location = new Point(39, 488);
+            lb13EmpID_Admintb.Name = "lb13EmpID_Admintb";
+            lb13EmpID_Admintb.Size = new Size(91, 23);
+            lb13EmpID_Admintb.TabIndex = 72;
+            lb13EmpID_Admintb.Text = "Employee ID";
+            // 
+            // lb12mpDet_Admintb
+            // 
+            lb12mpDet_Admintb.BackColor = Color.Gainsboro;
+            lb12mpDet_Admintb.Font = new Font("Franklin Gothic Book", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lb12mpDet_Admintb.ForeColor = SystemColors.ActiveCaptionText;
+            lb12mpDet_Admintb.Location = new Point(29, 425);
+            lb12mpDet_Admintb.Name = "lb12mpDet_Admintb";
+            lb12mpDet_Admintb.Padding = new Padding(1, 5, 1, 1);
+            lb12mpDet_Admintb.Size = new Size(526, 38);
+            lb12mpDet_Admintb.TabIndex = 71;
+            lb12mpDet_Admintb.Text = " Employment Details";
+            // 
+            // flowLayoutPanel10
+            // 
+            flowLayoutPanel10.BackColor = Color.Goldenrod;
+            flowLayoutPanel10.Location = new Point(24, 425);
+            flowLayoutPanel10.Name = "flowLayoutPanel10";
+            flowLayoutPanel10.Size = new Size(7, 38);
+            flowLayoutPanel10.TabIndex = 70;
+            // 
+            // txtb6EmailAdd_Admintb
+            // 
+            txtb6EmailAdd_Admintb.BackColor = SystemColors.ControlDark;
+            txtb6EmailAdd_Admintb.BorderStyle = BorderStyle.None;
+            txtb6EmailAdd_Admintb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb6EmailAdd_Admintb.Location = new Point(43, 350);
+            txtb6EmailAdd_Admintb.Multiline = true;
+            txtb6EmailAdd_Admintb.Name = "txtb6EmailAdd_Admintb";
+            txtb6EmailAdd_Admintb.PlaceholderText = "brandonjosefpine@email.com";
+            txtb6EmailAdd_Admintb.Size = new Size(488, 28);
+            txtb6EmailAdd_Admintb.TabIndex = 62;
+            // 
+            // lb11EmailAdd_Admintb
+            // 
+            lb11EmailAdd_Admintb.AutoSize = true;
+            lb11EmailAdd_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb11EmailAdd_Admintb.Location = new Point(39, 324);
+            lb11EmailAdd_Admintb.Name = "lb11EmailAdd_Admintb";
+            lb11EmailAdd_Admintb.Size = new Size(104, 23);
+            lb11EmailAdd_Admintb.TabIndex = 61;
+            lb11EmailAdd_Admintb.Text = "Email Address";
+            // 
+            // txtb5ContactNum_Admintb
+            // 
+            txtb5ContactNum_Admintb.BackColor = SystemColors.ControlDark;
+            txtb5ContactNum_Admintb.BorderStyle = BorderStyle.None;
+            txtb5ContactNum_Admintb.CharacterCasing = CharacterCasing.Upper;
+            txtb5ContactNum_Admintb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb5ContactNum_Admintb.Location = new Point(196, 283);
+            txtb5ContactNum_Admintb.Multiline = true;
+            txtb5ContactNum_Admintb.Name = "txtb5ContactNum_Admintb";
+            txtb5ContactNum_Admintb.PlaceholderText = " 09xxxxxxxxx";
+            txtb5ContactNum_Admintb.Size = new Size(335, 28);
+            txtb5ContactNum_Admintb.TabIndex = 60;
+            // 
+            // lb10ContactNum_Admintb
+            // 
+            lb10ContactNum_Admintb.AutoSize = true;
+            lb10ContactNum_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb10ContactNum_Admintb.Location = new Point(192, 257);
+            lb10ContactNum_Admintb.Name = "lb10ContactNum_Admintb";
+            lb10ContactNum_Admintb.Size = new Size(117, 23);
+            lb10ContactNum_Admintb.TabIndex = 59;
+            lb10ContactNum_Admintb.Text = "Contact Number";
+            // 
+            // cb2Sex_Admintb
+            // 
+            cb2Sex_Admintb.BackColor = SystemColors.Control;
+            cb2Sex_Admintb.DropDownStyle = ComboBoxStyle.DropDownList;
+            cb2Sex_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cb2Sex_Admintb.FormattingEnabled = true;
+            cb2Sex_Admintb.Items.AddRange(new object[] { "Male", "Female" });
+            cb2Sex_Admintb.Location = new Point(39, 283);
+            cb2Sex_Admintb.Name = "cb2Sex_Admintb";
+            cb2Sex_Admintb.Size = new Size(144, 29);
+            cb2Sex_Admintb.TabIndex = 58;
+            // 
+            // lb9Sex_Admintb
+            // 
+            lb9Sex_Admintb.AutoSize = true;
+            lb9Sex_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb9Sex_Admintb.Location = new Point(34, 257);
+            lb9Sex_Admintb.Name = "lb9Sex_Admintb";
+            lb9Sex_Admintb.Size = new Size(33, 23);
+            lb9Sex_Admintb.TabIndex = 57;
+            lb9Sex_Admintb.Text = "Sex";
+            // 
+            // cb1CivilStat_Admintb
+            // 
+            cb1CivilStat_Admintb.BackColor = SystemColors.Control;
+            cb1CivilStat_Admintb.DropDownStyle = ComboBoxStyle.DropDownList;
+            cb1CivilStat_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cb1CivilStat_Admintb.FormattingEnabled = true;
+            cb1CivilStat_Admintb.Items.AddRange(new object[] { "Single", "Married", "Widowed", "Seperated", "Divorced", "Common-Law/Live-in" });
+            cb1CivilStat_Admintb.Location = new Point(359, 218);
+            cb1CivilStat_Admintb.Name = "cb1CivilStat_Admintb";
+            cb1CivilStat_Admintb.Size = new Size(172, 29);
+            cb1CivilStat_Admintb.TabIndex = 56;
+            // 
+            // lb8CivilStat_Admintb
+            // 
+            lb8CivilStat_Admintb.AutoSize = true;
+            lb8CivilStat_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb8CivilStat_Admintb.Location = new Point(354, 194);
+            lb8CivilStat_Admintb.Name = "lb8CivilStat_Admintb";
+            lb8CivilStat_Admintb.Size = new Size(83, 23);
+            lb8CivilStat_Admintb.TabIndex = 55;
+            lb8CivilStat_Admintb.Text = "Civil Status";
+            // 
+            // txtb4Age_Admintb
+            // 
+            txtb4Age_Admintb.BackColor = SystemColors.ControlDark;
+            txtb4Age_Admintb.BorderStyle = BorderStyle.None;
+            txtb4Age_Admintb.CharacterCasing = CharacterCasing.Upper;
+            txtb4Age_Admintb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb4Age_Admintb.Location = new Point(225, 218);
+            txtb4Age_Admintb.Multiline = true;
+            txtb4Age_Admintb.Name = "txtb4Age_Admintb";
+            txtb4Age_Admintb.PlaceholderText = " 25";
+            txtb4Age_Admintb.Size = new Size(118, 28);
+            txtb4Age_Admintb.TabIndex = 54;
+            // 
+            // lb7Age_Admintb
+            // 
+            lb7Age_Admintb.AutoSize = true;
+            lb7Age_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb7Age_Admintb.Location = new Point(223, 194);
+            lb7Age_Admintb.Name = "lb7Age_Admintb";
+            lb7Age_Admintb.Size = new Size(35, 23);
+            lb7Age_Admintb.TabIndex = 53;
+            lb7Age_Admintb.Text = "Age";
+            // 
+            // dateTimePicker1DOB_Admintb
+            // 
+            dateTimePicker1DOB_Admintb.CalendarMonthBackground = SystemColors.ButtonFace;
+            dateTimePicker1DOB_Admintb.CustomFormat = "";
+            dateTimePicker1DOB_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dateTimePicker1DOB_Admintb.Format = DateTimePickerFormat.Short;
+            dateTimePicker1DOB_Admintb.ImeMode = ImeMode.NoControl;
+            dateTimePicker1DOB_Admintb.Location = new Point(39, 218);
+            dateTimePicker1DOB_Admintb.Name = "dateTimePicker1DOB_Admintb";
+            dateTimePicker1DOB_Admintb.Size = new Size(172, 28);
+            dateTimePicker1DOB_Admintb.TabIndex = 52;
+            dateTimePicker1DOB_Admintb.Value = new DateTime(2026, 4, 26, 0, 0, 0, 0);
+            // 
+            // lb6DOB_Admintb
+            // 
+            lb6DOB_Admintb.AutoSize = true;
+            lb6DOB_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb6DOB_Admintb.Location = new Point(34, 194);
+            lb6DOB_Admintb.Name = "lb6DOB_Admintb";
+            lb6DOB_Admintb.Size = new Size(92, 21);
+            lb6DOB_Admintb.TabIndex = 51;
+            lb6DOB_Admintb.Text = "Date Of Birth";
+            // 
+            // txtb3LN_Admintb
+            // 
+            txtb3LN_Admintb.BackColor = SystemColors.ControlDark;
+            txtb3LN_Admintb.BorderStyle = BorderStyle.None;
+            txtb3LN_Admintb.CharacterCasing = CharacterCasing.Upper;
+            txtb3LN_Admintb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb3LN_Admintb.Location = new Point(364, 147);
+            txtb3LN_Admintb.Multiline = true;
+            txtb3LN_Admintb.Name = "txtb3LN_Admintb";
+            txtb3LN_Admintb.PlaceholderText = " PINE";
+            txtb3LN_Admintb.Size = new Size(167, 28);
+            txtb3LN_Admintb.TabIndex = 50;
+            // 
+            // lb5LN_Admintb
+            // 
+            lb5LN_Admintb.AutoSize = true;
+            lb5LN_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb5LN_Admintb.Location = new Point(359, 119);
+            lb5LN_Admintb.Name = "lb5LN_Admintb";
+            lb5LN_Admintb.Size = new Size(79, 23);
+            lb5LN_Admintb.TabIndex = 49;
+            lb5LN_Admintb.Text = "Last Name";
+            // 
+            // txtb2MN_Admintb
+            // 
+            txtb2MN_Admintb.BackColor = SystemColors.ControlDark;
+            txtb2MN_Admintb.BorderStyle = BorderStyle.None;
+            txtb2MN_Admintb.CharacterCasing = CharacterCasing.Upper;
+            txtb2MN_Admintb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb2MN_Admintb.Location = new Point(223, 147);
+            txtb2MN_Admintb.Multiline = true;
+            txtb2MN_Admintb.Name = "txtb2MN_Admintb";
+            txtb2MN_Admintb.PlaceholderText = " VELEZ";
+            txtb2MN_Admintb.Size = new Size(120, 28);
+            txtb2MN_Admintb.TabIndex = 48;
+            // 
+            // lb4MN_Admintb
+            // 
+            lb4MN_Admintb.AutoSize = true;
+            lb4MN_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb4MN_Admintb.Location = new Point(219, 119);
+            lb4MN_Admintb.Name = "lb4MN_Admintb";
+            lb4MN_Admintb.Size = new Size(99, 23);
+            lb4MN_Admintb.TabIndex = 47;
+            lb4MN_Admintb.Text = "Middle Name";
+            // 
+            // txtb1FN_Admintb
+            // 
+            txtb1FN_Admintb.BackColor = SystemColors.ControlDark;
+            txtb1FN_Admintb.BorderStyle = BorderStyle.None;
+            txtb1FN_Admintb.CharacterCasing = CharacterCasing.Upper;
+            txtb1FN_Admintb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtb1FN_Admintb.Location = new Point(38, 147);
+            txtb1FN_Admintb.Multiline = true;
+            txtb1FN_Admintb.Name = "txtb1FN_Admintb";
+            txtb1FN_Admintb.PlaceholderText = " MARK BRANDON ";
+            txtb1FN_Admintb.Size = new Size(173, 28);
+            txtb1FN_Admintb.TabIndex = 46;
+            // 
+            // lb3FN_Admintb
+            // 
+            lb3FN_Admintb.AutoSize = true;
+            lb3FN_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lb3FN_Admintb.Location = new Point(34, 119);
+            lb3FN_Admintb.Name = "lb3FN_Admintb";
+            lb3FN_Admintb.Size = new Size(81, 23);
+            lb3FN_Admintb.TabIndex = 45;
+            lb3FN_Admintb.Text = "First Name";
+            // 
+            // lb2PersonalInfo_Admintb
+            // 
+            lb2PersonalInfo_Admintb.BackColor = Color.Gainsboro;
+            lb2PersonalInfo_Admintb.Font = new Font("Franklin Gothic Book", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lb2PersonalInfo_Admintb.ForeColor = SystemColors.ActiveCaptionText;
+            lb2PersonalInfo_Admintb.Location = new Point(30, 55);
+            lb2PersonalInfo_Admintb.Name = "lb2PersonalInfo_Admintb";
+            lb2PersonalInfo_Admintb.Padding = new Padding(1, 5, 1, 1);
+            lb2PersonalInfo_Admintb.Size = new Size(526, 38);
+            lb2PersonalInfo_Admintb.TabIndex = 44;
+            lb2PersonalInfo_Admintb.Text = " Personal Information                    ";
+            // 
+            // flowLayoutPanel8
+            // 
+            flowLayoutPanel8.BackColor = Color.Goldenrod;
+            flowLayoutPanel8.Location = new Point(25, 55);
+            flowLayoutPanel8.Name = "flowLayoutPanel8";
+            flowLayoutPanel8.Size = new Size(7, 38);
+            flowLayoutPanel8.TabIndex = 43;
+            // 
+            // lb1RegisterAs_Admintb
+            // 
+            lb1RegisterAs_Admintb.AutoSize = true;
+            lb1RegisterAs_Admintb.BackColor = Color.Goldenrod;
+            lb1RegisterAs_Admintb.BorderStyle = BorderStyle.Fixed3D;
+            lb1RegisterAs_Admintb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lb1RegisterAs_Admintb.ForeColor = SystemColors.Control;
+            lb1RegisterAs_Admintb.Location = new Point(14, 8);
+            lb1RegisterAs_Admintb.Name = "lb1RegisterAs_Admintb";
+            lb1RegisterAs_Admintb.Padding = new Padding(1, 3, 1, 3);
+            lb1RegisterAs_Admintb.Size = new Size(157, 32);
+            lb1RegisterAs_Admintb.TabIndex = 42;
+            lb1RegisterAs_Admintb.Text = "Register As Admin";
+            // 
+            // flowLayoutPanel9
+            // 
+            flowLayoutPanel9.BackColor = Color.Goldenrod;
+            flowLayoutPanel9.BorderStyle = BorderStyle.Fixed3D;
+            flowLayoutPanel9.Location = new Point(7, 6);
+            flowLayoutPanel9.Name = "flowLayoutPanel9";
+            flowLayoutPanel9.Size = new Size(7, 38);
+            flowLayoutPanel9.TabIndex = 41;
             // 
             // panel5
             // 
@@ -2309,6 +3386,11 @@
             panel12.ResumeLayout(false);
             panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)picb1ID_BrgyStftb).EndInit();
+            tabPage3.ResumeLayout(false);
+            tabPage3.PerformLayout();
+            panel16.ResumeLayout(false);
+            panel16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picbIDUpload_Admintb).EndInit();
             ResumeLayout(false);
         }
 
@@ -2432,10 +3514,10 @@
         private TextBox txtb1FN_BrgyStftb;
         private Label lb3FN_BrgyStftb;
         private NumericUpDown numericUpDown1;
-        private ComboBox comboBox1;
-        private TextBox textBox2;
+        private ComboBox cb4AccessLevel_Admintb;
+        private TextBox txtb12Appointedby_Admintb;
         private ComboBox cb3Department_BrgyStftb;
-        private TextBox textBox3;
+        private TextBox txtb11AdminCode_Admintb;
         private Label lb17OfficeNo_BrgyStftb;
         private TextBox txtb8Position_BrgyStftb;
         private Label lb14Position_BrgyStftb;
@@ -2485,5 +3567,83 @@
         private Button btSubmit_Restb_Click;
         private Button btIDUpload_Restb;
         private Label lb1FileName_BrgyStftb;
+        private TextBox txtb6EmailAdd_Admintb;
+        private Label lb11EmailAdd_Admintb;
+        private TextBox txtb5ContactNum_Admintb;
+        private Label lb10ContactNum_Admintb;
+        private ComboBox cb2Sex_Admintb;
+        private Label lb9Sex_Admintb;
+        private ComboBox cb1CivilStat_Admintb;
+        private Label lb8CivilStat_Admintb;
+        private TextBox txtb4Age_Admintb;
+        private Label lb7Age_Admintb;
+        private DateTimePicker dateTimePicker1DOB_Admintb;
+        private Label lb6DOB_Admintb;
+        private TextBox txtb3LN_Admintb;
+        private Label lb5LN_Admintb;
+        private TextBox txtb2MN_Admintb;
+        private Label lb4MN_Admintb;
+        private TextBox txtb1FN_Admintb;
+        private Label lb3FN_Admintb;
+        private Label lb2PersonalInfo_Admintb;
+        private FlowLayoutPanel flowLayoutPanel8;
+        private Label lb1RegisterAs_Admintb;
+        private FlowLayoutPanel flowLayoutPanel9;
+        private Label lb18OfficialEmail_Admintb;
+        private TextBox txtb10OfficialEm_Admintb;
+        private TextBox txtb9COntactNum_Admintb;
+        private DateTimePicker dateTimePicker2DOA_Admintb;
+        private ComboBox cb3Dept_Admintb;
+        private Label lb17ContactNum_Admintb;
+        private TextBox txtb8Position_admintb;
+        private Label lb14Position_Admintb;
+        private Label lb16DOA_Admintb;
+        private Label lb15Dept_Admintb;
+        private TextBox txtb7EmpID_Admintb;
+        private Label lb13EmpID_Admintb;
+        private Label lb12mpDet_Admintb;
+        private FlowLayoutPanel flowLayoutPanel10;
+        private Label lb21AccessLevel_Admintb;
+        private Label lb23Term_Admintb;
+        private Label lb22AuthoBy_Admintb;
+        private Label lb20AdminCode_Admintb;
+        private Label lb19AdminAutho_Admintb;
+        private FlowLayoutPanel flowLayoutPanel11;
+        private TextBox txtb13Term_Admintb;
+        private Button bt3ConShowPass_Admintb;
+        private Button bt4ConHidePass_Admintb;
+        private Button bt1ShowPassword_Admintb;
+        private Button bt2HidePassword_Admintb;
+        private Label lb30UploadID_Admintb;
+        private TextBox txtb17IDNum_Admintb;
+        private Label lb29IDNum_Admintb;
+        private ComboBox comboBox1;
+        private Label lb28ValidDType_Admintb;
+        private Label lb32Min_Admintb;
+        private Label lb31characters_Admintb;
+        private Label lb27ConfirmPass_Admintb;
+        private TextBox txtb16ConPassword_Admintb;
+        private Label lb26Password_Admintb;
+        private TextBox txtb15Passwors_Admintb;
+        private TextBox txtb14Username_Admintb;
+        private Label lb25Username_Admintb;
+        private Label lb24AccountCre_Admintb;
+        private FlowLayoutPanel flowLayoutPanel12;
+        private Panel panel13;
+        private Button btSignInHere_Adminbt;
+        private Label lb34Already_Admintb;
+        private Panel panel14;
+        private Panel panel15;
+        private Button btSubmit_Admintb;
+        private CheckBox chkbConfirm_Admintb;
+        private Label lb33Upload_Admintb;
+        private Panel panel16;
+        private Label label6;
+        private Label label7;
+        private Label lb31DragorDrop_Admintb;
+        private Label lb32Accepted_Admintb;
+        private PictureBox picbIDUpload_Admintb;
+        private Button btUploadID_Admintb;
+        private Label lb35FileName_Admintb;
     }
 }
