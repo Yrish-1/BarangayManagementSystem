@@ -1,6 +1,6 @@
 ﻿namespace EveryJuanCount
 {
-    partial class SignUp
+    partial class RegistrationForm2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUp));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrationForm2));
             panel1 = new Panel();
             panel2 = new Panel();
             Lb5Evr1_Fr2 = new Label();
@@ -3352,7 +3352,7 @@
             // 
             ofdID.FileName = "openFileDialog_Restb";
             // 
-            // SignUp
+            // RegistrationForm2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -3362,7 +3362,7 @@
             Controls.Add(panel3);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Name = "SignUp";
+            Name = "RegistrationForm2";
             StartPosition = FormStartPosition.CenterScreen;
             Load += SignUp_Load;
             panel1.ResumeLayout(false);

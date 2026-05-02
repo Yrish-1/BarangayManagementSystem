@@ -51,6 +51,28 @@
         "net10.0-windows": {
           "framework": "net10.0-windows7.0",
           "targetAlias": "net10.0-windows",
+          "dependencies": {
+            "Bunifu.UI.WinForms": {
+              "target": "Package",
+              "version": "[9.1.0, )"
+            },
+            "Krypton.Toolkit": {
+              "target": "Package",
+              "version": "[105.26.4.110, )"
+            },
+            "MaterialSkin": {
+              "target": "Package",
+              "version": "[0.2.1, )"
+            },
+            "ReaLTaiizor": {
+              "target": "Package",
+              "version": "[3.8.1.8, )"
+            },
+            "Siticone.Desktop.UI": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -72,7 +72,16 @@ namespace EveryJuanCount
 
         private void bt3LogIn_Click(object sender, EventArgs e)
         {
-
+            //hide Form 1
+            this.Hide();
+            //create an instance of Form 3
+            ResidentsForm3 f2 = new ResidentsForm3();
+            //show Form 2
+            f2.ShowDialog();
+            //dispose Form 2 after it is closed
+            f2 = null;
+            //show form1 again
+            this.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -80,7 +89,7 @@ namespace EveryJuanCount
             //hide Form 1
             this.Hide();
             //create an instance of Form 2
-            SignUp f2 = new SignUp();
+            RegistrationForm2 f2 = new RegistrationForm2();
             //show Form 2
             f2.ShowDialog();
             //dispose Form 2 after it is closed

@@ -10,9 +10,9 @@ using static System.Windows.Forms.DataFormats;
 
 namespace EveryJuanCount
 {
-    public partial class SignUp : Form
+    public partial class RegistrationForm2 : Form
     {
-        public SignUp()
+        public RegistrationForm2()
         {
             InitializeComponent();
         }
