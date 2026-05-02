@@ -1,3 +1,13 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using System.Threading.Tasks;
+using System.Runtime.InteropServices;
+
 namespace EveryJuanCount
 {
     public partial class LogInForm1 : Form
@@ -6,6 +16,11 @@ namespace EveryJuanCount
         {
             InitializeComponent();
         }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(IntPtr hWnd, int wMsg, int wParam, int lParam);
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -81,7 +96,7 @@ namespace EveryJuanCount
             //dispose Form 2 after it is closed
             f2 = null;
             //show form1 again
-            this.Show();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -104,6 +119,46 @@ namespace EveryJuanCount
         }
 
         private void SignInLb6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btminimizeApp_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btMaximizeApp_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+                btMaximizeApp.Text = "🗗"; // restore icon
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+                btMaximizeApp.Text = "🗖"; // maximize icon
+            }
+        }
+
+        private void btCloseApp_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void BarTitle_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void BarTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
         }

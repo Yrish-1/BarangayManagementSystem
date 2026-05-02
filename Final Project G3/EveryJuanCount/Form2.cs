@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
 using static System.Windows.Forms.DataFormats;
@@ -16,6 +17,11 @@ namespace EveryJuanCount
         {
             InitializeComponent();
         }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(IntPtr hWnd, int wMsg, int wParam, int lParam);
 
         private void SignUp_Load(object sender, EventArgs e)
         {
@@ -598,8 +604,31 @@ namespace EveryJuanCount
             }
             this.Close();
         }
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
 
-        private void btSignInHere_Adminbt_Click(object sender, EventArgs e)
+        }
+
+        private void btminimizeApp_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btMaximizeApp_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+                btMaximizeApp.Text = "🗗"; // restore icon
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+                btMaximizeApp.Text = "🗖"; // maximize icon
+            }
+        }
+
+        private void btCloseApp_Click(object sender, EventArgs e)
         {
             // Go back to Login Form
             var form1 = Application.OpenForms.OfType<LogInForm1>().FirstOrDefault();
@@ -613,6 +642,12 @@ namespace EveryJuanCount
                 new LogInForm1().Show();
             }
             this.Close();
+        }
+
+        private void BarTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

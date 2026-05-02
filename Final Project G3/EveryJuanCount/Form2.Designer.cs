@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrationForm2));
-            panel1 = new Panel();
+            BarTitle = new Panel();
             panel2 = new Panel();
-            Lb5Evr1_Fr2 = new Label();
+            Evr1Lb5 = new Label();
             Lb4WeCount_Fr2 = new Label();
             panel4 = new Panel();
             Lb32026_Fr2 = new Label();
@@ -42,6 +42,9 @@
             pb2Stars = new PictureBox();
             pb1Logo = new PictureBox();
             panel3 = new Panel();
+            btMaximizeApp = new Button();
+            btminimizeApp = new Button();
+            btCloseApp = new Button();
             lb1RegDes = new Label();
             tabControlRegistration = new TabControl();
             tab1Resident = new TabPage();
@@ -275,9 +278,9 @@
             flowLayoutPanel9 = new FlowLayoutPanel();
             panel5 = new Panel();
             Lb6Reg_Fr2 = new Label();
-            bt1ExitForm2 = new Button();
+            panel17 = new Panel();
             ofdID = new OpenFileDialog();
-            panel1.SuspendLayout();
+            panel18 = new Panel();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pb3stars).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pb4stars).BeginInit();
@@ -297,19 +300,20 @@
             ((System.ComponentModel.ISupportInitialize)picbIDUpload_Admintb).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // BarTitle
             // 
-            panel1.BackColor = Color.Maroon;
-            panel1.Controls.Add(panel2);
-            panel1.Location = new Point(4, 4);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(470, 701);
-            panel1.TabIndex = 0;
+            BarTitle.BackColor = Color.Maroon;
+            BarTitle.Dock = DockStyle.Top;
+            BarTitle.Location = new Point(0, 0);
+            BarTitle.Name = "BarTitle";
+            BarTitle.Size = new Size(1068, 25);
+            BarTitle.TabIndex = 0;
+            BarTitle.MouseDown += BarTitle_MouseDown;
             // 
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(0, 0, 64);
-            panel2.Controls.Add(Lb5Evr1_Fr2);
+            panel2.Controls.Add(Evr1Lb5);
             panel2.Controls.Add(Lb4WeCount_Fr2);
             panel2.Controls.Add(panel4);
             panel2.Controls.Add(Lb32026_Fr2);
@@ -319,24 +323,27 @@
             panel2.Controls.Add(pb4stars);
             panel2.Controls.Add(pb2Stars);
             panel2.Controls.Add(pb1Logo);
-            panel2.Location = new Point(0, 24);
+            panel2.Dock = DockStyle.Left;
+            panel2.Location = new Point(0, 25);
             panel2.Name = "panel2";
-            panel2.Size = new Size(447, 677);
+            panel2.Size = new Size(447, 684);
             panel2.TabIndex = 0;
             // 
-            // Lb5Evr1_Fr2
+            // Evr1Lb5
             // 
-            Lb5Evr1_Fr2.AutoSize = true;
-            Lb5Evr1_Fr2.Font = new Font("Arial Narrow", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            Lb5Evr1_Fr2.ForeColor = SystemColors.AppWorkspace;
-            Lb5Evr1_Fr2.Location = new Point(157, 566);
-            Lb5Evr1_Fr2.Name = "Lb5Evr1_Fr2";
-            Lb5Evr1_Fr2.Size = new Size(132, 22);
-            Lb5Evr1_Fr2.TabIndex = 19;
-            Lb5Evr1_Fr2.Text = "Everyone Counts.";
+            Evr1Lb5.Anchor = AnchorStyles.None;
+            Evr1Lb5.AutoSize = true;
+            Evr1Lb5.Font = new Font("Arial Narrow", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            Evr1Lb5.ForeColor = SystemColors.AppWorkspace;
+            Evr1Lb5.Location = new Point(157, 566);
+            Evr1Lb5.Name = "Evr1Lb5";
+            Evr1Lb5.Size = new Size(132, 22);
+            Evr1Lb5.TabIndex = 19;
+            Evr1Lb5.Text = "Everyone Counts.";
             // 
             // Lb4WeCount_Fr2
             // 
+            Lb4WeCount_Fr2.Anchor = AnchorStyles.None;
             Lb4WeCount_Fr2.AutoSize = true;
             Lb4WeCount_Fr2.Font = new Font("Arial Narrow", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             Lb4WeCount_Fr2.ForeColor = SystemColors.AppWorkspace;
@@ -349,6 +356,7 @@
             // 
             // panel4
             // 
+            panel4.Anchor = AnchorStyles.None;
             panel4.BackColor = Color.Goldenrod;
             panel4.ForeColor = Color.Goldenrod;
             panel4.Location = new Point(191, 457);
@@ -359,6 +367,7 @@
             // 
             // Lb32026_Fr2
             // 
+            Lb32026_Fr2.Anchor = AnchorStyles.None;
             Lb32026_Fr2.AutoSize = true;
             Lb32026_Fr2.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Lb32026_Fr2.ForeColor = SystemColors.AppWorkspace;
@@ -370,6 +379,7 @@
             // 
             // Lb1Brgy_Fr2
             // 
+            Lb1Brgy_Fr2.Anchor = AnchorStyles.None;
             Lb1Brgy_Fr2.AutoSize = true;
             Lb1Brgy_Fr2.Font = new Font("Arial Black", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Lb1Brgy_Fr2.ForeColor = Color.Goldenrod;
@@ -381,6 +391,7 @@
             // 
             // Lb2Csys_Fr2
             // 
+            Lb2Csys_Fr2.Anchor = AnchorStyles.None;
             Lb2Csys_Fr2.AutoSize = true;
             Lb2Csys_Fr2.Font = new Font("Arial Black", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Lb2Csys_Fr2.ForeColor = Color.Goldenrod;
@@ -392,6 +403,7 @@
             // 
             // pb3stars
             // 
+            pb3stars.Anchor = AnchorStyles.None;
             pb3stars.Image = Properties.Resources.Stars;
             pb3stars.Location = new Point(166, 257);
             pb3stars.Name = "pb3stars";
@@ -402,6 +414,7 @@
             // 
             // pb4stars
             // 
+            pb4stars.Anchor = AnchorStyles.None;
             pb4stars.BackColor = Color.Transparent;
             pb4stars.Image = Properties.Resources.Stars;
             pb4stars.Location = new Point(234, 257);
@@ -413,6 +426,7 @@
             // 
             // pb2Stars
             // 
+            pb2Stars.Anchor = AnchorStyles.None;
             pb2Stars.BackColor = Color.Transparent;
             pb2Stars.Image = Properties.Resources.Stars;
             pb2Stars.Location = new Point(194, 259);
@@ -424,6 +438,7 @@
             // 
             // pb1Logo
             // 
+            pb1Logo.Anchor = AnchorStyles.None;
             pb1Logo.Image = Properties.Resources.EJC_Logo;
             pb1Logo.Location = new Point(43, 88);
             pb1Logo.Name = "pb1Logo";
@@ -435,18 +450,71 @@
             // panel3
             // 
             panel3.BackColor = Color.WhiteSmoke;
+            panel3.Controls.Add(btMaximizeApp);
+            panel3.Controls.Add(btminimizeApp);
+            panel3.Controls.Add(btCloseApp);
             panel3.Controls.Add(lb1RegDes);
             panel3.Controls.Add(tabControlRegistration);
             panel3.Controls.Add(panel5);
             panel3.Controls.Add(Lb6Reg_Fr2);
-            panel3.Controls.Add(bt1ExitForm2);
-            panel3.Location = new Point(450, 4);
+            panel3.Controls.Add(panel17);
+            panel3.Dock = DockStyle.Fill;
+            panel3.Location = new Point(447, 25);
             panel3.Name = "panel3";
-            panel3.Size = new Size(618, 701);
+            panel3.Size = new Size(621, 684);
             panel3.TabIndex = 1;
+            panel3.Paint += panel3_Paint;
+            // 
+            // btMaximizeApp
+            // 
+            btMaximizeApp.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btMaximizeApp.BackColor = Color.Transparent;
+            btMaximizeApp.FlatAppearance.BorderSize = 0;
+            btMaximizeApp.FlatStyle = FlatStyle.Flat;
+            btMaximizeApp.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btMaximizeApp.ForeColor = Color.Maroon;
+            btMaximizeApp.Location = new Point(532, 6);
+            btMaximizeApp.Name = "btMaximizeApp";
+            btMaximizeApp.Size = new Size(34, 34);
+            btMaximizeApp.TabIndex = 54;
+            btMaximizeApp.Text = "🗖";
+            btMaximizeApp.UseVisualStyleBackColor = false;
+            btMaximizeApp.Click += btMaximizeApp_Click;
+            // 
+            // btminimizeApp
+            // 
+            btminimizeApp.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btminimizeApp.BackColor = Color.Transparent;
+            btminimizeApp.FlatAppearance.BorderSize = 0;
+            btminimizeApp.FlatStyle = FlatStyle.Flat;
+            btminimizeApp.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btminimizeApp.ForeColor = Color.Maroon;
+            btminimizeApp.Location = new Point(487, 6);
+            btminimizeApp.Name = "btminimizeApp";
+            btminimizeApp.Size = new Size(34, 34);
+            btminimizeApp.TabIndex = 56;
+            btminimizeApp.Text = "—";
+            btminimizeApp.UseVisualStyleBackColor = false;
+            btminimizeApp.Click += btminimizeApp_Click;
+            // 
+            // btCloseApp
+            // 
+            btCloseApp.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btCloseApp.FlatAppearance.BorderSize = 0;
+            btCloseApp.FlatStyle = FlatStyle.Flat;
+            btCloseApp.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btCloseApp.ForeColor = Color.Maroon;
+            btCloseApp.Location = new Point(572, 8);
+            btCloseApp.Name = "btCloseApp";
+            btCloseApp.Size = new Size(34, 34);
+            btCloseApp.TabIndex = 55;
+            btCloseApp.Text = "X";
+            btCloseApp.UseVisualStyleBackColor = true;
+            btCloseApp.Click += btCloseApp_Click;
             // 
             // lb1RegDes
             // 
+            lb1RegDes.Anchor = AnchorStyles.None;
             lb1RegDes.AutoSize = true;
             lb1RegDes.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lb1RegDes.ForeColor = SystemColors.ControlDark;
@@ -458,6 +526,7 @@
             // 
             // tabControlRegistration
             // 
+            tabControlRegistration.Anchor = AnchorStyles.None;
             tabControlRegistration.Controls.Add(tab1Resident);
             tabControlRegistration.Controls.Add(tab2BarangayStaff);
             tabControlRegistration.Controls.Add(tabPage3);
@@ -2415,7 +2484,6 @@
             btSignInHere_Adminbt.TabIndex = 120;
             btSignInHere_Adminbt.Text = "SIGN IN HERE";
             btSignInHere_Adminbt.UseVisualStyleBackColor = false;
-            btSignInHere_Adminbt.Click += btSignInHere_Adminbt_Click;
             // 
             // lb34Already_Admintb
             // 
@@ -3312,6 +3380,7 @@
             // 
             // panel5
             // 
+            panel5.Anchor = AnchorStyles.None;
             panel5.BackColor = Color.MidnightBlue;
             panel5.ForeColor = Color.Goldenrod;
             panel5.Location = new Point(18, 73);
@@ -3322,6 +3391,7 @@
             // 
             // Lb6Reg_Fr2
             // 
+            Lb6Reg_Fr2.Anchor = AnchorStyles.None;
             Lb6Reg_Fr2.AutoSize = true;
             Lb6Reg_Fr2.BackColor = Color.Transparent;
             Lb6Reg_Fr2.Font = new Font("Segoe UI Variable Display", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -3333,24 +3403,27 @@
             Lb6Reg_Fr2.Text = "REGISTRATION";
             Lb6Reg_Fr2.Click += SignInLb6_Click;
             // 
-            // bt1ExitForm2
+            // panel17
             // 
-            bt1ExitForm2.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
-            bt1ExitForm2.FlatAppearance.BorderSize = 0;
-            bt1ExitForm2.FlatStyle = FlatStyle.Flat;
-            bt1ExitForm2.Font = new Font("Verdana", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            bt1ExitForm2.ForeColor = Color.Maroon;
-            bt1ExitForm2.Location = new Point(564, 8);
-            bt1ExitForm2.Name = "bt1ExitForm2";
-            bt1ExitForm2.Size = new Size(42, 30);
-            bt1ExitForm2.TabIndex = 23;
-            bt1ExitForm2.Text = "X";
-            bt1ExitForm2.UseVisualStyleBackColor = true;
-            bt1ExitForm2.Click += bt1ExitForm2_Click;
+            panel17.BackColor = Color.Goldenrod;
+            panel17.Dock = DockStyle.Right;
+            panel17.Location = new Point(616, 0);
+            panel17.Name = "panel17";
+            panel17.Size = new Size(5, 684);
+            panel17.TabIndex = 2;
             // 
             // ofdID
             // 
             ofdID.FileName = "openFileDialog_Restb";
+            // 
+            // panel18
+            // 
+            panel18.BackColor = Color.Goldenrod;
+            panel18.Dock = DockStyle.Bottom;
+            panel18.Location = new Point(447, 704);
+            panel18.Name = "panel18";
+            panel18.Size = new Size(621, 5);
+            panel18.TabIndex = 54;
             // 
             // RegistrationForm2
             // 
@@ -3359,13 +3432,15 @@
             BackColor = Color.Goldenrod;
             ClientSize = new Size(1068, 709);
             ControlBox = false;
+            Controls.Add(panel18);
             Controls.Add(panel3);
-            Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Controls.Add(panel2);
+            Controls.Add(BarTitle);
+            FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "RegistrationForm2";
             StartPosition = FormStartPosition.CenterScreen;
             Load += SignUp_Load;
-            panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pb3stars).EndInit();
@@ -3395,11 +3470,10 @@
         }
 
         #endregion
-        private Panel panel1;
+        private Panel BarTitle;
         private Panel panel2;
         private Panel panel3;
-        private Button bt1ExitForm2;
-        private Label Lb5Evr1_Fr2;
+
         private Label Lb4WeCount_Fr2;
         private Panel panel4;
         private Label Lb32026_Fr2;
@@ -3645,5 +3719,11 @@
         private PictureBox picbIDUpload_Admintb;
         private Button btUploadID_Admintb;
         private Label lb35FileName_Admintb;
+        private Panel panel17;
+        private Panel panel18;
+        private Button btMaximizeApp;
+        private Button btminimizeApp;
+        private Button btCloseApp;
+        private Label Evr1Lb5;
     }
 }
