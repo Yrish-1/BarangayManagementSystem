@@ -56,6 +56,10 @@
               "target": "Package",
               "version": "[9.1.0, )"
             },
+            "Guna.UI2.WinForms": {
+              "target": "Package",
+              "version": "[2.0.4.7, )"
+            },
             "Krypton.Toolkit": {
               "target": "Package",
               "version": "[105.26.4.110, )"

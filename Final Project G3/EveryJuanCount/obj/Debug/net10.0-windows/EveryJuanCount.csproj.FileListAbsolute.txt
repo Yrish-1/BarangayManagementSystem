@@ -46,6 +46,9 @@ C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Pr
 C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\bin\Debug\net10.0-windows\runtimes\win\lib\net9.0\System.Management.dll
 C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.csproj.AssemblyReference.cache
 C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJua.1DC5555A.Up2Date
-C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.ResidentsForm3.resources
-C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.Dashboard_ResF3.resources
-C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.MyProfile_ResF3.resources
+C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.ResidentForm3.resources
+C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.DashboardResF3.resources
+C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.MyProfile.resources
+C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.ReportHistory.resources
+C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\bin\Debug\net10.0-windows\Guna.UI2.dll
+C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.SubmitReport.resources

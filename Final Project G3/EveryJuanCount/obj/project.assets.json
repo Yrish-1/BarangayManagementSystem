@@ -37,6 +37,21 @@
           "Microsoft.WindowsDesktop.App.WindowsForms"
         ]
       },
+      "Guna.UI2.WinForms/2.0.4.7": {
+        "type": "package",
+        "dependencies": {
+          "System.Management": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0-windows7.0/Guna.UI2.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows7.0/Guna.UI2.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
       "Krypton.Toolkit/105.26.4.110": {
         "type": "package",
         "compile": {
@@ -175,6 +190,28 @@
         "lib/net8.0-windows7.0/Bunifu.UI.WinForms.xml",
         "lib/net9.0-windows7.0/Bunifu.UI.WinForms.dll",
         "lib/net9.0-windows7.0/Bunifu.UI.WinForms.xml"
+      ]
+    },
+    "Guna.UI2.WinForms/2.0.4.7": {
+      "sha512": "8BdBYsfnntuICbFMHIZsd5morwURN8Ucsvq7wJeyLV1Z1ze6CAIxVKEirufgjGIiXfF0M0sCr9EVFloZSazWew==",
+      "type": "package",
+      "path": "guna.ui2.winforms/2.0.4.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "guna.ui2.winforms.2.0.4.7.nupkg.sha512",
+        "guna.ui2.winforms.nuspec",
+        "icon.png",
+        "lib/net40/Guna.UI2.dll",
+        "lib/net45/Guna.UI2.dll",
+        "lib/net461/Guna.UI2.dll",
+        "lib/net472/Guna.UI2.dll",
+        "lib/net48/Guna.UI2.dll",
+        "lib/net6.0-windows7.0/Guna.UI2.dll",
+        "lib/net7.0-windows7.0/Guna.UI2.dll",
+        "lib/netcoreapp3.1/Guna.UI2.dll"
       ]
     },
     "Krypton.Toolkit/105.26.4.110": {
@@ -324,6 +361,7 @@
   "projectFileDependencyGroups": {
     "net10.0-windows7.0": [
       "Bunifu.UI.WinForms >= 9.1.0",
+      "Guna.UI2.WinForms >= 2.0.4.7",
       "Krypton.Toolkit >= 105.26.4.110",
       "MaterialSkin >= 0.2.1",
       "ReaLTaiizor >= 3.8.1.8",
@@ -385,6 +423,10 @@
           "Bunifu.UI.WinForms": {
             "target": "Package",
             "version": "[9.1.0, )"
+          },
+          "Guna.UI2.WinForms": {
+            "target": "Package",
+            "version": "[2.0.4.7, )"
           },
           "Krypton.Toolkit": {
             "target": "Package",
