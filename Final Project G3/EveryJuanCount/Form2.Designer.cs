@@ -42,9 +42,6 @@
             pb2Stars = new PictureBox();
             pb1Logo = new PictureBox();
             panel3 = new Panel();
-            btMaximizeApp = new Button();
-            btminimizeApp = new Button();
-            btCloseApp = new Button();
             lb1RegDes = new Label();
             tabControlRegistration = new TabControl();
             tab1Resident = new TabPage();
@@ -278,9 +275,7 @@
             flowLayoutPanel9 = new FlowLayoutPanel();
             panel5 = new Panel();
             Lb6Reg_Fr2 = new Label();
-            panel17 = new Panel();
             ofdID = new OpenFileDialog();
-            panel18 = new Panel();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pb3stars).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pb4stars).BeginInit();
@@ -312,6 +307,7 @@
             // 
             // panel2
             // 
+            panel2.AutoScroll = true;
             panel2.BackColor = Color.FromArgb(0, 0, 64);
             panel2.Controls.Add(Evr1Lb5);
             panel2.Controls.Add(Lb4WeCount_Fr2);
@@ -352,7 +348,6 @@
             Lb4WeCount_Fr2.Size = new Size(158, 22);
             Lb4WeCount_Fr2.TabIndex = 18;
             Lb4WeCount_Fr2.Text = "You Count. We Count";
-            Lb4WeCount_Fr2.Click += Lb4WeCount_Fr2_Click;
             // 
             // panel4
             // 
@@ -449,72 +444,20 @@
             // 
             // panel3
             // 
+            panel3.AutoScroll = true;
             panel3.BackColor = Color.WhiteSmoke;
-            panel3.Controls.Add(btMaximizeApp);
-            panel3.Controls.Add(btminimizeApp);
-            panel3.Controls.Add(btCloseApp);
             panel3.Controls.Add(lb1RegDes);
             panel3.Controls.Add(tabControlRegistration);
             panel3.Controls.Add(panel5);
             panel3.Controls.Add(Lb6Reg_Fr2);
-            panel3.Controls.Add(panel17);
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(447, 25);
             panel3.Name = "panel3";
             panel3.Size = new Size(621, 684);
             panel3.TabIndex = 1;
-            panel3.Paint += panel3_Paint;
-            // 
-            // btMaximizeApp
-            // 
-            btMaximizeApp.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btMaximizeApp.BackColor = Color.Transparent;
-            btMaximizeApp.FlatAppearance.BorderSize = 0;
-            btMaximizeApp.FlatStyle = FlatStyle.Flat;
-            btMaximizeApp.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btMaximizeApp.ForeColor = Color.Maroon;
-            btMaximizeApp.Location = new Point(532, 6);
-            btMaximizeApp.Name = "btMaximizeApp";
-            btMaximizeApp.Size = new Size(34, 34);
-            btMaximizeApp.TabIndex = 54;
-            btMaximizeApp.Text = "🗖";
-            btMaximizeApp.UseVisualStyleBackColor = false;
-            btMaximizeApp.Click += btMaximizeApp_Click;
-            // 
-            // btminimizeApp
-            // 
-            btminimizeApp.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btminimizeApp.BackColor = Color.Transparent;
-            btminimizeApp.FlatAppearance.BorderSize = 0;
-            btminimizeApp.FlatStyle = FlatStyle.Flat;
-            btminimizeApp.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btminimizeApp.ForeColor = Color.Maroon;
-            btminimizeApp.Location = new Point(487, 6);
-            btminimizeApp.Name = "btminimizeApp";
-            btminimizeApp.Size = new Size(34, 34);
-            btminimizeApp.TabIndex = 56;
-            btminimizeApp.Text = "—";
-            btminimizeApp.UseVisualStyleBackColor = false;
-            btminimizeApp.Click += btminimizeApp_Click;
-            // 
-            // btCloseApp
-            // 
-            btCloseApp.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btCloseApp.FlatAppearance.BorderSize = 0;
-            btCloseApp.FlatStyle = FlatStyle.Flat;
-            btCloseApp.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btCloseApp.ForeColor = Color.Maroon;
-            btCloseApp.Location = new Point(572, 8);
-            btCloseApp.Name = "btCloseApp";
-            btCloseApp.Size = new Size(34, 34);
-            btCloseApp.TabIndex = 55;
-            btCloseApp.Text = "X";
-            btCloseApp.UseVisualStyleBackColor = true;
-            btCloseApp.Click += btCloseApp_Click;
             // 
             // lb1RegDes
             // 
-            lb1RegDes.Anchor = AnchorStyles.None;
             lb1RegDes.AutoSize = true;
             lb1RegDes.Font = new Font("Arial Narrow", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lb1RegDes.ForeColor = SystemColors.ControlDark;
@@ -626,7 +569,6 @@
             tab1Resident.Size = new Size(600, 504);
             tab1Resident.TabIndex = 0;
             tab1Resident.Text = "Resident";
-            tab1Resident.Click += tabPage1_Click;
             // 
             // btShowPassConfirm_Restb
             // 
@@ -768,7 +710,6 @@
             chkb1Confirm_Restb.TabIndex = 61;
             chkb1Confirm_Restb.Text = "I confirm that all information I provided is accurate and truthful. I understand that false \r\ninformation may result in rejection of my registration.";
             chkb1Confirm_Restb.UseVisualStyleBackColor = true;
-            chkb1Confirm_Restb.CheckedChanged += chkb1Confirm_Restb_CheckedChanged;
             // 
             // lb32Visibility_Restb
             // 
@@ -780,7 +721,6 @@
             lb32Visibility_Restb.Size = new Size(482, 16);
             lb32Visibility_Restb.TabIndex = 60;
             lb32Visibility_Restb.Text = "ⓘ Upload a clear photo or scanned copy of your valid ID. Make sure all details are visible and legible.\r\n";
-            lb32Visibility_Restb.Click += lb32Visibility_Restb_Click;
             // 
             // plUpload_Restb
             // 
@@ -837,7 +777,6 @@
             picb1IDUploaded_Restb.TabIndex = 1;
             picb1IDUploaded_Restb.TabStop = false;
             picb1IDUploaded_Restb.Visible = false;
-            picb1IDUploaded_Restb.Click += picb1IDUploaded_Restb_Click;
             // 
             // btIDUpload_Restb
             // 
@@ -929,7 +868,6 @@
             lb26Namereq_Restb.Size = new Size(135, 16);
             lb26Namereq_Restb.TabIndex = 52;
             lb26Namereq_Restb.Text = "6-20 characters, no spaces";
-            lb26Namereq_Restb.Click += lb26Namereq_Restb_Click;
             // 
             // lb25ConfirmPass_Restb
             // 
@@ -1029,7 +967,6 @@
             flowLayoutPanel3.Name = "flowLayoutPanel3";
             flowLayoutPanel3.Size = new Size(7, 38);
             flowLayoutPanel3.TabIndex = 43;
-            flowLayoutPanel3.Paint += flowLayoutPanel3_Paint;
             // 
             // lb21MembersNo_Restb
             // 
@@ -1167,7 +1104,6 @@
             txtb9Brgy_Restb.PlaceholderText = " ALANGILAN";
             txtb9Brgy_Restb.Size = new Size(144, 28);
             txtb9Brgy_Restb.TabIndex = 30;
-            txtb9Brgy_Restb.TextChanged += textBox1_TextChanged_2;
             // 
             // lb15Brgy_Restb
             // 
@@ -1214,7 +1150,6 @@
             txtb7House_Restb.PlaceholderText = " 123 SITIO CALUMPANG";
             txtb7House_Restb.Size = new Size(488, 28);
             txtb7House_Restb.TabIndex = 26;
-            txtb7House_Restb.TextChanged += textBox1_TextChanged_1;
             // 
             // lb13House_Restb
             // 
@@ -1290,7 +1225,6 @@
             lb10ContactN_Restb.Size = new Size(117, 23);
             lb10ContactN_Restb.TabIndex = 19;
             lb10ContactN_Restb.Text = "Contact Number";
-            lb10ContactN_Restb.Click += label1_Click_2;
             // 
             // cb2Sex_Restb
             // 
@@ -1358,7 +1292,6 @@
             lb7Age_Restb.Size = new Size(35, 23);
             lb7Age_Restb.TabIndex = 13;
             lb7Age_Restb.Text = "Age";
-            lb7Age_Restb.Click += label1_Click_1;
             // 
             // dateTimePicker1_Restb
             // 
@@ -1428,7 +1361,6 @@
             lb4MN_Restb.Size = new Size(99, 23);
             lb4MN_Restb.TabIndex = 7;
             lb4MN_Restb.Text = "Middle Name";
-            lb4MN_Restb.Click += label2_Click;
             // 
             // txtb1FN_Residenttb
             // 
@@ -1442,7 +1374,6 @@
             txtb1FN_Residenttb.PlaceholderText = " MARK BRANDON ";
             txtb1FN_Residenttb.Size = new Size(173, 28);
             txtb1FN_Residenttb.TabIndex = 6;
-            txtb1FN_Residenttb.TextChanged += textBox1_TextChanged;
             // 
             // lb3FN_Restb
             // 
@@ -1453,7 +1384,6 @@
             lb3FN_Restb.Size = new Size(81, 23);
             lb3FN_Restb.TabIndex = 5;
             lb3FN_Restb.Text = "First Name";
-            lb3FN_Restb.Click += label1_Click;
             // 
             // lb2PerInRestab_Fr2
             // 
@@ -1497,7 +1427,6 @@
             P1Restab_Form2.Name = "P1Restab_Form2";
             P1Restab_Form2.Size = new Size(7, 38);
             P1Restab_Form2.TabIndex = 1;
-            P1Restab_Form2.Paint += flowLayoutPanel1_Paint;
             // 
             // tab2BarangayStaff
             // 
@@ -3380,7 +3309,6 @@
             // 
             // panel5
             // 
-            panel5.Anchor = AnchorStyles.None;
             panel5.BackColor = Color.MidnightBlue;
             panel5.ForeColor = Color.Goldenrod;
             panel5.Location = new Point(18, 73);
@@ -3391,7 +3319,6 @@
             // 
             // Lb6Reg_Fr2
             // 
-            Lb6Reg_Fr2.Anchor = AnchorStyles.None;
             Lb6Reg_Fr2.AutoSize = true;
             Lb6Reg_Fr2.BackColor = Color.Transparent;
             Lb6Reg_Fr2.Font = new Font("Segoe UI Variable Display", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -3401,29 +3328,10 @@
             Lb6Reg_Fr2.Size = new Size(281, 49);
             Lb6Reg_Fr2.TabIndex = 24;
             Lb6Reg_Fr2.Text = "REGISTRATION";
-            Lb6Reg_Fr2.Click += SignInLb6_Click;
-            // 
-            // panel17
-            // 
-            panel17.BackColor = Color.Goldenrod;
-            panel17.Dock = DockStyle.Right;
-            panel17.Location = new Point(616, 0);
-            panel17.Name = "panel17";
-            panel17.Size = new Size(5, 684);
-            panel17.TabIndex = 2;
             // 
             // ofdID
             // 
             ofdID.FileName = "openFileDialog_Restb";
-            // 
-            // panel18
-            // 
-            panel18.BackColor = Color.Goldenrod;
-            panel18.Dock = DockStyle.Bottom;
-            panel18.Location = new Point(447, 704);
-            panel18.Name = "panel18";
-            panel18.Size = new Size(621, 5);
-            panel18.TabIndex = 54;
             // 
             // RegistrationForm2
             // 
@@ -3431,16 +3339,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Goldenrod;
             ClientSize = new Size(1068, 709);
-            ControlBox = false;
-            Controls.Add(panel18);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(BarTitle);
-            FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "RegistrationForm2";
             StartPosition = FormStartPosition.CenterScreen;
-            Load += SignUp_Load;
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pb3stars).EndInit();
@@ -3719,11 +3623,6 @@
         private PictureBox picbIDUpload_Admintb;
         private Button btUploadID_Admintb;
         private Label lb35FileName_Admintb;
-        private Panel panel17;
-        private Panel panel18;
-        private Button btMaximizeApp;
-        private Button btminimizeApp;
-        private Button btCloseApp;
         private Label Evr1Lb5;
     }
 }

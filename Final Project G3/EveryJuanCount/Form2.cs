@@ -18,18 +18,12 @@ namespace EveryJuanCount
             InitializeComponent();
         }
 
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(IntPtr hWnd, int wMsg, int wParam, int lParam);
-
-        private void SignUp_Load(object sender, EventArgs e)
+        #region FormClosing
+        protected override void OnFormClosing(FormClosingEventArgs e)
         {
+            base.OnFormClosing(e);
 
-        }
-
-        private void bt1ExitForm2_Click(object sender, EventArgs e)
-        {
+            // Show Login Form when this form closes
             var form1 = Application.OpenForms.OfType<LogInForm1>().FirstOrDefault();
             if (form1 != null)
             {
@@ -40,89 +34,45 @@ namespace EveryJuanCount
             {
                 new LogInForm1().Show();
             }
-            this.Close();
         }
+        #endregion
 
-        private void Lb4WeCount_Fr2_Click(object sender, EventArgs e)
+        #region DLL
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        #endregion
+
+        #region Color Title Bar
+
+        [DllImport("dwmapi.dll")]
+        private static extern int DwmSetWindowAttribute(IntPtr hwnd, int attr, ref int attrValue, int attrSize);
+
+        private const int DWMWA_CAPTION_COLOR = 35;  // title bar color
+        private const int DWMWA_BORDER_COLOR = 34;   // border color
+
+        protected override void OnHandleCreated(EventArgs e)
         {
-
+            base.OnHandleCreated(e);
+            SetGoldTitleBar();
         }
 
-        private void SignInLb6_Click(object sender, EventArgs e)
+        private void SetGoldTitleBar()
         {
-
+            int goldBGR = ColorToBGR(Color.Gold);
+            DwmSetWindowAttribute(this.Handle, DWMWA_CAPTION_COLOR, ref goldBGR, sizeof(int));
+            DwmSetWindowAttribute(this.Handle, DWMWA_BORDER_COLOR, ref goldBGR, sizeof(int));
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
+        private int ColorToBGR(Color color)
         {
-
+            return color.B << 16 | color.G << 8 | color.R;
         }
+        #endregion
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lb2ResLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lb26Namereq_Restb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lb32Visibility_Restb_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        #region SignInHereButtonRestb 
         private void btSignInHere_Restb_Click(object sender, EventArgs e)
         {
             // Go back to Login Form
@@ -139,6 +89,9 @@ namespace EveryJuanCount
             this.Close();
         }
 
+        #endregion
+
+        #region PasswordRestb
         private void btShowPassword_Restb_Click(object sender, EventArgs e)
         {
             if (txtb14Password_Restb.PasswordChar == '*')
@@ -175,53 +128,9 @@ namespace EveryJuanCount
                 txtb15ConfirmPass_Restb.PasswordChar = '*';
             }
         }
+        #endregion
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bt1ShowPass_BrgyStftb_Click(object sender, EventArgs e)
-        {
-            if (txtb12Password_BrgyStftb.PasswordChar == '*')
-            {
-                bt2HidePass_BrgyStftb.BringToFront();
-                txtb12Password_BrgyStftb.PasswordChar = '\0';
-            }
-        }
-
-        private void bt2HidePass_BrgyStftb_Click(object sender, EventArgs e)
-        {
-            if (txtb12Password_BrgyStftb.PasswordChar == '\0')
-            {
-                bt1ShowPass_BrgyStftb.BringToFront();
-                txtb12Password_BrgyStftb.PasswordChar = '*';
-            }
-        }
-
-        private void bt3ConShowPass_BrgyStftb_Click(object sender, EventArgs e)
-        {
-            if (txtb13ConfimPass_BrgyStftb.PasswordChar == '*')
-            {
-                bt4ConHidePass_BrgyStftb.BringToFront();
-                txtb13ConfimPass_BrgyStftb.PasswordChar = '\0';
-            }
-        }
-
-        private void bt4ConHidePass_BrgyStftb_Click(object sender, EventArgs e)
-        {
-            if (txtb13ConfimPass_BrgyStftb.PasswordChar == '\0')
-            {
-                bt3ConShowPass_BrgyStftb.BringToFront();
-                txtb13ConfimPass_BrgyStftb.PasswordChar = '*';
-            }
-        }
-
-        private void plUpload_Restb_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        #region SubmitbuttonRestb
         private void btSubmit_Restb_Click_1(object sender, EventArgs e)
         {
             // Check if declaration checkbox is checked
@@ -271,7 +180,9 @@ namespace EveryJuanCount
             }
             this.Close();
         }
+        #endregion
 
+        #region UploadFileRestb
         // Store the selected file path
         private string selectedIDFilePath = "";
         private void btIDUpload_Restb_Click(object sender, EventArgs e)
@@ -330,6 +241,47 @@ namespace EveryJuanCount
             }
         }
 
+        #endregion
+
+        #region PasswordBrgyStftb
+        private void bt1ShowPass_BrgyStftb_Click(object sender, EventArgs e)
+        {
+            if (txtb12Password_BrgyStftb.PasswordChar == '*')
+            {
+                bt2HidePass_BrgyStftb.BringToFront();
+                txtb12Password_BrgyStftb.PasswordChar = '\0';
+            }
+        }
+
+        private void bt2HidePass_BrgyStftb_Click(object sender, EventArgs e)
+        {
+            if (txtb12Password_BrgyStftb.PasswordChar == '\0')
+            {
+                bt1ShowPass_BrgyStftb.BringToFront();
+                txtb12Password_BrgyStftb.PasswordChar = '*';
+            }
+        }
+
+        private void bt3ConShowPass_BrgyStftb_Click(object sender, EventArgs e)
+        {
+            if (txtb13ConfimPass_BrgyStftb.PasswordChar == '*')
+            {
+                bt4ConHidePass_BrgyStftb.BringToFront();
+                txtb13ConfimPass_BrgyStftb.PasswordChar = '\0';
+            }
+        }
+
+        private void bt4ConHidePass_BrgyStftb_Click(object sender, EventArgs e)
+        {
+            if (txtb13ConfimPass_BrgyStftb.PasswordChar == '\0')
+            {
+                bt3ConShowPass_BrgyStftb.BringToFront();
+                txtb13ConfimPass_BrgyStftb.PasswordChar = '*';
+            }
+        }
+        #endregion
+
+        #region UploadFileBrgyStftb
         private void btUploadID_BrgyStftb_Click(object sender, EventArgs e)
         {
             // Open the file picker
@@ -386,11 +338,9 @@ namespace EveryJuanCount
             }
         }
 
-        private void picb1IDUploaded_Restb_Click(object sender, EventArgs e)
-        {
+        #endregion
 
-        }
-
+        #region SubmitButtonBrgyStftb
         private void btSubmit_BrgyStftb_Click(object sender, EventArgs e)
         {
             // Check if declaration checkbox is checked
@@ -441,11 +391,9 @@ namespace EveryJuanCount
             this.Close();
         }
 
-        private void chkb1Confirm_Restb_CheckedChanged(object sender, EventArgs e)
-        {
+        #endregion
 
-        }
-
+        #region SignInHereBrgyStftb
         private void btSignInHere_BrgyStftb_Click(object sender, EventArgs e)
         {
             // Go back to Login Form
@@ -462,6 +410,9 @@ namespace EveryJuanCount
             this.Close();
         }
 
+        #endregion
+
+        #region PasswordAdmintb
         private void bt1ShowPassword_Admintb_Click(object sender, EventArgs e)
         {
             if (txtb15Passwors_Admintb.PasswordChar == '*')
@@ -501,6 +452,9 @@ namespace EveryJuanCount
 
         }
 
+        #endregion
+
+        #region UploadFileAdmintb
         private void btUploadID_Admintb_Click(object sender, EventArgs e)
         {
             // Open the file picker
@@ -557,6 +511,9 @@ namespace EveryJuanCount
             }
         }
 
+        #endregion
+
+        #region SubmitButtonAdmintb
         private void btSubmit_Admintb_Click(object sender, EventArgs e)
         {
             // Check if declaration checkbox is checked
@@ -604,45 +561,8 @@ namespace EveryJuanCount
             }
             this.Close();
         }
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
-
-        private void btminimizeApp_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void btMaximizeApp_Click(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
-            {
-                WindowState = FormWindowState.Maximized;
-                btMaximizeApp.Text = "🗗"; // restore icon
-            }
-            else
-            {
-                WindowState = FormWindowState.Normal;
-                btMaximizeApp.Text = "🗖"; // maximize icon
-            }
-        }
-
-        private void btCloseApp_Click(object sender, EventArgs e)
-        {
-            // Go back to Login Form
-            var form1 = Application.OpenForms.OfType<LogInForm1>().FirstOrDefault();
-            if (form1 != null)
-            {
-                form1.Show();
-                form1.BringToFront();
-            }
-            else
-            {
-                new LogInForm1().Show();
-            }
-            this.Close();
-        }
+        #endregion 
 
         private void BarTitle_MouseDown(object sender, MouseEventArgs e)
         {

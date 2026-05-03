@@ -15,48 +15,44 @@ namespace EveryJuanCount
         public LogInForm1()
         {
             InitializeComponent();
+            
         }
 
+        #region DLL
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(IntPtr hWnd, int wMsg, int wParam, int lParam);
+        #endregion
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        #region Color Title Bar
+
+        [DllImport("dwmapi.dll")]
+        private static extern int DwmSetWindowAttribute(IntPtr hwnd, int attr, ref int attrValue, int attrSize);
+
+        private const int DWMWA_CAPTION_COLOR = 35;  // title bar color
+        private const int DWMWA_BORDER_COLOR = 34;   // border color
+
+        protected override void OnHandleCreated(EventArgs e)
         {
-
+            base.OnHandleCreated(e);
+            SetGoldTitleBar();
         }
 
-        private void EJC_Click(object sender, EventArgs e)
+        private void SetGoldTitleBar()
         {
-
+            int goldBGR = ColorToBGR(Color.Gold);
+            DwmSetWindowAttribute(this.Handle, DWMWA_CAPTION_COLOR, ref goldBGR, sizeof(int));
+            DwmSetWindowAttribute(this.Handle, DWMWA_BORDER_COLOR, ref goldBGR, sizeof(int));
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private int ColorToBGR(Color color)
         {
-
+            return color.B << 16 | color.G << 8 | color.R;
         }
+        #endregion
 
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UsernameTB1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        #region Password
         private void bt1ShowPass_Click(object sender, EventArgs e)
         {
             if (txtB2Password.PasswordChar == '*')
@@ -74,23 +70,15 @@ namespace EveryJuanCount
                 txtB2Password.PasswordChar = '*';
             }
         }
+        #endregion
 
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtB2Password_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        #region LogInButton
         private void bt3LogIn_Click(object sender, EventArgs e)
         {
             //hide Form 1
             this.Hide();
             //create an instance of Form 3
-            ResidentsForm3 f2 = new ResidentsForm3();
+            ResidentForm3 f2 = new ResidentForm3();
             //show Form 2
             f2.ShowDialog();
             //dispose Form 2 after it is closed
@@ -99,58 +87,7 @@ namespace EveryJuanCount
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //hide Form 1
-            this.Hide();
-            //create an instance of Form 2
-            RegistrationForm2 f2 = new RegistrationForm2();
-            //show Form 2
-            f2.ShowDialog();
-            //dispose Form 2 after it is closed
-            f2 = null;
-            //show form1 again
-            this.Show();
-        }
-
-        private void bt5Exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void SignInLb6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btminimizeApp_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void btMaximizeApp_Click(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
-            {
-                WindowState = FormWindowState.Maximized;
-                btMaximizeApp.Text = "🗗"; // restore icon
-            }
-            else
-            {
-                WindowState = FormWindowState.Normal;
-                btMaximizeApp.Text = "🗖"; // maximize icon
-            }
-        }
-
-        private void btCloseApp_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void BarTitle_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        #endregion
 
         private void BarTitle_MouseDown(object sender, MouseEventArgs e)
         {
@@ -158,9 +95,21 @@ namespace EveryJuanCount
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void panel4_Paint(object sender, PaintEventArgs e)
+        #region RegistrationButton
+        private void bt4Reg_Click(object sender, EventArgs e)
         {
-
+            //hide Form 1
+            this.Hide();
+            //create an instance of Form 3
+            RegistrationForm2 f2 = new RegistrationForm2();
+            //show Form 2
+            f2.ShowDialog();
+            //dispose Form 2 after it is closed
+            f2 = null;
+            //show form1 again
         }
+
+        #endregion
+
     }
 }
