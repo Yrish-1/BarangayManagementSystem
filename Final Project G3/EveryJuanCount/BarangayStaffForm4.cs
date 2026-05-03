@@ -1,5 +1,4 @@
-﻿using EveryJuanCount.Properties;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,15 +9,11 @@ using System.Windows.Forms;
 
 namespace EveryJuanCount
 {
-    public partial class ResidentForm3 : Form
+    public partial class BarangayStaffForm4 : Form
     {
-        public ResidentForm3()
+        public BarangayStaffForm4()
         {
             InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            this.ControlBox = true;
-
-
         }
 
         #region FormClosing
@@ -92,50 +87,26 @@ namespace EveryJuanCount
 
         #endregion
 
-        #region MenuVerticalButtons
-        private void btDashboard_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new DashboardResF3());
-        }
-
-        private void btMyProfile_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new MyProfileF3());
-        }
-
-        private void btSubmitReport_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new SubmitReport());
-        }
-
-        private void btReportHistory_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new ReportHistoryF3());
-        }
-
-        #endregion
-
-
-        private void btLogOut_Click(object sender, EventArgs e)
+        private void btLogOut_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btMenuVertical_Click(object sender, EventArgs e)
+        private void btMenuVertical_Click_1(object sender, EventArgs e)
         {
-
             pnSlideMenu.Width = pnSlideMenu.Width == 330 ? 45 : 330;
-
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            // Close the active child form and show the default panel background
-            if (activeForm != null)
-            {
-                activeForm.Close();
-                activeForm = null;
-            }
+            
+                // Close the active child form and show the default panel background
+                if (activeForm != null)
+                {
+                    activeForm.Close();
+                    activeForm = null;
+                }
         }
     }
+
 }

@@ -62,7 +62,7 @@ namespace EveryJuanCount
             var parentForm = this.ParentForm as ResidentForm3;
             if (parentForm != null)
             {
-                parentForm.OpenChildForm(new ReportHistory());
+                parentForm.OpenChildForm(new ReportHistoryF3());
             }
         }
 
