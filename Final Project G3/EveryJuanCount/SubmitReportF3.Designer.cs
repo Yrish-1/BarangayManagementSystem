@@ -115,6 +115,8 @@
             panel8 = new Panel();
             label29 = new Label();
             ofdID = new OpenFileDialog();
+            btSubmit_ReportF3 = new Button();
+            chkb1Confirm_ReportF3 = new CheckBox();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             guna2Panel1.SuspendLayout();
@@ -1133,11 +1135,41 @@
             // 
             ofdID.FileName = "openFileDialog_Restb";
             // 
+            // btSubmit_ReportF3
+            // 
+            btSubmit_ReportF3.BackColor = Color.MidnightBlue;
+            btSubmit_ReportF3.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 64);
+            btSubmit_ReportF3.FlatAppearance.BorderSize = 0;
+            btSubmit_ReportF3.FlatStyle = FlatStyle.Flat;
+            btSubmit_ReportF3.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btSubmit_ReportF3.ForeColor = Color.Transparent;
+            btSubmit_ReportF3.Location = new Point(242, 725);
+            btSubmit_ReportF3.Name = "btSubmit_ReportF3";
+            btSubmit_ReportF3.Size = new Size(531, 37);
+            btSubmit_ReportF3.TabIndex = 64;
+            btSubmit_ReportF3.Text = "SUBMIT REPORT";
+            btSubmit_ReportF3.UseVisualStyleBackColor = false;
+            btSubmit_ReportF3.Click += btSubmit_ReportF3_Click;
+            // 
+            // chkb1Confirm_ReportF3
+            // 
+            chkb1Confirm_ReportF3.AutoSize = true;
+            chkb1Confirm_ReportF3.CheckAlign = ContentAlignment.TopLeft;
+            chkb1Confirm_ReportF3.Font = new Font("Arial Narrow", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            chkb1Confirm_ReportF3.Location = new Point(262, 671);
+            chkb1Confirm_ReportF3.Name = "chkb1Confirm_ReportF3";
+            chkb1Confirm_ReportF3.Size = new Size(491, 36);
+            chkb1Confirm_ReportF3.TabIndex = 63;
+            chkb1Confirm_ReportF3.Text = "I confirm that all information I provided is accurate and truthful. I understand that false \r\ninformation may result in rejection of my registration.";
+            chkb1Confirm_ReportF3.UseVisualStyleBackColor = true;
+            // 
             // SubmitReport
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1015, 794);
+            Controls.Add(btSubmit_ReportF3);
+            Controls.Add(chkb1Confirm_ReportF3);
             Controls.Add(panel1);
             Controls.Add(panel3);
             Controls.Add(panel2);
@@ -1170,6 +1202,7 @@
             guna2Panel3.PerformLayout();
             panel7.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -1256,5 +1289,7 @@
         private Label label29;
         private Panel panel8;
         private Panel panel9;
+        private Button btSubmit_ReportF3;
+        private CheckBox chkb1Confirm_ReportF3;
     }
 }

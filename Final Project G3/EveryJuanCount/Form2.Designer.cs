@@ -710,6 +710,7 @@
             chkb1Confirm_Restb.TabIndex = 61;
             chkb1Confirm_Restb.Text = "I confirm that all information I provided is accurate and truthful. I understand that false \r\ninformation may result in rejection of my registration.";
             chkb1Confirm_Restb.UseVisualStyleBackColor = true;
+            chkb1Confirm_Restb.CheckedChanged += chkb1Confirm_Restb_CheckedChanged;
             // 
             // lb32Visibility_Restb
             // 

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace EveryJuanCount
 {
@@ -56,6 +57,31 @@ namespace EveryJuanCount
         #endregion
 
 
+        private void btSubmit_ReportF3_Click(object sender, EventArgs e)
+        {
+            // Check if declaration checkbox is checked
+            if (!chkb1Confirm_ReportF3.Checked)
+            {
+                MessageBox.Show(
+                    "Please confirm the declaration before submitting.",
+                    "Declaration Required",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+                return;
+
+            }
+            
+            // Show success message
+            MessageBox.Show(
+                "Report submitted successfully!\n\n" +
+                "Please wait for the Reply and further instructions.\n" +
+                "You will be notified once your concern is addressed.",
+                "Registration Submitted",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+        }
     }
 }
 

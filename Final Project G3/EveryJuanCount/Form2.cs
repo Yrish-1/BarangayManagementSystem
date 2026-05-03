@@ -569,5 +569,10 @@ namespace EveryJuanCount
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void chkb1Confirm_Restb_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
