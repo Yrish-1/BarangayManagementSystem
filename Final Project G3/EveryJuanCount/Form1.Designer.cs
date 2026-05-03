@@ -435,6 +435,7 @@
             Controls.Add(panel8);
             Controls.Add(panel2);
             Controls.Add(BarTitle);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             HelpButton = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "LogInForm1";

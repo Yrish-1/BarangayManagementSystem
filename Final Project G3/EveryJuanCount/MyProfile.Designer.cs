@@ -2177,6 +2177,7 @@
             ClientSize = new Size(1015, 794);
             Controls.Add(panel3);
             Controls.Add(panel2);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MyProfile";
             Text = "MyProfile";

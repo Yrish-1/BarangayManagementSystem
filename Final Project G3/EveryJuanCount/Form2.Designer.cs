@@ -3342,6 +3342,7 @@
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(BarTitle);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "RegistrationForm2";
             StartPosition = FormStartPosition.CenterScreen;

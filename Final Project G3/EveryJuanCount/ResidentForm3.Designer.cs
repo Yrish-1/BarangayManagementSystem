@@ -79,7 +79,7 @@
             pnSlideMenu.Dock = DockStyle.Left;
             pnSlideMenu.Location = new Point(0, 0);
             pnSlideMenu.Name = "pnSlideMenu";
-            pnSlideMenu.Size = new Size(45, 794);
+            pnSlideMenu.Size = new Size(330, 794);
             pnSlideMenu.TabIndex = 0;
             // 
             // btLogOut
@@ -96,7 +96,7 @@
             btLogOut.Location = new Point(0, 752);
             btLogOut.Name = "btLogOut";
             btLogOut.Padding = new Padding(50, 5, 0, 10);
-            btLogOut.Size = new Size(45, 42);
+            btLogOut.Size = new Size(330, 42);
             btLogOut.TabIndex = 12;
             btLogOut.Text = "          LOG OUT";
             btLogOut.TextAlign = ContentAlignment.MiddleLeft;
@@ -109,7 +109,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 389);
             panel1.Name = "panel1";
-            panel1.Size = new Size(45, 362);
+            panel1.Size = new Size(330, 362);
             panel1.TabIndex = 1;
             // 
             // pnButtons
@@ -126,7 +126,7 @@
             pnButtons.Location = new Point(0, 0);
             pnButtons.Name = "pnButtons";
             pnButtons.Padding = new Padding(50, 0, 0, 0);
-            pnButtons.Size = new Size(45, 329);
+            pnButtons.Size = new Size(330, 329);
             pnButtons.TabIndex = 1;
             // 
             // panel7
@@ -134,7 +134,7 @@
             panel7.Dock = DockStyle.Top;
             panel7.Location = new Point(50, 268);
             panel7.Name = "panel7";
-            panel7.Size = new Size(0, 36);
+            panel7.Size = new Size(280, 36);
             panel7.TabIndex = 18;
             // 
             // btReportHistory
@@ -150,7 +150,7 @@
             btReportHistory.ImageAlign = ContentAlignment.MiddleLeft;
             btReportHistory.Location = new Point(50, 228);
             btReportHistory.Name = "btReportHistory";
-            btReportHistory.Size = new Size(0, 40);
+            btReportHistory.Size = new Size(280, 40);
             btReportHistory.TabIndex = 17;
             btReportHistory.Text = "          REPORT HISTORY";
             btReportHistory.TextAlign = ContentAlignment.MiddleLeft;
@@ -162,7 +162,7 @@
             panel6.Dock = DockStyle.Top;
             panel6.Location = new Point(50, 192);
             panel6.Name = "panel6";
-            panel6.Size = new Size(0, 36);
+            panel6.Size = new Size(280, 36);
             panel6.TabIndex = 16;
             // 
             // btSubmitReport
@@ -178,7 +178,7 @@
             btSubmitReport.ImageAlign = ContentAlignment.MiddleLeft;
             btSubmitReport.Location = new Point(50, 152);
             btSubmitReport.Name = "btSubmitReport";
-            btSubmitReport.Size = new Size(0, 40);
+            btSubmitReport.Size = new Size(280, 40);
             btSubmitReport.TabIndex = 15;
             btSubmitReport.Text = "          SUBMIT REPORT";
             btSubmitReport.TextAlign = ContentAlignment.MiddleLeft;
@@ -190,7 +190,7 @@
             panel5.Dock = DockStyle.Top;
             panel5.Location = new Point(50, 116);
             panel5.Name = "panel5";
-            panel5.Size = new Size(0, 36);
+            panel5.Size = new Size(280, 36);
             panel5.TabIndex = 14;
             // 
             // btMyProfile
@@ -206,7 +206,7 @@
             btMyProfile.ImageAlign = ContentAlignment.MiddleLeft;
             btMyProfile.Location = new Point(50, 76);
             btMyProfile.Name = "btMyProfile";
-            btMyProfile.Size = new Size(0, 40);
+            btMyProfile.Size = new Size(280, 40);
             btMyProfile.TabIndex = 13;
             btMyProfile.Text = "          MY PROFILE";
             btMyProfile.TextAlign = ContentAlignment.MiddleLeft;
@@ -218,7 +218,7 @@
             panel10.Dock = DockStyle.Top;
             panel10.Location = new Point(50, 40);
             panel10.Name = "panel10";
-            panel10.Size = new Size(0, 36);
+            panel10.Size = new Size(280, 36);
             panel10.TabIndex = 12;
             // 
             // btDashboard
@@ -234,7 +234,7 @@
             btDashboard.ImageAlign = ContentAlignment.MiddleLeft;
             btDashboard.Location = new Point(50, 0);
             btDashboard.Name = "btDashboard";
-            btDashboard.Size = new Size(0, 40);
+            btDashboard.Size = new Size(280, 40);
             btDashboard.TabIndex = 6;
             btDashboard.Text = "          DASHBOARD";
             btDashboard.TextAlign = ContentAlignment.MiddleLeft;
@@ -256,13 +256,13 @@
             panelLogo.Dock = DockStyle.Top;
             panelLogo.Location = new Point(0, 0);
             panelLogo.Name = "panelLogo";
-            panelLogo.Size = new Size(45, 389);
+            panelLogo.Size = new Size(330, 389);
             panelLogo.TabIndex = 0;
             // 
             // panel9
             // 
             panel9.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            panel9.Location = new Point(-285, 372);
+            panel9.Location = new Point(0, 372);
             panel9.Name = "panel9";
             panel9.Size = new Size(330, 17);
             panel9.TabIndex = 16;
@@ -271,7 +271,7 @@
             // 
             pictureBox4.Anchor = AnchorStyles.None;
             pictureBox4.Image = Properties.Resources.Stars;
-            pictureBox4.Location = new Point(-38, 200);
+            pictureBox4.Location = new Point(105, 200);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(46, 28);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -283,7 +283,7 @@
             pictureBox3.Anchor = AnchorStyles.None;
             pictureBox3.BackColor = Color.Transparent;
             pictureBox3.Image = Properties.Resources.Stars;
-            pictureBox3.Location = new Point(33, 200);
+            pictureBox3.Location = new Point(176, 200);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(46, 28);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -295,7 +295,7 @@
             pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = Properties.Resources.Stars;
-            pictureBox2.Location = new Point(-150, 200);
+            pictureBox2.Location = new Point(135, 200);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(59, 34);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -306,12 +306,13 @@
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox1.Image = Properties.Resources.EJC_Logo;
-            pictureBox1.Location = new Point(-285, 37);
+            pictureBox1.Location = new Point(0, 37);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(330, 169);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // p1top
             // 
@@ -319,7 +320,7 @@
             p1top.Dock = DockStyle.Top;
             p1top.Location = new Point(0, 0);
             p1top.Name = "p1top";
-            p1top.Size = new Size(45, 37);
+            p1top.Size = new Size(330, 37);
             p1top.TabIndex = 1;
             // 
             // btMenuVertical
@@ -339,7 +340,7 @@
             panel3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             panel3.BackColor = Color.Goldenrod;
             panel3.ForeColor = Color.Goldenrod;
-            panel3.Location = new Point(-152, 352);
+            panel3.Location = new Point(133, 352);
             panel3.Margin = new Padding(0);
             panel3.Name = "panel3";
             panel3.Size = new Size(65, 4);
@@ -351,7 +352,7 @@
             Lb32026.AutoSize = true;
             Lb32026.Font = new Font("Arial Narrow", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Lb32026.ForeColor = SystemColors.AppWorkspace;
-            Lb32026.Location = new Point(-155, 325);
+            Lb32026.Location = new Point(130, 325);
             Lb32026.Name = "Lb32026";
             Lb32026.Size = new Size(71, 22);
             Lb32026.TabIndex = 14;
@@ -363,7 +364,7 @@
             BrgyLb1.AutoSize = true;
             BrgyLb1.Font = new Font("Arial Black", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BrgyLb1.ForeColor = Color.Goldenrod;
-            BrgyLb1.Location = new Point(-165, 274);
+            BrgyLb1.Location = new Point(120, 274);
             BrgyLb1.Name = "BrgyLb1";
             BrgyLb1.Size = new Size(89, 18);
             BrgyLb1.TabIndex = 13;
@@ -375,7 +376,7 @@
             CenSyLb2.AutoSize = true;
             CenSyLb2.Font = new Font("Arial Black", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             CenSyLb2.ForeColor = Color.Goldenrod;
-            CenSyLb2.Location = new Point(-186, 298);
+            CenSyLb2.Location = new Point(99, 298);
             CenSyLb2.Name = "CenSyLb2";
             CenSyLb2.Size = new Size(132, 18);
             CenSyLb2.TabIndex = 12;
@@ -387,16 +388,16 @@
             pnChilForms.BackColor = Color.MidnightBlue;
             pnChilForms.Controls.Add(pbLogo);
             pnChilForms.Dock = DockStyle.Fill;
-            pnChilForms.Location = new Point(45, 0);
+            pnChilForms.Location = new Point(330, 0);
             pnChilForms.Name = "pnChilForms";
-            pnChilForms.Size = new Size(1300, 794);
+            pnChilForms.Size = new Size(1015, 794);
             pnChilForms.TabIndex = 2;
             // 
             // pbLogo
             // 
             pbLogo.Anchor = AnchorStyles.None;
             pbLogo.Image = Properties.Resources.EJC_Logo;
-            pbLogo.Location = new Point(244, 158);
+            pbLogo.Location = new Point(101, 158);
             pbLogo.Name = "pbLogo";
             pbLogo.Size = new Size(812, 478);
             pbLogo.SizeMode = PictureBoxSizeMode.Zoom;
@@ -412,6 +413,7 @@
             Controls.Add(pnChilForms);
             Controls.Add(pnSlideMenu);
             Font = new Font("Segoe UI", 10F);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "ResidentForm3";
             StartPosition = FormStartPosition.CenterScreen;

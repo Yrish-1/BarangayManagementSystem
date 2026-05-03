@@ -671,6 +671,7 @@
             AutoScroll = true;
             ClientSize = new Size(1015, 773);
             Controls.Add(panel2);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "DashboardResF3";
             Text = "DashboardResF3";

@@ -44,6 +44,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReportHistory));
             panel2 = new Panel();
+            panel7 = new Panel();
+            panel9 = new Panel();
             panel5 = new Panel();
             Welcome = new Label();
             Greetings = new Label();
@@ -64,8 +66,6 @@
             guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             panel8 = new Panel();
             label29 = new Label();
-            panel9 = new Panel();
-            panel7 = new Panel();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             Rejected.SuspendLayout();
@@ -92,6 +92,26 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(1015, 80);
             panel2.TabIndex = 20;
+            // 
+            // panel7
+            // 
+            panel7.BackColor = Color.MidnightBlue;
+            panel7.ForeColor = Color.Goldenrod;
+            panel7.Location = new Point(197, 12);
+            panel7.Margin = new Padding(0);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(90, 4);
+            panel7.TabIndex = 19;
+            // 
+            // panel9
+            // 
+            panel9.BackColor = Color.Maroon;
+            panel9.ForeColor = Color.Goldenrod;
+            panel9.Location = new Point(107, 12);
+            panel9.Margin = new Padding(0);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(90, 4);
+            panel9.TabIndex = 18;
             // 
             // panel5
             // 
@@ -335,26 +355,6 @@
             label29.TabIndex = 15;
             label29.Text = "REPORTER HISTORY";
             // 
-            // panel9
-            // 
-            panel9.BackColor = Color.Maroon;
-            panel9.ForeColor = Color.Goldenrod;
-            panel9.Location = new Point(107, 12);
-            panel9.Margin = new Padding(0);
-            panel9.Name = "panel9";
-            panel9.Size = new Size(90, 4);
-            panel9.TabIndex = 18;
-            // 
-            // panel7
-            // 
-            panel7.BackColor = Color.MidnightBlue;
-            panel7.ForeColor = Color.Goldenrod;
-            panel7.Location = new Point(197, 12);
-            panel7.Margin = new Padding(0);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(90, 4);
-            panel7.TabIndex = 19;
-            // 
             // ReportHistory
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -363,6 +363,7 @@
             Controls.Add(panel3);
             Controls.Add(panel1);
             Controls.Add(panel2);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "ReportHistory";
             panel2.ResumeLayout(false);

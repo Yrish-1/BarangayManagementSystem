@@ -15,8 +15,9 @@ namespace EveryJuanCount
         public ResidentForm3()
         {
             InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.Sizable;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.ControlBox = true;
+
 
         }
 
@@ -127,5 +128,14 @@ namespace EveryJuanCount
 
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            // Close the active child form and show the default panel background
+            if (activeForm != null)
+            {
+                activeForm.Close();
+                activeForm = null;
+            }
+        }
     }
 }
