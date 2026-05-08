@@ -1262,7 +1262,7 @@
             cb4HouseRole_Restb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb4HouseRole_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb4HouseRole_Restb.FormattingEnabled = true;
-            cb4HouseRole_Restb.Items.AddRange(new object[] { "Head of Household", "Spouse", "Child", "Other Relative", "Boarder / Tenant" });
+            cb4HouseRole_Restb.Items.AddRange(new object[] { "Head of Household", "Spouse", "Child", "Other Relative", "Boarder / Tenant", "Not Applicable" });
             cb4HouseRole_Restb.Location = new Point(43, 715);
             cb4HouseRole_Restb.Name = "cb4HouseRole_Restb";
             cb4HouseRole_Restb.Size = new Size(321, 29);
@@ -1308,7 +1308,7 @@
             cb3ResStat_Restb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb3ResStat_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb3ResStat_Restb.FormattingEnabled = true;
-            cb3ResStat_Restb.Items.AddRange(new object[] { "Permanent Resident", "Temporary Resident", "Relocating" });
+            cb3ResStat_Restb.Items.AddRange(new object[] { "Permanent Resident", "Temporary Resident", "Relocating", "Not Applicable" });
             cb3ResStat_Restb.Location = new Point(364, 649);
             cb3ResStat_Restb.Name = "cb3ResStat_Restb";
             cb3ResStat_Restb.Size = new Size(167, 29);
@@ -1532,7 +1532,7 @@
             cb1CivilSt_Restb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb1CivilSt_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb1CivilSt_Restb.FormattingEnabled = true;
-            cb1CivilSt_Restb.Items.AddRange(new object[] { "Single", "Married", "Widowed", "Seperated", "Divorced", "Common-Law/Live-in" });
+            cb1CivilSt_Restb.Items.AddRange(new object[] { "Single", "Married", "Widowed", "Seperated", "Divorced", "Common-Law/Live-in", "Not Applicable" });
             cb1CivilSt_Restb.Location = new Point(359, 218);
             cb1CivilSt_Restb.Name = "cb1CivilSt_Restb";
             cb1CivilSt_Restb.Size = new Size(172, 29);
@@ -2455,7 +2455,7 @@
             cb3Department_BrgyStftb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb3Department_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb3Department_BrgyStftb.FormattingEnabled = true;
-            cb3Department_BrgyStftb.Items.AddRange(new object[] { "Census & Records", "Health Services", "Social Welfare", "Peace & Order", "Barangay Officials", "Sangguniang Kabataan" });
+            cb3Department_BrgyStftb.Items.AddRange(new object[] { "Census & Records", "Health Services", "Social Welfare", "Peace & Order", "Barangay Officials", "Sangguniang Kabataan", "Not Applicable" });
             cb3Department_BrgyStftb.Location = new Point(43, 580);
             cb3Department_BrgyStftb.Name = "cb3Department_BrgyStftb";
             cb3Department_BrgyStftb.Size = new Size(254, 29);
@@ -2629,7 +2629,7 @@
             cb1CivilStat_BrgyStftb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb1CivilStat_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb1CivilStat_BrgyStftb.FormattingEnabled = true;
-            cb1CivilStat_BrgyStftb.Items.AddRange(new object[] { "Single", "Married", "Widowed", "Seperated", "Divorced", "Common-Law/Live-in" });
+            cb1CivilStat_BrgyStftb.Items.AddRange(new object[] { "Single", "Married", "Widowed", "Seperated", "Divorced", "Common-Law/Live-in", "Not Applicable" });
             cb1CivilStat_BrgyStftb.Location = new Point(359, 218);
             cb1CivilStat_BrgyStftb.Name = "cb1CivilStat_BrgyStftb";
             cb1CivilStat_BrgyStftb.Size = new Size(172, 29);
@@ -3748,7 +3748,7 @@
             cb3Dept_Admintb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb3Dept_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb3Dept_Admintb.FormattingEnabled = true;
-            cb3Dept_Admintb.Items.AddRange(new object[] { "Census & Records", "Health Services", "Social Welfare", "Peace & Order", "Barangay Officials", "Sangguniang Kabataan" });
+            cb3Dept_Admintb.Items.AddRange(new object[] { "Census & Records", "Health Services", "Social Welfare", "Peace & Order", "Barangay Officials", "Sangguniang Kabataan", "Not Applicable" });
             cb3Dept_Admintb.Location = new Point(43, 582);
             cb3Dept_Admintb.Name = "cb3Dept_Admintb";
             cb3Dept_Admintb.Size = new Size(254, 29);
@@ -3922,7 +3922,7 @@
             cb1CivilStat_Admintb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb1CivilStat_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb1CivilStat_Admintb.FormattingEnabled = true;
-            cb1CivilStat_Admintb.Items.AddRange(new object[] { "Single", "Married", "Widowed", "Seperated", "Divorced", "Common-Law/Live-in" });
+            cb1CivilStat_Admintb.Items.AddRange(new object[] { "Single", "Married", "Widowed", "Seperated", "Divorced", "Common-Law/Live-in", "Not Applicable" });
             cb1CivilStat_Admintb.Location = new Point(359, 218);
             cb1CivilStat_Admintb.Name = "cb1CivilStat_Admintb";
             cb1CivilStat_Admintb.Size = new Size(172, 29);

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ResidentForm3));
             pnSlideMenu = new Panel();
-            Settings = new Button();
             btLogOut = new Button();
             panel1 = new Panel();
             pnButtons = new Panel();
@@ -38,8 +37,6 @@
             btReportHistory = new Button();
             panel6 = new Panel();
             btSubmitReport = new Button();
-            panel5 = new Panel();
-            btMyProfile = new Button();
             panel10 = new Panel();
             btDashboard = new Button();
             panelLogo = new Panel();
@@ -56,6 +53,7 @@
             CenSyLb2 = new Label();
             pnChilForms = new Panel();
             pbLogo = new PictureBox();
+            Settings = new Button();
             pnSlideMenu.SuspendLayout();
             panel1.SuspendLayout();
             pnButtons.SuspendLayout();
@@ -73,7 +71,6 @@
             // pnSlideMenu
             // 
             pnSlideMenu.BackColor = Color.FromArgb(0, 0, 64);
-            pnSlideMenu.Controls.Add(Settings);
             pnSlideMenu.Controls.Add(btLogOut);
             pnSlideMenu.Controls.Add(panel1);
             pnSlideMenu.Controls.Add(panelLogo);
@@ -82,27 +79,6 @@
             pnSlideMenu.Name = "pnSlideMenu";
             pnSlideMenu.Size = new Size(330, 794);
             pnSlideMenu.TabIndex = 0;
-            // 
-            // Settings
-            // 
-            Settings.Cursor = Cursors.Hand;
-            Settings.Dock = DockStyle.Bottom;
-            Settings.FlatAppearance.BorderSize = 0;
-            Settings.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
-            Settings.FlatAppearance.MouseOverBackColor = Color.Navy;
-            Settings.FlatStyle = FlatStyle.Flat;
-            Settings.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Settings.ForeColor = SystemColors.ControlLightLight;
-            Settings.Image = Properties.Resources.Settings;
-            Settings.ImageAlign = ContentAlignment.MiddleLeft;
-            Settings.Location = new Point(0, 710);
-            Settings.Name = "Settings";
-            Settings.Padding = new Padding(10, 5, 0, 10);
-            Settings.Size = new Size(330, 42);
-            Settings.TabIndex = 20;
-            Settings.Text = "          SETTINGS";
-            Settings.TextAlign = ContentAlignment.MiddleLeft;
-            Settings.UseVisualStyleBackColor = true;
             // 
             // btLogOut
             // 
@@ -137,12 +113,11 @@
             // 
             // pnButtons
             // 
+            pnButtons.Controls.Add(Settings);
             pnButtons.Controls.Add(panel2);
             pnButtons.Controls.Add(btReportHistory);
             pnButtons.Controls.Add(panel6);
             pnButtons.Controls.Add(btSubmitReport);
-            pnButtons.Controls.Add(panel5);
-            pnButtons.Controls.Add(btMyProfile);
             pnButtons.Controls.Add(panel10);
             pnButtons.Controls.Add(btDashboard);
             pnButtons.Dock = DockStyle.Top;
@@ -154,7 +129,7 @@
             // panel2
             // 
             panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 208);
+            panel2.Location = new Point(0, 156);
             panel2.Name = "panel2";
             panel2.Size = new Size(330, 10);
             panel2.TabIndex = 18;
@@ -171,7 +146,7 @@
             btReportHistory.ForeColor = SystemColors.ControlLightLight;
             btReportHistory.Image = Properties.Resources.Report_History1;
             btReportHistory.ImageAlign = ContentAlignment.MiddleLeft;
-            btReportHistory.Location = new Point(0, 159);
+            btReportHistory.Location = new Point(0, 107);
             btReportHistory.Name = "btReportHistory";
             btReportHistory.Padding = new Padding(10, 5, 0, 10);
             btReportHistory.Size = new Size(330, 49);
@@ -184,7 +159,7 @@
             // panel6
             // 
             panel6.Dock = DockStyle.Top;
-            panel6.Location = new Point(0, 149);
+            panel6.Location = new Point(0, 97);
             panel6.Name = "panel6";
             panel6.Size = new Size(330, 10);
             panel6.TabIndex = 16;
@@ -201,7 +176,7 @@
             btSubmitReport.ForeColor = SystemColors.ControlLightLight;
             btSubmitReport.Image = Properties.Resources.Submit_Report;
             btSubmitReport.ImageAlign = ContentAlignment.MiddleLeft;
-            btSubmitReport.Location = new Point(0, 107);
+            btSubmitReport.Location = new Point(0, 55);
             btSubmitReport.Name = "btSubmitReport";
             btSubmitReport.Padding = new Padding(10, 5, 0, 10);
             btSubmitReport.Size = new Size(330, 42);
@@ -210,36 +185,6 @@
             btSubmitReport.TextAlign = ContentAlignment.MiddleLeft;
             btSubmitReport.UseVisualStyleBackColor = true;
             btSubmitReport.Click += btSubmitReport_Click;
-            // 
-            // panel5
-            // 
-            panel5.Dock = DockStyle.Top;
-            panel5.Location = new Point(0, 97);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(330, 10);
-            panel5.TabIndex = 14;
-            // 
-            // btMyProfile
-            // 
-            btMyProfile.Cursor = Cursors.Hand;
-            btMyProfile.Dock = DockStyle.Top;
-            btMyProfile.FlatAppearance.BorderSize = 0;
-            btMyProfile.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btMyProfile.FlatAppearance.MouseOverBackColor = Color.Gold;
-            btMyProfile.FlatStyle = FlatStyle.Flat;
-            btMyProfile.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btMyProfile.ForeColor = SystemColors.ControlLightLight;
-            btMyProfile.Image = Properties.Resources.My_Profile1;
-            btMyProfile.ImageAlign = ContentAlignment.MiddleLeft;
-            btMyProfile.Location = new Point(0, 55);
-            btMyProfile.Name = "btMyProfile";
-            btMyProfile.Padding = new Padding(10, 5, 0, 10);
-            btMyProfile.Size = new Size(330, 42);
-            btMyProfile.TabIndex = 13;
-            btMyProfile.Text = "          MY PROFILE";
-            btMyProfile.TextAlign = ContentAlignment.MiddleLeft;
-            btMyProfile.UseVisualStyleBackColor = true;
-            btMyProfile.Click += btMyProfile_Click;
             // 
             // panel10
             // 
@@ -435,6 +380,28 @@
             pbLogo.TabIndex = 0;
             pbLogo.TabStop = false;
             // 
+            // Settings
+            // 
+            Settings.Cursor = Cursors.Hand;
+            Settings.Dock = DockStyle.Top;
+            Settings.FlatAppearance.BorderSize = 0;
+            Settings.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            Settings.FlatAppearance.MouseOverBackColor = Color.Navy;
+            Settings.FlatStyle = FlatStyle.Flat;
+            Settings.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Settings.ForeColor = SystemColors.ControlLightLight;
+            Settings.Image = Properties.Resources.Settings;
+            Settings.ImageAlign = ContentAlignment.MiddleLeft;
+            Settings.Location = new Point(0, 166);
+            Settings.Name = "Settings";
+            Settings.Padding = new Padding(10, 5, 0, 10);
+            Settings.Size = new Size(330, 42);
+            Settings.TabIndex = 20;
+            Settings.Text = "          SETTINGS";
+            Settings.TextAlign = ContentAlignment.MiddleLeft;
+            Settings.UseVisualStyleBackColor = true;
+            Settings.Click += Settings_Click;
+            // 
             // ResidentForm3
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
@@ -485,8 +452,6 @@
         private Button btReportHistory;
         private Panel panel6;
         private Button btSubmitReport;
-        private Panel panel5;
-        private Button btMyProfile;
         private Panel panel9;
         private Panel pnChilForms;
         private PictureBox pbLogo;

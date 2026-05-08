@@ -38,7 +38,6 @@
             Welcome = new Label();
             Greetings = new Label();
             panel2 = new Panel();
-            panel9 = new Panel();
             panel5 = new Panel();
             panel3 = new Panel();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -159,7 +158,6 @@
             // panel2
             // 
             panel2.BackColor = Color.Transparent;
-            panel2.Controls.Add(panel9);
             panel2.Controls.Add(panel5);
             panel2.Controls.Add(Welcome);
             panel2.Controls.Add(Greetings);
@@ -168,16 +166,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(1015, 80);
             panel2.TabIndex = 19;
-            // 
-            // panel9
-            // 
-            panel9.BackColor = Color.Maroon;
-            panel9.ForeColor = Color.Goldenrod;
-            panel9.Location = new Point(107, 12);
-            panel9.Margin = new Padding(0);
-            panel9.Name = "panel9";
-            panel9.Size = new Size(90, 4);
-            panel9.TabIndex = 17;
             // 
             // panel5
             // 
@@ -418,9 +406,9 @@
             lb6DOB_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lb6DOB_BrgyStftb.Location = new Point(700, 33);
             lb6DOB_BrgyStftb.Name = "lb6DOB_BrgyStftb";
-            lb6DOB_BrgyStftb.Size = new Size(92, 21);
+            lb6DOB_BrgyStftb.Size = new Size(96, 21);
             lb6DOB_BrgyStftb.TabIndex = 31;
-            lb6DOB_BrgyStftb.Text = "Date Of Birth";
+            lb6DOB_BrgyStftb.Text = "Date Of Event";
             // 
             // Death
             // 
@@ -567,9 +555,9 @@
             label10.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label10.Location = new Point(700, 33);
             label10.Name = "label10";
-            label10.Size = new Size(92, 21);
+            label10.Size = new Size(96, 21);
             label10.TabIndex = 42;
-            label10.Text = "Date Of Birth";
+            label10.Text = "Date Of Event";
             // 
             // MoveIn
             // 
@@ -715,9 +703,9 @@
             label16.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label16.Location = new Point(700, 33);
             label16.Name = "label16";
-            label16.Size = new Size(92, 21);
+            label16.Size = new Size(96, 21);
             label16.TabIndex = 42;
-            label16.Text = "Date Of Birth";
+            label16.Text = "Date Of Event";
             // 
             // MoveOut
             // 
@@ -863,9 +851,9 @@
             label22.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label22.Location = new Point(700, 33);
             label22.Name = "label22";
-            label22.Size = new Size(92, 21);
+            label22.Size = new Size(96, 21);
             label22.TabIndex = 42;
-            label22.Text = "Date Of Birth";
+            label22.Text = "Date Of Event";
             // 
             // panel1
             // 
@@ -1137,6 +1125,7 @@
             // 
             // btSubmit_ReportF3
             // 
+            btSubmit_ReportF3.Anchor = AnchorStyles.None;
             btSubmit_ReportF3.BackColor = Color.MidnightBlue;
             btSubmit_ReportF3.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 64);
             btSubmit_ReportF3.FlatAppearance.BorderSize = 0;
@@ -1153,6 +1142,7 @@
             // 
             // chkb1Confirm_ReportF3
             // 
+            chkb1Confirm_ReportF3.Anchor = AnchorStyles.None;
             chkb1Confirm_ReportF3.AutoSize = true;
             chkb1Confirm_ReportF3.CheckAlign = ContentAlignment.TopLeft;
             chkb1Confirm_ReportF3.Font = new Font("Arial Narrow", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -1288,7 +1278,6 @@
         private Panel panel7;
         private Label label29;
         private Panel panel8;
-        private Panel panel9;
         private Button btSubmit_ReportF3;
         private CheckBox chkb1Confirm_ReportF3;
     }

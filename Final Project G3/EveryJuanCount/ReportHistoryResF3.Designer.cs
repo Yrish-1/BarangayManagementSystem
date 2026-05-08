@@ -44,7 +44,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReportHistoryResF3));
             panel2 = new Panel();
-            panel7 = new Panel();
             panel9 = new Panel();
             panel5 = new Panel();
             Welcome = new Label();
@@ -82,7 +81,6 @@
             // panel2
             // 
             panel2.BackColor = Color.Transparent;
-            panel2.Controls.Add(panel7);
             panel2.Controls.Add(panel9);
             panel2.Controls.Add(panel5);
             panel2.Controls.Add(Welcome);
@@ -92,16 +90,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(1015, 80);
             panel2.TabIndex = 20;
-            // 
-            // panel7
-            // 
-            panel7.BackColor = Color.MidnightBlue;
-            panel7.ForeColor = Color.Goldenrod;
-            panel7.Location = new Point(197, 12);
-            panel7.Margin = new Padding(0);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(90, 4);
-            panel7.TabIndex = 19;
             // 
             // panel9
             // 
@@ -178,9 +166,9 @@
             lbRejected.ForeColor = SystemColors.ControlLightLight;
             lbRejected.Location = new Point(40, 10);
             lbRejected.Name = "lbRejected";
-            lbRejected.Size = new Size(102, 18);
+            lbRejected.Size = new Size(94, 18);
             lbRejected.TabIndex = 1;
-            lbRejected.Text = "Rejected ( 4 )";
+            lbRejected.Text = "Rejected (  )";
             // 
             // Approved
             // 
@@ -203,9 +191,9 @@
             lbApproved.ForeColor = SystemColors.Control;
             lbApproved.Location = new Point(38, 10);
             lbApproved.Name = "lbApproved";
-            lbApproved.Size = new Size(107, 18);
+            lbApproved.Size = new Size(99, 18);
             lbApproved.TabIndex = 1;
-            lbApproved.Text = "Approved ( 4 )";
+            lbApproved.Text = "Approved (  )";
             // 
             // Pending
             // 
@@ -228,9 +216,9 @@
             lbPending.ForeColor = SystemColors.ControlLightLight;
             lbPending.Location = new Point(43, 10);
             lbPending.Name = "lbPending";
-            lbPending.Size = new Size(97, 18);
+            lbPending.Size = new Size(89, 18);
             lbPending.TabIndex = 1;
-            lbPending.Text = "Pending ( 4 )";
+            lbPending.Text = "Pending (  )";
             // 
             // All
             // 
@@ -253,9 +241,9 @@
             lbAll.ForeColor = SystemColors.ControlLightLight;
             lbAll.Location = new Point(64, 9);
             lbAll.Name = "lbAll";
-            lbAll.Size = new Size(55, 18);
+            lbAll.Size = new Size(47, 18);
             lbAll.TabIndex = 0;
-            lbAll.Text = "All ( 4 )";
+            lbAll.Text = "All (  )";
             // 
             // panel3
             // 
@@ -351,11 +339,11 @@
             label29.ForeColor = Color.Gold;
             label29.Location = new Point(25, 15);
             label29.Name = "label29";
-            label29.Size = new Size(297, 36);
+            label29.Size = new Size(260, 36);
             label29.TabIndex = 15;
-            label29.Text = "REPORTER HISTORY";
+            label29.Text = "REPORT HISTORY";
             // 
-            // ReportHistoryF3
+            // ReportHistoryResF3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -365,7 +353,7 @@
             Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "ReportHistoryF3";
+            Name = "ReportHistoryResF3";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel1.ResumeLayout(false);
@@ -409,7 +397,6 @@
         private Label label29;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Panel panel4;
-        private Panel panel7;
         private Panel panel9;
     }
 }

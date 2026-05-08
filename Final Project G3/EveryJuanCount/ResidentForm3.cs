@@ -98,11 +98,6 @@ namespace EveryJuanCount
             OpenChildForm(new DashboardResF3());
         }
 
-        private void btMyProfile_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new MyProfileResF3());
-        }
-
         private void btSubmitReport_Click(object sender, EventArgs e)
         {
             OpenChildForm(new SubmitReport());
@@ -112,11 +107,9 @@ namespace EveryJuanCount
         {
             OpenChildForm(new ReportHistoryResF3());
         }
-
-        private void btSettings_ResF_Click(object sender, EventArgs e)
+        private void Settings_Click(object sender, EventArgs e)
         {
             OpenChildForm(new SettingsResF3());
-
         }
 
         #endregion
