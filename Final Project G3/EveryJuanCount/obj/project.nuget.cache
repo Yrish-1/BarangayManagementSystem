@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ohiYg6NLIXQ=",
+  "dgSpecHash": "opL1qcNhbCU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\OneDrive\\Documents\\aoop project\\BarangayManagementSystem\\Final Project G3\\EveryJuanCount\\EveryJuanCount.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\OneDrive\\Documents\\Ahh\\Final Project G3\\EveryJuanCount\\EveryJuanCount.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\bunifu.licensing\\6.3.0\\bunifu.licensing.6.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\bunifu.ui.winforms\\9.1.0\\bunifu.ui.winforms.9.1.0.nupkg.sha512",
@@ -19,9 +19,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'MaterialSkin 0.2.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0-windows7.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Users\\Admin\\OneDrive\\Documents\\aoop project\\BarangayManagementSystem\\Final Project G3\\EveryJuanCount\\EveryJuanCount.csproj",
+      "projectPath": "C:\\Users\\Admin\\OneDrive\\Documents\\Ahh\\Final Project G3\\EveryJuanCount\\EveryJuanCount.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Admin\\OneDrive\\Documents\\aoop project\\BarangayManagementSystem\\Final Project G3\\EveryJuanCount\\EveryJuanCount.csproj",
+      "filePath": "C:\\Users\\Admin\\OneDrive\\Documents\\Ahh\\Final Project G3\\EveryJuanCount\\EveryJuanCount.csproj",
       "libraryId": "MaterialSkin",
       "targetGraphs": [
         "net10.0-windows"
@@ -31,9 +31,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'Siticone.Desktop.UI 2.1.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0-windows7.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Users\\Admin\\OneDrive\\Documents\\aoop project\\BarangayManagementSystem\\Final Project G3\\EveryJuanCount\\EveryJuanCount.csproj",
+      "projectPath": "C:\\Users\\Admin\\OneDrive\\Documents\\Ahh\\Final Project G3\\EveryJuanCount\\EveryJuanCount.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Admin\\OneDrive\\Documents\\aoop project\\BarangayManagementSystem\\Final Project G3\\EveryJuanCount\\EveryJuanCount.csproj",
+      "filePath": "C:\\Users\\Admin\\OneDrive\\Documents\\Ahh\\Final Project G3\\EveryJuanCount\\EveryJuanCount.csproj",
       "libraryId": "Siticone.Desktop.UI",
       "targetGraphs": [
         "net10.0-windows"
