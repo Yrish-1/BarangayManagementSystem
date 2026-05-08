@@ -529,6 +529,7 @@
             tabControlRegistration.Controls.Add(tab1Resident);
             tabControlRegistration.Controls.Add(tab2BarangayStaff);
             tabControlRegistration.Controls.Add(tabPage3);
+            tabControlRegistration.Cursor = Cursors.Hand;
             tabControlRegistration.Font = new Font("Microsoft Yi Baiti", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             tabControlRegistration.HotTrack = true;
             tabControlRegistration.ImeMode = ImeMode.NoControl;
@@ -850,6 +851,7 @@
             // btShowPassConfirm_Restb
             // 
             btShowPassConfirm_Restb.BackColor = SystemColors.ScrollBar;
+            btShowPassConfirm_Restb.Cursor = Cursors.Hand;
             btShowPassConfirm_Restb.FlatAppearance.BorderSize = 0;
             btShowPassConfirm_Restb.FlatStyle = FlatStyle.Flat;
             btShowPassConfirm_Restb.Image = Properties.Resources.eyePass;
@@ -864,6 +866,7 @@
             // 
             btHidePassConfirm_Restb.BackColor = SystemColors.ScrollBar;
             btHidePassConfirm_Restb.BackgroundImage = Properties.Resources.hidePass;
+            btHidePassConfirm_Restb.Cursor = Cursors.Hand;
             btHidePassConfirm_Restb.FlatAppearance.BorderSize = 0;
             btHidePassConfirm_Restb.FlatStyle = FlatStyle.Flat;
             btHidePassConfirm_Restb.Image = Properties.Resources.hidePass;
@@ -878,6 +881,7 @@
             // btShowPassword_Restb
             // 
             btShowPassword_Restb.BackColor = SystemColors.ScrollBar;
+            btShowPassword_Restb.Cursor = Cursors.Hand;
             btShowPassword_Restb.FlatAppearance.BorderSize = 0;
             btShowPassword_Restb.FlatStyle = FlatStyle.Flat;
             btShowPassword_Restb.Image = Properties.Resources.eyePass;
@@ -892,6 +896,7 @@
             // 
             btHidePassword_Restb.BackColor = SystemColors.ScrollBar;
             btHidePassword_Restb.BackgroundImage = Properties.Resources.hidePass;
+            btHidePassword_Restb.Cursor = Cursors.Hand;
             btHidePassword_Restb.FlatAppearance.BorderSize = 0;
             btHidePassword_Restb.FlatStyle = FlatStyle.Flat;
             btHidePassword_Restb.Image = Properties.Resources.hidePass;
@@ -916,6 +921,7 @@
             // btSignInHere_Restb
             // 
             btSignInHere_Restb.BackColor = Color.Goldenrod;
+            btSignInHere_Restb.Cursor = Cursors.Hand;
             btSignInHere_Restb.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 64);
             btSignInHere_Restb.FlatAppearance.BorderSize = 0;
             btSignInHere_Restb.FlatStyle = FlatStyle.Flat;
@@ -963,6 +969,7 @@
             // btSubmit_Restb
             // 
             btSubmit_Restb.BackColor = Color.MidnightBlue;
+            btSubmit_Restb.Cursor = Cursors.Hand;
             btSubmit_Restb.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 64);
             btSubmit_Restb.FlatAppearance.BorderSize = 0;
             btSubmit_Restb.FlatStyle = FlatStyle.Flat;
@@ -980,6 +987,7 @@
             // 
             chkb1Confirm_Restb.AutoSize = true;
             chkb1Confirm_Restb.CheckAlign = ContentAlignment.TopLeft;
+            chkb1Confirm_Restb.Cursor = Cursors.Hand;
             chkb1Confirm_Restb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             chkb1Confirm_Restb.Location = new Point(47, 1284);
             chkb1Confirm_Restb.Name = "chkb1Confirm_Restb";
@@ -1058,6 +1066,7 @@
             // 
             // btIDUpload_Restb
             // 
+            btIDUpload_Restb.Cursor = Cursors.Hand;
             btIDUpload_Restb.FlatAppearance.BorderColor = Color.AliceBlue;
             btIDUpload_Restb.FlatStyle = FlatStyle.Flat;
             btIDUpload_Restb.Font = new Font("Sans Serif Collection", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -1106,6 +1115,7 @@
             // cb5ValidIDType_Restb
             // 
             cb5ValidIDType_Restb.BackColor = SystemColors.Control;
+            cb5ValidIDType_Restb.Cursor = Cursors.Hand;
             cb5ValidIDType_Restb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb5ValidIDType_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb5ValidIDType_Restb.FormattingEnabled = true;
@@ -1220,6 +1230,7 @@
             // 
             // numericUpDownHM_Restb
             // 
+            numericUpDownHM_Restb.Cursor = Cursors.Hand;
             numericUpDownHM_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             numericUpDownHM_Restb.Location = new Point(381, 715);
             numericUpDownHM_Restb.Name = "numericUpDownHM_Restb";
@@ -1259,6 +1270,7 @@
             // cb4HouseRole_Restb
             // 
             cb4HouseRole_Restb.BackColor = SystemColors.Control;
+            cb4HouseRole_Restb.Cursor = Cursors.Hand;
             cb4HouseRole_Restb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb4HouseRole_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb4HouseRole_Restb.FormattingEnabled = true;
@@ -1305,6 +1317,7 @@
             // cb3ResStat_Restb
             // 
             cb3ResStat_Restb.BackColor = SystemColors.Control;
+            cb3ResStat_Restb.Cursor = Cursors.Hand;
             cb3ResStat_Restb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb3ResStat_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb3ResStat_Restb.FormattingEnabled = true;
@@ -1507,6 +1520,7 @@
             // cb2Sex_Restb
             // 
             cb2Sex_Restb.BackColor = SystemColors.Control;
+            cb2Sex_Restb.Cursor = Cursors.Hand;
             cb2Sex_Restb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb2Sex_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb2Sex_Restb.FormattingEnabled = true;
@@ -1529,6 +1543,7 @@
             // cb1CivilSt_Restb
             // 
             cb1CivilSt_Restb.BackColor = SystemColors.Control;
+            cb1CivilSt_Restb.Cursor = Cursors.Hand;
             cb1CivilSt_Restb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb1CivilSt_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb1CivilSt_Restb.FormattingEnabled = true;
@@ -1575,6 +1590,7 @@
             // dateTimePicker1_Restb
             // 
             dateTimePicker1_Restb.CalendarMonthBackground = SystemColors.ButtonFace;
+            dateTimePicker1_Restb.Cursor = Cursors.Hand;
             dateTimePicker1_Restb.CustomFormat = "";
             dateTimePicker1_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dateTimePicker1_Restb.Format = DateTimePickerFormat.Short;
@@ -2018,6 +2034,7 @@
             // btSignInHere_BrgyStftb
             // 
             btSignInHere_BrgyStftb.BackColor = Color.Goldenrod;
+            btSignInHere_BrgyStftb.Cursor = Cursors.Hand;
             btSignInHere_BrgyStftb.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 64);
             btSignInHere_BrgyStftb.FlatAppearance.BorderSize = 0;
             btSignInHere_BrgyStftb.FlatStyle = FlatStyle.Flat;
@@ -2065,6 +2082,7 @@
             // btSubmit_BrgyStftb
             // 
             btSubmit_BrgyStftb.BackColor = Color.MidnightBlue;
+            btSubmit_BrgyStftb.Cursor = Cursors.Hand;
             btSubmit_BrgyStftb.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 64);
             btSubmit_BrgyStftb.FlatAppearance.BorderSize = 0;
             btSubmit_BrgyStftb.FlatStyle = FlatStyle.Flat;
@@ -2082,6 +2100,7 @@
             // 
             chkb1Confirm_BrgyStftb.AutoSize = true;
             chkb1Confirm_BrgyStftb.CheckAlign = ContentAlignment.TopLeft;
+            chkb1Confirm_BrgyStftb.Cursor = Cursors.Hand;
             chkb1Confirm_BrgyStftb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             chkb1Confirm_BrgyStftb.Location = new Point(52, 1225);
             chkb1Confirm_BrgyStftb.Name = "chkb1Confirm_BrgyStftb";
@@ -2170,6 +2189,7 @@
             // 
             // btUploadID_BrgyStftb
             // 
+            btUploadID_BrgyStftb.Cursor = Cursors.Hand;
             btUploadID_BrgyStftb.FlatAppearance.BorderColor = Color.AliceBlue;
             btUploadID_BrgyStftb.FlatStyle = FlatStyle.Flat;
             btUploadID_BrgyStftb.Font = new Font("Sans Serif Collection", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -2186,10 +2206,11 @@
             // bt3ConShowPass_BrgyStftb
             // 
             bt3ConShowPass_BrgyStftb.BackColor = SystemColors.ScrollBar;
+            bt3ConShowPass_BrgyStftb.Cursor = Cursors.Hand;
             bt3ConShowPass_BrgyStftb.FlatAppearance.BorderSize = 0;
             bt3ConShowPass_BrgyStftb.FlatStyle = FlatStyle.Flat;
             bt3ConShowPass_BrgyStftb.Image = Properties.Resources.eyePass;
-            bt3ConShowPass_BrgyStftb.Location = new Point(495, 884);
+            bt3ConShowPass_BrgyStftb.Location = new Point(496, 884);
             bt3ConShowPass_BrgyStftb.Name = "bt3ConShowPass_BrgyStftb";
             bt3ConShowPass_BrgyStftb.Size = new Size(36, 27);
             bt3ConShowPass_BrgyStftb.TabIndex = 90;
@@ -2200,6 +2221,7 @@
             // 
             bt4ConHidePass_BrgyStftb.BackColor = SystemColors.ScrollBar;
             bt4ConHidePass_BrgyStftb.BackgroundImage = Properties.Resources.hidePass;
+            bt4ConHidePass_BrgyStftb.Cursor = Cursors.Hand;
             bt4ConHidePass_BrgyStftb.FlatAppearance.BorderSize = 0;
             bt4ConHidePass_BrgyStftb.FlatStyle = FlatStyle.Flat;
             bt4ConHidePass_BrgyStftb.Image = Properties.Resources.hidePass;
@@ -2214,6 +2236,7 @@
             // bt1ShowPass_BrgyStftb
             // 
             bt1ShowPass_BrgyStftb.BackColor = SystemColors.ScrollBar;
+            bt1ShowPass_BrgyStftb.Cursor = Cursors.Hand;
             bt1ShowPass_BrgyStftb.FlatAppearance.BorderSize = 0;
             bt1ShowPass_BrgyStftb.FlatStyle = FlatStyle.Flat;
             bt1ShowPass_BrgyStftb.Image = Properties.Resources.eyePass;
@@ -2228,6 +2251,7 @@
             // 
             bt2HidePass_BrgyStftb.BackColor = SystemColors.ScrollBar;
             bt2HidePass_BrgyStftb.BackgroundImage = Properties.Resources.hidePass;
+            bt2HidePass_BrgyStftb.Cursor = Cursors.Hand;
             bt2HidePass_BrgyStftb.FlatAppearance.BorderSize = 0;
             bt2HidePass_BrgyStftb.FlatStyle = FlatStyle.Flat;
             bt2HidePass_BrgyStftb.Image = Properties.Resources.hidePass;
@@ -2274,6 +2298,7 @@
             // cb4ValidIDType_BrgyStftb
             // 
             cb4ValidIDType_BrgyStftb.BackColor = SystemColors.Control;
+            cb4ValidIDType_BrgyStftb.Cursor = Cursors.Hand;
             cb4ValidIDType_BrgyStftb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb4ValidIDType_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb4ValidIDType_BrgyStftb.FormattingEnabled = true;
@@ -2442,6 +2467,7 @@
             // 
             // dateTimePicker2DOA_BrgyStftb
             // 
+            dateTimePicker2DOA_BrgyStftb.Cursor = Cursors.Hand;
             dateTimePicker2DOA_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dateTimePicker2DOA_BrgyStftb.Format = DateTimePickerFormat.Short;
             dateTimePicker2DOA_BrgyStftb.Location = new Point(314, 582);
@@ -2452,6 +2478,7 @@
             // cb3Department_BrgyStftb
             // 
             cb3Department_BrgyStftb.BackColor = SystemColors.Control;
+            cb3Department_BrgyStftb.Cursor = Cursors.Hand;
             cb3Department_BrgyStftb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb3Department_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb3Department_BrgyStftb.FormattingEnabled = true;
@@ -2604,6 +2631,7 @@
             // cb2Sex_BrgyStftb
             // 
             cb2Sex_BrgyStftb.BackColor = SystemColors.Control;
+            cb2Sex_BrgyStftb.Cursor = Cursors.Hand;
             cb2Sex_BrgyStftb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb2Sex_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb2Sex_BrgyStftb.FormattingEnabled = true;
@@ -2626,6 +2654,7 @@
             // cb1CivilStat_BrgyStftb
             // 
             cb1CivilStat_BrgyStftb.BackColor = SystemColors.Control;
+            cb1CivilStat_BrgyStftb.Cursor = Cursors.Hand;
             cb1CivilStat_BrgyStftb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb1CivilStat_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb1CivilStat_BrgyStftb.FormattingEnabled = true;
@@ -2672,6 +2701,7 @@
             // dateTimePicker1DOB_BrgyStftb
             // 
             dateTimePicker1DOB_BrgyStftb.CalendarMonthBackground = SystemColors.ButtonFace;
+            dateTimePicker1DOB_BrgyStftb.Cursor = Cursors.Hand;
             dateTimePicker1DOB_BrgyStftb.CustomFormat = "";
             dateTimePicker1DOB_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dateTimePicker1DOB_BrgyStftb.Format = DateTimePickerFormat.Short;
@@ -3191,6 +3221,7 @@
             // btSignInHere_Adminbt
             // 
             btSignInHere_Adminbt.BackColor = Color.Goldenrod;
+            btSignInHere_Adminbt.Cursor = Cursors.Hand;
             btSignInHere_Adminbt.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 64);
             btSignInHere_Adminbt.FlatAppearance.BorderSize = 0;
             btSignInHere_Adminbt.FlatStyle = FlatStyle.Flat;
@@ -3237,6 +3268,7 @@
             // btSubmit_Admintb
             // 
             btSubmit_Admintb.BackColor = Color.MidnightBlue;
+            btSubmit_Admintb.Cursor = Cursors.Hand;
             btSubmit_Admintb.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 64);
             btSubmit_Admintb.FlatAppearance.BorderSize = 0;
             btSubmit_Admintb.FlatStyle = FlatStyle.Flat;
@@ -3254,6 +3286,7 @@
             // 
             chkbConfirm_Admintb.AutoSize = true;
             chkbConfirm_Admintb.CheckAlign = ContentAlignment.TopLeft;
+            chkbConfirm_Admintb.Cursor = Cursors.Hand;
             chkbConfirm_Admintb.Font = new Font("Arial Narrow", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             chkbConfirm_Admintb.Location = new Point(40, 1451);
             chkbConfirm_Admintb.Name = "chkbConfirm_Admintb";
@@ -3353,6 +3386,7 @@
             // 
             // btUploadID_Admintb
             // 
+            btUploadID_Admintb.Cursor = Cursors.Hand;
             btUploadID_Admintb.FlatAppearance.BorderColor = Color.AliceBlue;
             btUploadID_Admintb.FlatStyle = FlatStyle.Flat;
             btUploadID_Admintb.Font = new Font("Sans Serif Collection", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -3369,6 +3403,7 @@
             // bt3ConShowPass_Admintb
             // 
             bt3ConShowPass_Admintb.BackColor = SystemColors.ScrollBar;
+            bt3ConShowPass_Admintb.Cursor = Cursors.Hand;
             bt3ConShowPass_Admintb.FlatAppearance.BorderSize = 0;
             bt3ConShowPass_Admintb.FlatStyle = FlatStyle.Flat;
             bt3ConShowPass_Admintb.Image = Properties.Resources.eyePass;
@@ -3383,6 +3418,7 @@
             // 
             bt4ConHidePass_Admintb.BackColor = SystemColors.ScrollBar;
             bt4ConHidePass_Admintb.BackgroundImage = Properties.Resources.hidePass;
+            bt4ConHidePass_Admintb.Cursor = Cursors.Hand;
             bt4ConHidePass_Admintb.FlatAppearance.BorderSize = 0;
             bt4ConHidePass_Admintb.FlatStyle = FlatStyle.Flat;
             bt4ConHidePass_Admintb.Image = Properties.Resources.hidePass;
@@ -3397,6 +3433,7 @@
             // bt1ShowPassword_Admintb
             // 
             bt1ShowPassword_Admintb.BackColor = SystemColors.ScrollBar;
+            bt1ShowPassword_Admintb.Cursor = Cursors.Hand;
             bt1ShowPassword_Admintb.FlatAppearance.BorderSize = 0;
             bt1ShowPassword_Admintb.FlatStyle = FlatStyle.Flat;
             bt1ShowPassword_Admintb.Image = Properties.Resources.eyePass;
@@ -3411,6 +3448,7 @@
             // 
             bt2HidePassword_Admintb.BackColor = SystemColors.ScrollBar;
             bt2HidePassword_Admintb.BackgroundImage = Properties.Resources.hidePass;
+            bt2HidePassword_Admintb.Cursor = Cursors.Hand;
             bt2HidePassword_Admintb.FlatAppearance.BorderSize = 0;
             bt2HidePassword_Admintb.FlatStyle = FlatStyle.Flat;
             bt2HidePassword_Admintb.Image = Properties.Resources.hidePass;
@@ -3457,6 +3495,7 @@
             // comboBox1
             // 
             comboBox1.BackColor = SystemColors.Control;
+            comboBox1.Cursor = Cursors.Hand;
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             comboBox1.FormattingEnabled = true;
@@ -3605,6 +3644,7 @@
             // cb4AccessLevel_Admintb
             // 
             cb4AccessLevel_Admintb.BackColor = SystemColors.Control;
+            cb4AccessLevel_Admintb.Cursor = Cursors.Hand;
             cb4AccessLevel_Admintb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb4AccessLevel_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb4AccessLevel_Admintb.FormattingEnabled = true;
@@ -3735,6 +3775,7 @@
             // 
             // dateTimePicker2DOA_Admintb
             // 
+            dateTimePicker2DOA_Admintb.Cursor = Cursors.Hand;
             dateTimePicker2DOA_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dateTimePicker2DOA_Admintb.Format = DateTimePickerFormat.Short;
             dateTimePicker2DOA_Admintb.Location = new Point(314, 582);
@@ -3745,6 +3786,7 @@
             // cb3Dept_Admintb
             // 
             cb3Dept_Admintb.BackColor = SystemColors.Control;
+            cb3Dept_Admintb.Cursor = Cursors.Hand;
             cb3Dept_Admintb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb3Dept_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb3Dept_Admintb.FormattingEnabled = true;
@@ -3897,6 +3939,7 @@
             // cb2Sex_Admintb
             // 
             cb2Sex_Admintb.BackColor = SystemColors.Control;
+            cb2Sex_Admintb.Cursor = Cursors.Hand;
             cb2Sex_Admintb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb2Sex_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb2Sex_Admintb.FormattingEnabled = true;
@@ -3919,6 +3962,7 @@
             // cb1CivilStat_Admintb
             // 
             cb1CivilStat_Admintb.BackColor = SystemColors.Control;
+            cb1CivilStat_Admintb.Cursor = Cursors.Hand;
             cb1CivilStat_Admintb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb1CivilStat_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb1CivilStat_Admintb.FormattingEnabled = true;
@@ -3965,6 +4009,7 @@
             // dateTimePicker1DOB_Admintb
             // 
             dateTimePicker1DOB_Admintb.CalendarMonthBackground = SystemColors.ButtonFace;
+            dateTimePicker1DOB_Admintb.Cursor = Cursors.Hand;
             dateTimePicker1DOB_Admintb.CustomFormat = "";
             dateTimePicker1DOB_Admintb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dateTimePicker1DOB_Admintb.Format = DateTimePickerFormat.Short;

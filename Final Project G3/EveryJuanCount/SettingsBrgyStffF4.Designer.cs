@@ -1,6 +1,6 @@
 ﻿namespace EveryJuanCount
 {
-    partial class SettingsResF3
+    partial class SettingsBrgyStffF4
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsResF3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsBrgyStffF4));
             Settings = new Panel();
             panel4 = new Panel();
             panel3 = new Panel();
@@ -41,24 +41,17 @@
             Settingss = new Guna.UI2.WinForms.Guna2TabControl();
             tabPage1 = new TabPage();
             panel126 = new Panel();
-            button1 = new Button();
-            button2 = new Button();
+            btDeleteAccount = new Button();
+            btUpdateInformation = new Button();
             panel127 = new Panel();
-            panel128 = new Panel();
-            textBox16 = new TextBox();
             panel129 = new Panel();
             panel130 = new Panel();
-            panel131 = new Panel();
             textBox15 = new TextBox();
-            label18 = new Label();
             panel132 = new Panel();
             panel133 = new Panel();
             textBox1 = new TextBox();
             panel134 = new Panel();
             panel135 = new Panel();
-            panel136 = new Panel();
-            label19 = new Label();
-            panel137 = new Panel();
             panel138 = new Panel();
             panel139 = new Panel();
             label20 = new Label();
@@ -68,20 +61,14 @@
             label22 = new Label();
             panel142 = new Panel();
             panel143 = new Panel();
-            panel144 = new Panel();
-            textBox2 = new TextBox();
             panel145 = new Panel();
             panel146 = new Panel();
-            panel147 = new Panel();
             textBox3 = new TextBox();
-            label23 = new Label();
             panel148 = new Panel();
             panel149 = new Panel();
             textBox4 = new TextBox();
             panel150 = new Panel();
             panel151 = new Panel();
-            panel152 = new Panel();
-            label24 = new Label();
             panel153 = new Panel();
             panel154 = new Panel();
             label25 = new Label();
@@ -91,20 +78,14 @@
             label27 = new Label();
             panel160 = new Panel();
             panel161 = new Panel();
-            panel164 = new Panel();
-            textBox5 = new TextBox();
             panel165 = new Panel();
             panel166 = new Panel();
-            panel167 = new Panel();
             textBox6 = new TextBox();
-            label29 = new Label();
             panel168 = new Panel();
             panel169 = new Panel();
             textBox7 = new TextBox();
             panel170 = new Panel();
             panel171 = new Panel();
-            panel172 = new Panel();
-            label30 = new Label();
             panel173 = new Panel();
             label31 = new Label();
             panel174 = new Panel();
@@ -177,7 +158,7 @@
             panel217 = new Panel();
             label47 = new Label();
             panel218 = new Panel();
-            button3 = new Button();
+            btChangePAssword = new Button();
             panel219 = new Panel();
             panel220 = new Panel();
             panel221 = new Panel();
@@ -243,32 +224,23 @@
             tabPage1.SuspendLayout();
             panel126.SuspendLayout();
             panel127.SuspendLayout();
-            panel128.SuspendLayout();
             panel130.SuspendLayout();
-            panel131.SuspendLayout();
             panel133.SuspendLayout();
             panel135.SuspendLayout();
-            panel136.SuspendLayout();
             panel138.SuspendLayout();
             panel139.SuspendLayout();
             panel141.SuspendLayout();
             panel143.SuspendLayout();
-            panel144.SuspendLayout();
             panel146.SuspendLayout();
-            panel147.SuspendLayout();
             panel149.SuspendLayout();
             panel151.SuspendLayout();
-            panel152.SuspendLayout();
             panel153.SuspendLayout();
             panel154.SuspendLayout();
             panel159.SuspendLayout();
             panel161.SuspendLayout();
-            panel164.SuspendLayout();
             panel166.SuspendLayout();
-            panel167.SuspendLayout();
             panel169.SuspendLayout();
             panel171.SuspendLayout();
-            panel172.SuspendLayout();
             panel173.SuspendLayout();
             panel175.SuspendLayout();
             panel177.SuspendLayout();
@@ -332,7 +304,7 @@
             Settings.Location = new Point(0, 0);
             Settings.Name = "Settings";
             Settings.Size = new Size(1015, 96);
-            Settings.TabIndex = 21;
+            Settings.TabIndex = 22;
             // 
             // panel4
             // 
@@ -379,12 +351,12 @@
             // 
             Set.AutoSize = true;
             Set.Font = new Font("Arial Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Set.ForeColor = Color.FromArgb(0, 0, 64);
+            Set.ForeColor = Color.MidnightBlue;
             Set.Location = new Point(11, 16);
             Set.Name = "Set";
-            Set.Size = new Size(154, 42);
+            Set.Size = new Size(190, 42);
             Set.TabIndex = 14;
-            Set.Text = "Settings";
+            Set.Text = "SETTINGS";
             // 
             // panel6
             // 
@@ -392,7 +364,7 @@
             panel6.Location = new Point(0, 96);
             panel6.Name = "panel6";
             panel6.Size = new Size(1015, 10);
-            panel6.TabIndex = 22;
+            panel6.TabIndex = 23;
             // 
             // panel1
             // 
@@ -402,7 +374,7 @@
             panel1.Name = "panel1";
             panel1.Padding = new Padding(10);
             panel1.Size = new Size(1015, 676);
-            panel1.TabIndex = 23;
+            panel1.TabIndex = 24;
             // 
             // panel2
             // 
@@ -462,8 +434,8 @@
             panel126.AutoScroll = true;
             panel126.AutoScrollMinSize = new Size(0, 600);
             panel126.BackColor = SystemColors.GradientActiveCaption;
-            panel126.Controls.Add(button1);
-            panel126.Controls.Add(button2);
+            panel126.Controls.Add(btDeleteAccount);
+            panel126.Controls.Add(btUpdateInformation);
             panel126.Controls.Add(panel127);
             panel126.Controls.Add(panel134);
             panel126.Controls.Add(panel135);
@@ -494,39 +466,38 @@
             panel126.Size = new Size(981, 592);
             panel126.TabIndex = 20;
             // 
-            // button1
+            // btDeleteAccount
             // 
-            button1.BackColor = Color.Maroon;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.Control;
-            button1.Location = new Point(462, 565);
-            button1.Name = "button1";
-            button1.Size = new Size(267, 29);
-            button1.TabIndex = 96;
-            button1.Text = "DELETE ACCOUNT";
-            button1.UseVisualStyleBackColor = false;
+            btDeleteAccount.BackColor = Color.Maroon;
+            btDeleteAccount.Cursor = Cursors.Hand;
+            btDeleteAccount.FlatAppearance.BorderSize = 0;
+            btDeleteAccount.FlatStyle = FlatStyle.Flat;
+            btDeleteAccount.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btDeleteAccount.ForeColor = SystemColors.Control;
+            btDeleteAccount.Location = new Point(486, 565);
+            btDeleteAccount.Name = "btDeleteAccount";
+            btDeleteAccount.Size = new Size(267, 29);
+            btDeleteAccount.TabIndex = 95;
+            btDeleteAccount.Text = "DELETE ACCOUNT";
+            btDeleteAccount.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btUpdateInformation
             // 
-            button2.BackColor = Color.Goldenrod;
-            button2.Cursor = Cursors.Hand;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = SystemColors.Control;
-            button2.Location = new Point(189, 565);
-            button2.Name = "button2";
-            button2.Size = new Size(267, 29);
-            button2.TabIndex = 93;
-            button2.Text = "REQUEST FOR UPDATE";
-            button2.UseVisualStyleBackColor = false;
+            btUpdateInformation.BackColor = Color.Goldenrod;
+            btUpdateInformation.Cursor = Cursors.Hand;
+            btUpdateInformation.FlatAppearance.BorderSize = 0;
+            btUpdateInformation.FlatStyle = FlatStyle.Flat;
+            btUpdateInformation.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btUpdateInformation.ForeColor = SystemColors.Control;
+            btUpdateInformation.Location = new Point(213, 565);
+            btUpdateInformation.Name = "btUpdateInformation";
+            btUpdateInformation.Size = new Size(267, 29);
+            btUpdateInformation.TabIndex = 94;
+            btUpdateInformation.Text = "UPDATE";
+            btUpdateInformation.UseVisualStyleBackColor = false;
             // 
             // panel127
             // 
-            panel127.Controls.Add(panel128);
             panel127.Controls.Add(panel129);
             panel127.Controls.Add(panel130);
             panel127.Controls.Add(panel132);
@@ -538,79 +509,37 @@
             panel127.Size = new Size(900, 26);
             panel127.TabIndex = 92;
             // 
-            // panel128
-            // 
-            panel128.Controls.Add(textBox16);
-            panel128.Dock = DockStyle.Left;
-            panel128.Location = new Point(610, 0);
-            panel128.Name = "panel128";
-            panel128.Size = new Size(188, 26);
-            panel128.TabIndex = 30;
-            // 
-            // textBox16
-            // 
-            textBox16.BackColor = SystemColors.ScrollBar;
-            textBox16.BorderStyle = BorderStyle.None;
-            textBox16.CharacterCasing = CharacterCasing.Upper;
-            textBox16.Dock = DockStyle.Fill;
-            textBox16.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox16.Location = new Point(0, 0);
-            textBox16.Multiline = true;
-            textBox16.Name = "textBox16";
-            textBox16.PlaceholderText = " 0";
-            textBox16.Size = new Size(188, 26);
-            textBox16.TabIndex = 70;
-            // 
             // panel129
             // 
             panel129.Dock = DockStyle.Left;
-            panel129.Location = new Point(600, 0);
+            panel129.Location = new Point(756, 0);
             panel129.Name = "panel129";
             panel129.Size = new Size(10, 26);
             panel129.TabIndex = 29;
             // 
             // panel130
             // 
-            panel130.Controls.Add(panel131);
-            panel130.Controls.Add(label18);
+            panel130.Controls.Add(textBox15);
             panel130.Dock = DockStyle.Left;
             panel130.Location = new Point(424, 0);
             panel130.Name = "panel130";
-            panel130.Size = new Size(176, 26);
+            panel130.Size = new Size(332, 26);
             panel130.TabIndex = 2;
-            // 
-            // panel131
-            // 
-            panel131.Controls.Add(textBox15);
-            panel131.Dock = DockStyle.Left;
-            panel131.Location = new Point(0, 0);
-            panel131.Name = "panel131";
-            panel131.Size = new Size(176, 26);
-            panel131.TabIndex = 28;
             // 
             // textBox15
             // 
             textBox15.BackColor = SystemColors.ScrollBar;
             textBox15.BorderStyle = BorderStyle.None;
             textBox15.CharacterCasing = CharacterCasing.Upper;
+            textBox15.Cursor = Cursors.IBeam;
             textBox15.Dock = DockStyle.Fill;
             textBox15.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox15.Location = new Point(0, 0);
             textBox15.Multiline = true;
             textBox15.Name = "textBox15";
             textBox15.PlaceholderText = " Not Applicable";
-            textBox15.Size = new Size(176, 26);
+            textBox15.Size = new Size(332, 26);
             textBox15.TabIndex = 70;
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label18.Location = new Point(0, 3);
-            label18.Name = "label18";
-            label18.Size = new Size(99, 23);
-            label18.TabIndex = 27;
-            label18.Text = "Middle Name";
             // 
             // panel132
             // 
@@ -634,6 +563,7 @@
             textBox1.BackColor = SystemColors.ScrollBar;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.CharacterCasing = CharacterCasing.Upper;
+            textBox1.Cursor = Cursors.IBeam;
             textBox1.Dock = DockStyle.Fill;
             textBox1.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox1.Location = new Point(0, 0);
@@ -654,8 +584,6 @@
             // 
             // panel135
             // 
-            panel135.Controls.Add(panel136);
-            panel135.Controls.Add(panel137);
             panel135.Controls.Add(panel138);
             panel135.Controls.Add(panel140);
             panel135.Controls.Add(panel141);
@@ -665,35 +593,6 @@
             panel135.Padding = new Padding(60, 0, 0, 0);
             panel135.Size = new Size(900, 27);
             panel135.TabIndex = 90;
-            // 
-            // panel136
-            // 
-            panel136.Controls.Add(label19);
-            panel136.Dock = DockStyle.Left;
-            panel136.Font = new Font("Segoe UI", 11F);
-            panel136.Location = new Point(610, 0);
-            panel136.Name = "panel136";
-            panel136.Size = new Size(198, 27);
-            panel136.TabIndex = 31;
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Dock = DockStyle.Left;
-            label19.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label19.Location = new Point(0, 0);
-            label19.Name = "label19";
-            label19.Size = new Size(146, 23);
-            label19.TabIndex = 78;
-            label19.Text = "Household Members";
-            // 
-            // panel137
-            // 
-            panel137.Dock = DockStyle.Left;
-            panel137.Location = new Point(600, 0);
-            panel137.Name = "panel137";
-            panel137.Size = new Size(10, 27);
-            panel137.TabIndex = 30;
             // 
             // panel138
             // 
@@ -722,9 +621,9 @@
             label20.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label20.Location = new Point(0, 0);
             label20.Name = "label20";
-            label20.Size = new Size(122, 23);
+            label20.Size = new Size(97, 23);
             label20.TabIndex = 72;
-            label20.Text = "Residency Status";
+            label20.Text = "Official Email";
             // 
             // label21
             // 
@@ -762,9 +661,9 @@
             label22.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label22.Location = new Point(0, 0);
             label22.Name = "label22";
-            label22.Size = new Size(113, 23);
+            label22.Size = new Size(159, 23);
             label22.TabIndex = 76;
-            label22.Text = "Household Role";
+            label22.Text = "Office Contact Number";
             // 
             // panel142
             // 
@@ -777,7 +676,6 @@
             // 
             // panel143
             // 
-            panel143.Controls.Add(panel144);
             panel143.Controls.Add(panel145);
             panel143.Controls.Add(panel146);
             panel143.Controls.Add(panel148);
@@ -789,79 +687,37 @@
             panel143.Size = new Size(900, 26);
             panel143.TabIndex = 88;
             // 
-            // panel144
-            // 
-            panel144.Controls.Add(textBox2);
-            panel144.Dock = DockStyle.Left;
-            panel144.Location = new Point(610, 0);
-            panel144.Name = "panel144";
-            panel144.Size = new Size(188, 26);
-            panel144.TabIndex = 30;
-            // 
-            // textBox2
-            // 
-            textBox2.BackColor = SystemColors.ScrollBar;
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.CharacterCasing = CharacterCasing.Upper;
-            textBox2.Dock = DockStyle.Fill;
-            textBox2.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(0, 0);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = " 4200";
-            textBox2.Size = new Size(188, 26);
-            textBox2.TabIndex = 75;
-            // 
             // panel145
             // 
             panel145.Dock = DockStyle.Left;
-            panel145.Location = new Point(600, 0);
+            panel145.Location = new Point(756, 0);
             panel145.Name = "panel145";
             panel145.Size = new Size(10, 26);
             panel145.TabIndex = 29;
             // 
             // panel146
             // 
-            panel146.Controls.Add(panel147);
-            panel146.Controls.Add(label23);
+            panel146.Controls.Add(textBox3);
             panel146.Dock = DockStyle.Left;
             panel146.Location = new Point(424, 0);
             panel146.Name = "panel146";
-            panel146.Size = new Size(176, 26);
+            panel146.Size = new Size(332, 26);
             panel146.TabIndex = 2;
-            // 
-            // panel147
-            // 
-            panel147.Controls.Add(textBox3);
-            panel147.Dock = DockStyle.Left;
-            panel147.Location = new Point(0, 0);
-            panel147.Name = "panel147";
-            panel147.Size = new Size(176, 26);
-            panel147.TabIndex = 28;
             // 
             // textBox3
             // 
             textBox3.BackColor = SystemColors.ScrollBar;
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.CharacterCasing = CharacterCasing.Upper;
+            textBox3.Cursor = Cursors.IBeam;
             textBox3.Dock = DockStyle.Fill;
             textBox3.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox3.Location = new Point(0, 0);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.PlaceholderText = " BATANGAS";
-            textBox3.Size = new Size(176, 26);
+            textBox3.Size = new Size(332, 26);
             textBox3.TabIndex = 71;
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label23.Location = new Point(0, 3);
-            label23.Name = "label23";
-            label23.Size = new Size(99, 23);
-            label23.TabIndex = 27;
-            label23.Text = "Middle Name";
             // 
             // panel148
             // 
@@ -885,6 +741,7 @@
             textBox4.BackColor = SystemColors.ScrollBar;
             textBox4.BorderStyle = BorderStyle.None;
             textBox4.CharacterCasing = CharacterCasing.Upper;
+            textBox4.Cursor = Cursors.IBeam;
             textBox4.Dock = DockStyle.Fill;
             textBox4.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox4.Location = new Point(0, 0);
@@ -905,7 +762,6 @@
             // 
             // panel151
             // 
-            panel151.Controls.Add(panel152);
             panel151.Controls.Add(panel153);
             panel151.Controls.Add(panel157);
             panel151.Controls.Add(panel159);
@@ -915,27 +771,6 @@
             panel151.Padding = new Padding(60, 0, 0, 0);
             panel151.Size = new Size(900, 27);
             panel151.TabIndex = 86;
-            // 
-            // panel152
-            // 
-            panel152.Controls.Add(label24);
-            panel152.Dock = DockStyle.Left;
-            panel152.Font = new Font("Segoe UI", 11F);
-            panel152.Location = new Point(610, 0);
-            panel152.Name = "panel152";
-            panel152.Size = new Size(198, 27);
-            panel152.TabIndex = 30;
-            // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.Dock = DockStyle.Left;
-            label24.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label24.Location = new Point(0, 0);
-            label24.Name = "label24";
-            label24.Size = new Size(89, 23);
-            label24.TabIndex = 74;
-            label24.Text = "Postal Code";
             // 
             // panel153
             // 
@@ -964,9 +799,9 @@
             label25.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label25.Location = new Point(0, 0);
             label25.Name = "label25";
-            label25.Size = new Size(65, 23);
+            label25.Size = new Size(146, 23);
             label25.TabIndex = 70;
-            label25.Text = "Province";
+            label25.Text = "Date of Appointment";
             // 
             // label26
             // 
@@ -1004,9 +839,9 @@
             label27.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label27.Location = new Point(0, 0);
             label27.Name = "label27";
-            label27.Size = new Size(130, 23);
+            label27.Size = new Size(89, 23);
             label27.TabIndex = 68;
-            label27.Text = "Municipality / City";
+            label27.Text = "Department";
             // 
             // panel160
             // 
@@ -1019,7 +854,6 @@
             // 
             // panel161
             // 
-            panel161.Controls.Add(panel164);
             panel161.Controls.Add(panel165);
             panel161.Controls.Add(panel166);
             panel161.Controls.Add(panel168);
@@ -1031,79 +865,36 @@
             panel161.Size = new Size(900, 26);
             panel161.TabIndex = 84;
             // 
-            // panel164
-            // 
-            panel164.Controls.Add(textBox5);
-            panel164.Dock = DockStyle.Left;
-            panel164.Location = new Point(610, 0);
-            panel164.Name = "panel164";
-            panel164.Size = new Size(188, 26);
-            panel164.TabIndex = 30;
-            // 
-            // textBox5
-            // 
-            textBox5.BackColor = SystemColors.ScrollBar;
-            textBox5.BorderStyle = BorderStyle.None;
-            textBox5.CharacterCasing = CharacterCasing.Upper;
-            textBox5.Dock = DockStyle.Fill;
-            textBox5.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox5.Location = new Point(0, 0);
-            textBox5.Multiline = true;
-            textBox5.Name = "textBox5";
-            textBox5.PlaceholderText = " ALANGILAN";
-            textBox5.Size = new Size(188, 26);
-            textBox5.TabIndex = 67;
-            // 
             // panel165
             // 
             panel165.Dock = DockStyle.Left;
-            panel165.Location = new Point(600, 0);
+            panel165.Location = new Point(756, 0);
             panel165.Name = "panel165";
-            panel165.Size = new Size(10, 26);
+            panel165.Size = new Size(33, 26);
             panel165.TabIndex = 29;
             // 
             // panel166
             // 
-            panel166.Controls.Add(panel167);
-            panel166.Controls.Add(label29);
+            panel166.Controls.Add(textBox6);
             panel166.Dock = DockStyle.Left;
             panel166.Location = new Point(424, 0);
             panel166.Name = "panel166";
-            panel166.Size = new Size(176, 26);
+            panel166.Size = new Size(332, 26);
             panel166.TabIndex = 2;
-            // 
-            // panel167
-            // 
-            panel167.Controls.Add(textBox6);
-            panel167.Dock = DockStyle.Left;
-            panel167.Location = new Point(0, 0);
-            panel167.Name = "panel167";
-            panel167.Size = new Size(176, 26);
-            panel167.TabIndex = 28;
             // 
             // textBox6
             // 
             textBox6.BackColor = SystemColors.ScrollBar;
             textBox6.BorderStyle = BorderStyle.None;
-            textBox6.CharacterCasing = CharacterCasing.Upper;
+            textBox6.Cursor = Cursors.IBeam;
             textBox6.Dock = DockStyle.Fill;
             textBox6.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox6.Location = new Point(0, 0);
             textBox6.Multiline = true;
             textBox6.Name = "textBox6";
-            textBox6.PlaceholderText = " PUROK 1";
-            textBox6.Size = new Size(176, 26);
+            textBox6.PlaceholderText = " Data Encoder";
+            textBox6.Size = new Size(332, 26);
             textBox6.TabIndex = 65;
-            // 
-            // label29
-            // 
-            label29.AutoSize = true;
-            label29.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label29.Location = new Point(0, 3);
-            label29.Name = "label29";
-            label29.Size = new Size(99, 23);
-            label29.TabIndex = 27;
-            label29.Text = "Middle Name";
             // 
             // panel168
             // 
@@ -1126,19 +917,19 @@
             // 
             textBox7.BackColor = SystemColors.ScrollBar;
             textBox7.BorderStyle = BorderStyle.None;
-            textBox7.CharacterCasing = CharacterCasing.Upper;
+            textBox7.Cursor = Cursors.IBeam;
             textBox7.Dock = DockStyle.Fill;
             textBox7.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox7.Location = new Point(0, 0);
             textBox7.Multiline = true;
             textBox7.Name = "textBox7";
-            textBox7.PlaceholderText = " 123 SITIO CALUMPANG";
+            textBox7.PlaceholderText = " BRGY-2201-XXXX";
             textBox7.Size = new Size(352, 26);
             textBox7.TabIndex = 63;
             // 
             // panel170
             // 
-            panel170.BackColor = SystemColors.GradientActiveCaption;
+            panel170.BackColor = Color.Transparent;
             panel170.Dock = DockStyle.Top;
             panel170.Location = new Point(30, 351);
             panel170.Name = "panel170";
@@ -1147,7 +938,6 @@
             // 
             // panel171
             // 
-            panel171.Controls.Add(panel172);
             panel171.Controls.Add(panel173);
             panel171.Controls.Add(panel174);
             panel171.Controls.Add(panel175);
@@ -1158,26 +948,6 @@
             panel171.Size = new Size(900, 27);
             panel171.TabIndex = 82;
             // 
-            // panel172
-            // 
-            panel172.Controls.Add(label30);
-            panel172.Dock = DockStyle.Left;
-            panel172.Font = new Font("Segoe UI", 11F);
-            panel172.Location = new Point(600, 0);
-            panel172.Name = "panel172";
-            panel172.Size = new Size(198, 27);
-            panel172.TabIndex = 30;
-            // 
-            // label30
-            // 
-            label30.AutoSize = true;
-            label30.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label30.Location = new Point(0, 3);
-            label30.Name = "label30";
-            label30.Size = new Size(71, 23);
-            label30.TabIndex = 66;
-            label30.Text = "Barangay";
-            // 
             // panel173
             // 
             panel173.Controls.Add(label31);
@@ -1185,7 +955,7 @@
             panel173.Font = new Font("Segoe UI", 11F);
             panel173.Location = new Point(424, 0);
             panel173.Name = "panel173";
-            panel173.Size = new Size(176, 27);
+            panel173.Size = new Size(196, 27);
             panel173.TabIndex = 2;
             // 
             // label31
@@ -1195,9 +965,9 @@
             label31.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label31.Location = new Point(0, 0);
             label31.Name = "label31";
-            label31.Size = new Size(93, 23);
+            label31.Size = new Size(156, 23);
             label31.TabIndex = 65;
-            label31.Text = "Purok / Sitio";
+            label31.Text = "Position / Designation";
             // 
             // panel174
             // 
@@ -1224,9 +994,9 @@
             label33.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label33.Location = new Point(0, 0);
             label33.Name = "label33";
-            label33.Size = new Size(173, 23);
+            label33.Size = new Size(91, 23);
             label33.TabIndex = 62;
-            label33.Text = "House / Unit No. / Street";
+            label33.Text = "Employee ID";
             // 
             // panel176
             // 
@@ -1249,7 +1019,7 @@
             // 
             // flowLayoutPanel2
             // 
-            flowLayoutPanel2.BackColor = Color.MidnightBlue;
+            flowLayoutPanel2.BackColor = Color.FromArgb(0, 0, 64);
             flowLayoutPanel2.Dock = DockStyle.Left;
             flowLayoutPanel2.Location = new Point(0, 0);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
@@ -1635,7 +1405,7 @@
             // 
             // panel202
             // 
-            panel202.BackColor = SystemColors.GradientActiveCaption;
+            panel202.BackColor = Color.Transparent;
             panel202.Dock = DockStyle.Top;
             panel202.Location = new Point(30, 100);
             panel202.Name = "panel202";
@@ -1782,7 +1552,7 @@
             // 
             // flowLayoutPanel5
             // 
-            flowLayoutPanel5.BackColor = Color.MidnightBlue;
+            flowLayoutPanel5.BackColor = Color.FromArgb(0, 0, 64);
             flowLayoutPanel5.Dock = DockStyle.Left;
             flowLayoutPanel5.Location = new Point(0, 0);
             flowLayoutPanel5.Name = "flowLayoutPanel5";
@@ -1842,7 +1612,7 @@
             // 
             // panel212
             // 
-            panel212.BackColor = SystemColors.GradientActiveCaption;
+            panel212.BackColor = Color.Transparent;
             panel212.Controls.Add(panel213);
             panel212.Dock = DockStyle.Top;
             panel212.Location = new Point(30, 408);
@@ -1853,11 +1623,12 @@
             // panel213
             // 
             panel213.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel213.BackColor = Color.Transparent;
             panel213.Controls.Add(label45);
             panel213.Controls.Add(label46);
-            panel213.Location = new Point(60, 3);
+            panel213.Location = new Point(60, 1);
             panel213.Name = "panel213";
-            panel213.Size = new Size(806, 117);
+            panel213.Size = new Size(840, 120);
             panel213.TabIndex = 1;
             // 
             // label45
@@ -1873,17 +1644,17 @@
             // label46
             // 
             label46.AutoSize = true;
-            label46.Font = new Font("Arial Narrow", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label46.Font = new Font("Arial Narrow", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label46.ForeColor = SystemColors.ControlDarkDark;
             label46.Location = new Point(33, 34);
             label46.Name = "label46";
-            label46.Size = new Size(268, 64);
+            label46.Size = new Size(307, 80);
             label46.TabIndex = 16;
             label46.Text = "● At least 8 characters long\r\n● Contains at least one number (0–9)\r\n● Contains at least one special character (!@#$%)\r\n● Must be different from your current password\r\n";
             // 
             // panel214
             // 
-            panel214.BackColor = SystemColors.GradientActiveCaption;
+            panel214.BackColor = Color.Transparent;
             panel214.Dock = DockStyle.Top;
             panel214.Location = new Point(30, 398);
             panel214.Name = "panel214";
@@ -1926,7 +1697,7 @@
             label47.Anchor = AnchorStyles.None;
             label47.AutoSize = true;
             label47.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label47.Location = new Point(1334, -76);
+            label47.Location = new Point(1654, -105);
             label47.Name = "label47";
             label47.Size = new Size(122, 21);
             label47.TabIndex = 12;
@@ -1934,26 +1705,26 @@
             // 
             // panel218
             // 
-            panel218.Controls.Add(button3);
+            panel218.Controls.Add(btChangePAssword);
             panel218.Dock = DockStyle.Left;
             panel218.Location = new Point(288, 0);
             panel218.Name = "panel218";
             panel218.Size = new Size(295, 42);
             panel218.TabIndex = 14;
             // 
-            // button3
+            // btChangePAssword
             // 
-            button3.BackColor = Color.Goldenrod;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.ForeColor = SystemColors.Control;
-            button3.Location = new Point(14, 7);
-            button3.Name = "button3";
-            button3.Size = new Size(267, 29);
-            button3.TabIndex = 94;
-            button3.Text = "CHANGE PASSWORD";
-            button3.UseVisualStyleBackColor = false;
+            btChangePAssword.BackColor = Color.Goldenrod;
+            btChangePAssword.FlatAppearance.BorderSize = 0;
+            btChangePAssword.FlatStyle = FlatStyle.Flat;
+            btChangePAssword.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btChangePAssword.ForeColor = SystemColors.Control;
+            btChangePAssword.Location = new Point(14, 7);
+            btChangePAssword.Name = "btChangePAssword";
+            btChangePAssword.Size = new Size(267, 29);
+            btChangePAssword.TabIndex = 94;
+            btChangePAssword.Text = "CHANGE PASSWORD";
+            btChangePAssword.UseVisualStyleBackColor = false;
             // 
             // panel219
             // 
@@ -1965,7 +1736,7 @@
             // 
             // panel220
             // 
-            panel220.BackColor = SystemColors.GradientActiveCaption;
+            panel220.BackColor = Color.Transparent;
             panel220.Dock = DockStyle.Top;
             panel220.Location = new Point(30, 346);
             panel220.Name = "panel220";
@@ -2008,7 +1779,7 @@
             label48.Anchor = AnchorStyles.None;
             label48.AutoSize = true;
             label48.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label48.Location = new Point(1654, -141);
+            label48.Location = new Point(1974, -179);
             label48.Name = "label48";
             label48.Size = new Size(122, 21);
             label48.TabIndex = 12;
@@ -2031,7 +1802,7 @@
             btShowConNewPass_SettingsF3.FlatAppearance.BorderSize = 0;
             btShowConNewPass_SettingsF3.FlatStyle = FlatStyle.Flat;
             btShowConNewPass_SettingsF3.Image = Properties.Resources.eyePass;
-            btShowConNewPass_SettingsF3.Location = new Point(462, -2);
+            btShowConNewPass_SettingsF3.Location = new Point(461, -1);
             btShowConNewPass_SettingsF3.Name = "btShowConNewPass_SettingsF3";
             btShowConNewPass_SettingsF3.Size = new Size(36, 27);
             btShowConNewPass_SettingsF3.TabIndex = 74;
@@ -2078,7 +1849,7 @@
             // 
             // panel226
             // 
-            panel226.BackColor = SystemColors.GradientActiveCaption;
+            panel226.BackColor = Color.Transparent;
             panel226.Dock = DockStyle.Top;
             panel226.Location = new Point(30, 307);
             panel226.Name = "panel226";
@@ -2121,7 +1892,7 @@
             label49.Anchor = AnchorStyles.None;
             label49.AutoSize = true;
             label49.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label49.Location = new Point(1014, -47);
+            label49.Location = new Point(1334, -76);
             label49.Name = "label49";
             label49.Size = new Size(122, 21);
             label49.TabIndex = 12;
@@ -2157,7 +1928,7 @@
             // 
             // panel232
             // 
-            panel232.BackColor = SystemColors.GradientActiveCaption;
+            panel232.BackColor = Color.Transparent;
             panel232.Dock = DockStyle.Top;
             panel232.Location = new Point(30, 250);
             panel232.Name = "panel232";
@@ -2200,7 +1971,7 @@
             label51.Anchor = AnchorStyles.None;
             label51.AutoSize = true;
             label51.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label51.Location = new Point(1334, -103);
+            label51.Location = new Point(1654, -141);
             label51.Name = "label51";
             label51.Size = new Size(122, 21);
             label51.TabIndex = 12;
@@ -2223,7 +1994,7 @@
             btShowNewPass_SettingsF3.FlatAppearance.BorderSize = 0;
             btShowNewPass_SettingsF3.FlatStyle = FlatStyle.Flat;
             btShowNewPass_SettingsF3.Image = Properties.Resources.eyePass;
-            btShowNewPass_SettingsF3.Location = new Point(461, -2);
+            btShowNewPass_SettingsF3.Location = new Point(460, -1);
             btShowNewPass_SettingsF3.Name = "btShowNewPass_SettingsF3";
             btShowNewPass_SettingsF3.Size = new Size(36, 27);
             btShowNewPass_SettingsF3.TabIndex = 73;
@@ -2270,7 +2041,7 @@
             // 
             // panel238
             // 
-            panel238.BackColor = SystemColors.GradientActiveCaption;
+            panel238.BackColor = Color.Transparent;
             panel238.Dock = DockStyle.Top;
             panel238.Location = new Point(30, 211);
             panel238.Name = "panel238";
@@ -2313,7 +2084,7 @@
             label52.Anchor = AnchorStyles.None;
             label52.AutoSize = true;
             label52.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label52.Location = new Point(1014, -47);
+            label52.Location = new Point(1334, -76);
             label52.Name = "label52";
             label52.Size = new Size(122, 21);
             label52.TabIndex = 12;
@@ -2349,7 +2120,7 @@
             // 
             // panel244
             // 
-            panel244.BackColor = SystemColors.GradientActiveCaption;
+            panel244.BackColor = Color.Transparent;
             panel244.Dock = DockStyle.Top;
             panel244.Location = new Point(30, 154);
             panel244.Name = "panel244";
@@ -2392,7 +2163,7 @@
             label54.Anchor = AnchorStyles.None;
             label54.AutoSize = true;
             label54.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label54.Location = new Point(1014, -65);
+            label54.Location = new Point(1334, -103);
             label54.Name = "label54";
             label54.Size = new Size(122, 21);
             label54.TabIndex = 12;
@@ -2415,12 +2186,12 @@
             btShowCurrentPass_SettingsF3.FlatAppearance.BorderSize = 0;
             btShowCurrentPass_SettingsF3.FlatStyle = FlatStyle.Flat;
             btShowCurrentPass_SettingsF3.Image = Properties.Resources.eyePass;
-            btShowCurrentPass_SettingsF3.Location = new Point(459, -3);
+            btShowCurrentPass_SettingsF3.Location = new Point(462, -2);
             btShowCurrentPass_SettingsF3.Name = "btShowCurrentPass_SettingsF3";
-            btShowCurrentPass_SettingsF3.Size = new Size(36, 27);
+            btShowCurrentPass_SettingsF3.Size = new Size(36, 26);
             btShowCurrentPass_SettingsF3.TabIndex = 72;
             btShowCurrentPass_SettingsF3.UseVisualStyleBackColor = false;
-            btShowCurrentPass_SettingsF3.Click += btShowCurrentPass_SettingsF3_Click;
+            btShowCurrentPass_SettingsF3.Click += btShowCurrentPass_SettingsF3_Click_1;
             // 
             // btHideCurrentPass_SettingsF3
             // 
@@ -2429,7 +2200,7 @@
             btHideCurrentPass_SettingsF3.FlatAppearance.BorderSize = 0;
             btHideCurrentPass_SettingsF3.FlatStyle = FlatStyle.Flat;
             btHideCurrentPass_SettingsF3.Image = Properties.Resources.hidePass;
-            btHideCurrentPass_SettingsF3.Location = new Point(463, -2);
+            btHideCurrentPass_SettingsF3.Location = new Point(464, -2);
             btHideCurrentPass_SettingsF3.Name = "btHideCurrentPass_SettingsF3";
             btHideCurrentPass_SettingsF3.Size = new Size(36, 27);
             btHideCurrentPass_SettingsF3.TabIndex = 71;
@@ -2462,7 +2233,7 @@
             // 
             // panel250
             // 
-            panel250.BackColor = SystemColors.GradientActiveCaption;
+            panel250.BackColor = Color.Transparent;
             panel250.Dock = DockStyle.Top;
             panel250.Location = new Point(30, 115);
             panel250.Name = "panel250";
@@ -2529,7 +2300,7 @@
             // 
             // panel256
             // 
-            panel256.BackColor = SystemColors.GradientActiveCaption;
+            panel256.BackColor = Color.Transparent;
             panel256.Dock = DockStyle.Top;
             panel256.Location = new Point(30, 58);
             panel256.Name = "panel256";
@@ -2548,7 +2319,7 @@
             // 
             // flowLayoutPanel6
             // 
-            flowLayoutPanel6.BackColor = Color.MidnightBlue;
+            flowLayoutPanel6.BackColor = Color.FromArgb(0, 0, 64);
             flowLayoutPanel6.Dock = DockStyle.Left;
             flowLayoutPanel6.Location = new Point(0, 0);
             flowLayoutPanel6.Name = "flowLayoutPanel6";
@@ -2568,7 +2339,7 @@
             label56.TabIndex = 24;
             label56.Text = "      Change Password                    ";
             // 
-            // SettingsResF3
+            // SettingsBrgyStffF4
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -2578,8 +2349,8 @@
             Controls.Add(Settings);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "SettingsResF3";
-            Text = "SettingsForm3";
+            Name = "SettingsBrgyStffF4";
+            Text = "SettingsBrgyStffF4";
             Settings.ResumeLayout(false);
             Settings.PerformLayout();
             panel1.ResumeLayout(false);
@@ -2588,17 +2359,11 @@
             tabPage1.ResumeLayout(false);
             panel126.ResumeLayout(false);
             panel127.ResumeLayout(false);
-            panel128.ResumeLayout(false);
-            panel128.PerformLayout();
             panel130.ResumeLayout(false);
             panel130.PerformLayout();
-            panel131.ResumeLayout(false);
-            panel131.PerformLayout();
             panel133.ResumeLayout(false);
             panel133.PerformLayout();
             panel135.ResumeLayout(false);
-            panel136.ResumeLayout(false);
-            panel136.PerformLayout();
             panel138.ResumeLayout(false);
             panel138.PerformLayout();
             panel139.ResumeLayout(false);
@@ -2606,17 +2371,11 @@
             panel141.ResumeLayout(false);
             panel141.PerformLayout();
             panel143.ResumeLayout(false);
-            panel144.ResumeLayout(false);
-            panel144.PerformLayout();
             panel146.ResumeLayout(false);
             panel146.PerformLayout();
-            panel147.ResumeLayout(false);
-            panel147.PerformLayout();
             panel149.ResumeLayout(false);
             panel149.PerformLayout();
             panel151.ResumeLayout(false);
-            panel152.ResumeLayout(false);
-            panel152.PerformLayout();
             panel153.ResumeLayout(false);
             panel153.PerformLayout();
             panel154.ResumeLayout(false);
@@ -2624,17 +2383,11 @@
             panel159.ResumeLayout(false);
             panel159.PerformLayout();
             panel161.ResumeLayout(false);
-            panel164.ResumeLayout(false);
-            panel164.PerformLayout();
             panel166.ResumeLayout(false);
             panel166.PerformLayout();
-            panel167.ResumeLayout(false);
-            panel167.PerformLayout();
             panel169.ResumeLayout(false);
             panel169.PerformLayout();
             panel171.ResumeLayout(false);
-            panel172.ResumeLayout(false);
-            panel172.PerformLayout();
             panel173.ResumeLayout(false);
             panel173.PerformLayout();
             panel175.ResumeLayout(false);
@@ -2720,30 +2473,26 @@
         #endregion
 
         private Panel Settings;
+        private Panel panel4;
+        private Panel panel3;
         private Panel panel5;
         private Label Welcome;
         private Label Set;
         private Panel panel6;
         private Panel panel1;
         private Panel panel2;
-        private DateTimePicker dateTimePicker1;
         private Guna.UI2.WinForms.Guna2TabControl Settingss;
         private TabPage tabPage1;
         private Panel panel126;
-        private Button button2;
         private Panel panel127;
-        private Panel panel128;
         private Panel panel129;
         private Panel panel130;
-        private Panel panel131;
-        private Label label18;
+        private TextBox textBox15;
         private Panel panel132;
         private Panel panel133;
+        private TextBox textBox1;
         private Panel panel134;
         private Panel panel135;
-        private Panel panel136;
-        private Label label19;
-        private Panel panel137;
         private Panel panel138;
         private Panel panel139;
         private Label label20;
@@ -2753,20 +2502,14 @@
         private Label label22;
         private Panel panel142;
         private Panel panel143;
-        private Panel panel144;
-        private TextBox textBox2;
         private Panel panel145;
         private Panel panel146;
-        private Panel panel147;
         private TextBox textBox3;
-        private Label label23;
         private Panel panel148;
         private Panel panel149;
         private TextBox textBox4;
         private Panel panel150;
         private Panel panel151;
-        private Panel panel152;
-        private Label label24;
         private Panel panel153;
         private Panel panel154;
         private Label label25;
@@ -2776,20 +2519,14 @@
         private Label label27;
         private Panel panel160;
         private Panel panel161;
-        private Panel panel164;
-        private TextBox textBox5;
         private Panel panel165;
         private Panel panel166;
-        private Panel panel167;
         private TextBox textBox6;
-        private Label label29;
         private Panel panel168;
         private Panel panel169;
         private TextBox textBox7;
         private Panel panel170;
         private Panel panel171;
-        private Panel panel172;
-        private Label label30;
         private Panel panel173;
         private Label label31;
         private Panel panel174;
@@ -2862,7 +2599,7 @@
         private Panel panel217;
         private Label label47;
         private Panel panel218;
-        private Button button3;
+        private Button btChangePAssword;
         private Panel panel219;
         private Panel panel220;
         private Panel panel221;
@@ -2921,11 +2658,7 @@
         private Panel panel257;
         private FlowLayoutPanel flowLayoutPanel6;
         private Label label56;
-        private TextBox textBox16;
-        private TextBox textBox15;
-        private TextBox textBox1;
-        private Panel panel3;
-        private Panel panel4;
-        private Button button1;
+        private Button btUpdateInformation;
+        private Button btDeleteAccount;
     }
 }

@@ -8,16 +8,17 @@ using System.Windows.Forms;
 
 namespace EveryJuanCount
 {
-    public partial class SettingsResF3 : Form
+    public partial class SettingsBrgyStffF4 : Form
     {
-        public SettingsResF3()
+        public SettingsBrgyStffF4()
         {
             InitializeComponent();
         }
 
-        #region ChangePasswordButtons
 
-        private void btShowCurrentPass_SettingsF3_Click(object sender, EventArgs e)
+        #region ChangePAsswordButtons
+
+        private void btShowCurrentPass_SettingsF3_Click_1(object sender, EventArgs e)
         {
             if (CurrentPass.PasswordChar == '*')
             {
@@ -68,9 +69,10 @@ namespace EveryJuanCount
             {
                 btShowConNewPass_SettingsF3.BringToFront();
                 ConNewPass.PasswordChar = '*';
+            
             }
         }
-        #endregion 
-    }
+        #endregion
 
+    }
 }

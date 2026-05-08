@@ -8,11 +8,9 @@ using System.Windows.Forms;
 
 namespace EveryJuanCount
 {
-    public partial class DashboardResF3 : Form
+    public partial class DashboardBrgyStffF4 : Form
     {
-        private System.Windows.Forms.Timer clockTimer;
-
-        public DashboardResF3()
+        public DashboardBrgyStffF4()
         {
             InitializeComponent();
             InitializeClockLabel();
@@ -53,6 +51,7 @@ namespace EveryJuanCount
             // Update label every second
             labelClock.Text = DateTime.Now.ToString("dddd,  MMMM dd, yyyy   hh:mm:ss tt");
         }
+
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             base.OnFormClosing(e);
@@ -62,96 +61,94 @@ namespace EveryJuanCount
                 clockTimer.Dispose();
             }
         }
-
-
         #endregion
+
 
         private void ViewAllRecentReports_Click(object sender, EventArgs e)
         {
-            var parentForm = this.ParentForm as ResidentForm3;
+            var parentForm = this.ParentForm as BarangayStaffForm4;
             if (parentForm != null)
             {
-                parentForm.OpenChildForm(new ReportHistoryResF3());
+                parentForm.OpenChildForm(new ReportsQueueBrgyStffF4());
             }
         }
-
-        
 
         #region QuickAccessButtons
         private void btReportBirth_Click(object sender, EventArgs e)
         {
-            var parentForm = this.ParentForm as ResidentForm3;
+            var parentForm = this.ParentForm as BarangayStaffForm4;
             if (parentForm != null)
             {
-                parentForm.OpenChildForm(new SubmitReport());
+                parentForm.OpenChildForm(new SubmitReportBrgyStffF4());
             }
         }
 
         private void btReportDeath_Click(object sender, EventArgs e)
         {
-            var parentForm = this.ParentForm as ResidentForm3;
+            var parentForm = this.ParentForm as BarangayStaffForm4;
             if (parentForm != null)
             {
-                parentForm.OpenChildForm(new SubmitReport());
+                parentForm.OpenChildForm(new SubmitReportBrgyStffF4());
             }
         }
 
         private void btMoveIn_Click(object sender, EventArgs e)
         {
-            var parentForm = this.ParentForm as ResidentForm3;
+            var parentForm = this.ParentForm as BarangayStaffForm4;
             if (parentForm != null)
             {
-                parentForm.OpenChildForm(new SubmitReport());
+                parentForm.OpenChildForm(new SubmitReportBrgyStffF4());
             }
         }
 
         private void btMoveOut_Click(object sender, EventArgs e)
         {
-            var parentForm = this.ParentForm as ResidentForm3;
+            var parentForm = this.ParentForm as BarangayStaffForm4;
             if (parentForm != null)
             {
-                parentForm.OpenChildForm(new SubmitReport());
+                parentForm.OpenChildForm(new SubmitReportBrgyStffF4());
             }
         }
-
         #endregion
 
         #region QuickAccessPictureBoxes
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            var parentForm = this.ParentForm as ResidentForm3;
-            if (parentForm != null)
-            {
-                parentForm.OpenChildForm(new SubmitReport());
-            }
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            var parentForm = this.ParentForm as ResidentForm3;
-            if (parentForm != null)
-            {
-                parentForm.OpenChildForm(new SubmitReport());
-            }
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            var parentForm = this.ParentForm as ResidentForm3;
-            if (parentForm != null)
-            {
-                parentForm.OpenChildForm(new SubmitReport());
-            }
-        }
-
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            var parentForm = this.ParentForm as ResidentForm3;
+            var parentForm = this.ParentForm as BarangayStaffForm4;
             if (parentForm != null)
             {
-                parentForm.OpenChildForm(new SubmitReport());
+                parentForm.OpenChildForm(new ReportsQueueBrgyStffF4());
+            }
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            var parentForm = this.ParentForm as BarangayStaffForm4;
+            if (parentForm != null)
+            {
+                parentForm.OpenChildForm(new ReportsQueueBrgyStffF4());
+            }
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            var parentForm = this.ParentForm as BarangayStaffForm4;
+            if (parentForm != null)
+            {
+                parentForm.OpenChildForm(new ReportsQueueBrgyStffF4());
+            }
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            var parentForm = this.ParentForm as BarangayStaffForm4;
+            if (parentForm != null)
+            {
+                parentForm.OpenChildForm(new ReportsQueueBrgyStffF4());
             }
         }
         #endregion
+
+
     }
 }

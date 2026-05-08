@@ -1,6 +1,6 @@
 ﻿namespace EveryJuanCount
 {
-    partial class SubmitReport
+    partial class SubmitReportBrgyStffF4
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubmitReport));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubmitReportBrgyStffF4));
+            panel2 = new Panel();
+            panel1 = new Panel();
+            panel5 = new Panel();
             Welcome = new Label();
             Greetings = new Label();
-            panel2 = new Panel();
-            panel5 = new Panel();
             panel3 = new Panel();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             label1 = new Label();
@@ -92,9 +93,9 @@
             label21 = new Label();
             dateTimePicker3 = new DateTimePicker();
             label22 = new Label();
-            panel1 = new Panel();
-            guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             panel6 = new Panel();
+            guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            panel7 = new Panel();
             textBox16 = new TextBox();
             label27 = new Label();
             lb27UploadID_BrgyStftb = new Label();
@@ -111,12 +112,11 @@
             label28 = new Label();
             btUploadFile = new Button();
             guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            panel7 = new Panel();
             panel8 = new Panel();
             label29 = new Label();
+            btSubmit_ReportF4 = new Button();
+            chkb1Confirm_ReportF4 = new CheckBox();
             openFile = new OpenFileDialog();
-            btSubmit_ReportF3 = new Button();
-            chkb1Confirm_ReportF3 = new CheckBox();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             guna2Panel1.SuspendLayout();
@@ -126,13 +126,45 @@
             Death.SuspendLayout();
             MoveIn.SuspendLayout();
             MoveOut.SuspendLayout();
-            panel1.SuspendLayout();
-            guna2Panel2.SuspendLayout();
             panel6.SuspendLayout();
+            guna2Panel2.SuspendLayout();
+            panel7.SuspendLayout();
             pnIDUp.SuspendLayout();
             guna2Panel3.SuspendLayout();
-            panel7.SuspendLayout();
             SuspendLayout();
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.Transparent;
+            panel2.Controls.Add(panel1);
+            panel2.Controls.Add(panel5);
+            panel2.Controls.Add(Welcome);
+            panel2.Controls.Add(Greetings);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1015, 80);
+            panel2.TabIndex = 20;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Maroon;
+            panel1.ForeColor = Color.Goldenrod;
+            panel1.Location = new Point(107, 12);
+            panel1.Margin = new Padding(0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(90, 4);
+            panel1.TabIndex = 17;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.Goldenrod;
+            panel5.ForeColor = Color.Goldenrod;
+            panel5.Location = new Point(17, 12);
+            panel5.Margin = new Padding(0);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(90, 4);
+            panel5.TabIndex = 16;
             // 
             // Welcome
             // 
@@ -149,34 +181,12 @@
             // 
             Greetings.AutoSize = true;
             Greetings.Font = new Font("Arial Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Greetings.ForeColor = Color.FromArgb(0, 0, 64);
+            Greetings.ForeColor = Color.MidnightBlue;
             Greetings.Location = new Point(12, 16);
             Greetings.Name = "Greetings";
             Greetings.Size = new Size(297, 42);
             Greetings.TabIndex = 14;
             Greetings.Text = "SUBMIT REPORT";
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.Transparent;
-            panel2.Controls.Add(panel5);
-            panel2.Controls.Add(Welcome);
-            panel2.Controls.Add(Greetings);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1015, 80);
-            panel2.TabIndex = 19;
-            // 
-            // panel5
-            // 
-            panel5.BackColor = Color.Goldenrod;
-            panel5.ForeColor = Color.Goldenrod;
-            panel5.Location = new Point(17, 12);
-            panel5.Margin = new Padding(0);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(90, 4);
-            panel5.TabIndex = 16;
             // 
             // panel3
             // 
@@ -186,7 +196,7 @@
             panel3.Name = "panel3";
             panel3.Padding = new Padding(10);
             panel3.Size = new Size(1015, 314);
-            panel3.TabIndex = 20;
+            panel3.TabIndex = 21;
             // 
             // guna2Panel1
             // 
@@ -195,12 +205,12 @@
             guna2Panel1.BorderThickness = 2;
             guna2Panel1.Controls.Add(label1);
             guna2Panel1.Controls.Add(panel4);
-            guna2Panel1.CustomizableEdges = customizableEdges7;
+            guna2Panel1.CustomizableEdges = customizableEdges1;
             guna2Panel1.Dock = DockStyle.Fill;
             guna2Panel1.FillColor = Color.MidnightBlue;
             guna2Panel1.Location = new Point(10, 10);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Panel1.Size = new Size(995, 294);
             guna2Panel1.TabIndex = 0;
             // 
@@ -246,7 +256,7 @@
             TabCSubmitReport.TabButtonHoverState.ForeColor = Color.White;
             TabCSubmitReport.TabButtonHoverState.InnerColor = Color.FromArgb(40, 52, 70);
             TabCSubmitReport.TabButtonIdleState.BorderColor = Color.Empty;
-            TabCSubmitReport.TabButtonIdleState.FillColor = Color.White;
+            TabCSubmitReport.TabButtonIdleState.FillColor = Color.LightGray;
             TabCSubmitReport.TabButtonIdleState.Font = new Font("Segoe UI Semibold", 10F);
             TabCSubmitReport.TabButtonIdleState.ForeColor = Color.FromArgb(0, 0, 64);
             TabCSubmitReport.TabButtonIdleState.InnerColor = Color.MidnightBlue;
@@ -257,7 +267,7 @@
             TabCSubmitReport.TabButtonSelectedState.InnerColor = Color.Yellow;
             TabCSubmitReport.TabButtonSize = new Size(237, 40);
             TabCSubmitReport.TabButtonTextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
-            TabCSubmitReport.TabIndex = 21;
+            TabCSubmitReport.TabIndex = 20;
             TabCSubmitReport.TabMenuBackColor = Color.Transparent;
             TabCSubmitReport.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
             // 
@@ -601,7 +611,7 @@
             label11.AutoSize = true;
             label11.Font = new Font("Arial Narrow", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.FromArgb(0, 0, 64);
-            label11.Location = new Point(6, 99);
+            label11.Location = new Point(9, 102);
             label11.Name = "label11";
             label11.Size = new Size(132, 22);
             label11.TabIndex = 51;
@@ -612,7 +622,7 @@
             label12.AutoSize = true;
             label12.Font = new Font("Arial Narrow", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.FromArgb(0, 0, 64);
-            label12.Location = new Point(3, 5);
+            label12.Location = new Point(6, 8);
             label12.Name = "label12";
             label12.Size = new Size(182, 22);
             label12.TabIndex = 50;
@@ -635,7 +645,7 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label13.Location = new Point(456, 30);
+            label13.Location = new Point(459, 33);
             label13.Name = "label13";
             label13.Size = new Size(79, 23);
             label13.TabIndex = 48;
@@ -658,7 +668,7 @@
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label14.Location = new Point(245, 30);
+            label14.Location = new Point(248, 33);
             label14.Name = "label14";
             label14.Size = new Size(99, 23);
             label14.TabIndex = 46;
@@ -681,7 +691,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label15.Location = new Point(27, 30);
+            label15.Location = new Point(30, 33);
             label15.Name = "label15";
             label15.Size = new Size(81, 23);
             label15.TabIndex = 44;
@@ -705,7 +715,7 @@
             // 
             label16.AutoSize = true;
             label16.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label16.Location = new Point(700, 33);
+            label16.Location = new Point(703, 36);
             label16.Name = "label16";
             label16.Size = new Size(96, 21);
             label16.TabIndex = 42;
@@ -750,7 +760,7 @@
             label17.AutoSize = true;
             label17.Font = new Font("Arial Narrow", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label17.ForeColor = Color.FromArgb(0, 0, 64);
-            label17.Location = new Point(6, 99);
+            label17.Location = new Point(9, 102);
             label17.Name = "label17";
             label17.Size = new Size(132, 22);
             label17.TabIndex = 51;
@@ -761,7 +771,7 @@
             label18.AutoSize = true;
             label18.Font = new Font("Arial Narrow", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label18.ForeColor = Color.FromArgb(0, 0, 64);
-            label18.Location = new Point(3, 5);
+            label18.Location = new Point(6, 8);
             label18.Name = "label18";
             label18.Size = new Size(182, 22);
             label18.TabIndex = 50;
@@ -784,7 +794,7 @@
             // 
             label19.AutoSize = true;
             label19.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label19.Location = new Point(456, 30);
+            label19.Location = new Point(459, 33);
             label19.Name = "label19";
             label19.Size = new Size(79, 23);
             label19.TabIndex = 48;
@@ -807,7 +817,7 @@
             // 
             label20.AutoSize = true;
             label20.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label20.Location = new Point(245, 30);
+            label20.Location = new Point(248, 33);
             label20.Name = "label20";
             label20.Size = new Size(99, 23);
             label20.TabIndex = 46;
@@ -830,7 +840,7 @@
             // 
             label21.AutoSize = true;
             label21.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label21.Location = new Point(27, 30);
+            label21.Location = new Point(30, 33);
             label21.Name = "label21";
             label21.Size = new Size(81, 23);
             label21.TabIndex = 44;
@@ -854,58 +864,58 @@
             // 
             label22.AutoSize = true;
             label22.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label22.Location = new Point(700, 33);
+            label22.Location = new Point(703, 36);
             label22.Name = "label22";
             label22.Size = new Size(96, 21);
             label22.TabIndex = 42;
             label22.Text = "Date Of Event";
             // 
-            // panel1
+            // panel6
             // 
-            panel1.Controls.Add(guna2Panel2);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 394);
-            panel1.Name = "panel1";
-            panel1.Padding = new Padding(10);
-            panel1.Size = new Size(1015, 264);
-            panel1.TabIndex = 21;
+            panel6.Controls.Add(guna2Panel2);
+            panel6.Dock = DockStyle.Top;
+            panel6.Location = new Point(0, 394);
+            panel6.Name = "panel6";
+            panel6.Padding = new Padding(10);
+            panel6.Size = new Size(1015, 264);
+            panel6.TabIndex = 22;
             // 
             // guna2Panel2
             // 
             guna2Panel2.BorderColor = Color.MidnightBlue;
             guna2Panel2.BorderRadius = 18;
             guna2Panel2.BorderThickness = 2;
-            guna2Panel2.Controls.Add(panel6);
+            guna2Panel2.Controls.Add(panel7);
             guna2Panel2.Controls.Add(guna2Panel3);
-            guna2Panel2.CustomizableEdges = customizableEdges11;
+            guna2Panel2.CustomizableEdges = customizableEdges5;
             guna2Panel2.Dock = DockStyle.Fill;
             guna2Panel2.FillColor = Color.MidnightBlue;
             guna2Panel2.Location = new Point(10, 10);
             guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2Panel2.Size = new Size(995, 244);
             guna2Panel2.TabIndex = 0;
             // 
-            // panel6
+            // panel7
             // 
-            panel6.BackColor = SystemColors.GradientActiveCaption;
-            panel6.Controls.Add(textBox16);
-            panel6.Controls.Add(label27);
-            panel6.Controls.Add(lb27UploadID_BrgyStftb);
-            panel6.Controls.Add(txtb5ContactN_BrgyStftb);
-            panel6.Controls.Add(lb10ContactN_BrgyStftb);
-            panel6.Controls.Add(textBox13);
-            panel6.Controls.Add(label24);
-            panel6.Controls.Add(textBox14);
-            panel6.Controls.Add(label25);
-            panel6.Controls.Add(textBox15);
-            panel6.Controls.Add(label26);
-            panel6.Controls.Add(pnIDUp);
-            panel6.Dock = DockStyle.Top;
-            panel6.Location = new Point(0, 58);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(995, 165);
-            panel6.TabIndex = 17;
+            panel7.BackColor = SystemColors.GradientActiveCaption;
+            panel7.Controls.Add(textBox16);
+            panel7.Controls.Add(label27);
+            panel7.Controls.Add(lb27UploadID_BrgyStftb);
+            panel7.Controls.Add(txtb5ContactN_BrgyStftb);
+            panel7.Controls.Add(lb10ContactN_BrgyStftb);
+            panel7.Controls.Add(textBox13);
+            panel7.Controls.Add(label24);
+            panel7.Controls.Add(textBox14);
+            panel7.Controls.Add(label25);
+            panel7.Controls.Add(textBox15);
+            panel7.Controls.Add(label26);
+            panel7.Controls.Add(pnIDUp);
+            panel7.Dock = DockStyle.Top;
+            panel7.Location = new Point(0, 58);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(995, 165);
+            panel7.TabIndex = 17;
             // 
             // textBox16
             // 
@@ -1057,7 +1067,7 @@
             // lbFile
             // 
             lbFile.AutoSize = true;
-            lbFile.Location = new Point(7, 64);
+            lbFile.Location = new Point(13, 61);
             lbFile.Name = "lbFile";
             lbFile.Size = new Size(0, 20);
             lbFile.TabIndex = 57;
@@ -1082,7 +1092,7 @@
             btUploadFile.Location = new Point(-1, 3);
             btUploadFile.Name = "btUploadFile";
             btUploadFile.Padding = new Padding(3);
-            btUploadFile.Size = new Size(276, 93);
+            btUploadFile.Size = new Size(280, 86);
             btUploadFile.TabIndex = 0;
             btUploadFile.Text = "Click to Upload ";
             btUploadFile.UseVisualStyleBackColor = true;
@@ -1093,35 +1103,25 @@
             guna2Panel3.BorderColor = Color.MidnightBlue;
             guna2Panel3.BorderRadius = 18;
             guna2Panel3.BorderThickness = 2;
-            guna2Panel3.Controls.Add(panel7);
+            guna2Panel3.Controls.Add(panel8);
             guna2Panel3.Controls.Add(label29);
-            guna2Panel3.CustomizableEdges = customizableEdges9;
+            guna2Panel3.CustomizableEdges = customizableEdges3;
             guna2Panel3.Dock = DockStyle.Top;
             guna2Panel3.FillColor = Color.MidnightBlue;
             guna2Panel3.Location = new Point(0, 0);
             guna2Panel3.Name = "guna2Panel3";
-            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Panel3.Size = new Size(995, 58);
             guna2Panel3.TabIndex = 16;
             // 
-            // panel7
-            // 
-            panel7.BackColor = SystemColors.GradientActiveCaption;
-            panel7.Controls.Add(panel8);
-            panel7.Dock = DockStyle.Bottom;
-            panel7.Location = new Point(0, 46);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(995, 12);
-            panel7.TabIndex = 16;
-            // 
             // panel8
             // 
-            panel8.BackColor = SystemColors.GradientActiveCaption;
+            panel8.BackColor = Color.MidnightBlue;
             panel8.Dock = DockStyle.Bottom;
-            panel8.Location = new Point(0, 0);
+            panel8.Location = new Point(0, 39);
             panel8.Name = "panel8";
-            panel8.Size = new Size(995, 12);
-            panel8.TabIndex = 17;
+            panel8.Size = new Size(995, 19);
+            panel8.TabIndex = 16;
             // 
             // label29
             // 
@@ -1135,56 +1135,52 @@
             label29.TabIndex = 15;
             label29.Text = "REPORTER INFORMATION";
             // 
-            // openFile
+            // btSubmit_ReportF4
             // 
-            openFile.FileName = "openFile";
+            btSubmit_ReportF4.Anchor = AnchorStyles.None;
+            btSubmit_ReportF4.BackColor = Color.MidnightBlue;
+            btSubmit_ReportF4.Cursor = Cursors.Hand;
+            btSubmit_ReportF4.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 64);
+            btSubmit_ReportF4.FlatAppearance.BorderSize = 0;
+            btSubmit_ReportF4.FlatStyle = FlatStyle.Flat;
+            btSubmit_ReportF4.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btSubmit_ReportF4.ForeColor = Color.Transparent;
+            btSubmit_ReportF4.Location = new Point(242, 736);
+            btSubmit_ReportF4.Name = "btSubmit_ReportF4";
+            btSubmit_ReportF4.Size = new Size(531, 37);
+            btSubmit_ReportF4.TabIndex = 66;
+            btSubmit_ReportF4.Text = "SUBMIT REPORT";
+            btSubmit_ReportF4.UseVisualStyleBackColor = false;
+            btSubmit_ReportF4.Click += btSubmit_ReportF4_Click;
             // 
-            // btSubmit_ReportF3
+            // chkb1Confirm_ReportF4
             // 
-            btSubmit_ReportF3.Anchor = AnchorStyles.None;
-            btSubmit_ReportF3.BackColor = Color.MidnightBlue;
-            btSubmit_ReportF3.Cursor = Cursors.Hand;
-            btSubmit_ReportF3.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 64);
-            btSubmit_ReportF3.FlatAppearance.BorderSize = 0;
-            btSubmit_ReportF3.FlatStyle = FlatStyle.Flat;
-            btSubmit_ReportF3.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btSubmit_ReportF3.ForeColor = Color.Transparent;
-            btSubmit_ReportF3.Location = new Point(242, 725);
-            btSubmit_ReportF3.Name = "btSubmit_ReportF3";
-            btSubmit_ReportF3.Size = new Size(531, 37);
-            btSubmit_ReportF3.TabIndex = 64;
-            btSubmit_ReportF3.Text = "SUBMIT REPORT";
-            btSubmit_ReportF3.UseVisualStyleBackColor = false;
-            btSubmit_ReportF3.Click += btSubmit_ReportF3_Click;
+            chkb1Confirm_ReportF4.Anchor = AnchorStyles.None;
+            chkb1Confirm_ReportF4.AutoSize = true;
+            chkb1Confirm_ReportF4.CheckAlign = ContentAlignment.TopLeft;
+            chkb1Confirm_ReportF4.Cursor = Cursors.Hand;
+            chkb1Confirm_ReportF4.Font = new Font("Arial Narrow", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            chkb1Confirm_ReportF4.Location = new Point(262, 682);
+            chkb1Confirm_ReportF4.Name = "chkb1Confirm_ReportF4";
+            chkb1Confirm_ReportF4.Size = new Size(491, 36);
+            chkb1Confirm_ReportF4.TabIndex = 65;
+            chkb1Confirm_ReportF4.Text = "I confirm that all information I provided is accurate and truthful. I understand that false \r\ninformation may result in rejection of my registration.";
+            chkb1Confirm_ReportF4.UseVisualStyleBackColor = true;
             // 
-            // chkb1Confirm_ReportF3
-            // 
-            chkb1Confirm_ReportF3.Anchor = AnchorStyles.None;
-            chkb1Confirm_ReportF3.AutoSize = true;
-            chkb1Confirm_ReportF3.CheckAlign = ContentAlignment.TopLeft;
-            chkb1Confirm_ReportF3.Cursor = Cursors.Hand;
-            chkb1Confirm_ReportF3.Font = new Font("Arial Narrow", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            chkb1Confirm_ReportF3.Location = new Point(262, 671);
-            chkb1Confirm_ReportF3.Name = "chkb1Confirm_ReportF3";
-            chkb1Confirm_ReportF3.Size = new Size(491, 36);
-            chkb1Confirm_ReportF3.TabIndex = 63;
-            chkb1Confirm_ReportF3.Text = "I confirm that all information I provided is accurate and truthful. I understand that false \r\ninformation may result in rejection of my registration.";
-            chkb1Confirm_ReportF3.UseVisualStyleBackColor = true;
-            // 
-            // SubmitReport
+            // SubmitReportBrgyStffF4
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1015, 794);
-            Controls.Add(btSubmit_ReportF3);
-            Controls.Add(chkb1Confirm_ReportF3);
-            Controls.Add(panel1);
+            Controls.Add(btSubmit_ReportF4);
+            Controls.Add(chkb1Confirm_ReportF4);
+            Controls.Add(panel6);
             Controls.Add(panel3);
             Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "SubmitReport";
-            Text = "SubmitReport";
+            Name = "SubmitReportBrgyStffF4";
+            Text = "SubmitReportBrgyStffF4";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
@@ -1200,55 +1196,29 @@
             MoveIn.PerformLayout();
             MoveOut.ResumeLayout(false);
             MoveOut.PerformLayout();
-            panel1.ResumeLayout(false);
-            guna2Panel2.ResumeLayout(false);
             panel6.ResumeLayout(false);
-            panel6.PerformLayout();
+            guna2Panel2.ResumeLayout(false);
+            panel7.ResumeLayout(false);
+            panel7.PerformLayout();
             pnIDUp.ResumeLayout(false);
             pnIDUp.PerformLayout();
             guna2Panel3.ResumeLayout(false);
             guna2Panel3.PerformLayout();
-            panel7.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Panel pnTitleBar;
-        private Panel Verification;
-        private Label label1;
+        private Panel panel2;
+        private Panel panel1;
+        private Panel panel5;
         private Label Welcome;
         private Label Greetings;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Panel panel2;
         private Panel panel3;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Label label1;
         private Panel panel4;
-        private Panel panel5;
-        private Panel panel1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private OpenFileDialog openFile;
-        private Panel panel6;
-        private TextBox textBox16;
-        private Label label27;
-        private Label lb27UploadID_BrgyStftb;
-        private TextBox txtb5ContactN_BrgyStftb;
-        private Label lb10ContactN_BrgyStftb;
-        private TextBox textBox13;
-        private Label label24;
-        private TextBox textBox14;
-        private Label label25;
-        private TextBox textBox15;
-        private Label label26;
-        private Panel pnIDUp;
-        private Label label28;
-        private Button btUploadFile;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Panel panel7;
-        private Label label29;
-        private Panel panel8;
-        private Button btSubmit_ReportF3;
-        private CheckBox chkb1Confirm_ReportF3;
         private Guna.UI2.WinForms.Guna2TabControl TabCSubmitReport;
         private TabPage Birth;
         private TextBox txtbAdditionalDits;
@@ -1298,6 +1268,29 @@
         private Label label21;
         private DateTimePicker dateTimePicker3;
         private Label label22;
+        private Panel panel6;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Panel panel7;
+        private TextBox textBox16;
+        private Label label27;
+        private Label lb27UploadID_BrgyStftb;
+        private TextBox txtb5ContactN_BrgyStftb;
+        private Label lb10ContactN_BrgyStftb;
+        private TextBox textBox13;
+        private Label label24;
+        private TextBox textBox14;
+        private Label label25;
+        private TextBox textBox15;
+        private Label label26;
+        private Panel pnIDUp;
+        private Label label28;
+        private Button btUploadFile;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Panel panel8;
+        private Label label29;
+        private Button btSubmit_ReportF4;
+        private CheckBox chkb1Confirm_ReportF4;
+        private OpenFileDialog openFile;
         private Label lbFile;
     }
 }

@@ -1,10 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="AnnouncementsBrgyStffF4.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="BarangayStaffForm4.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="DashboardBrgyStffF4.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="DashboardResF3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EncodeResidentBrgyStffF4.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form1.cs">
@@ -16,10 +25,22 @@
     <Compile Update="ReportHistoryResF3.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ReportsQueueBrgyStffF4.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ResidentForm3.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ResidentsBrgyStffF4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SettingsBrgyStffF4.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="SettingsResF3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SubmitReportBrgyStffF4.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="SubmitReportResF3.cs">

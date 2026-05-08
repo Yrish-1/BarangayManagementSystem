@@ -15,7 +15,7 @@ namespace EveryJuanCount
         public LogInForm1()
         {
             InitializeComponent();
-            
+
         }
 
         #region DLL
@@ -111,5 +111,9 @@ namespace EveryJuanCount
 
         #endregion
 
+        private void pbLogo_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
 }

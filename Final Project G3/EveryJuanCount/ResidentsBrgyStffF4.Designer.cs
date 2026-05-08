@@ -1,0 +1,465 @@
+﻿namespace EveryJuanCount
+{
+    partial class ResidentsBrgyStffF4
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ResidentsBrgyStffF4));
+            panel2 = new Panel();
+            panel5 = new Panel();
+            Welcome = new Label();
+            Greetings = new Label();
+            panel1 = new Panel();
+            Rejected = new Guna.UI2.WinForms.Guna2GradientPanel();
+            lbRejected = new Label();
+            Approved = new Guna.UI2.WinForms.Guna2GradientPanel();
+            lbApproved = new Label();
+            Pending = new Guna.UI2.WinForms.Guna2GradientPanel();
+            lbPending = new Label();
+            All = new Guna.UI2.WinForms.Guna2GradientPanel();
+            lbAll = new Label();
+            panel3 = new Panel();
+            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            panel6 = new Panel();
+            panel7 = new Panel();
+            panel4 = new Panel();
+            txtbFineRes = new Guna.UI2.WinForms.Guna2TextBox();
+            label2 = new Label();
+            cbFilterBy = new Guna.UI2.WinForms.Guna2ComboBox();
+            label1 = new Label();
+            guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            panel8 = new Panel();
+            label29 = new Label();
+            panel2.SuspendLayout();
+            panel1.SuspendLayout();
+            Rejected.SuspendLayout();
+            Approved.SuspendLayout();
+            Pending.SuspendLayout();
+            All.SuspendLayout();
+            panel3.SuspendLayout();
+            guna2Panel1.SuspendLayout();
+            panel6.SuspendLayout();
+            panel4.SuspendLayout();
+            guna2Panel3.SuspendLayout();
+            SuspendLayout();
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.Transparent;
+            panel2.Controls.Add(panel5);
+            panel2.Controls.Add(Welcome);
+            panel2.Controls.Add(Greetings);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1015, 80);
+            panel2.TabIndex = 21;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.Goldenrod;
+            panel5.ForeColor = Color.Goldenrod;
+            panel5.Location = new Point(17, 12);
+            panel5.Margin = new Padding(0);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(45, 4);
+            panel5.TabIndex = 16;
+            // 
+            // Welcome
+            // 
+            Welcome.AutoSize = true;
+            Welcome.Font = new Font("Arial Narrow", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Welcome.ForeColor = SystemColors.AppWorkspace;
+            Welcome.Location = new Point(17, 58);
+            Welcome.Name = "Welcome";
+            Welcome.Size = new Size(335, 16);
+            Welcome.TabIndex = 15;
+            Welcome.Text = "Browse, search, and manage all registered barangay residents.";
+            // 
+            // Greetings
+            // 
+            Greetings.AutoSize = true;
+            Greetings.Font = new Font("Arial Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Greetings.ForeColor = Color.MidnightBlue;
+            Greetings.Location = new Point(12, 16);
+            Greetings.Name = "Greetings";
+            Greetings.Size = new Size(211, 42);
+            Greetings.TabIndex = 14;
+            Greetings.Text = "RESIDENTS";
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(Rejected);
+            panel1.Controls.Add(Approved);
+            panel1.Controls.Add(Pending);
+            panel1.Controls.Add(All);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 80);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1015, 79);
+            panel1.TabIndex = 22;
+            // 
+            // Rejected
+            // 
+            Rejected.Anchor = AnchorStyles.None;
+            Rejected.Controls.Add(lbRejected);
+            Rejected.CustomizableEdges = customizableEdges17;
+            Rejected.FillColor = Color.FromArgb(64, 0, 0);
+            Rejected.FillColor2 = Color.Red;
+            Rejected.Location = new Point(722, 16);
+            Rejected.Name = "Rejected";
+            Rejected.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            Rejected.Size = new Size(182, 38);
+            Rejected.TabIndex = 3;
+            // 
+            // lbRejected
+            // 
+            lbRejected.AutoSize = true;
+            lbRejected.BackColor = Color.Transparent;
+            lbRejected.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbRejected.ForeColor = SystemColors.ControlLightLight;
+            lbRejected.Location = new Point(32, 10);
+            lbRejected.Name = "lbRejected";
+            lbRejected.Size = new Size(119, 18);
+            lbRejected.TabIndex = 1;
+            lbRejected.Text = "Total Deaths (  )";
+            // 
+            // Approved
+            // 
+            Approved.Anchor = AnchorStyles.None;
+            Approved.Controls.Add(lbApproved);
+            Approved.CustomizableEdges = customizableEdges19;
+            Approved.FillColor = Color.FromArgb(0, 64, 0);
+            Approved.FillColor2 = Color.LimeGreen;
+            Approved.Location = new Point(516, 16);
+            Approved.Name = "Approved";
+            Approved.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            Approved.Size = new Size(182, 38);
+            Approved.TabIndex = 2;
+            // 
+            // lbApproved
+            // 
+            lbApproved.AutoSize = true;
+            lbApproved.BackColor = Color.Transparent;
+            lbApproved.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbApproved.ForeColor = SystemColors.Control;
+            lbApproved.Location = new Point(38, 10);
+            lbApproved.Name = "lbApproved";
+            lbApproved.Size = new Size(99, 18);
+            lbApproved.TabIndex = 1;
+            lbApproved.Text = "Approved (  )";
+            // 
+            // Pending
+            // 
+            Pending.Anchor = AnchorStyles.None;
+            Pending.Controls.Add(lbPending);
+            Pending.CustomizableEdges = customizableEdges21;
+            Pending.FillColor = Color.SaddleBrown;
+            Pending.FillColor2 = Color.Gold;
+            Pending.Location = new Point(314, 16);
+            Pending.Name = "Pending";
+            Pending.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            Pending.Size = new Size(182, 38);
+            Pending.TabIndex = 1;
+            // 
+            // lbPending
+            // 
+            lbPending.AutoSize = true;
+            lbPending.BackColor = Color.Transparent;
+            lbPending.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbPending.ForeColor = SystemColors.ControlLightLight;
+            lbPending.Location = new Point(19, 10);
+            lbPending.Name = "lbPending";
+            lbPending.Size = new Size(144, 18);
+            lbPending.TabIndex = 1;
+            lbPending.Text = "New Registered (  )";
+            // 
+            // All
+            // 
+            All.Anchor = AnchorStyles.None;
+            All.Controls.Add(lbAll);
+            All.CustomizableEdges = customizableEdges23;
+            All.FillColor = Color.FromArgb(0, 0, 64);
+            All.FillColor2 = Color.RoyalBlue;
+            All.Location = new Point(111, 16);
+            All.Name = "All";
+            All.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            All.Size = new Size(182, 38);
+            All.TabIndex = 0;
+            // 
+            // lbAll
+            // 
+            lbAll.AutoSize = true;
+            lbAll.BackColor = Color.Transparent;
+            lbAll.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbAll.ForeColor = SystemColors.ControlLightLight;
+            lbAll.Location = new Point(21, 9);
+            lbAll.Name = "lbAll";
+            lbAll.Size = new Size(141, 18);
+            lbAll.TabIndex = 0;
+            lbAll.Text = "Total Residents (  )";
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(guna2Panel1);
+            panel3.Dock = DockStyle.Fill;
+            panel3.Location = new Point(0, 159);
+            panel3.Name = "panel3";
+            panel3.Padding = new Padding(10, 5, 10, 5);
+            panel3.Size = new Size(1015, 635);
+            panel3.TabIndex = 23;
+            // 
+            // guna2Panel1
+            // 
+            guna2Panel1.BorderColor = Color.FromArgb(0, 0, 64);
+            guna2Panel1.BorderRadius = 18;
+            guna2Panel1.BorderThickness = 4;
+            guna2Panel1.Controls.Add(panel6);
+            guna2Panel1.Controls.Add(guna2Panel3);
+            guna2Panel1.CustomBorderColor = Color.FromArgb(0, 0, 64);
+            guna2Panel1.CustomizableEdges = customizableEdges27;
+            guna2Panel1.Dock = DockStyle.Fill;
+            guna2Panel1.FillColor = Color.FromArgb(0, 0, 64);
+            guna2Panel1.Location = new Point(10, 5);
+            guna2Panel1.Name = "guna2Panel1";
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            guna2Panel1.Size = new Size(995, 625);
+            guna2Panel1.TabIndex = 0;
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.MidnightBlue;
+            panel6.Controls.Add(panel7);
+            panel6.Controls.Add(panel4);
+            panel6.Dock = DockStyle.Fill;
+            panel6.Location = new Point(0, 79);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(995, 546);
+            panel6.TabIndex = 18;
+            // 
+            // panel7
+            // 
+            panel7.BackColor = Color.Gainsboro;
+            panel7.Dock = DockStyle.Top;
+            panel7.Location = new Point(0, 50);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(995, 12);
+            panel7.TabIndex = 19;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.Gainsboro;
+            panel4.Controls.Add(txtbFineRes);
+            panel4.Controls.Add(label2);
+            panel4.Controls.Add(cbFilterBy);
+            panel4.Controls.Add(label1);
+            panel4.Dock = DockStyle.Top;
+            panel4.Location = new Point(0, 0);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(995, 50);
+            panel4.TabIndex = 18;
+            // 
+            // txtbFineRes
+            // 
+            txtbFineRes.BackColor = SystemColors.GrayText;
+            txtbFineRes.CustomizableEdges = customizableEdges29;
+            txtbFineRes.DefaultText = "";
+            txtbFineRes.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtbFineRes.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtbFineRes.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtbFineRes.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtbFineRes.FillColor = SystemColors.ControlDark;
+            txtbFineRes.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtbFineRes.Font = new Font("Segoe UI", 9F);
+            txtbFineRes.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtbFineRes.Location = new Point(613, 7);
+            txtbFineRes.Margin = new Padding(3, 4, 3, 4);
+            txtbFineRes.Name = "txtbFineRes";
+            txtbFineRes.PlaceholderText = "";
+            txtbFineRes.SelectedText = "";
+            txtbFineRes.ShadowDecoration.CustomizableEdges = customizableEdges30;
+            txtbFineRes.Size = new Size(286, 36);
+            txtbFineRes.TabIndex = 4;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.ActiveCaptionText;
+            label2.Location = new Point(460, 16);
+            label2.Name = "label2";
+            label2.Size = new Size(147, 18);
+            label2.TabIndex = 3;
+            label2.Text = "Find Resident No. : ";
+            // 
+            // cbFilterBy
+            // 
+            cbFilterBy.BackColor = Color.Transparent;
+            cbFilterBy.CustomizableEdges = customizableEdges31;
+            cbFilterBy.DrawMode = DrawMode.OwnerDrawFixed;
+            cbFilterBy.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbFilterBy.FillColor = SystemColors.ControlDark;
+            cbFilterBy.FocusedColor = Color.FromArgb(94, 148, 255);
+            cbFilterBy.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cbFilterBy.Font = new Font("Segoe UI", 10F);
+            cbFilterBy.ForeColor = Color.FromArgb(68, 88, 112);
+            cbFilterBy.ItemHeight = 30;
+            cbFilterBy.Items.AddRange(new object[] { "All Status", "Active", "Inactive", "Transferred", "Pending" });
+            cbFilterBy.Location = new Point(116, 7);
+            cbFilterBy.Name = "cbFilterBy";
+            cbFilterBy.ShadowDecoration.CustomizableEdges = customizableEdges32;
+            cbFilterBy.Size = new Size(265, 36);
+            cbFilterBy.TabIndex = 2;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.ActiveCaptionText;
+            label1.Location = new Point(35, 17);
+            label1.Name = "label1";
+            label1.Size = new Size(79, 18);
+            label1.TabIndex = 1;
+            label1.Text = "Filter By : ";
+            // 
+            // guna2Panel3
+            // 
+            guna2Panel3.BorderColor = Color.MidnightBlue;
+            guna2Panel3.BorderRadius = 18;
+            guna2Panel3.BorderThickness = 2;
+            guna2Panel3.Controls.Add(panel8);
+            guna2Panel3.Controls.Add(label29);
+            guna2Panel3.CustomizableEdges = customizableEdges25;
+            guna2Panel3.Dock = DockStyle.Top;
+            guna2Panel3.FillColor = Color.MidnightBlue;
+            guna2Panel3.Location = new Point(0, 0);
+            guna2Panel3.Name = "guna2Panel3";
+            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            guna2Panel3.Size = new Size(995, 79);
+            guna2Panel3.TabIndex = 17;
+            // 
+            // panel8
+            // 
+            panel8.BackColor = Color.Gainsboro;
+            panel8.Dock = DockStyle.Bottom;
+            panel8.Location = new Point(0, 67);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(995, 12);
+            panel8.TabIndex = 17;
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.BackColor = Color.Transparent;
+            label29.Font = new Font("Arial Black", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label29.ForeColor = Color.Gold;
+            label29.Location = new Point(25, 15);
+            label29.Name = "label29";
+            label29.Size = new Size(297, 36);
+            label29.TabIndex = 15;
+            label29.Text = "RESIDENTS RECORD";
+            // 
+            // ResidentsBrgyStffF4
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1015, 794);
+            Controls.Add(panel3);
+            Controls.Add(panel1);
+            Controls.Add(panel2);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "ResidentsBrgyStffF4";
+            Text = "ResidentsBrgyStffF4";
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panel1.ResumeLayout(false);
+            Rejected.ResumeLayout(false);
+            Rejected.PerformLayout();
+            Approved.ResumeLayout(false);
+            Approved.PerformLayout();
+            Pending.ResumeLayout(false);
+            Pending.PerformLayout();
+            All.ResumeLayout(false);
+            All.PerformLayout();
+            panel3.ResumeLayout(false);
+            guna2Panel1.ResumeLayout(false);
+            panel6.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            guna2Panel3.ResumeLayout(false);
+            guna2Panel3.PerformLayout();
+            ResumeLayout(false);
+        }
+
+        #endregion
+
+        private Panel panel2;
+        private Panel panel5;
+        private Label Welcome;
+        private Label Greetings;
+        private Panel panel1;
+        private Guna.UI2.WinForms.Guna2GradientPanel Rejected;
+        private Label lbRejected;
+        private Guna.UI2.WinForms.Guna2GradientPanel Approved;
+        private Label lbApproved;
+        private Guna.UI2.WinForms.Guna2GradientPanel Pending;
+        private Label lbPending;
+        private Guna.UI2.WinForms.Guna2GradientPanel All;
+        private Label lbAll;
+        private Panel panel3;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Panel panel6;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Panel panel8;
+        private Label label29;
+        private Panel panel4;
+        private Label label2;
+        private Guna.UI2.WinForms.Guna2ComboBox cbFilterBy;
+        private Label label1;
+        private Guna.UI2.WinForms.Guna2TextBox txtbFineRes;
+        private Panel panel7;
+    }
+}
