@@ -48,7 +48,13 @@ C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Pr
 C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJua.1DC5555A.Up2Date
 C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.ResidentForm3.resources
 C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.DashboardResF3.resources
-C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.MyProfile.resources
-C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.ReportHistory.resources
 C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\bin\Debug\net10.0-windows\Guna.UI2.dll
 C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.SubmitReport.resources
+C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.BarangayStaffForm4.resources
+C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.MyProfileF3.resources
+C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.ReportHistoryF3.resources
+C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.Settings_ResF.resources
+C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.MyProfileResF3.resources
+C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.ReportHistoryResF3.resources
+C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.SettingsResF3.resources
+C:\Users\Admin\OneDrive\Documents\aoop project\BarangayManagementSystem\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.SubmitReportResF3.resources
