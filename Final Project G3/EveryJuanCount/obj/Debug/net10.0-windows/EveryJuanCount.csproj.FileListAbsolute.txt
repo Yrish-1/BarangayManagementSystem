@@ -63,7 +63,6 @@ C:\Users\Admin\OneDrive\Documents\Ahh\Final Project G3\EveryJuanCount\obj\Debug\
 C:\Users\Admin\OneDrive\Documents\Ahh\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.DashboardResF3.resources
 C:\Users\Admin\OneDrive\Documents\Ahh\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.LogInForm1.resources
 C:\Users\Admin\OneDrive\Documents\Ahh\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.RegistrationForm2.resources
-C:\Users\Admin\OneDrive\Documents\Ahh\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.MyProfileResF3.resources
 C:\Users\Admin\OneDrive\Documents\Ahh\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.Properties.Resources.resources
 C:\Users\Admin\OneDrive\Documents\Ahh\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.ReportHistoryResF3.resources
 C:\Users\Admin\OneDrive\Documents\Ahh\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.ResidentForm3.resources
