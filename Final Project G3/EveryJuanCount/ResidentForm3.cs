@@ -105,7 +105,7 @@ namespace EveryJuanCount
 
         private void btSubmitReport_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new SubmitReport
+            OpenChildForm(new SubmitReport());
         }
 
         private void btReportHistory_Click(object sender, EventArgs e)
