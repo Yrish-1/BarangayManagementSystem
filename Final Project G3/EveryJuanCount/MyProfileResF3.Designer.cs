@@ -1654,7 +1654,7 @@
             label29.TabIndex = 15;
             label29.Text = "PERSONAL INFORMATION";
             // 
-            // MyProfileF3
+            // MyProfileResF3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -1663,7 +1663,7 @@
             Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "MyProfileF3";
+            Name = "MyProfileResF3";
             Text = "MyProfile";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();

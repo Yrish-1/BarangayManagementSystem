@@ -7,22 +7,13 @@
     <Compile Update="DashboardResF3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Dashboard_ResF3.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MyProfileF3.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="MyProfileResF3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="ReportHistoryF3.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ReportHistoryResF3.cs">
