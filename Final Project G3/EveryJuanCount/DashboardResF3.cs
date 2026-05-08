@@ -62,7 +62,7 @@ namespace EveryJuanCount
             var parentForm = this.ParentForm as ResidentForm3;
             if (parentForm != null)
             {
-                parentForm.OpenChildForm(new ReportHistoryF3());
+                parentForm.OpenChildForm(new ReportHistoryResF3());
             }
         }
 
@@ -113,6 +113,44 @@ namespace EveryJuanCount
             }
         }
 
-#endregion
+        #endregion
+
+        #region QuickAccessPictureBoxes
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            var parentForm = this.ParentForm as ResidentForm3;
+            if (parentForm != null)
+            {
+                parentForm.OpenChildForm(new SubmitReport());
+            }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            var parentForm = this.ParentForm as ResidentForm3;
+            if (parentForm != null)
+            {
+                parentForm.OpenChildForm(new SubmitReport());
+            }
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            var parentForm = this.ParentForm as ResidentForm3;
+            if (parentForm != null)
+            {
+                parentForm.OpenChildForm(new SubmitReport());
+            }
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            var parentForm = this.ParentForm as ResidentForm3;
+            if (parentForm != null)
+            {
+                parentForm.OpenChildForm(new SubmitReport());
+            }
+        }
+        #endregion
     }
 }

@@ -100,17 +100,23 @@ namespace EveryJuanCount
 
         private void btMyProfile_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new MyProfileF3());
+            OpenChildForm(new MyProfileResF3());
         }
 
         private void btSubmitReport_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new SubmitReport());
+            OpenChildForm(new SubmitReport
         }
 
         private void btReportHistory_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new ReportHistoryF3());
+            OpenChildForm(new ReportHistoryResF3());
+        }
+
+        private void btSettings_ResF_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new SettingsResF3());
+
         }
 
         #endregion
@@ -137,5 +143,7 @@ namespace EveryJuanCount
                 activeForm = null;
             }
         }
+
+        
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BarangayStaffForm4));
             pnChilForms = new Panel();
             pbLogo = new PictureBox();
@@ -35,6 +36,11 @@
             btLogOut = new Button();
             panel1 = new Panel();
             pnButtons = new Panel();
+            button3 = new Button();
+            panel4 = new Panel();
+            button2 = new Button();
+            panel2 = new Panel();
+            button1 = new Button();
             panel7 = new Panel();
             btReportHistory = new Button();
             panel6 = new Panel();
@@ -55,7 +61,7 @@
             pictureBox1 = new PictureBox();
             p1top = new Panel();
             btMenuVertical = new PictureBox();
-            button1 = new Button();
+            sidebarTimer = new System.Windows.Forms.Timer(components);
             pnChilForms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbLogo).BeginInit();
             pnSlideMenu.SuspendLayout();
@@ -119,7 +125,7 @@
             btLogOut.ImageAlign = ContentAlignment.MiddleLeft;
             btLogOut.Location = new Point(0, 752);
             btLogOut.Name = "btLogOut";
-            btLogOut.Padding = new Padding(50, 5, 0, 10);
+            btLogOut.Padding = new Padding(10, 5, 0, 10);
             btLogOut.Size = new Size(330, 42);
             btLogOut.TabIndex = 12;
             btLogOut.Text = "          LOG OUT";
@@ -138,8 +144,10 @@
             // 
             // pnButtons
             // 
-            pnButtons.AutoScroll = true;
-            pnButtons.AutoScrollMinSize = new Size(0, 350);
+            pnButtons.Controls.Add(button3);
+            pnButtons.Controls.Add(panel4);
+            pnButtons.Controls.Add(button2);
+            pnButtons.Controls.Add(panel2);
             pnButtons.Controls.Add(button1);
             pnButtons.Controls.Add(panel7);
             pnButtons.Controls.Add(btReportHistory);
@@ -152,16 +160,92 @@
             pnButtons.Dock = DockStyle.Top;
             pnButtons.Location = new Point(0, 0);
             pnButtons.Name = "pnButtons";
-            pnButtons.Padding = new Padding(50, 0, 0, 0);
-            pnButtons.Size = new Size(330, 329);
+            pnButtons.Padding = new Padding(10, 0, 0, 0);
+            pnButtons.Size = new Size(330, 359);
             pnButtons.TabIndex = 1;
+            // 
+            // button3
+            // 
+            button3.Cursor = Cursors.Hand;
+            button3.Dock = DockStyle.Top;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button3.FlatAppearance.MouseOverBackColor = Color.Gold;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.ForeColor = SystemColors.ControlLightLight;
+            button3.Image = Properties.Resources.Settings;
+            button3.ImageAlign = ContentAlignment.MiddleLeft;
+            button3.Location = new Point(10, 300);
+            button3.Name = "button3";
+            button3.Size = new Size(320, 40);
+            button3.TabIndex = 23;
+            button3.Text = "          SETTINGS";
+            button3.TextAlign = ContentAlignment.MiddleLeft;
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            panel4.Dock = DockStyle.Top;
+            panel4.Location = new Point(10, 290);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(320, 10);
+            panel4.TabIndex = 22;
+            // 
+            // button2
+            // 
+            button2.Cursor = Cursors.Hand;
+            button2.Dock = DockStyle.Top;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button2.FlatAppearance.MouseOverBackColor = Color.Gold;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = SystemColors.ControlLightLight;
+            button2.Image = Properties.Resources.Announcement1;
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(10, 250);
+            button2.Name = "button2";
+            button2.Size = new Size(320, 40);
+            button2.TabIndex = 21;
+            button2.Text = "          ANNOUNCEMENTS";
+            button2.TextAlign = ContentAlignment.MiddleLeft;
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(10, 240);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(320, 10);
+            panel2.TabIndex = 20;
+            // 
+            // button1
+            // 
+            button1.Cursor = Cursors.Hand;
+            button1.Dock = DockStyle.Top;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button1.FlatAppearance.MouseOverBackColor = Color.Gold;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ControlLightLight;
+            button1.Image = Properties.Resources.Submit_Document;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(10, 200);
+            button1.Name = "button1";
+            button1.Size = new Size(320, 40);
+            button1.TabIndex = 19;
+            button1.Text = "          SUBMIT REPORT";
+            button1.TextAlign = ContentAlignment.MiddleLeft;
+            button1.UseVisualStyleBackColor = true;
             // 
             // panel7
             // 
             panel7.Dock = DockStyle.Top;
-            panel7.Location = new Point(50, 268);
+            panel7.Location = new Point(10, 190);
             panel7.Name = "panel7";
-            panel7.Size = new Size(259, 36);
+            panel7.Size = new Size(320, 10);
             panel7.TabIndex = 18;
             // 
             // btReportHistory
@@ -174,22 +258,22 @@
             btReportHistory.FlatStyle = FlatStyle.Flat;
             btReportHistory.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btReportHistory.ForeColor = SystemColors.ControlLightLight;
-            btReportHistory.Image = Properties.Resources.Report_History;
+            btReportHistory.Image = Properties.Resources.Report_History1;
             btReportHistory.ImageAlign = ContentAlignment.MiddleLeft;
-            btReportHistory.Location = new Point(50, 228);
+            btReportHistory.Location = new Point(10, 150);
             btReportHistory.Name = "btReportHistory";
-            btReportHistory.Size = new Size(259, 40);
+            btReportHistory.Size = new Size(320, 40);
             btReportHistory.TabIndex = 17;
-            btReportHistory.Text = "          SUBMIT REPORT";
+            btReportHistory.Text = "          REPORTS QUEUE";
             btReportHistory.TextAlign = ContentAlignment.MiddleLeft;
             btReportHistory.UseVisualStyleBackColor = true;
             // 
             // panel6
             // 
             panel6.Dock = DockStyle.Top;
-            panel6.Location = new Point(50, 192);
+            panel6.Location = new Point(10, 140);
             panel6.Name = "panel6";
-            panel6.Size = new Size(259, 36);
+            panel6.Size = new Size(320, 10);
             panel6.TabIndex = 16;
             // 
             // btEncodeResident
@@ -204,9 +288,9 @@
             btEncodeResident.ForeColor = SystemColors.ControlLightLight;
             btEncodeResident.Image = Properties.Resources.Submit_Report;
             btEncodeResident.ImageAlign = ContentAlignment.MiddleLeft;
-            btEncodeResident.Location = new Point(50, 152);
+            btEncodeResident.Location = new Point(10, 100);
             btEncodeResident.Name = "btEncodeResident";
-            btEncodeResident.Size = new Size(259, 40);
+            btEncodeResident.Size = new Size(320, 40);
             btEncodeResident.TabIndex = 15;
             btEncodeResident.Text = "          ENCODE RESIDENT";
             btEncodeResident.TextAlign = ContentAlignment.MiddleLeft;
@@ -215,9 +299,9 @@
             // panel5
             // 
             panel5.Dock = DockStyle.Top;
-            panel5.Location = new Point(50, 116);
+            panel5.Location = new Point(10, 90);
             panel5.Name = "panel5";
-            panel5.Size = new Size(259, 36);
+            panel5.Size = new Size(320, 10);
             panel5.TabIndex = 14;
             // 
             // btResidentsRecords
@@ -230,11 +314,11 @@
             btResidentsRecords.FlatStyle = FlatStyle.Flat;
             btResidentsRecords.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btResidentsRecords.ForeColor = SystemColors.ControlLightLight;
-            btResidentsRecords.Image = Properties.Resources.My_Profile;
+            btResidentsRecords.Image = Properties.Resources.resident3;
             btResidentsRecords.ImageAlign = ContentAlignment.MiddleLeft;
-            btResidentsRecords.Location = new Point(50, 76);
+            btResidentsRecords.Location = new Point(10, 50);
             btResidentsRecords.Name = "btResidentsRecords";
-            btResidentsRecords.Size = new Size(259, 40);
+            btResidentsRecords.Size = new Size(320, 40);
             btResidentsRecords.TabIndex = 13;
             btResidentsRecords.Text = "          RESIDENTS";
             btResidentsRecords.TextAlign = ContentAlignment.MiddleLeft;
@@ -243,9 +327,9 @@
             // panel10
             // 
             panel10.Dock = DockStyle.Top;
-            panel10.Location = new Point(50, 40);
+            panel10.Location = new Point(10, 40);
             panel10.Name = "panel10";
-            panel10.Size = new Size(259, 36);
+            panel10.Size = new Size(320, 10);
             panel10.TabIndex = 12;
             // 
             // btDashboard
@@ -260,9 +344,9 @@
             btDashboard.ForeColor = SystemColors.ControlLightLight;
             btDashboard.Image = Properties.Resources.dash;
             btDashboard.ImageAlign = ContentAlignment.MiddleLeft;
-            btDashboard.Location = new Point(50, 0);
+            btDashboard.Location = new Point(10, 0);
             btDashboard.Name = "btDashboard";
-            btDashboard.Size = new Size(259, 40);
+            btDashboard.Size = new Size(320, 40);
             btDashboard.TabIndex = 6;
             btDashboard.Text = "          DASHBOARD";
             btDashboard.TextAlign = ContentAlignment.MiddleLeft;
@@ -326,11 +410,11 @@
             Lb32026.AutoSize = true;
             Lb32026.Font = new Font("Arial Narrow", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Lb32026.ForeColor = SystemColors.AppWorkspace;
-            Lb32026.Location = new Point(130, 325);
+            Lb32026.Location = new Point(109, 325);
             Lb32026.Name = "Lb32026";
-            Lb32026.Size = new Size(71, 22);
+            Lb32026.Size = new Size(112, 22);
             Lb32026.TabIndex = 14;
-            Lb32026.Text = "Resident";
+            Lb32026.Text = "Barangay Staff";
             // 
             // pictureBox3
             // 
@@ -378,7 +462,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Anchor = AnchorStyles.None;
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox1.Cursor = Cursors.Hand;
             pictureBox1.Image = Properties.Resources.EJC_Logo;
             pictureBox1.Location = new Point(0, 37);
@@ -400,35 +484,15 @@
             // 
             // btMenuVertical
             // 
-            btMenuVertical.Dock = DockStyle.Left;
             btMenuVertical.Image = Properties.Resources.Menu;
-            btMenuVertical.Location = new Point(0, 0);
+            btMenuVertical.Location = new Point(10, 0);
             btMenuVertical.Name = "btMenuVertical";
-            btMenuVertical.Size = new Size(45, 37);
+            btMenuVertical.Padding = new Padding(100, 50, 0, 10);
+            btMenuVertical.Size = new Size(28, 37);
             btMenuVertical.SizeMode = PictureBoxSizeMode.Zoom;
             btMenuVertical.TabIndex = 1;
             btMenuVertical.TabStop = false;
             btMenuVertical.Click += btMenuVertical_Click_1;
-            // 
-            // button1
-            // 
-            button1.Cursor = Cursors.Hand;
-            button1.Dock = DockStyle.Top;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            button1.FlatAppearance.MouseOverBackColor = Color.Gold;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Image = Properties.Resources.Report_History;
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(50, 304);
-            button1.Name = "button1";
-            button1.Size = new Size(259, 40);
-            button1.TabIndex = 19;
-            button1.Text = "          REPORT HISTORY";
-            button1.TextAlign = ContentAlignment.MiddleLeft;
-            button1.UseVisualStyleBackColor = true;
             // 
             // BarangayStaffForm4
             // 
@@ -486,5 +550,10 @@
         private Panel p1top;
         private PictureBox btMenuVertical;
         private Button button1;
+        private System.Windows.Forms.Timer sidebarTimer;
+        private Button button2;
+        private Panel panel2;
+        private Button button3;
+        private Panel panel4;
     }
 }

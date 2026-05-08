@@ -68,8 +68,8 @@
             pictureBox6 = new PictureBox();
             btMoveOut = new Button();
             panel3 = new Panel();
-            guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            MyRecentReports = new Guna.UI2.WinForms.Guna2Panel();
+            TitleBarMyRecentReports = new Guna.UI2.WinForms.Guna2GradientPanel();
             ViewAllRecentReports = new Button();
             label5 = new Label();
             gunpnReports = new Guna.UI2.WinForms.Guna2Panel();
@@ -104,8 +104,8 @@
             panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel3.SuspendLayout();
-            guna2Panel2.SuspendLayout();
-            guna2GradientPanel2.SuspendLayout();
+            MyRecentReports.SuspendLayout();
+            TitleBarMyRecentReports.SuspendLayout();
             gunpnReports.SuspendLayout();
             gunaGPApproved.SuspendLayout();
             gunaGPPending.SuspendLayout();
@@ -191,9 +191,9 @@
             fLpnQuickAccess.Controls.Add(panel7);
             fLpnQuickAccess.Controls.Add(panel8);
             fLpnQuickAccess.Controls.Add(panel9);
-            fLpnQuickAccess.Location = new Point(783, 377);
+            fLpnQuickAccess.Location = new Point(783, 388);
             fLpnQuickAccess.Name = "fLpnQuickAccess";
-            fLpnQuickAccess.Size = new Size(232, 396);
+            fLpnQuickAccess.Size = new Size(232, 385);
             fLpnQuickAccess.TabIndex = 26;
             // 
             // panel5
@@ -249,6 +249,7 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 1;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // btReportBirth
             // 
@@ -284,6 +285,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 2;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // btReportDeath
             // 
@@ -319,6 +321,7 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 2;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // btMoveIn
             // 
@@ -354,6 +357,7 @@
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 3;
             pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
             // 
             // btMoveOut
             // 
@@ -373,43 +377,43 @@
             // panel3
             // 
             panel3.Anchor = AnchorStyles.None;
-            panel3.Controls.Add(guna2Panel2);
-            panel3.Location = new Point(0, 377);
+            panel3.Controls.Add(MyRecentReports);
+            panel3.Location = new Point(0, 392);
             panel3.Name = "panel3";
             panel3.Padding = new Padding(10, 0, 10, 5);
-            panel3.Size = new Size(784, 396);
+            panel3.Size = new Size(784, 381);
             panel3.TabIndex = 24;
             // 
-            // guna2Panel2
+            // MyRecentReports
             // 
-            guna2Panel2.BorderColor = Color.Transparent;
-            guna2Panel2.BorderRadius = 30;
-            guna2Panel2.BorderThickness = 5;
-            guna2Panel2.Controls.Add(guna2GradientPanel2);
-            guna2Panel2.CustomizableEdges = customizableEdges5;
-            guna2Panel2.Dock = DockStyle.Fill;
-            guna2Panel2.FillColor = Color.Silver;
-            guna2Panel2.Location = new Point(10, 0);
-            guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2Panel2.Size = new Size(764, 391);
-            guna2Panel2.TabIndex = 24;
+            MyRecentReports.BorderColor = Color.Transparent;
+            MyRecentReports.BorderRadius = 30;
+            MyRecentReports.BorderThickness = 5;
+            MyRecentReports.Controls.Add(TitleBarMyRecentReports);
+            MyRecentReports.CustomizableEdges = customizableEdges5;
+            MyRecentReports.Dock = DockStyle.Fill;
+            MyRecentReports.FillColor = Color.Silver;
+            MyRecentReports.Location = new Point(10, 0);
+            MyRecentReports.Name = "MyRecentReports";
+            MyRecentReports.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            MyRecentReports.Size = new Size(764, 376);
+            MyRecentReports.TabIndex = 24;
             // 
-            // guna2GradientPanel2
+            // TitleBarMyRecentReports
             // 
-            guna2GradientPanel2.BorderRadius = 10;
-            guna2GradientPanel2.BorderThickness = 3;
-            guna2GradientPanel2.Controls.Add(ViewAllRecentReports);
-            guna2GradientPanel2.Controls.Add(label5);
-            guna2GradientPanel2.CustomizableEdges = customizableEdges3;
-            guna2GradientPanel2.Dock = DockStyle.Top;
-            guna2GradientPanel2.FillColor = Color.FromArgb(0, 0, 64);
-            guna2GradientPanel2.FillColor2 = Color.MidnightBlue;
-            guna2GradientPanel2.Location = new Point(0, 0);
-            guna2GradientPanel2.Name = "guna2GradientPanel2";
-            guna2GradientPanel2.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2GradientPanel2.Size = new Size(764, 58);
-            guna2GradientPanel2.TabIndex = 0;
+            TitleBarMyRecentReports.BorderRadius = 10;
+            TitleBarMyRecentReports.BorderThickness = 3;
+            TitleBarMyRecentReports.Controls.Add(ViewAllRecentReports);
+            TitleBarMyRecentReports.Controls.Add(label5);
+            TitleBarMyRecentReports.CustomizableEdges = customizableEdges3;
+            TitleBarMyRecentReports.Dock = DockStyle.Top;
+            TitleBarMyRecentReports.FillColor = Color.FromArgb(0, 0, 64);
+            TitleBarMyRecentReports.FillColor2 = Color.MidnightBlue;
+            TitleBarMyRecentReports.Location = new Point(0, 0);
+            TitleBarMyRecentReports.Name = "TitleBarMyRecentReports";
+            TitleBarMyRecentReports.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            TitleBarMyRecentReports.Size = new Size(764, 58);
+            TitleBarMyRecentReports.TabIndex = 0;
             // 
             // ViewAllRecentReports
             // 
@@ -446,7 +450,7 @@
             gunpnReports.Controls.Add(gunaGPTotalReports);
             gunpnReports.CustomizableEdges = customizableEdges13;
             gunpnReports.Dock = DockStyle.Top;
-            gunpnReports.Location = new Point(0, 189);
+            gunpnReports.Location = new Point(0, 180);
             gunpnReports.Name = "gunpnReports";
             gunpnReports.ShadowDecoration.CustomizableEdges = customizableEdges14;
             gunpnReports.Size = new Size(1015, 188);
@@ -463,7 +467,7 @@
             gunaGPApproved.CustomizableEdges = customizableEdges7;
             gunaGPApproved.FillColor = Color.FromArgb(0, 64, 0);
             gunaGPApproved.FillColor2 = Color.ForestGreen;
-            gunaGPApproved.Location = new Point(717, 19);
+            gunaGPApproved.Location = new Point(653, 19);
             gunaGPApproved.Name = "gunaGPApproved";
             gunaGPApproved.ShadowDecoration.CustomizableEdges = customizableEdges8;
             gunaGPApproved.Size = new Size(250, 150);
@@ -569,7 +573,7 @@
             gunaGPTotalReports.CustomizableEdges = customizableEdges11;
             gunaGPTotalReports.FillColor = Color.FromArgb(0, 0, 64);
             gunaGPTotalReports.FillColor2 = Color.MidnightBlue;
-            gunaGPTotalReports.Location = new Point(47, 19);
+            gunaGPTotalReports.Location = new Point(116, 19);
             gunaGPTotalReports.Name = "gunaGPTotalReports";
             gunaGPTotalReports.ShadowDecoration.CustomizableEdges = customizableEdges12;
             gunaGPTotalReports.Size = new Size(250, 150);
@@ -613,7 +617,6 @@
             // 
             // gunapnAnnouncement
             // 
-            gunapnAnnouncement.AutoScroll = true;
             gunapnAnnouncement.BackColor = Color.Transparent;
             gunapnAnnouncement.BorderColor = Color.FromArgb(0, 0, 64);
             gunapnAnnouncement.BorderRadius = 30;
@@ -624,12 +627,12 @@
             gunapnAnnouncement.Controls.Add(lbAnnouncement);
             gunapnAnnouncement.CustomizableEdges = customizableEdges15;
             gunapnAnnouncement.Dock = DockStyle.Top;
-            gunapnAnnouncement.FillColor = Color.LightSteelBlue;
+            gunapnAnnouncement.FillColor = Color.Silver;
             gunapnAnnouncement.Location = new Point(0, 80);
             gunapnAnnouncement.Name = "gunapnAnnouncement";
-            gunapnAnnouncement.Padding = new Padding(10, 0, 10, 0);
+            gunapnAnnouncement.Padding = new Padding(10, 0, 20, 0);
             gunapnAnnouncement.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            gunapnAnnouncement.Size = new Size(1015, 109);
+            gunapnAnnouncement.Size = new Size(1015, 100);
             gunapnAnnouncement.TabIndex = 21;
             // 
             // pictureBox2
@@ -692,9 +695,9 @@
             panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel3.ResumeLayout(false);
-            guna2Panel2.ResumeLayout(false);
-            guna2GradientPanel2.ResumeLayout(false);
-            guna2GradientPanel2.PerformLayout();
+            MyRecentReports.ResumeLayout(false);
+            TitleBarMyRecentReports.ResumeLayout(false);
+            TitleBarMyRecentReports.PerformLayout();
             gunpnReports.ResumeLayout(false);
             gunaGPApproved.ResumeLayout(false);
             gunaGPApproved.PerformLayout();
@@ -732,8 +735,8 @@
         private Label Announcement;
         private Label lbAnnouncement;
         private Panel panel3;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
+        private Guna.UI2.WinForms.Guna2Panel MyRecentReports;
+        private Guna.UI2.WinForms.Guna2GradientPanel TitleBarMyRecentReports;
         private Button ViewAllRecentReports;
         private Label label5;
         private FlowLayoutPanel fLpnQuickAccess;

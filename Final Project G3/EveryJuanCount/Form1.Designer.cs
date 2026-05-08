@@ -222,7 +222,7 @@
             lb10dhaA.AutoSize = true;
             lb10dhaA.Font = new Font("Arial Narrow", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             lb10dhaA.ForeColor = SystemColors.AppWorkspace;
-            lb10dhaA.Location = new Point(206, 488);
+            lb10dhaA.Location = new Point(207, 488);
             lb10dhaA.Name = "lb10dhaA";
             lb10dhaA.Size = new Size(173, 22);
             lb10dhaA.TabIndex = 18;

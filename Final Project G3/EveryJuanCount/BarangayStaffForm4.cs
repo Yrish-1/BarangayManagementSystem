@@ -99,13 +99,13 @@ namespace EveryJuanCount
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            
-                // Close the active child form and show the default panel background
-                if (activeForm != null)
-                {
-                    activeForm.Close();
-                    activeForm = null;
-                }
+
+            // Close the active child form and show the default panel background
+            if (activeForm != null)
+            {
+                activeForm.Close();
+                activeForm = null;
+            }
         }
     }
 

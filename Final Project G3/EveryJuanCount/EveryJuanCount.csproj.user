@@ -13,16 +13,16 @@
     <Compile Update="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MyProfileF3.cs">
+    <Compile Update="MyProfileResF3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ReportHistoryF3.cs">
+    <Compile Update="ReportHistoryResF3.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ResidentForm3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="SubmitReportF3.cs">
+    <Compile Update="SettingsResF3.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

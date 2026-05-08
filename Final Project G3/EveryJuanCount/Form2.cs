@@ -574,5 +574,55 @@ namespace EveryJuanCount
         {
 
         }
+
+        private void dateTimePicker1DOB_Admintb_ValueChanged(object sender, EventArgs e)
+        {
+
+            // Auto-compute age
+            DateTime birthDate = dateTimePicker1DOB_Admintb.Value;
+            DateTime today = DateTime.Today;
+
+            int age = today.Year - birthDate.Year;
+
+            // Adjust if birthday hasn't occurred yet this year
+            if (birthDate.Date > today.AddYears(-age))
+                age--;
+
+            // Display in the Age textbox
+            txtb4Age_Admintb.Text = age.ToString();
+
+        }
+
+        private void dateTimePicker1_Restb_ValueChanged(object sender, EventArgs e)
+        {
+            // Auto-compute age
+            DateTime birthDate = dateTimePicker1_Restb.Value;
+            DateTime today = DateTime.Today;
+
+            int age = today.Year - birthDate.Year;
+
+            // Adjust if birthday hasn't occurred yet this year
+            if (birthDate.Date > today.AddYears(-age))
+                age--;
+
+            // Display in the Age textbox
+            txtb4Age_Residenttb.Text = age.ToString();
+        }
+
+        private void dateTimePicker1DOB_BrgyStftb_ValueChanged(object sender, EventArgs e)
+        {
+            // Auto-compute age
+            DateTime birthDate = dateTimePicker1DOB_BrgyStftb.Value;
+            DateTime today = DateTime.Today;
+
+            int age = today.Year - birthDate.Year;
+
+            // Adjust if birthday hasn't occurred yet this year
+            if (birthDate.Date > today.AddYears(-age))
+                age--;
+
+            // Display in the Age textbox
+            txtb4Age_BrgyStftb.Text = age.ToString();
+        }
     }
 }
