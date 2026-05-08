@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ResidentForm3));
             pnSlideMenu = new Panel();
+            Settings = new Button();
             btLogOut = new Button();
             panel1 = new Panel();
             pnButtons = new Panel();
-            btSettings_ResF = new Button();
             panel2 = new Panel();
             btReportHistory = new Button();
             panel6 = new Panel();
@@ -72,8 +72,8 @@
             // 
             // pnSlideMenu
             // 
-            pnSlideMenu.AutoScroll = true;
             pnSlideMenu.BackColor = Color.FromArgb(0, 0, 64);
+            pnSlideMenu.Controls.Add(Settings);
             pnSlideMenu.Controls.Add(btLogOut);
             pnSlideMenu.Controls.Add(panel1);
             pnSlideMenu.Controls.Add(panelLogo);
@@ -82,6 +82,27 @@
             pnSlideMenu.Name = "pnSlideMenu";
             pnSlideMenu.Size = new Size(330, 794);
             pnSlideMenu.TabIndex = 0;
+            // 
+            // Settings
+            // 
+            Settings.Cursor = Cursors.Hand;
+            Settings.Dock = DockStyle.Bottom;
+            Settings.FlatAppearance.BorderSize = 0;
+            Settings.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            Settings.FlatAppearance.MouseOverBackColor = Color.Navy;
+            Settings.FlatStyle = FlatStyle.Flat;
+            Settings.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Settings.ForeColor = SystemColors.ControlLightLight;
+            Settings.Image = Properties.Resources.Settings;
+            Settings.ImageAlign = ContentAlignment.MiddleLeft;
+            Settings.Location = new Point(0, 710);
+            Settings.Name = "Settings";
+            Settings.Padding = new Padding(10, 5, 0, 10);
+            Settings.Size = new Size(330, 42);
+            Settings.TabIndex = 20;
+            Settings.Text = "          SETTINGS";
+            Settings.TextAlign = ContentAlignment.MiddleLeft;
+            Settings.UseVisualStyleBackColor = true;
             // 
             // btLogOut
             // 
@@ -107,19 +128,15 @@
             // 
             // panel1
             // 
-            panel1.AutoScroll = true;
-            panel1.AutoScrollMinSize = new Size(0, 200);
             panel1.Controls.Add(pnButtons);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 389);
             panel1.Name = "panel1";
-            panel1.Size = new Size(330, 362);
+            panel1.Size = new Size(330, 262);
             panel1.TabIndex = 1;
             // 
             // pnButtons
             // 
-            pnButtons.AutoScroll = true;
-            pnButtons.Controls.Add(btSettings_ResF);
             pnButtons.Controls.Add(panel2);
             pnButtons.Controls.Add(btReportHistory);
             pnButtons.Controls.Add(panel6);
@@ -131,37 +148,15 @@
             pnButtons.Dock = DockStyle.Top;
             pnButtons.Location = new Point(0, 0);
             pnButtons.Name = "pnButtons";
-            pnButtons.Padding = new Padding(10, 0, 0, 0);
-            pnButtons.Size = new Size(330, 329);
+            pnButtons.Size = new Size(330, 294);
             pnButtons.TabIndex = 1;
-            // 
-            // btSettings_ResF
-            // 
-            btSettings_ResF.Cursor = Cursors.Hand;
-            btSettings_ResF.Dock = DockStyle.Top;
-            btSettings_ResF.FlatAppearance.BorderSize = 0;
-            btSettings_ResF.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btSettings_ResF.FlatAppearance.MouseOverBackColor = Color.Gold;
-            btSettings_ResF.FlatStyle = FlatStyle.Flat;
-            btSettings_ResF.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btSettings_ResF.ForeColor = SystemColors.ControlLightLight;
-            btSettings_ResF.Image = Properties.Resources.Settings;
-            btSettings_ResF.ImageAlign = ContentAlignment.MiddleLeft;
-            btSettings_ResF.Location = new Point(10, 203);
-            btSettings_ResF.Name = "btSettings_ResF";
-            btSettings_ResF.Size = new Size(320, 40);
-            btSettings_ResF.TabIndex = 19;
-            btSettings_ResF.Text = "          SETTINGS";
-            btSettings_ResF.TextAlign = ContentAlignment.MiddleLeft;
-            btSettings_ResF.UseVisualStyleBackColor = true;
-            btSettings_ResF.Click += btSettings_ResF_Click;
             // 
             // panel2
             // 
             panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(10, 193);
+            panel2.Location = new Point(0, 208);
             panel2.Name = "panel2";
-            panel2.Size = new Size(320, 10);
+            panel2.Size = new Size(330, 10);
             panel2.TabIndex = 18;
             // 
             // btReportHistory
@@ -176,9 +171,10 @@
             btReportHistory.ForeColor = SystemColors.ControlLightLight;
             btReportHistory.Image = Properties.Resources.Report_History1;
             btReportHistory.ImageAlign = ContentAlignment.MiddleLeft;
-            btReportHistory.Location = new Point(10, 153);
+            btReportHistory.Location = new Point(0, 159);
             btReportHistory.Name = "btReportHistory";
-            btReportHistory.Size = new Size(320, 40);
+            btReportHistory.Padding = new Padding(10, 5, 0, 10);
+            btReportHistory.Size = new Size(330, 49);
             btReportHistory.TabIndex = 17;
             btReportHistory.Text = "          REPORT HISTORY";
             btReportHistory.TextAlign = ContentAlignment.MiddleLeft;
@@ -188,9 +184,9 @@
             // panel6
             // 
             panel6.Dock = DockStyle.Top;
-            panel6.Location = new Point(10, 143);
+            panel6.Location = new Point(0, 149);
             panel6.Name = "panel6";
-            panel6.Size = new Size(320, 10);
+            panel6.Size = new Size(330, 10);
             panel6.TabIndex = 16;
             // 
             // btSubmitReport
@@ -205,9 +201,10 @@
             btSubmitReport.ForeColor = SystemColors.ControlLightLight;
             btSubmitReport.Image = Properties.Resources.Submit_Report;
             btSubmitReport.ImageAlign = ContentAlignment.MiddleLeft;
-            btSubmitReport.Location = new Point(10, 103);
+            btSubmitReport.Location = new Point(0, 107);
             btSubmitReport.Name = "btSubmitReport";
-            btSubmitReport.Size = new Size(320, 40);
+            btSubmitReport.Padding = new Padding(10, 5, 0, 10);
+            btSubmitReport.Size = new Size(330, 42);
             btSubmitReport.TabIndex = 15;
             btSubmitReport.Text = "          SUBMIT REPORT";
             btSubmitReport.TextAlign = ContentAlignment.MiddleLeft;
@@ -217,9 +214,9 @@
             // panel5
             // 
             panel5.Dock = DockStyle.Top;
-            panel5.Location = new Point(10, 93);
+            panel5.Location = new Point(0, 97);
             panel5.Name = "panel5";
-            panel5.Size = new Size(320, 10);
+            panel5.Size = new Size(330, 10);
             panel5.TabIndex = 14;
             // 
             // btMyProfile
@@ -234,9 +231,10 @@
             btMyProfile.ForeColor = SystemColors.ControlLightLight;
             btMyProfile.Image = Properties.Resources.My_Profile1;
             btMyProfile.ImageAlign = ContentAlignment.MiddleLeft;
-            btMyProfile.Location = new Point(10, 53);
+            btMyProfile.Location = new Point(0, 55);
             btMyProfile.Name = "btMyProfile";
-            btMyProfile.Size = new Size(320, 40);
+            btMyProfile.Padding = new Padding(10, 5, 0, 10);
+            btMyProfile.Size = new Size(330, 42);
             btMyProfile.TabIndex = 13;
             btMyProfile.Text = "          MY PROFILE";
             btMyProfile.TextAlign = ContentAlignment.MiddleLeft;
@@ -246,9 +244,9 @@
             // panel10
             // 
             panel10.Dock = DockStyle.Top;
-            panel10.Location = new Point(10, 40);
+            panel10.Location = new Point(0, 42);
             panel10.Name = "panel10";
-            panel10.Size = new Size(320, 13);
+            panel10.Size = new Size(330, 13);
             panel10.TabIndex = 12;
             // 
             // btDashboard
@@ -263,9 +261,10 @@
             btDashboard.ForeColor = SystemColors.ControlLightLight;
             btDashboard.Image = Properties.Resources.dash;
             btDashboard.ImageAlign = ContentAlignment.MiddleLeft;
-            btDashboard.Location = new Point(10, 0);
+            btDashboard.Location = new Point(0, 0);
             btDashboard.Name = "btDashboard";
-            btDashboard.Size = new Size(320, 40);
+            btDashboard.Padding = new Padding(10, 5, 0, 10);
+            btDashboard.Size = new Size(330, 42);
             btDashboard.TabIndex = 6;
             btDashboard.Text = "          DASHBOARD";
             btDashboard.TextAlign = ContentAlignment.MiddleLeft;
@@ -492,7 +491,7 @@
         private Panel pnChilForms;
         private PictureBox pbLogo;
         private PictureBox btMenuVertical;
-        private Button btSettings_ResF;
         private Panel panel2;
+        private Button Settings;
     }
 }

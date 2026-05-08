@@ -226,6 +226,22 @@
             lb1RegisterAs_BrgyStftb = new Label();
             flowLayoutPanel4 = new FlowLayoutPanel();
             tabPage3 = new TabPage();
+            label61 = new Label();
+            label60 = new Label();
+            label59 = new Label();
+            label58 = new Label();
+            label57 = new Label();
+            label56 = new Label();
+            label55 = new Label();
+            label54 = new Label();
+            label53 = new Label();
+            label52 = new Label();
+            label51 = new Label();
+            label50 = new Label();
+            label49 = new Label();
+            label48 = new Label();
+            label47 = new Label();
+            label46 = new Label();
             label45 = new Label();
             label44 = new Label();
             label43 = new Label();
@@ -316,22 +332,6 @@
             panel5 = new Panel();
             Lb6Reg_Fr2 = new Label();
             ofdID = new OpenFileDialog();
-            label46 = new Label();
-            label47 = new Label();
-            label48 = new Label();
-            label49 = new Label();
-            label50 = new Label();
-            label51 = new Label();
-            label52 = new Label();
-            label53 = new Label();
-            label54 = new Label();
-            label55 = new Label();
-            label56 = new Label();
-            label57 = new Label();
-            label58 = new Label();
-            label59 = new Label();
-            label60 = new Label();
-            label61 = new Label();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pb3stars).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pb4stars).BeginInit();
@@ -519,7 +519,7 @@
             lb1RegDes.ForeColor = SystemColors.ControlDark;
             lb1RegDes.Location = new Point(15, 84);
             lb1RegDes.Name = "lb1RegDes";
-            lb1RegDes.Size = new Size(575, 48);
+            lb1RegDes.Size = new Size(575, 32);
             lb1RegDes.TabIndex = 53;
             lb1RegDes.Text = resources.GetString("lb1RegDes.Text");
             // 
@@ -2914,6 +2914,198 @@
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Admin";
             // 
+            // label61
+            // 
+            label61.AutoSize = true;
+            label61.BackColor = Color.Transparent;
+            label61.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label61.ForeColor = Color.Red;
+            label61.Location = new Point(116, 1224);
+            label61.Name = "label61";
+            label61.Size = new Size(17, 20);
+            label61.TabIndex = 141;
+            label61.Text = "*";
+            // 
+            // label60
+            // 
+            label60.AutoSize = true;
+            label60.BackColor = Color.Transparent;
+            label60.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label60.ForeColor = Color.Red;
+            label60.Location = new Point(302, 1156);
+            label60.Name = "label60";
+            label60.Size = new Size(17, 20);
+            label60.TabIndex = 140;
+            label60.Text = "*";
+            // 
+            // label59
+            // 
+            label59.AutoSize = true;
+            label59.BackColor = Color.Transparent;
+            label59.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label59.ForeColor = Color.Red;
+            label59.Location = new Point(128, 1157);
+            label59.Name = "label59";
+            label59.Size = new Size(17, 20);
+            label59.TabIndex = 132;
+            label59.Text = "*";
+            // 
+            // label58
+            // 
+            label58.AutoSize = true;
+            label58.BackColor = Color.Transparent;
+            label58.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label58.ForeColor = Color.Red;
+            label58.Location = new Point(419, 1076);
+            label58.Name = "label58";
+            label58.Size = new Size(17, 20);
+            label58.TabIndex = 139;
+            label58.Text = "*";
+            // 
+            // label57
+            // 
+            label57.AutoSize = true;
+            label57.BackColor = Color.Transparent;
+            label57.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label57.ForeColor = Color.Red;
+            label57.Location = new Point(106, 1076);
+            label57.Name = "label57";
+            label57.Size = new Size(17, 20);
+            label57.TabIndex = 138;
+            label57.Text = "*";
+            // 
+            // label56
+            // 
+            label56.AutoSize = true;
+            label56.BackColor = Color.Transparent;
+            label56.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label56.ForeColor = Color.Red;
+            label56.Location = new Point(110, 1000);
+            label56.Name = "label56";
+            label56.Size = new Size(17, 20);
+            label56.TabIndex = 137;
+            label56.Text = "*";
+            // 
+            // label55
+            // 
+            label55.AutoSize = true;
+            label55.BackColor = Color.Transparent;
+            label55.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label55.ForeColor = Color.Red;
+            label55.Location = new Point(406, 848);
+            label55.Name = "label55";
+            label55.Size = new Size(17, 20);
+            label55.TabIndex = 136;
+            label55.Text = "*";
+            // 
+            // label54
+            // 
+            label54.AutoSize = true;
+            label54.BackColor = Color.Transparent;
+            label54.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label54.ForeColor = Color.Red;
+            label54.Location = new Point(130, 849);
+            label54.Name = "label54";
+            label54.Size = new Size(17, 20);
+            label54.TabIndex = 135;
+            label54.Text = "*";
+            // 
+            // label53
+            // 
+            label53.AutoSize = true;
+            label53.BackColor = Color.Transparent;
+            label53.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label53.ForeColor = Color.Red;
+            label53.Location = new Point(396, 782);
+            label53.Name = "label53";
+            label53.Size = new Size(17, 20);
+            label53.TabIndex = 134;
+            label53.Text = "*";
+            // 
+            // label52
+            // 
+            label52.AutoSize = true;
+            label52.BackColor = Color.Transparent;
+            label52.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label52.ForeColor = Color.Red;
+            label52.Location = new Point(124, 782);
+            label52.Name = "label52";
+            label52.Size = new Size(17, 20);
+            label52.TabIndex = 133;
+            label52.Text = "*";
+            // 
+            // label51
+            // 
+            label51.AutoSize = true;
+            label51.BackColor = Color.Transparent;
+            label51.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label51.ForeColor = Color.Red;
+            label51.Location = new Point(335, 625);
+            label51.Name = "label51";
+            label51.Size = new Size(17, 20);
+            label51.TabIndex = 132;
+            label51.Text = "*";
+            // 
+            // label50
+            // 
+            label50.AutoSize = true;
+            label50.BackColor = Color.Transparent;
+            label50.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label50.ForeColor = Color.Red;
+            label50.Location = new Point(159, 625);
+            label50.Name = "label50";
+            label50.Size = new Size(17, 20);
+            label50.TabIndex = 128;
+            label50.Text = "*";
+            // 
+            // label49
+            // 
+            label49.AutoSize = true;
+            label49.BackColor = Color.Transparent;
+            label49.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label49.ForeColor = Color.Red;
+            label49.Location = new Point(452, 556);
+            label49.Name = "label49";
+            label49.Size = new Size(17, 20);
+            label49.TabIndex = 131;
+            label49.Text = "*";
+            // 
+            // label48
+            // 
+            label48.AutoSize = true;
+            label48.BackColor = Color.Transparent;
+            label48.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label48.ForeColor = Color.Red;
+            label48.Location = new Point(121, 556);
+            label48.Name = "label48";
+            label48.Size = new Size(17, 20);
+            label48.TabIndex = 130;
+            label48.Text = "*";
+            // 
+            // label47
+            // 
+            label47.AutoSize = true;
+            label47.BackColor = Color.Transparent;
+            label47.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label47.ForeColor = Color.Red;
+            label47.Location = new Point(460, 491);
+            label47.Name = "label47";
+            label47.Size = new Size(17, 20);
+            label47.TabIndex = 129;
+            label47.Text = "*";
+            // 
+            // label46
+            // 
+            label46.AutoSize = true;
+            label46.BackColor = Color.Transparent;
+            label46.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label46.ForeColor = Color.Red;
+            label46.Location = new Point(124, 489);
+            label46.Name = "label46";
+            label46.Size = new Size(17, 20);
+            label46.TabIndex = 128;
+            label46.Text = "*";
+            // 
             // label45
             // 
             label45.AutoSize = true;
@@ -3931,198 +4123,6 @@
             // ofdID
             // 
             ofdID.FileName = "openFileDialog_Restb";
-            // 
-            // label46
-            // 
-            label46.AutoSize = true;
-            label46.BackColor = Color.Transparent;
-            label46.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label46.ForeColor = Color.Red;
-            label46.Location = new Point(124, 489);
-            label46.Name = "label46";
-            label46.Size = new Size(17, 20);
-            label46.TabIndex = 128;
-            label46.Text = "*";
-            // 
-            // label47
-            // 
-            label47.AutoSize = true;
-            label47.BackColor = Color.Transparent;
-            label47.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label47.ForeColor = Color.Red;
-            label47.Location = new Point(460, 491);
-            label47.Name = "label47";
-            label47.Size = new Size(17, 20);
-            label47.TabIndex = 129;
-            label47.Text = "*";
-            // 
-            // label48
-            // 
-            label48.AutoSize = true;
-            label48.BackColor = Color.Transparent;
-            label48.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label48.ForeColor = Color.Red;
-            label48.Location = new Point(121, 556);
-            label48.Name = "label48";
-            label48.Size = new Size(17, 20);
-            label48.TabIndex = 130;
-            label48.Text = "*";
-            // 
-            // label49
-            // 
-            label49.AutoSize = true;
-            label49.BackColor = Color.Transparent;
-            label49.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label49.ForeColor = Color.Red;
-            label49.Location = new Point(452, 556);
-            label49.Name = "label49";
-            label49.Size = new Size(17, 20);
-            label49.TabIndex = 131;
-            label49.Text = "*";
-            // 
-            // label50
-            // 
-            label50.AutoSize = true;
-            label50.BackColor = Color.Transparent;
-            label50.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label50.ForeColor = Color.Red;
-            label50.Location = new Point(159, 625);
-            label50.Name = "label50";
-            label50.Size = new Size(17, 20);
-            label50.TabIndex = 128;
-            label50.Text = "*";
-            // 
-            // label51
-            // 
-            label51.AutoSize = true;
-            label51.BackColor = Color.Transparent;
-            label51.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label51.ForeColor = Color.Red;
-            label51.Location = new Point(335, 625);
-            label51.Name = "label51";
-            label51.Size = new Size(17, 20);
-            label51.TabIndex = 132;
-            label51.Text = "*";
-            // 
-            // label52
-            // 
-            label52.AutoSize = true;
-            label52.BackColor = Color.Transparent;
-            label52.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label52.ForeColor = Color.Red;
-            label52.Location = new Point(124, 782);
-            label52.Name = "label52";
-            label52.Size = new Size(17, 20);
-            label52.TabIndex = 133;
-            label52.Text = "*";
-            // 
-            // label53
-            // 
-            label53.AutoSize = true;
-            label53.BackColor = Color.Transparent;
-            label53.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label53.ForeColor = Color.Red;
-            label53.Location = new Point(396, 782);
-            label53.Name = "label53";
-            label53.Size = new Size(17, 20);
-            label53.TabIndex = 134;
-            label53.Text = "*";
-            // 
-            // label54
-            // 
-            label54.AutoSize = true;
-            label54.BackColor = Color.Transparent;
-            label54.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label54.ForeColor = Color.Red;
-            label54.Location = new Point(130, 849);
-            label54.Name = "label54";
-            label54.Size = new Size(17, 20);
-            label54.TabIndex = 135;
-            label54.Text = "*";
-            // 
-            // label55
-            // 
-            label55.AutoSize = true;
-            label55.BackColor = Color.Transparent;
-            label55.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label55.ForeColor = Color.Red;
-            label55.Location = new Point(406, 848);
-            label55.Name = "label55";
-            label55.Size = new Size(17, 20);
-            label55.TabIndex = 136;
-            label55.Text = "*";
-            // 
-            // label56
-            // 
-            label56.AutoSize = true;
-            label56.BackColor = Color.Transparent;
-            label56.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label56.ForeColor = Color.Red;
-            label56.Location = new Point(110, 1000);
-            label56.Name = "label56";
-            label56.Size = new Size(17, 20);
-            label56.TabIndex = 137;
-            label56.Text = "*";
-            // 
-            // label57
-            // 
-            label57.AutoSize = true;
-            label57.BackColor = Color.Transparent;
-            label57.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label57.ForeColor = Color.Red;
-            label57.Location = new Point(106, 1076);
-            label57.Name = "label57";
-            label57.Size = new Size(17, 20);
-            label57.TabIndex = 138;
-            label57.Text = "*";
-            // 
-            // label58
-            // 
-            label58.AutoSize = true;
-            label58.BackColor = Color.Transparent;
-            label58.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label58.ForeColor = Color.Red;
-            label58.Location = new Point(419, 1076);
-            label58.Name = "label58";
-            label58.Size = new Size(17, 20);
-            label58.TabIndex = 139;
-            label58.Text = "*";
-            // 
-            // label59
-            // 
-            label59.AutoSize = true;
-            label59.BackColor = Color.Transparent;
-            label59.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label59.ForeColor = Color.Red;
-            label59.Location = new Point(128, 1157);
-            label59.Name = "label59";
-            label59.Size = new Size(17, 20);
-            label59.TabIndex = 132;
-            label59.Text = "*";
-            // 
-            // label60
-            // 
-            label60.AutoSize = true;
-            label60.BackColor = Color.Transparent;
-            label60.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label60.ForeColor = Color.Red;
-            label60.Location = new Point(302, 1156);
-            label60.Name = "label60";
-            label60.Size = new Size(17, 20);
-            label60.TabIndex = 140;
-            label60.Text = "*";
-            // 
-            // label61
-            // 
-            label61.AutoSize = true;
-            label61.BackColor = Color.Transparent;
-            label61.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label61.ForeColor = Color.Red;
-            label61.Location = new Point(116, 1224);
-            label61.Name = "label61";
-            label61.Size = new Size(17, 20);
-            label61.TabIndex = 141;
-            label61.Text = "*";
             // 
             // RegistrationForm2
             // 

@@ -119,9 +119,7 @@
   </resheader>
   <data name="lb1RegDes.Text" xml:space="preserve">
     <value>Join the Every Juan Counts community! Complete the form below to register and help keep our barangay data up to date. 
-Please fill out all required fields marked with (*
-). Make sure all information is accuratebefore submitting.
-</value>
+Please fill out all required fields marked with (*). Make sure all information is accuratebefore submitting. </value>
   </data>
   <metadata name="ofdID.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 1</value>
