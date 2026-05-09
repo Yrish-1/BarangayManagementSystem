@@ -75,16 +75,48 @@ namespace EveryJuanCount
         #region LogInButton
         private void bt3LogIn_Click(object sender, EventArgs e)
         {
-            //hide Form 1
-            this.Hide();
-            //create an instance of Form 3
-            ResidentForm3 f2 = new ResidentForm3();
-            //show Form 2
-            f2.ShowDialog();
-            //dispose Form 2 after it is closed
-            f2 = null;
-            //show form1 again
+            string username = txtB1Username.Text.Trim();
+            string password = txtB2Password.Text.Trim();
 
+            // Check if fields are empty
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Please enter your username and password.",
+                    "Missing Fields", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Check against dummy accounts
+            var account = SessionData.Accounts.FirstOrDefault(a =>
+                a.Username == username && a.Password == password);
+
+            if (account == default)
+            {
+                MessageBox.Show("Invalid username or password.",
+                    "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Set current role
+            SessionData.CurrentRole = account.Role;
+
+            // Redirect based on role
+            this.Hide();
+
+            if (account.Role == "Resident")
+            {
+                ResidentForm3 f = new ResidentForm3();
+                f.ShowDialog();
+                f = null;
+            }
+            else if (account.Role == "Staff")
+            {
+                BarangayStaffForm4 f = new BarangayStaffForm4();
+                f.ShowDialog();
+                f = null;
+            }
+
+            this.Show();
         }
 
         #endregion

@@ -121,7 +121,6 @@ namespace EveryJuanCount
             string newPass = NewPass.Text.Trim();
             string confirm = ConNewPass.Text.Trim();
 
-            // Check if fields are empty
             if (string.IsNullOrEmpty(current) || string.IsNullOrEmpty(newPass) || string.IsNullOrEmpty(confirm))
             {
                 MessageBox.Show("Please fill in all password fields.", "Missing Fields",
@@ -129,7 +128,6 @@ namespace EveryJuanCount
                 return;
             }
 
-            // Check current password
             if (current != SessionData.Password)
             {
                 MessageBox.Show("Current password is incorrect.", "Error",
@@ -137,7 +135,6 @@ namespace EveryJuanCount
                 return;
             }
 
-            // Check new password is different from current
             if (newPass == current)
             {
                 MessageBox.Show("New password must be different from your current password.", "Error",
@@ -145,7 +142,6 @@ namespace EveryJuanCount
                 return;
             }
 
-            // Validate new password requirements
             if (!IsValidPassword(newPass))
             {
                 MessageBox.Show(
@@ -158,7 +154,6 @@ namespace EveryJuanCount
                 return;
             }
 
-            // Check if new password matches confirm
             if (newPass != confirm)
             {
                 MessageBox.Show("New password and confirm password do not match.", "Error",
@@ -166,12 +161,10 @@ namespace EveryJuanCount
                 return;
             }
 
-            // All good — update password
             SessionData.Password = newPass;
             MessageBox.Show("Password changed successfully!", "Success",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            // Clear fields
             CurrentPass.Text = "";
             NewPass.Text = "";
             ConNewPass.Text = "";

@@ -31,5 +31,15 @@ namespace EveryJuanCount
 
         // Reports submitted by the resident
         public static List<Report> Reports { get; set; } = new List<Report>();
+
+        // Add inside SessionData class
+        public static string CurrentRole { get; set; } = "";
+
+        public static List<(string Username, string Password, string Role)> Accounts =
+            new List<(string, string, string)>
+        {
+            ("resident1", "Test@1234", "Resident"),
+            ("staff1", "Staff@1234", "Staff")
+        };
     }
 }
