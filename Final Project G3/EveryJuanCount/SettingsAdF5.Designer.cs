@@ -1,6 +1,6 @@
 ﻿namespace EveryJuanCount
 {
-    partial class SettingsBrgyStffF4
+    partial class SettingsAdF5
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsBrgyStffF4));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsAdF5));
             Settings = new Panel();
             panel4 = new Panel();
             panel3 = new Panel();
@@ -166,8 +166,8 @@
             panel223 = new Panel();
             label48 = new Label();
             panel224 = new Panel();
-            btShowConNewPass_SettingsF4 = new Button();
-            btHideConNewPass_SettingsF4 = new Button();
+            btShowConNewPass_SettingsF5 = new Button();
+            btHideConNewPass_SettingsF5 = new Button();
             ConNewPass = new TextBox();
             panel225 = new Panel();
             panel226 = new Panel();
@@ -184,8 +184,8 @@
             panel235 = new Panel();
             label51 = new Label();
             panel236 = new Panel();
-            btShowNewPass_SettingsF4 = new Button();
-            btHideNewPass_SettingsF4 = new Button();
+            btShowNewPass_SettingsF5 = new Button();
+            btHideNewPass_SettingsF5 = new Button();
             NewPass = new TextBox();
             panel237 = new Panel();
             panel238 = new Panel();
@@ -202,8 +202,8 @@
             panel247 = new Panel();
             label54 = new Label();
             panel248 = new Panel();
-            btShowCurrentPass_SettingsF4 = new Button();
-            btHideCurrentPass_SettingsF4 = new Button();
+            btShowCurrentPass_SettingsF5 = new Button();
+            btHideCurrentPass_SettingsF5 = new Button();
             CurrentPass = new TextBox();
             panel249 = new Panel();
             panel250 = new Panel();
@@ -304,7 +304,7 @@
             Settings.Location = new Point(0, 0);
             Settings.Name = "Settings";
             Settings.Size = new Size(1015, 96);
-            Settings.TabIndex = 22;
+            Settings.TabIndex = 23;
             // 
             // panel4
             // 
@@ -364,7 +364,7 @@
             panel6.Location = new Point(0, 96);
             panel6.Name = "panel6";
             panel6.Size = new Size(1015, 10);
-            panel6.TabIndex = 23;
+            panel6.TabIndex = 24;
             // 
             // panel1
             // 
@@ -374,7 +374,7 @@
             panel1.Name = "panel1";
             panel1.Padding = new Padding(10);
             panel1.Size = new Size(1015, 676);
-            panel1.TabIndex = 24;
+            panel1.TabIndex = 25;
             // 
             // panel2
             // 
@@ -1628,7 +1628,7 @@
             panel213.Controls.Add(label46);
             panel213.Location = new Point(60, 1);
             panel213.Name = "panel213";
-            panel213.Size = new Size(840, 120);
+            panel213.Size = new Size(1561, 143);
             panel213.TabIndex = 1;
             // 
             // label45
@@ -1697,7 +1697,7 @@
             label47.Anchor = AnchorStyles.None;
             label47.AutoSize = true;
             label47.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label47.Location = new Point(1654, -105);
+            label47.Location = new Point(1974, -134);
             label47.Name = "label47";
             label47.Size = new Size(122, 21);
             label47.TabIndex = 12;
@@ -1779,7 +1779,7 @@
             label48.Anchor = AnchorStyles.None;
             label48.AutoSize = true;
             label48.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label48.Location = new Point(1974, -179);
+            label48.Location = new Point(2294, -217);
             label48.Name = "label48";
             label48.Size = new Size(122, 21);
             label48.TabIndex = 12;
@@ -1787,8 +1787,8 @@
             // 
             // panel224
             // 
-            panel224.Controls.Add(btShowConNewPass_SettingsF4);
-            panel224.Controls.Add(btHideConNewPass_SettingsF4);
+            panel224.Controls.Add(btShowConNewPass_SettingsF5);
+            panel224.Controls.Add(btHideConNewPass_SettingsF5);
             panel224.Controls.Add(ConNewPass);
             panel224.Dock = DockStyle.Left;
             panel224.Location = new Point(189, 0);
@@ -1796,33 +1796,33 @@
             panel224.Size = new Size(499, 24);
             panel224.TabIndex = 14;
             // 
-            // btShowConNewPass_SettingsF4
+            // btShowConNewPass_SettingsF5
             // 
-            btShowConNewPass_SettingsF4.BackColor = SystemColors.ScrollBar;
-            btShowConNewPass_SettingsF4.FlatAppearance.BorderSize = 0;
-            btShowConNewPass_SettingsF4.FlatStyle = FlatStyle.Flat;
-            btShowConNewPass_SettingsF4.Image = Properties.Resources.eyePass;
-            btShowConNewPass_SettingsF4.Location = new Point(462, -1);
-            btShowConNewPass_SettingsF4.Name = "btShowConNewPass_SettingsF4";
-            btShowConNewPass_SettingsF4.Size = new Size(36, 27);
-            btShowConNewPass_SettingsF4.TabIndex = 74;
-            btShowConNewPass_SettingsF4.UseVisualStyleBackColor = false;
-            btShowConNewPass_SettingsF4.Click += btShowConNewPass_SettingsF3_Click;
+            btShowConNewPass_SettingsF5.BackColor = SystemColors.ScrollBar;
+            btShowConNewPass_SettingsF5.FlatAppearance.BorderSize = 0;
+            btShowConNewPass_SettingsF5.FlatStyle = FlatStyle.Flat;
+            btShowConNewPass_SettingsF5.Image = Properties.Resources.eyePass;
+            btShowConNewPass_SettingsF5.Location = new Point(461, -1);
+            btShowConNewPass_SettingsF5.Name = "btShowConNewPass_SettingsF5";
+            btShowConNewPass_SettingsF5.Size = new Size(36, 27);
+            btShowConNewPass_SettingsF5.TabIndex = 74;
+            btShowConNewPass_SettingsF5.UseVisualStyleBackColor = false;
+            btShowConNewPass_SettingsF5.Click += btShowConNewPass_SettingsF5_Click;
             // 
-            // btHideConNewPass_SettingsF4
+            // btHideConNewPass_SettingsF5
             // 
-            btHideConNewPass_SettingsF4.BackColor = SystemColors.ScrollBar;
-            btHideConNewPass_SettingsF4.BackgroundImage = Properties.Resources.hidePass;
-            btHideConNewPass_SettingsF4.FlatAppearance.BorderSize = 0;
-            btHideConNewPass_SettingsF4.FlatStyle = FlatStyle.Flat;
-            btHideConNewPass_SettingsF4.Image = Properties.Resources.hidePass;
-            btHideConNewPass_SettingsF4.Location = new Point(464, -2);
-            btHideConNewPass_SettingsF4.Name = "btHideConNewPass_SettingsF4";
-            btHideConNewPass_SettingsF4.Size = new Size(36, 27);
-            btHideConNewPass_SettingsF4.TabIndex = 73;
-            btHideConNewPass_SettingsF4.TextAlign = ContentAlignment.TopCenter;
-            btHideConNewPass_SettingsF4.UseVisualStyleBackColor = false;
-            btHideConNewPass_SettingsF4.Click += btHideConNewPass_SettingsF3_Click;
+            btHideConNewPass_SettingsF5.BackColor = SystemColors.ScrollBar;
+            btHideConNewPass_SettingsF5.BackgroundImage = Properties.Resources.hidePass;
+            btHideConNewPass_SettingsF5.FlatAppearance.BorderSize = 0;
+            btHideConNewPass_SettingsF5.FlatStyle = FlatStyle.Flat;
+            btHideConNewPass_SettingsF5.Image = Properties.Resources.hidePass;
+            btHideConNewPass_SettingsF5.Location = new Point(464, -2);
+            btHideConNewPass_SettingsF5.Name = "btHideConNewPass_SettingsF5";
+            btHideConNewPass_SettingsF5.Size = new Size(36, 27);
+            btHideConNewPass_SettingsF5.TabIndex = 73;
+            btHideConNewPass_SettingsF5.TextAlign = ContentAlignment.TopCenter;
+            btHideConNewPass_SettingsF5.UseVisualStyleBackColor = false;
+            btHideConNewPass_SettingsF5.Click += btHideConNewPass_SettingsF5_Click;
             // 
             // ConNewPass
             // 
@@ -1892,7 +1892,7 @@
             label49.Anchor = AnchorStyles.None;
             label49.AutoSize = true;
             label49.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label49.Location = new Point(1334, -76);
+            label49.Location = new Point(1654, -105);
             label49.Name = "label49";
             label49.Size = new Size(122, 21);
             label49.TabIndex = 12;
@@ -1971,7 +1971,7 @@
             label51.Anchor = AnchorStyles.None;
             label51.AutoSize = true;
             label51.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label51.Location = new Point(1654, -141);
+            label51.Location = new Point(1974, -179);
             label51.Name = "label51";
             label51.Size = new Size(122, 21);
             label51.TabIndex = 12;
@@ -1979,8 +1979,8 @@
             // 
             // panel236
             // 
-            panel236.Controls.Add(btShowNewPass_SettingsF4);
-            panel236.Controls.Add(btHideNewPass_SettingsF4);
+            panel236.Controls.Add(btShowNewPass_SettingsF5);
+            panel236.Controls.Add(btHideNewPass_SettingsF5);
             panel236.Controls.Add(NewPass);
             panel236.Dock = DockStyle.Left;
             panel236.Location = new Point(189, 0);
@@ -1988,33 +1988,33 @@
             panel236.Size = new Size(499, 24);
             panel236.TabIndex = 14;
             // 
-            // btShowNewPass_SettingsF4
+            // btShowNewPass_SettingsF5
             // 
-            btShowNewPass_SettingsF4.BackColor = SystemColors.ScrollBar;
-            btShowNewPass_SettingsF4.FlatAppearance.BorderSize = 0;
-            btShowNewPass_SettingsF4.FlatStyle = FlatStyle.Flat;
-            btShowNewPass_SettingsF4.Image = Properties.Resources.eyePass;
-            btShowNewPass_SettingsF4.Location = new Point(462, -1);
-            btShowNewPass_SettingsF4.Name = "btShowNewPass_SettingsF4";
-            btShowNewPass_SettingsF4.Size = new Size(36, 27);
-            btShowNewPass_SettingsF4.TabIndex = 73;
-            btShowNewPass_SettingsF4.UseVisualStyleBackColor = false;
-            btShowNewPass_SettingsF4.Click += btShowNewPass_SettingsF3_Click;
+            btShowNewPass_SettingsF5.BackColor = SystemColors.ScrollBar;
+            btShowNewPass_SettingsF5.FlatAppearance.BorderSize = 0;
+            btShowNewPass_SettingsF5.FlatStyle = FlatStyle.Flat;
+            btShowNewPass_SettingsF5.Image = Properties.Resources.eyePass;
+            btShowNewPass_SettingsF5.Location = new Point(461, -1);
+            btShowNewPass_SettingsF5.Name = "btShowNewPass_SettingsF5";
+            btShowNewPass_SettingsF5.Size = new Size(36, 27);
+            btShowNewPass_SettingsF5.TabIndex = 73;
+            btShowNewPass_SettingsF5.UseVisualStyleBackColor = false;
+            btShowNewPass_SettingsF5.Click += btShowNewPass_SettingsF5_Click;
             // 
-            // btHideNewPass_SettingsF4
+            // btHideNewPass_SettingsF5
             // 
-            btHideNewPass_SettingsF4.BackColor = SystemColors.ScrollBar;
-            btHideNewPass_SettingsF4.BackgroundImage = Properties.Resources.hidePass;
-            btHideNewPass_SettingsF4.FlatAppearance.BorderSize = 0;
-            btHideNewPass_SettingsF4.FlatStyle = FlatStyle.Flat;
-            btHideNewPass_SettingsF4.Image = Properties.Resources.hidePass;
-            btHideNewPass_SettingsF4.Location = new Point(463, -2);
-            btHideNewPass_SettingsF4.Name = "btHideNewPass_SettingsF4";
-            btHideNewPass_SettingsF4.Size = new Size(36, 27);
-            btHideNewPass_SettingsF4.TabIndex = 72;
-            btHideNewPass_SettingsF4.TextAlign = ContentAlignment.TopCenter;
-            btHideNewPass_SettingsF4.UseVisualStyleBackColor = false;
-            btHideNewPass_SettingsF4.Click += btHideNewPass_SettingsF3_Click;
+            btHideNewPass_SettingsF5.BackColor = SystemColors.ScrollBar;
+            btHideNewPass_SettingsF5.BackgroundImage = Properties.Resources.hidePass;
+            btHideNewPass_SettingsF5.FlatAppearance.BorderSize = 0;
+            btHideNewPass_SettingsF5.FlatStyle = FlatStyle.Flat;
+            btHideNewPass_SettingsF5.Image = Properties.Resources.hidePass;
+            btHideNewPass_SettingsF5.Location = new Point(463, -2);
+            btHideNewPass_SettingsF5.Name = "btHideNewPass_SettingsF5";
+            btHideNewPass_SettingsF5.Size = new Size(36, 27);
+            btHideNewPass_SettingsF5.TabIndex = 72;
+            btHideNewPass_SettingsF5.TextAlign = ContentAlignment.TopCenter;
+            btHideNewPass_SettingsF5.UseVisualStyleBackColor = false;
+            btHideNewPass_SettingsF5.Click += btHideNewPass_SettingsF5_Click;
             // 
             // NewPass
             // 
@@ -2084,7 +2084,7 @@
             label52.Anchor = AnchorStyles.None;
             label52.AutoSize = true;
             label52.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label52.Location = new Point(1334, -76);
+            label52.Location = new Point(1654, -105);
             label52.Name = "label52";
             label52.Size = new Size(122, 21);
             label52.TabIndex = 12;
@@ -2163,7 +2163,7 @@
             label54.Anchor = AnchorStyles.None;
             label54.AutoSize = true;
             label54.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label54.Location = new Point(1334, -103);
+            label54.Location = new Point(1654, -141);
             label54.Name = "label54";
             label54.Size = new Size(122, 21);
             label54.TabIndex = 12;
@@ -2171,8 +2171,8 @@
             // 
             // panel248
             // 
-            panel248.Controls.Add(btShowCurrentPass_SettingsF4);
-            panel248.Controls.Add(btHideCurrentPass_SettingsF4);
+            panel248.Controls.Add(btShowCurrentPass_SettingsF5);
+            panel248.Controls.Add(btHideCurrentPass_SettingsF5);
             panel248.Controls.Add(CurrentPass);
             panel248.Dock = DockStyle.Left;
             panel248.Location = new Point(189, 0);
@@ -2180,33 +2180,33 @@
             panel248.Size = new Size(499, 24);
             panel248.TabIndex = 14;
             // 
-            // btShowCurrentPass_SettingsF4
+            // btShowCurrentPass_SettingsF5
             // 
-            btShowCurrentPass_SettingsF4.BackColor = SystemColors.ScrollBar;
-            btShowCurrentPass_SettingsF4.FlatAppearance.BorderSize = 0;
-            btShowCurrentPass_SettingsF4.FlatStyle = FlatStyle.Flat;
-            btShowCurrentPass_SettingsF4.Image = Properties.Resources.eyePass;
-            btShowCurrentPass_SettingsF4.Location = new Point(461, -1);
-            btShowCurrentPass_SettingsF4.Name = "btShowCurrentPass_SettingsF4";
-            btShowCurrentPass_SettingsF4.Size = new Size(36, 26);
-            btShowCurrentPass_SettingsF4.TabIndex = 72;
-            btShowCurrentPass_SettingsF4.UseVisualStyleBackColor = false;
-            btShowCurrentPass_SettingsF4.Click += btShowCurrentPass_SettingsF3_Click_1;
+            btShowCurrentPass_SettingsF5.BackColor = SystemColors.ScrollBar;
+            btShowCurrentPass_SettingsF5.FlatAppearance.BorderSize = 0;
+            btShowCurrentPass_SettingsF5.FlatStyle = FlatStyle.Flat;
+            btShowCurrentPass_SettingsF5.Image = Properties.Resources.eyePass;
+            btShowCurrentPass_SettingsF5.Location = new Point(461, -2);
+            btShowCurrentPass_SettingsF5.Name = "btShowCurrentPass_SettingsF5";
+            btShowCurrentPass_SettingsF5.Size = new Size(36, 26);
+            btShowCurrentPass_SettingsF5.TabIndex = 72;
+            btShowCurrentPass_SettingsF5.UseVisualStyleBackColor = false;
+            btShowCurrentPass_SettingsF5.Click += btShowCurrentPass_SettingsF5_Click;
             // 
-            // btHideCurrentPass_SettingsF4
+            // btHideCurrentPass_SettingsF5
             // 
-            btHideCurrentPass_SettingsF4.BackColor = SystemColors.ScrollBar;
-            btHideCurrentPass_SettingsF4.BackgroundImage = Properties.Resources.hidePass;
-            btHideCurrentPass_SettingsF4.FlatAppearance.BorderSize = 0;
-            btHideCurrentPass_SettingsF4.FlatStyle = FlatStyle.Flat;
-            btHideCurrentPass_SettingsF4.Image = Properties.Resources.hidePass;
-            btHideCurrentPass_SettingsF4.Location = new Point(464, -2);
-            btHideCurrentPass_SettingsF4.Name = "btHideCurrentPass_SettingsF4";
-            btHideCurrentPass_SettingsF4.Size = new Size(36, 27);
-            btHideCurrentPass_SettingsF4.TabIndex = 71;
-            btHideCurrentPass_SettingsF4.TextAlign = ContentAlignment.TopCenter;
-            btHideCurrentPass_SettingsF4.UseVisualStyleBackColor = false;
-            btHideCurrentPass_SettingsF4.Click += btHideCurrentPass_SettingsF3_Click;
+            btHideCurrentPass_SettingsF5.BackColor = SystemColors.ScrollBar;
+            btHideCurrentPass_SettingsF5.BackgroundImage = Properties.Resources.hidePass;
+            btHideCurrentPass_SettingsF5.FlatAppearance.BorderSize = 0;
+            btHideCurrentPass_SettingsF5.FlatStyle = FlatStyle.Flat;
+            btHideCurrentPass_SettingsF5.Image = Properties.Resources.hidePass;
+            btHideCurrentPass_SettingsF5.Location = new Point(464, -2);
+            btHideCurrentPass_SettingsF5.Name = "btHideCurrentPass_SettingsF5";
+            btHideCurrentPass_SettingsF5.Size = new Size(36, 27);
+            btHideCurrentPass_SettingsF5.TabIndex = 71;
+            btHideCurrentPass_SettingsF5.TextAlign = ContentAlignment.TopCenter;
+            btHideCurrentPass_SettingsF5.UseVisualStyleBackColor = false;
+            btHideCurrentPass_SettingsF5.Click += btHideCurrentPass_SettingsF5_Click;
             // 
             // CurrentPass
             // 
@@ -2339,18 +2339,18 @@
             label56.TabIndex = 24;
             label56.Text = "      Change Password                    ";
             // 
-            // SettingsBrgyStffF4
+            // SettingsAdF5
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1015, 794);
+            ClientSize = new Size(1015, 773);
             Controls.Add(panel1);
             Controls.Add(panel6);
             Controls.Add(Settings);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "SettingsBrgyStffF4";
-            Text = "SettingsBrgyStffF4";
+            Name = "SettingsAdF5";
+            Text = "SettingsAdF5";
             Settings.ResumeLayout(false);
             Settings.PerformLayout();
             panel1.ResumeLayout(false);
@@ -2484,6 +2484,8 @@
         private Guna.UI2.WinForms.Guna2TabControl Settingss;
         private TabPage tabPage1;
         private Panel panel126;
+        private Button btDeleteAccount;
+        private Button btUpdateInformation;
         private Panel panel127;
         private Panel panel129;
         private Panel panel130;
@@ -2607,8 +2609,8 @@
         private Panel panel223;
         private Label label48;
         private Panel panel224;
-        private Button btShowConNewPass_SettingsF4;
-        private Button btHideConNewPass_SettingsF4;
+        private Button btShowConNewPass_SettingsF5;
+        private Button btHideConNewPass_SettingsF5;
         private TextBox ConNewPass;
         private Panel panel225;
         private Panel panel226;
@@ -2625,8 +2627,8 @@
         private Panel panel235;
         private Label label51;
         private Panel panel236;
-        private Button btShowNewPass_SettingsF4;
-        private Button btHideNewPass_SettingsF4;
+        private Button btShowNewPass_SettingsF5;
+        private Button btHideNewPass_SettingsF5;
         private TextBox NewPass;
         private Panel panel237;
         private Panel panel238;
@@ -2643,8 +2645,8 @@
         private Panel panel247;
         private Label label54;
         private Panel panel248;
-        private Button btShowCurrentPass_SettingsF4;
-        private Button btHideCurrentPass_SettingsF4;
+        private Button btShowCurrentPass_SettingsF5;
+        private Button btHideCurrentPass_SettingsF5;
         private TextBox CurrentPass;
         private Panel panel249;
         private Panel panel250;
@@ -2658,7 +2660,5 @@
         private Panel panel257;
         private FlowLayoutPanel flowLayoutPanel6;
         private Label label56;
-        private Button btUpdateInformation;
-        private Button btDeleteAccount;
     }
 }

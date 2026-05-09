@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubmitReport));
             Welcome = new Label();
             Greetings = new Label();
@@ -45,6 +45,10 @@
             panel4 = new Panel();
             TabCSubmitReport = new Guna.UI2.WinForms.Guna2TabControl();
             Birth = new TabPage();
+            label36 = new Label();
+            label35 = new Label();
+            label34 = new Label();
+            label33 = new Label();
             txtbAdditionalDits = new TextBox();
             label4 = new Label();
             label3 = new Label();
@@ -57,6 +61,10 @@
             dateTimePicker1DOB_BrgyStftb = new DateTimePicker();
             lb6DOB_BrgyStftb = new Label();
             Death = new TabPage();
+            label40 = new Label();
+            label39 = new Label();
+            label38 = new Label();
+            label37 = new Label();
             textBox1 = new TextBox();
             label5 = new Label();
             label6 = new Label();
@@ -69,6 +77,10 @@
             dateTimePicker1 = new DateTimePicker();
             label10 = new Label();
             MoveIn = new TabPage();
+            label44 = new Label();
+            label43 = new Label();
+            label42 = new Label();
+            label41 = new Label();
             textBox5 = new TextBox();
             label11 = new Label();
             label12 = new Label();
@@ -81,6 +93,10 @@
             dateTimePicker2 = new DateTimePicker();
             label16 = new Label();
             MoveOut = new TabPage();
+            label48 = new Label();
+            label47 = new Label();
+            label46 = new Label();
+            label45 = new Label();
             textBox9 = new TextBox();
             label17 = new Label();
             label18 = new Label();
@@ -95,6 +111,11 @@
             panel1 = new Panel();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             panel6 = new Panel();
+            label32 = new Label();
+            label31 = new Label();
+            label30 = new Label();
+            label23 = new Label();
+            label2 = new Label();
             textBox16 = new TextBox();
             label27 = new Label();
             lb27UploadID_BrgyStftb = new Label();
@@ -195,12 +216,12 @@
             guna2Panel1.BorderThickness = 2;
             guna2Panel1.Controls.Add(label1);
             guna2Panel1.Controls.Add(panel4);
-            guna2Panel1.CustomizableEdges = customizableEdges7;
+            guna2Panel1.CustomizableEdges = customizableEdges1;
             guna2Panel1.Dock = DockStyle.Fill;
             guna2Panel1.FillColor = Color.MidnightBlue;
             guna2Panel1.Location = new Point(10, 10);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Panel1.Size = new Size(995, 294);
             guna2Panel1.TabIndex = 0;
             // 
@@ -266,6 +287,10 @@
             Birth.AutoScroll = true;
             Birth.AutoScrollMinSize = new Size(0, 220);
             Birth.BackColor = Color.Transparent;
+            Birth.Controls.Add(label36);
+            Birth.Controls.Add(label35);
+            Birth.Controls.Add(label34);
+            Birth.Controls.Add(label33);
             Birth.Controls.Add(txtbAdditionalDits);
             Birth.Controls.Add(label4);
             Birth.Controls.Add(label3);
@@ -284,6 +309,54 @@
             Birth.Size = new Size(947, 145);
             Birth.TabIndex = 0;
             Birth.Text = "Birth";
+            // 
+            // label36
+            // 
+            label36.AutoSize = true;
+            label36.BackColor = Color.Transparent;
+            label36.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label36.ForeColor = Color.Red;
+            label36.Location = new Point(134, 104);
+            label36.Name = "label36";
+            label36.Size = new Size(17, 20);
+            label36.TabIndex = 105;
+            label36.Text = "*";
+            // 
+            // label35
+            // 
+            label35.AutoSize = true;
+            label35.BackColor = Color.Transparent;
+            label35.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label35.ForeColor = Color.Red;
+            label35.Location = new Point(793, 36);
+            label35.Name = "label35";
+            label35.Size = new Size(17, 20);
+            label35.TabIndex = 104;
+            label35.Text = "*";
+            // 
+            // label34
+            // 
+            label34.AutoSize = true;
+            label34.BackColor = Color.Transparent;
+            label34.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label34.ForeColor = Color.Red;
+            label34.Location = new Point(532, 35);
+            label34.Name = "label34";
+            label34.Size = new Size(17, 20);
+            label34.TabIndex = 103;
+            label34.Text = "*";
+            // 
+            // label33
+            // 
+            label33.AutoSize = true;
+            label33.BackColor = Color.Transparent;
+            label33.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label33.ForeColor = Color.Red;
+            label33.Location = new Point(105, 34);
+            label33.Name = "label33";
+            label33.Size = new Size(17, 20);
+            label33.TabIndex = 102;
+            label33.Text = "*";
             // 
             // txtbAdditionalDits
             // 
@@ -416,6 +489,10 @@
             // 
             Death.AutoScroll = true;
             Death.AutoScrollMinSize = new Size(0, 220);
+            Death.Controls.Add(label40);
+            Death.Controls.Add(label39);
+            Death.Controls.Add(label38);
+            Death.Controls.Add(label37);
             Death.Controls.Add(textBox1);
             Death.Controls.Add(label5);
             Death.Controls.Add(label6);
@@ -434,6 +511,54 @@
             Death.TabIndex = 1;
             Death.Text = "Death";
             Death.UseVisualStyleBackColor = true;
+            // 
+            // label40
+            // 
+            label40.AutoSize = true;
+            label40.BackColor = Color.Transparent;
+            label40.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label40.ForeColor = Color.Red;
+            label40.Location = new Point(134, 104);
+            label40.Name = "label40";
+            label40.Size = new Size(17, 20);
+            label40.TabIndex = 108;
+            label40.Text = "*";
+            // 
+            // label39
+            // 
+            label39.AutoSize = true;
+            label39.BackColor = Color.Transparent;
+            label39.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label39.ForeColor = Color.Red;
+            label39.Location = new Point(793, 36);
+            label39.Name = "label39";
+            label39.Size = new Size(17, 20);
+            label39.TabIndex = 107;
+            label39.Text = "*";
+            // 
+            // label38
+            // 
+            label38.AutoSize = true;
+            label38.BackColor = Color.Transparent;
+            label38.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label38.ForeColor = Color.Red;
+            label38.Location = new Point(105, 34);
+            label38.Name = "label38";
+            label38.Size = new Size(17, 20);
+            label38.TabIndex = 106;
+            label38.Text = "*";
+            // 
+            // label37
+            // 
+            label37.AutoSize = true;
+            label37.BackColor = Color.Transparent;
+            label37.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label37.ForeColor = Color.Red;
+            label37.Location = new Point(532, 35);
+            label37.Name = "label37";
+            label37.Size = new Size(17, 20);
+            label37.TabIndex = 106;
+            label37.Text = "*";
             // 
             // textBox1
             // 
@@ -566,6 +691,10 @@
             // 
             MoveIn.AutoScroll = true;
             MoveIn.AutoScrollMinSize = new Size(0, 220);
+            MoveIn.Controls.Add(label44);
+            MoveIn.Controls.Add(label43);
+            MoveIn.Controls.Add(label42);
+            MoveIn.Controls.Add(label41);
             MoveIn.Controls.Add(textBox5);
             MoveIn.Controls.Add(label11);
             MoveIn.Controls.Add(label12);
@@ -584,6 +713,54 @@
             MoveIn.Text = "Move In";
             MoveIn.UseVisualStyleBackColor = true;
             // 
+            // label44
+            // 
+            label44.AutoSize = true;
+            label44.BackColor = Color.Transparent;
+            label44.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label44.ForeColor = Color.Red;
+            label44.Location = new Point(134, 104);
+            label44.Name = "label44";
+            label44.Size = new Size(17, 20);
+            label44.TabIndex = 108;
+            label44.Text = "*";
+            // 
+            // label43
+            // 
+            label43.AutoSize = true;
+            label43.BackColor = Color.Transparent;
+            label43.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label43.ForeColor = Color.Red;
+            label43.Location = new Point(793, 36);
+            label43.Name = "label43";
+            label43.Size = new Size(17, 20);
+            label43.TabIndex = 107;
+            label43.Text = "*";
+            // 
+            // label42
+            // 
+            label42.AutoSize = true;
+            label42.BackColor = Color.Transparent;
+            label42.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label42.ForeColor = Color.Red;
+            label42.Location = new Point(532, 35);
+            label42.Name = "label42";
+            label42.Size = new Size(17, 20);
+            label42.TabIndex = 106;
+            label42.Text = "*";
+            // 
+            // label41
+            // 
+            label41.AutoSize = true;
+            label41.BackColor = Color.Transparent;
+            label41.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label41.ForeColor = Color.Red;
+            label41.Location = new Point(105, 34);
+            label41.Name = "label41";
+            label41.Size = new Size(17, 20);
+            label41.TabIndex = 106;
+            label41.Text = "*";
+            // 
             // textBox5
             // 
             textBox5.BackColor = SystemColors.ControlDark;
@@ -601,7 +778,7 @@
             label11.AutoSize = true;
             label11.Font = new Font("Arial Narrow", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.FromArgb(0, 0, 64);
-            label11.Location = new Point(6, 99);
+            label11.Location = new Point(9, 102);
             label11.Name = "label11";
             label11.Size = new Size(132, 22);
             label11.TabIndex = 51;
@@ -612,7 +789,7 @@
             label12.AutoSize = true;
             label12.Font = new Font("Arial Narrow", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.FromArgb(0, 0, 64);
-            label12.Location = new Point(3, 5);
+            label12.Location = new Point(6, 8);
             label12.Name = "label12";
             label12.Size = new Size(182, 22);
             label12.TabIndex = 50;
@@ -635,7 +812,7 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label13.Location = new Point(456, 30);
+            label13.Location = new Point(459, 33);
             label13.Name = "label13";
             label13.Size = new Size(79, 23);
             label13.TabIndex = 48;
@@ -658,7 +835,7 @@
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label14.Location = new Point(245, 30);
+            label14.Location = new Point(248, 33);
             label14.Name = "label14";
             label14.Size = new Size(99, 23);
             label14.TabIndex = 46;
@@ -681,7 +858,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label15.Location = new Point(27, 30);
+            label15.Location = new Point(30, 33);
             label15.Name = "label15";
             label15.Size = new Size(81, 23);
             label15.TabIndex = 44;
@@ -705,7 +882,7 @@
             // 
             label16.AutoSize = true;
             label16.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label16.Location = new Point(700, 33);
+            label16.Location = new Point(703, 36);
             label16.Name = "label16";
             label16.Size = new Size(96, 21);
             label16.TabIndex = 42;
@@ -715,6 +892,10 @@
             // 
             MoveOut.AutoScroll = true;
             MoveOut.AutoScrollMinSize = new Size(0, 220);
+            MoveOut.Controls.Add(label48);
+            MoveOut.Controls.Add(label47);
+            MoveOut.Controls.Add(label46);
+            MoveOut.Controls.Add(label45);
             MoveOut.Controls.Add(textBox9);
             MoveOut.Controls.Add(label17);
             MoveOut.Controls.Add(label18);
@@ -733,6 +914,54 @@
             MoveOut.Text = "Move Out";
             MoveOut.UseVisualStyleBackColor = true;
             // 
+            // label48
+            // 
+            label48.AutoSize = true;
+            label48.BackColor = Color.Transparent;
+            label48.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label48.ForeColor = Color.Red;
+            label48.Location = new Point(134, 104);
+            label48.Name = "label48";
+            label48.Size = new Size(17, 20);
+            label48.TabIndex = 106;
+            label48.Text = "*";
+            // 
+            // label47
+            // 
+            label47.AutoSize = true;
+            label47.BackColor = Color.Transparent;
+            label47.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label47.ForeColor = Color.Red;
+            label47.Location = new Point(793, 36);
+            label47.Name = "label47";
+            label47.Size = new Size(17, 20);
+            label47.TabIndex = 105;
+            label47.Text = "*";
+            // 
+            // label46
+            // 
+            label46.AutoSize = true;
+            label46.BackColor = Color.Transparent;
+            label46.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label46.ForeColor = Color.Red;
+            label46.Location = new Point(532, 35);
+            label46.Name = "label46";
+            label46.Size = new Size(17, 20);
+            label46.TabIndex = 104;
+            label46.Text = "*";
+            // 
+            // label45
+            // 
+            label45.AutoSize = true;
+            label45.BackColor = Color.Transparent;
+            label45.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label45.ForeColor = Color.Red;
+            label45.Location = new Point(105, 34);
+            label45.Name = "label45";
+            label45.Size = new Size(17, 20);
+            label45.TabIndex = 103;
+            label45.Text = "*";
+            // 
             // textBox9
             // 
             textBox9.BackColor = SystemColors.ControlDark;
@@ -750,7 +979,7 @@
             label17.AutoSize = true;
             label17.Font = new Font("Arial Narrow", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label17.ForeColor = Color.FromArgb(0, 0, 64);
-            label17.Location = new Point(6, 99);
+            label17.Location = new Point(9, 102);
             label17.Name = "label17";
             label17.Size = new Size(132, 22);
             label17.TabIndex = 51;
@@ -761,7 +990,7 @@
             label18.AutoSize = true;
             label18.Font = new Font("Arial Narrow", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label18.ForeColor = Color.FromArgb(0, 0, 64);
-            label18.Location = new Point(3, 5);
+            label18.Location = new Point(6, 8);
             label18.Name = "label18";
             label18.Size = new Size(182, 22);
             label18.TabIndex = 50;
@@ -784,7 +1013,7 @@
             // 
             label19.AutoSize = true;
             label19.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label19.Location = new Point(456, 30);
+            label19.Location = new Point(459, 33);
             label19.Name = "label19";
             label19.Size = new Size(79, 23);
             label19.TabIndex = 48;
@@ -807,7 +1036,7 @@
             // 
             label20.AutoSize = true;
             label20.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label20.Location = new Point(245, 30);
+            label20.Location = new Point(248, 33);
             label20.Name = "label20";
             label20.Size = new Size(99, 23);
             label20.TabIndex = 46;
@@ -830,7 +1059,7 @@
             // 
             label21.AutoSize = true;
             label21.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label21.Location = new Point(27, 30);
+            label21.Location = new Point(30, 33);
             label21.Name = "label21";
             label21.Size = new Size(81, 23);
             label21.TabIndex = 44;
@@ -854,7 +1083,7 @@
             // 
             label22.AutoSize = true;
             label22.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label22.Location = new Point(700, 33);
+            label22.Location = new Point(703, 36);
             label22.Name = "label22";
             label22.Size = new Size(96, 21);
             label22.TabIndex = 42;
@@ -872,23 +1101,29 @@
             // 
             // guna2Panel2
             // 
+            guna2Panel2.BackColor = Color.Transparent;
             guna2Panel2.BorderColor = Color.MidnightBlue;
             guna2Panel2.BorderRadius = 18;
             guna2Panel2.BorderThickness = 2;
             guna2Panel2.Controls.Add(panel6);
             guna2Panel2.Controls.Add(guna2Panel3);
-            guna2Panel2.CustomizableEdges = customizableEdges11;
+            guna2Panel2.CustomizableEdges = customizableEdges5;
             guna2Panel2.Dock = DockStyle.Fill;
             guna2Panel2.FillColor = Color.MidnightBlue;
             guna2Panel2.Location = new Point(10, 10);
             guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2Panel2.Size = new Size(995, 244);
             guna2Panel2.TabIndex = 0;
             // 
             // panel6
             // 
             panel6.BackColor = SystemColors.GradientActiveCaption;
+            panel6.Controls.Add(label32);
+            panel6.Controls.Add(label31);
+            panel6.Controls.Add(label30);
+            panel6.Controls.Add(label23);
+            panel6.Controls.Add(label2);
             panel6.Controls.Add(textBox16);
             panel6.Controls.Add(label27);
             panel6.Controls.Add(lb27UploadID_BrgyStftb);
@@ -906,6 +1141,71 @@
             panel6.Name = "panel6";
             panel6.Size = new Size(995, 165);
             panel6.TabIndex = 17;
+            // 
+            // label32
+            // 
+            label32.Anchor = AnchorStyles.None;
+            label32.AutoSize = true;
+            label32.BackColor = Color.Transparent;
+            label32.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label32.ForeColor = Color.Red;
+            label32.Location = new Point(532, 89);
+            label32.Name = "label32";
+            label32.Size = new Size(17, 20);
+            label32.TabIndex = 101;
+            label32.Text = "*";
+            // 
+            // label31
+            // 
+            label31.Anchor = AnchorStyles.None;
+            label31.AutoSize = true;
+            label31.BackColor = Color.Transparent;
+            label31.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label31.ForeColor = Color.Red;
+            label31.Location = new Point(137, 91);
+            label31.Name = "label31";
+            label31.Size = new Size(17, 20);
+            label31.TabIndex = 100;
+            label31.Text = "*";
+            // 
+            // label30
+            // 
+            label30.Anchor = AnchorStyles.None;
+            label30.AutoSize = true;
+            label30.BackColor = Color.Transparent;
+            label30.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label30.ForeColor = Color.Red;
+            label30.Location = new Point(813, 23);
+            label30.Name = "label30";
+            label30.Size = new Size(17, 20);
+            label30.TabIndex = 99;
+            label30.Text = "*";
+            // 
+            // label23
+            // 
+            label23.Anchor = AnchorStyles.None;
+            label23.AutoSize = true;
+            label23.BackColor = Color.Transparent;
+            label23.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label23.ForeColor = Color.Red;
+            label23.Location = new Point(522, 24);
+            label23.Name = "label23";
+            label23.Size = new Size(17, 20);
+            label23.TabIndex = 98;
+            label23.Text = "*";
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.None;
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Franklin Gothic Medium Cond", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Red;
+            label2.Location = new Point(100, 24);
+            label2.Name = "label2";
+            label2.Size = new Size(17, 20);
+            label2.TabIndex = 97;
+            label2.Text = "*";
             // 
             // textBox16
             // 
@@ -1095,12 +1395,12 @@
             guna2Panel3.BorderThickness = 2;
             guna2Panel3.Controls.Add(panel7);
             guna2Panel3.Controls.Add(label29);
-            guna2Panel3.CustomizableEdges = customizableEdges9;
+            guna2Panel3.CustomizableEdges = customizableEdges3;
             guna2Panel3.Dock = DockStyle.Top;
             guna2Panel3.FillColor = Color.MidnightBlue;
             guna2Panel3.Location = new Point(0, 0);
             guna2Panel3.Name = "guna2Panel3";
-            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Panel3.Size = new Size(995, 58);
             guna2Panel3.TabIndex = 16;
             // 
@@ -1299,5 +1599,26 @@
         private DateTimePicker dateTimePicker3;
         private Label label22;
         private Label lbFile;
+        private Label label32;
+        private Label label31;
+        private Label label30;
+        private Label label23;
+        private Label label2;
+        private Label label36;
+        private Label label35;
+        private Label label34;
+        private Label label33;
+        private Label label40;
+        private Label label39;
+        private Label label38;
+        private Label label37;
+        private Label label44;
+        private Label label43;
+        private Label label42;
+        private Label label41;
+        private Label label48;
+        private Label label47;
+        private Label label46;
+        private Label label45;
     }
 }

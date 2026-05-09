@@ -1119,7 +1119,7 @@
             cb5ValidIDType_Restb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb5ValidIDType_Restb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb5ValidIDType_Restb.FormattingEnabled = true;
-            cb5ValidIDType_Restb.Items.AddRange(new object[] { "PhilSys National ID", "Barangay ID", "Voter's ID", "Driver's License", "Passport", "SSS / GSIS ID", "PhilHealth ID" });
+            cb5ValidIDType_Restb.Items.AddRange(new object[] { "PhilSys National ID", "Barangay ID", "Voter's ID", "Driver's License", "Passport", "SSS / GSIS ID", "PhilHealth ID", "Not Applicable" });
             cb5ValidIDType_Restb.Location = new Point(43, 1035);
             cb5ValidIDType_Restb.Name = "cb5ValidIDType_Restb";
             cb5ValidIDType_Restb.Size = new Size(167, 29);
@@ -2302,7 +2302,7 @@
             cb4ValidIDType_BrgyStftb.DropDownStyle = ComboBoxStyle.DropDownList;
             cb4ValidIDType_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cb4ValidIDType_BrgyStftb.FormattingEnabled = true;
-            cb4ValidIDType_BrgyStftb.Items.AddRange(new object[] { "PhilSys National ID", "Barangay ID", "Voter's ID", "Driver's License", "Passport", "SSS / GSIS ID", "PhilHealth ID" });
+            cb4ValidIDType_BrgyStftb.Items.AddRange(new object[] { "PhilSys National ID", "Barangay ID", "Voter's ID", "Driver's License", "Passport", "SSS / GSIS ID", "PhilHealth ID", "Not Applicable" });
             cb4ValidIDType_BrgyStftb.Location = new Point(43, 964);
             cb4ValidIDType_BrgyStftb.Name = "cb4ValidIDType_BrgyStftb";
             cb4ValidIDType_BrgyStftb.Size = new Size(167, 29);
@@ -3233,6 +3233,7 @@
             btSignInHere_Adminbt.TabIndex = 120;
             btSignInHere_Adminbt.Text = "SIGN IN HERE";
             btSignInHere_Adminbt.UseVisualStyleBackColor = false;
+            btSignInHere_Adminbt.Click += btSignInHere_Adminbt_Click;
             // 
             // lb34Already_Admintb
             // 
@@ -3499,7 +3500,7 @@
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "PhilSys National ID", "Barangay ID", "Voter's ID", "Driver's License", "Passport", "SSS / GSIS ID", "PhilHealth ID" });
+            comboBox1.Items.AddRange(new object[] { "PhilSys National ID", "Barangay ID", "Voter's ID", "Driver's License", "Passport", "SSS / GSIS ID", "PhilHealth ID", "Not Applicable" });
             comboBox1.Location = new Point(43, 1180);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(167, 29);

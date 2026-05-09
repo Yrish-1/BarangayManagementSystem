@@ -8,69 +8,68 @@ using System.Windows.Forms;
 
 namespace EveryJuanCount
 {
-    public partial class SettingsResF3 : Form
+    public partial class SettingsAdF5 : Form
     {
-        public SettingsResF3()
+        public SettingsAdF5()
         {
             InitializeComponent();
         }
 
-        #region ChangePasswordButtons
-
-        private void btShowCurrentPass_SettingsF3_Click(object sender, EventArgs e)
+        #region Password Show/Hide
+        private void btShowCurrentPass_SettingsF5_Click(object sender, EventArgs e)
         {
             if (CurrentPass.PasswordChar == '*')
             {
-                btHideCurrentPass_SettingsF3.BringToFront();
+                btHideCurrentPass_SettingsF5.BringToFront();
                 CurrentPass.PasswordChar = '\0';
             }
         }
 
-        private void btHideCurrentPass_SettingsF3_Click(object sender, EventArgs e)
+        private void btHideCurrentPass_SettingsF5_Click(object sender, EventArgs e)
         {
             if (CurrentPass.PasswordChar == '\0')
             {
-                btShowCurrentPass_SettingsF3.BringToFront();
+                btShowCurrentPass_SettingsF5.BringToFront();
                 CurrentPass.PasswordChar = '*';
             }
         }
 
-        private void btShowNewPass_SettingsF3_Click(object sender, EventArgs e)
+        private void btShowNewPass_SettingsF5_Click(object sender, EventArgs e)
         {
             if (NewPass.PasswordChar == '*')
             {
-                btHideNewPass_SettingsF3.BringToFront();
+                btHideNewPass_SettingsF5.BringToFront();
                 NewPass.PasswordChar = '\0';
             }
         }
 
-        private void btHideNewPass_SettingsF3_Click(object sender, EventArgs e)
+        private void btHideNewPass_SettingsF5_Click(object sender, EventArgs e)
         {
             if (NewPass.PasswordChar == '\0')
             {
-                btShowNewPass_SettingsF3.BringToFront();
+                btShowNewPass_SettingsF5.BringToFront();
                 NewPass.PasswordChar = '*';
             }
         }
 
-        private void btShowConNewPass_SettingsF3_Click(object sender, EventArgs e)
+        private void btShowConNewPass_SettingsF5_Click(object sender, EventArgs e)
         {
             if (ConNewPass.PasswordChar == '*')
             {
-                btHideConNewPass_SettingsF3.BringToFront();
+                btHideConNewPass_SettingsF5.BringToFront();
                 ConNewPass.PasswordChar = '\0';
             }
         }
-
-        private void btHideConNewPass_SettingsF3_Click(object sender, EventArgs e)
+        private void btHideConNewPass_SettingsF5_Click(object sender, EventArgs e)
         {
             if (ConNewPass.PasswordChar == '\0')
             {
-                btShowConNewPass_SettingsF3.BringToFront();
+                btShowConNewPass_SettingsF5.BringToFront();
                 ConNewPass.PasswordChar = '*';
             }
         }
-        #endregion 
-    }
 
+        #endregion
+
+    }
 }

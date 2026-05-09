@@ -1,10 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="AdminForm5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AnnouncementsAdF5.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="AnnouncementsBrgyStffF4.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="BarangayStaffForm4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DashboardAdF5.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DashboardBrgyStffF4.cs">
@@ -22,6 +31,15 @@
     <Compile Update="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ManageStaffAdF5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PopulationReportAdF5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ReportApprovalAdF5.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ReportHistoryResF3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -31,7 +49,13 @@
     <Compile Update="ResidentForm3.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ResidentsAdF5.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ResidentsBrgyStffF4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SettingsAdF5.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="SettingsBrgyStffF4.cs">

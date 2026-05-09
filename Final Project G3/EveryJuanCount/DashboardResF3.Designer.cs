@@ -177,7 +177,6 @@
             panel2.Controls.Add(gunpnReports);
             panel2.Controls.Add(gunapnAnnouncement);
             panel2.Controls.Add(pnTitleBar);
-            panel2.Cursor = Cursors.Default;
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
@@ -186,16 +185,14 @@
             // 
             // fLpnQuickAccess
             // 
-            fLpnQuickAccess.Anchor = AnchorStyles.None;
             fLpnQuickAccess.Controls.Add(panel5);
             fLpnQuickAccess.Controls.Add(panel6);
             fLpnQuickAccess.Controls.Add(panel7);
             fLpnQuickAccess.Controls.Add(panel8);
             fLpnQuickAccess.Controls.Add(panel9);
-            fLpnQuickAccess.Cursor = Cursors.Default;
-            fLpnQuickAccess.Location = new Point(783, 388);
+            fLpnQuickAccess.Location = new Point(784, 368);
             fLpnQuickAccess.Name = "fLpnQuickAccess";
-            fLpnQuickAccess.Size = new Size(232, 385);
+            fLpnQuickAccess.Size = new Size(231, 405);
             fLpnQuickAccess.TabIndex = 26;
             // 
             // panel5
@@ -210,7 +207,6 @@
             // 
             guna2Panel3.BorderRadius = 15;
             guna2Panel3.Controls.Add(label4);
-            guna2Panel3.Cursor = Cursors.Default;
             guna2Panel3.CustomizableEdges = customizableEdges1;
             guna2Panel3.Dock = DockStyle.Top;
             guna2Panel3.FillColor = Color.Goldenrod;
@@ -387,12 +383,12 @@
             // 
             // panel3
             // 
-            panel3.Anchor = AnchorStyles.None;
             panel3.Controls.Add(MyRecentReports);
-            panel3.Location = new Point(0, 392);
+            panel3.Dock = DockStyle.Left;
+            panel3.Location = new Point(0, 368);
             panel3.Name = "panel3";
             panel3.Padding = new Padding(10, 0, 10, 5);
-            panel3.Size = new Size(784, 381);
+            panel3.Size = new Size(784, 405);
             panel3.TabIndex = 24;
             // 
             // MyRecentReports
@@ -401,14 +397,13 @@
             MyRecentReports.BorderRadius = 30;
             MyRecentReports.BorderThickness = 5;
             MyRecentReports.Controls.Add(TitleBarMyRecentReports);
-            MyRecentReports.Cursor = Cursors.Default;
             MyRecentReports.CustomizableEdges = customizableEdges5;
             MyRecentReports.Dock = DockStyle.Fill;
             MyRecentReports.FillColor = Color.Silver;
             MyRecentReports.Location = new Point(10, 0);
             MyRecentReports.Name = "MyRecentReports";
             MyRecentReports.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            MyRecentReports.Size = new Size(764, 376);
+            MyRecentReports.Size = new Size(764, 400);
             MyRecentReports.TabIndex = 24;
             // 
             // TitleBarMyRecentReports
@@ -461,7 +456,6 @@
             gunpnReports.Controls.Add(gunaGPApproved);
             gunpnReports.Controls.Add(gunaGPPending);
             gunpnReports.Controls.Add(gunaGPTotalReports);
-            gunpnReports.Cursor = Cursors.Default;
             gunpnReports.CustomizableEdges = customizableEdges13;
             gunpnReports.Dock = DockStyle.Top;
             gunpnReports.Location = new Point(0, 180);

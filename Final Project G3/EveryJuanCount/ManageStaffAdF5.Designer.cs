@@ -1,6 +1,6 @@
 ﻿namespace EveryJuanCount
 {
-    partial class ReportsQueueBrgyStffF4
+    partial class ManageStaffAdF5
     {
         /// <summary>
         /// Required designer variable.
@@ -32,15 +32,13 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReportsQueueBrgyStffF4));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageStaffAdF5));
             panel2 = new Panel();
             panel1 = new Panel();
             panel5 = new Panel();
@@ -49,7 +47,6 @@
             panel6 = new Panel();
             panel3 = new Panel();
             cbAllStatus_ReportsQueue = new Guna.UI2.WinForms.Guna2ComboBox();
-            cbAllTypes_ReportsQueue = new Guna.UI2.WinForms.Guna2ComboBox();
             txtbSearch_ReportQueue = new Guna.UI2.WinForms.Guna2TextBox();
             panel4 = new Panel();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -79,7 +76,7 @@
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(1015, 80);
-            panel2.TabIndex = 23;
+            panel2.TabIndex = 24;
             // 
             // panel1
             // 
@@ -108,9 +105,9 @@
             Welcome.ForeColor = SystemColors.AppWorkspace;
             Welcome.Location = new Point(17, 54);
             Welcome.Name = "Welcome";
-            Welcome.Size = new Size(399, 16);
+            Welcome.Size = new Size(342, 16);
             Welcome.TabIndex = 15;
-            Welcome.Text = "All resident-submitted reports awaiting encoding and forwarding to admin.";
+            Welcome.Text = "View, activate, deactivate, and manage barangay staff accounts.";
             // 
             // Greetings
             // 
@@ -119,9 +116,9 @@
             Greetings.ForeColor = Color.MidnightBlue;
             Greetings.Location = new Point(12, 16);
             Greetings.Name = "Greetings";
-            Greetings.Size = new Size(306, 42);
+            Greetings.Size = new Size(278, 42);
             Greetings.TabIndex = 14;
-            Greetings.Text = "REPORTS QUEUE";
+            Greetings.Text = "MANAGE STAFF";
             // 
             // panel6
             // 
@@ -129,24 +126,23 @@
             panel6.Location = new Point(0, 80);
             panel6.Name = "panel6";
             panel6.Size = new Size(1015, 10);
-            panel6.TabIndex = 24;
+            panel6.TabIndex = 25;
             // 
             // panel3
             // 
             panel3.Controls.Add(cbAllStatus_ReportsQueue);
-            panel3.Controls.Add(cbAllTypes_ReportsQueue);
             panel3.Controls.Add(txtbSearch_ReportQueue);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 90);
             panel3.Name = "panel3";
             panel3.Size = new Size(1015, 70);
-            panel3.TabIndex = 25;
+            panel3.TabIndex = 26;
             // 
             // cbAllStatus_ReportsQueue
             // 
             cbAllStatus_ReportsQueue.AccessibleName = "";
             cbAllStatus_ReportsQueue.Anchor = AnchorStyles.None;
-            cbAllStatus_ReportsQueue.AutoCompleteCustomSource.AddRange(new string[] { "All Status", "Pending", "Forwarded", "Approved" });
+            cbAllStatus_ReportsQueue.AutoCompleteCustomSource.AddRange(new string[] { "All Status", "Active", "Inactive", "On Leave", "Part-Time", "Resigned" });
             cbAllStatus_ReportsQueue.AutoRoundedCorners = true;
             cbAllStatus_ReportsQueue.BackColor = Color.Transparent;
             cbAllStatus_ReportsQueue.BorderColor = SystemColors.ScrollBar;
@@ -155,85 +151,52 @@
             cbAllStatus_ReportsQueue.DrawMode = DrawMode.OwnerDrawFixed;
             cbAllStatus_ReportsQueue.DropDownStyle = ComboBoxStyle.DropDownList;
             cbAllStatus_ReportsQueue.FillColor = SystemColors.ScrollBar;
-            cbAllStatus_ReportsQueue.FocusedColor = Color.Empty;
+            cbAllStatus_ReportsQueue.FocusedColor = SystemColors.ControlDark;
+            cbAllStatus_ReportsQueue.FocusedState.BorderColor = SystemColors.ControlDark;
             cbAllStatus_ReportsQueue.Font = new Font("Segoe UI", 10F);
-            cbAllStatus_ReportsQueue.ForeColor = SystemColors.ActiveCaptionText;
+            cbAllStatus_ReportsQueue.ForeColor = Color.Black;
             cbAllStatus_ReportsQueue.HoverState.Font = new Font("Segoe UI", 10F);
             cbAllStatus_ReportsQueue.HoverState.ForeColor = Color.Black;
             cbAllStatus_ReportsQueue.ItemHeight = 30;
-            cbAllStatus_ReportsQueue.Items.AddRange(new object[] { "All Status", "Pending", "Forwarded", "Approved" });
+            cbAllStatus_ReportsQueue.Items.AddRange(new object[] { "All Status", "Active", "Inactive", "On Leave", "Part-Time", "Resigned" });
             cbAllStatus_ReportsQueue.ItemsAppearance.Font = new Font("Segoe UI", 10F);
             cbAllStatus_ReportsQueue.ItemsAppearance.ForeColor = Color.Black;
             cbAllStatus_ReportsQueue.ItemsAppearance.SelectedBackColor = Color.FromArgb(0, 0, 64);
             cbAllStatus_ReportsQueue.ItemsAppearance.SelectedFont = new Font("Segoe UI", 10F);
             cbAllStatus_ReportsQueue.ItemsAppearance.SelectedForeColor = Color.White;
-            cbAllStatus_ReportsQueue.Location = new Point(732, 18);
+            cbAllStatus_ReportsQueue.Location = new Point(768, 18);
             cbAllStatus_ReportsQueue.Name = "cbAllStatus_ReportsQueue";
             cbAllStatus_ReportsQueue.ShadowDecoration.BorderRadius = 0;
             cbAllStatus_ReportsQueue.ShadowDecoration.CustomizableEdges = customizableEdges2;
             cbAllStatus_ReportsQueue.Size = new Size(175, 36);
-            cbAllStatus_ReportsQueue.StartIndex = 0;
             cbAllStatus_ReportsQueue.TabIndex = 2;
-            // 
-            // cbAllTypes_ReportsQueue
-            // 
-            cbAllTypes_ReportsQueue.Anchor = AnchorStyles.None;
-            cbAllTypes_ReportsQueue.AutoCompleteCustomSource.AddRange(new string[] { "All types", "Birth", "Death", "Move-In", "Move-Out" });
-            cbAllTypes_ReportsQueue.AutoRoundedCorners = true;
-            cbAllTypes_ReportsQueue.BackColor = Color.Transparent;
-            cbAllTypes_ReportsQueue.BorderColor = SystemColors.ScrollBar;
-            cbAllTypes_ReportsQueue.BorderRadius = 17;
-            cbAllTypes_ReportsQueue.CustomizableEdges = customizableEdges3;
-            cbAllTypes_ReportsQueue.DrawMode = DrawMode.OwnerDrawFixed;
-            cbAllTypes_ReportsQueue.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbAllTypes_ReportsQueue.FillColor = SystemColors.ScrollBar;
-            cbAllTypes_ReportsQueue.FocusedColor = Color.Empty;
-            cbAllTypes_ReportsQueue.FocusedState.Font = new Font("Segoe UI", 10F);
-            cbAllTypes_ReportsQueue.FocusedState.ForeColor = Color.Black;
-            cbAllTypes_ReportsQueue.Font = new Font("Segoe UI", 10F);
-            cbAllTypes_ReportsQueue.ForeColor = Color.Black;
-            cbAllTypes_ReportsQueue.HoverState.Font = new Font("Segoe UI", 10F);
-            cbAllTypes_ReportsQueue.HoverState.ForeColor = Color.Black;
-            cbAllTypes_ReportsQueue.ItemHeight = 30;
-            cbAllTypes_ReportsQueue.Items.AddRange(new object[] { "All Types", "Birth", "Death", "Move-In", "Move-Out" });
-            cbAllTypes_ReportsQueue.ItemsAppearance.Font = new Font("Segoe UI", 10F);
-            cbAllTypes_ReportsQueue.ItemsAppearance.ForeColor = Color.Black;
-            cbAllTypes_ReportsQueue.ItemsAppearance.SelectedBackColor = Color.FromArgb(0, 0, 64);
-            cbAllTypes_ReportsQueue.ItemsAppearance.SelectedFont = new Font("Segoe UI", 10F);
-            cbAllTypes_ReportsQueue.ItemsAppearance.SelectedForeColor = Color.White;
-            cbAllTypes_ReportsQueue.Location = new Point(551, 18);
-            cbAllTypes_ReportsQueue.Name = "cbAllTypes_ReportsQueue";
-            cbAllTypes_ReportsQueue.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            cbAllTypes_ReportsQueue.Size = new Size(175, 36);
-            cbAllTypes_ReportsQueue.StartIndex = 0;
-            cbAllTypes_ReportsQueue.TabIndex = 1;
             // 
             // txtbSearch_ReportQueue
             // 
             txtbSearch_ReportQueue.Anchor = AnchorStyles.None;
             txtbSearch_ReportQueue.AutoRoundedCorners = true;
             txtbSearch_ReportQueue.BackColor = Color.Transparent;
-            txtbSearch_ReportQueue.CustomizableEdges = customizableEdges5;
+            txtbSearch_ReportQueue.CustomizableEdges = customizableEdges3;
             txtbSearch_ReportQueue.DefaultText = "";
             txtbSearch_ReportQueue.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtbSearch_ReportQueue.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
             txtbSearch_ReportQueue.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             txtbSearch_ReportQueue.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtbSearch_ReportQueue.FillColor = SystemColors.ScrollBar;
+            txtbSearch_ReportQueue.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtbSearch_ReportQueue.Font = new Font("Segoe UI", 10F);
             txtbSearch_ReportQueue.ForeColor = SystemColors.ActiveCaptionText;
-            txtbSearch_ReportQueue.HoverState.BorderColor = Color.Transparent;
-            txtbSearch_ReportQueue.HoverState.ForeColor = Color.Black;
+            txtbSearch_ReportQueue.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtbSearch_ReportQueue.IconLeft = Properties.Resources.Search1;
             txtbSearch_ReportQueue.IconLeftOffset = new Point(10, 0);
-            txtbSearch_ReportQueue.Location = new Point(40, 21);
+            txtbSearch_ReportQueue.Location = new Point(120, 17);
             txtbSearch_ReportQueue.Margin = new Padding(3, 5, 3, 5);
             txtbSearch_ReportQueue.Name = "txtbSearch_ReportQueue";
             txtbSearch_ReportQueue.PlaceholderForeColor = Color.DimGray;
             txtbSearch_ReportQueue.PlaceholderText = "Search";
             txtbSearch_ReportQueue.SelectedText = "";
-            txtbSearch_ReportQueue.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtbSearch_ReportQueue.Size = new Size(428, 36);
+            txtbSearch_ReportQueue.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtbSearch_ReportQueue.Size = new Size(580, 36);
             txtbSearch_ReportQueue.TabIndex = 0;
             txtbSearch_ReportQueue.TextOffset = new Point(10, 0);
             // 
@@ -244,8 +207,8 @@
             panel4.Location = new Point(0, 160);
             panel4.Name = "panel4";
             panel4.Padding = new Padding(10, 5, 10, 5);
-            panel4.Size = new Size(1015, 634);
-            panel4.TabIndex = 26;
+            panel4.Size = new Size(1015, 613);
+            panel4.TabIndex = 27;
             // 
             // guna2Panel1
             // 
@@ -255,13 +218,13 @@
             guna2Panel1.Controls.Add(panel7);
             guna2Panel1.Controls.Add(guna2Panel3);
             guna2Panel1.CustomBorderColor = Color.FromArgb(0, 0, 64);
-            guna2Panel1.CustomizableEdges = customizableEdges11;
+            guna2Panel1.CustomizableEdges = customizableEdges9;
             guna2Panel1.Dock = DockStyle.Fill;
             guna2Panel1.FillColor = Color.FromArgb(0, 0, 64);
             guna2Panel1.Location = new Point(10, 5);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2Panel1.Size = new Size(995, 624);
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2Panel1.Size = new Size(995, 603);
             guna2Panel1.TabIndex = 0;
             // 
             // panel7
@@ -271,7 +234,7 @@
             panel7.Dock = DockStyle.Fill;
             panel7.Location = new Point(0, 79);
             panel7.Name = "panel7";
-            panel7.Size = new Size(995, 545);
+            panel7.Size = new Size(995, 524);
             panel7.TabIndex = 18;
             // 
             // guna2Panel2
@@ -280,12 +243,12 @@
             guna2Panel2.BorderRadius = 18;
             guna2Panel2.BorderThickness = 2;
             guna2Panel2.Controls.Add(panel8);
-            guna2Panel2.CustomizableEdges = customizableEdges7;
+            guna2Panel2.CustomizableEdges = customizableEdges5;
             guna2Panel2.Dock = DockStyle.Bottom;
             guna2Panel2.FillColor = Color.MidnightBlue;
-            guna2Panel2.Location = new Point(0, 466);
+            guna2Panel2.Location = new Point(0, 445);
             guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2Panel2.Size = new Size(995, 79);
             guna2Panel2.TabIndex = 18;
             // 
@@ -305,12 +268,12 @@
             guna2Panel3.BorderThickness = 2;
             guna2Panel3.Controls.Add(panel9);
             guna2Panel3.Controls.Add(label29);
-            guna2Panel3.CustomizableEdges = customizableEdges9;
+            guna2Panel3.CustomizableEdges = customizableEdges7;
             guna2Panel3.Dock = DockStyle.Top;
             guna2Panel3.FillColor = Color.MidnightBlue;
             guna2Panel3.Location = new Point(0, 0);
             guna2Panel3.Name = "guna2Panel3";
-            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2Panel3.Size = new Size(995, 79);
             guna2Panel3.TabIndex = 17;
             // 
@@ -331,23 +294,23 @@
             label29.ForeColor = Color.Gold;
             label29.Location = new Point(25, 15);
             label29.Name = "label29";
-            label29.Size = new Size(319, 36);
+            label29.Size = new Size(266, 36);
             label29.TabIndex = 15;
-            label29.Text = "SUBMITTED REPORTS";
+            label29.Text = "STAFF ACCOUNTS";
             // 
-            // ReportsQueueBrgyStffF4
+            // ManageStaffAdF5
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1015, 794);
+            ClientSize = new Size(1015, 773);
             Controls.Add(panel4);
             Controls.Add(panel3);
             Controls.Add(panel6);
             Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "ReportsQueueBrgyStffF4";
-            Text = "ReportsQueueBrgyStffF4";
+            Name = "ManageStaffAdF5";
+            Text = "ManageStaffAdF5";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
@@ -369,9 +332,8 @@
         private Label Greetings;
         private Panel panel6;
         private Panel panel3;
-        private Guna.UI2.WinForms.Guna2TextBox txtbSearch_ReportQueue;
-        private Guna.UI2.WinForms.Guna2ComboBox cbAllTypes_ReportsQueue;
         private Guna.UI2.WinForms.Guna2ComboBox cbAllStatus_ReportsQueue;
+        private Guna.UI2.WinForms.Guna2TextBox txtbSearch_ReportQueue;
         private Panel panel4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Panel panel7;

@@ -1,6 +1,6 @@
 ﻿namespace EveryJuanCount
 {
-    partial class AnnouncementsBrgyStffF4
+    partial class AnnouncementsAdF5
     {
         /// <summary>
         /// Required designer variable.
@@ -36,21 +36,24 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnnouncementsBrgyStffF4));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnnouncementsAdF5));
             panel2 = new Panel();
+            panel4 = new Panel();
             panel1 = new Panel();
             panel5 = new Panel();
             Welcome = new Label();
             Greetings = new Label();
             panel6 = new Panel();
-            panel4 = new Panel();
             panel3 = new Panel();
+            btAdd = new Guna.UI2.WinForms.Guna2Button();
             btEdit = new Guna.UI2.WinForms.Guna2Button();
             cbAllStatus_Announcements = new Guna.UI2.WinForms.Guna2ComboBox();
             cbAllCategories_Announcements = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -64,7 +67,6 @@
             panel13 = new Panel();
             label1 = new Label();
             panel2.SuspendLayout();
-            panel6.SuspendLayout();
             panel3.SuspendLayout();
             panel10.SuspendLayout();
             guna2Panel4.SuspendLayout();
@@ -76,6 +78,7 @@
             // panel2
             // 
             panel2.BackColor = Color.Transparent;
+            panel2.Controls.Add(panel4);
             panel2.Controls.Add(panel1);
             panel2.Controls.Add(panel5);
             panel2.Controls.Add(Welcome);
@@ -84,7 +87,17 @@
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(1015, 80);
-            panel2.TabIndex = 24;
+            panel2.TabIndex = 25;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.MidnightBlue;
+            panel4.ForeColor = Color.MidnightBlue;
+            panel4.Location = new Point(197, 12);
+            panel4.Margin = new Padding(0);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(45, 4);
+            panel4.TabIndex = 18;
             // 
             // panel1
             // 
@@ -93,7 +106,7 @@
             panel1.Location = new Point(107, 12);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(45, 4);
+            panel1.Size = new Size(90, 4);
             panel1.TabIndex = 17;
             // 
             // panel5
@@ -130,24 +143,15 @@
             // 
             // panel6
             // 
-            panel6.Controls.Add(panel4);
             panel6.Dock = DockStyle.Top;
             panel6.Location = new Point(0, 80);
             panel6.Name = "panel6";
             panel6.Size = new Size(1015, 10);
-            panel6.TabIndex = 25;
-            // 
-            // panel4
-            // 
-            panel4.Dock = DockStyle.Fill;
-            panel4.Location = new Point(0, 0);
-            panel4.Name = "panel4";
-            panel4.Padding = new Padding(10, 5, 10, 5);
-            panel4.Size = new Size(1015, 10);
-            panel4.TabIndex = 27;
+            panel6.TabIndex = 26;
             // 
             // panel3
             // 
+            panel3.Controls.Add(btAdd);
             panel3.Controls.Add(btEdit);
             panel3.Controls.Add(cbAllStatus_Announcements);
             panel3.Controls.Add(cbAllCategories_Announcements);
@@ -156,13 +160,32 @@
             panel3.Location = new Point(0, 90);
             panel3.Name = "panel3";
             panel3.Size = new Size(1015, 70);
-            panel3.TabIndex = 26;
+            panel3.TabIndex = 27;
+            // 
+            // btAdd
+            // 
+            btAdd.Anchor = AnchorStyles.None;
+            btAdd.BorderRadius = 14;
+            btAdd.CustomizableEdges = customizableEdges1;
+            btAdd.DisabledState.BorderColor = Color.DarkGray;
+            btAdd.DisabledState.CustomBorderColor = Color.DarkGray;
+            btAdd.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btAdd.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btAdd.FillColor = Color.FromArgb(0, 64, 0);
+            btAdd.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btAdd.ForeColor = Color.White;
+            btAdd.Location = new Point(848, 23);
+            btAdd.Name = "btAdd";
+            btAdd.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btAdd.Size = new Size(67, 26);
+            btAdd.TabIndex = 4;
+            btAdd.Text = "Add";
             // 
             // btEdit
             // 
             btEdit.Anchor = AnchorStyles.None;
             btEdit.BorderRadius = 14;
-            btEdit.CustomizableEdges = customizableEdges1;
+            btEdit.CustomizableEdges = customizableEdges3;
             btEdit.DisabledState.BorderColor = Color.DarkGray;
             btEdit.DisabledState.CustomBorderColor = Color.DarkGray;
             btEdit.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -170,10 +193,10 @@
             btEdit.FillColor = Color.Maroon;
             btEdit.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btEdit.ForeColor = Color.White;
-            btEdit.Location = new Point(873, 23);
+            btEdit.Location = new Point(921, 23);
             btEdit.Name = "btEdit";
-            btEdit.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btEdit.Size = new Size(88, 26);
+            btEdit.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btEdit.Size = new Size(67, 26);
             btEdit.TabIndex = 3;
             btEdit.Text = "Edit";
             // 
@@ -185,15 +208,18 @@
             cbAllStatus_Announcements.AutoRoundedCorners = true;
             cbAllStatus_Announcements.BackColor = Color.Transparent;
             cbAllStatus_Announcements.BorderColor = SystemColors.ScrollBar;
-            cbAllStatus_Announcements.CustomizableEdges = customizableEdges3;
-            cbAllStatus_Announcements.DisplayMember = "all typed";
+            cbAllStatus_Announcements.CustomizableEdges = customizableEdges5;
+            cbAllStatus_Announcements.DisabledState.FillColor = Color.WhiteSmoke;
+            cbAllStatus_Announcements.DisabledState.Font = new Font("Segoe UI", 10F);
+            cbAllStatus_Announcements.DisabledState.ForeColor = Color.Black;
             cbAllStatus_Announcements.DrawMode = DrawMode.OwnerDrawFixed;
             cbAllStatus_Announcements.DropDownStyle = ComboBoxStyle.DropDownList;
             cbAllStatus_Announcements.FillColor = SystemColors.ScrollBar;
             cbAllStatus_Announcements.FocusedColor = SystemColors.ControlDark;
             cbAllStatus_Announcements.FocusedState.BorderColor = SystemColors.ControlDark;
+            cbAllStatus_Announcements.FocusedState.Font = new Font("Segoe UI", 10F);
             cbAllStatus_Announcements.Font = new Font("Segoe UI", 10F);
-            cbAllStatus_Announcements.ForeColor = SystemColors.ActiveCaptionText;
+            cbAllStatus_Announcements.ForeColor = Color.Black;
             cbAllStatus_Announcements.HoverState.Font = new Font("Segoe UI", 10F);
             cbAllStatus_Announcements.HoverState.ForeColor = Color.Black;
             cbAllStatus_Announcements.ItemHeight = 30;
@@ -203,10 +229,10 @@
             cbAllStatus_Announcements.ItemsAppearance.SelectedBackColor = Color.FromArgb(0, 0, 64);
             cbAllStatus_Announcements.ItemsAppearance.SelectedFont = new Font("Segoe UI", 10F);
             cbAllStatus_Announcements.ItemsAppearance.SelectedForeColor = Color.White;
-            cbAllStatus_Announcements.Location = new Point(654, 18);
+            cbAllStatus_Announcements.Location = new Point(647, 18);
             cbAllStatus_Announcements.Name = "cbAllStatus_Announcements";
             cbAllStatus_Announcements.ShadowDecoration.BorderRadius = 0;
-            cbAllStatus_Announcements.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            cbAllStatus_Announcements.ShadowDecoration.CustomizableEdges = customizableEdges6;
             cbAllStatus_Announcements.Size = new Size(175, 36);
             cbAllStatus_Announcements.StartIndex = 0;
             cbAllStatus_Announcements.TabIndex = 2;
@@ -219,28 +245,31 @@
             cbAllCategories_Announcements.BackColor = Color.Transparent;
             cbAllCategories_Announcements.BorderColor = SystemColors.ScrollBar;
             cbAllCategories_Announcements.BorderRadius = 17;
-            cbAllCategories_Announcements.CustomizableEdges = customizableEdges5;
+            cbAllCategories_Announcements.CustomizableEdges = customizableEdges7;
+            cbAllCategories_Announcements.DisabledState.FillColor = Color.WhiteSmoke;
+            cbAllCategories_Announcements.DisabledState.Font = new Font("Segoe UI", 10F);
+            cbAllCategories_Announcements.DisabledState.ForeColor = Color.Black;
             cbAllCategories_Announcements.DrawMode = DrawMode.OwnerDrawFixed;
             cbAllCategories_Announcements.DropDownStyle = ComboBoxStyle.DropDownList;
             cbAllCategories_Announcements.FillColor = SystemColors.ScrollBar;
             cbAllCategories_Announcements.FocusedColor = SystemColors.ControlDark;
             cbAllCategories_Announcements.FocusedState.BorderColor = SystemColors.ControlDark;
             cbAllCategories_Announcements.FocusedState.Font = new Font("Segoe UI", 10F);
-            cbAllCategories_Announcements.FocusedState.ForeColor = Color.Black;
             cbAllCategories_Announcements.Font = new Font("Segoe UI", 10F);
             cbAllCategories_Announcements.ForeColor = Color.Black;
             cbAllCategories_Announcements.HoverState.Font = new Font("Segoe UI", 10F);
             cbAllCategories_Announcements.HoverState.ForeColor = Color.Black;
             cbAllCategories_Announcements.ItemHeight = 30;
             cbAllCategories_Announcements.Items.AddRange(new object[] { "All Categories", "General Info", "Urgent", "Event", "Health" });
+            cbAllCategories_Announcements.ItemsAppearance.BackColor = SystemColors.ScrollBar;
             cbAllCategories_Announcements.ItemsAppearance.Font = new Font("Segoe UI", 10F);
             cbAllCategories_Announcements.ItemsAppearance.ForeColor = Color.Black;
             cbAllCategories_Announcements.ItemsAppearance.SelectedBackColor = Color.FromArgb(0, 0, 64);
             cbAllCategories_Announcements.ItemsAppearance.SelectedFont = new Font("Segoe UI", 10F);
-            cbAllCategories_Announcements.ItemsAppearance.SelectedForeColor = Color.White;
-            cbAllCategories_Announcements.Location = new Point(466, 18);
+            cbAllCategories_Announcements.ItemsAppearance.SelectedForeColor = Color.FloralWhite;
+            cbAllCategories_Announcements.Location = new Point(456, 18);
             cbAllCategories_Announcements.Name = "cbAllCategories_Announcements";
-            cbAllCategories_Announcements.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            cbAllCategories_Announcements.ShadowDecoration.CustomizableEdges = customizableEdges8;
             cbAllCategories_Announcements.Size = new Size(175, 36);
             cbAllCategories_Announcements.StartIndex = 0;
             cbAllCategories_Announcements.TabIndex = 1;
@@ -250,7 +279,7 @@
             txtbSearchAnnouncements.Anchor = AnchorStyles.None;
             txtbSearchAnnouncements.AutoRoundedCorners = true;
             txtbSearchAnnouncements.BackColor = Color.Transparent;
-            txtbSearchAnnouncements.CustomizableEdges = customizableEdges7;
+            txtbSearchAnnouncements.CustomizableEdges = customizableEdges9;
             txtbSearchAnnouncements.DefaultText = "";
             txtbSearchAnnouncements.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtbSearchAnnouncements.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -263,14 +292,14 @@
             txtbSearchAnnouncements.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtbSearchAnnouncements.IconLeft = Properties.Resources.Search1;
             txtbSearchAnnouncements.IconLeftOffset = new Point(10, 0);
-            txtbSearchAnnouncements.Location = new Point(26, 17);
+            txtbSearchAnnouncements.Location = new Point(34, 17);
             txtbSearchAnnouncements.Margin = new Padding(3, 5, 3, 5);
             txtbSearchAnnouncements.Name = "txtbSearchAnnouncements";
             txtbSearchAnnouncements.PlaceholderForeColor = Color.DimGray;
             txtbSearchAnnouncements.PlaceholderText = "Search";
             txtbSearchAnnouncements.SelectedText = "";
-            txtbSearchAnnouncements.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            txtbSearchAnnouncements.Size = new Size(428, 36);
+            txtbSearchAnnouncements.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            txtbSearchAnnouncements.Size = new Size(410, 36);
             txtbSearchAnnouncements.TabIndex = 0;
             txtbSearchAnnouncements.TextOffset = new Point(10, 0);
             // 
@@ -281,8 +310,8 @@
             panel10.Location = new Point(0, 160);
             panel10.Name = "panel10";
             panel10.Padding = new Padding(10, 5, 10, 5);
-            panel10.Size = new Size(1015, 634);
-            panel10.TabIndex = 27;
+            panel10.Size = new Size(1015, 613);
+            panel10.TabIndex = 28;
             // 
             // guna2Panel4
             // 
@@ -292,13 +321,13 @@
             guna2Panel4.Controls.Add(panel11);
             guna2Panel4.Controls.Add(guna2Panel6);
             guna2Panel4.CustomBorderColor = Color.FromArgb(0, 0, 64);
-            guna2Panel4.CustomizableEdges = customizableEdges13;
+            guna2Panel4.CustomizableEdges = customizableEdges15;
             guna2Panel4.Dock = DockStyle.Fill;
             guna2Panel4.FillColor = Color.FromArgb(0, 0, 64);
             guna2Panel4.Location = new Point(10, 5);
             guna2Panel4.Name = "guna2Panel4";
-            guna2Panel4.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2Panel4.Size = new Size(995, 624);
+            guna2Panel4.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            guna2Panel4.Size = new Size(995, 603);
             guna2Panel4.TabIndex = 0;
             // 
             // panel11
@@ -308,7 +337,7 @@
             panel11.Dock = DockStyle.Fill;
             panel11.Location = new Point(0, 79);
             panel11.Name = "panel11";
-            panel11.Size = new Size(995, 545);
+            panel11.Size = new Size(995, 524);
             panel11.TabIndex = 18;
             // 
             // guna2Panel5
@@ -317,12 +346,12 @@
             guna2Panel5.BorderRadius = 18;
             guna2Panel5.BorderThickness = 2;
             guna2Panel5.Controls.Add(panel12);
-            guna2Panel5.CustomizableEdges = customizableEdges9;
+            guna2Panel5.CustomizableEdges = customizableEdges11;
             guna2Panel5.Dock = DockStyle.Bottom;
             guna2Panel5.FillColor = Color.MidnightBlue;
-            guna2Panel5.Location = new Point(0, 466);
+            guna2Panel5.Location = new Point(0, 445);
             guna2Panel5.Name = "guna2Panel5";
-            guna2Panel5.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2Panel5.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2Panel5.Size = new Size(995, 79);
             guna2Panel5.TabIndex = 18;
             // 
@@ -342,12 +371,12 @@
             guna2Panel6.BorderThickness = 2;
             guna2Panel6.Controls.Add(panel13);
             guna2Panel6.Controls.Add(label1);
-            guna2Panel6.CustomizableEdges = customizableEdges11;
+            guna2Panel6.CustomizableEdges = customizableEdges13;
             guna2Panel6.Dock = DockStyle.Top;
             guna2Panel6.FillColor = Color.MidnightBlue;
             guna2Panel6.Location = new Point(0, 0);
             guna2Panel6.Name = "guna2Panel6";
-            guna2Panel6.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2Panel6.ShadowDecoration.CustomizableEdges = customizableEdges14;
             guna2Panel6.Size = new Size(995, 79);
             guna2Panel6.TabIndex = 17;
             // 
@@ -372,22 +401,21 @@
             label1.TabIndex = 15;
             label1.Text = "ANNOUNCEMENTS";
             // 
-            // AnnouncementsBrgyStffF4
+            // AnnouncementsAdF5
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1015, 794);
+            ClientSize = new Size(1015, 773);
             Controls.Add(panel10);
             Controls.Add(panel3);
             Controls.Add(panel6);
             Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "AnnouncementsBrgyStffF4";
-            Text = "AnnouncementsBrgyStffF4";
+            Name = "AnnouncementsAdF5";
+            Text = "AnnouncementsAdF5";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            panel6.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel10.ResumeLayout(false);
             guna2Panel4.ResumeLayout(false);
@@ -406,19 +434,20 @@
         private Label Welcome;
         private Label Greetings;
         private Panel panel6;
-        private Panel panel4;
         private Panel panel3;
+        private Guna.UI2.WinForms.Guna2Button btEdit;
         private Guna.UI2.WinForms.Guna2ComboBox cbAllStatus_Announcements;
         private Guna.UI2.WinForms.Guna2ComboBox cbAllCategories_Announcements;
         private Guna.UI2.WinForms.Guna2TextBox txtbSearchAnnouncements;
-        private Guna.UI2.WinForms.Guna2Button btEdit;
+        private Guna.UI2.WinForms.Guna2Button btAdd;
         private Panel panel10;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private Panel panel11;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
         private Panel panel13;
         private Label label1;
-        private Panel panel11;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private Panel panel12;
+        private Panel panel4;
     }
 }

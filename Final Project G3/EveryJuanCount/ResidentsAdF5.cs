@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace EveryJuanCount
 {
-    public partial class ReportHistoryResF3 : Form
+    public partial class ResidentsAdF5 : Form
     {
-        public ReportHistoryResF3()
+        public ResidentsAdF5()
         {
             InitializeComponent();
         }

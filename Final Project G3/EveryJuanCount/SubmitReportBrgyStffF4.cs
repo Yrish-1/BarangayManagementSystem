@@ -85,18 +85,23 @@ namespace EveryJuanCount
                 );
                 return;
             }
-             // Show success message
-                MessageBox.Show(
-                "Report submitted successfully!\n\n" +
-                "Please wait for the Reply and further instructions.\n" +
-                "You will be notified once your concern is addressed.",
-                "Registration Submitted",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information
-                );
-                return;
-            }
+            // Show success message
+            MessageBox.Show(
+            "Report submitted successfully!\n\n" +
+            "Please wait for the Reply and further instructions.\n" +
+            "You will be notified once your concern is addressed.",
+            "Registration Submitted",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Information
+            );
+            return;
         }
+
+        private void MoveIn_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
 
 

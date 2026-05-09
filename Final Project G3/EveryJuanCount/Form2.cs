@@ -624,5 +624,21 @@ namespace EveryJuanCount
             // Display in the Age textbox
             txtb4Age_BrgyStftb.Text = age.ToString();
         }
+
+        private void btSignInHere_Adminbt_Click(object sender, EventArgs e)
+        {
+            // Go back to Login Form
+            var form1 = Application.OpenForms.OfType<LogInForm1>().FirstOrDefault();
+            if (form1 != null)
+            {
+                form1.Show();
+                form1.BringToFront();
+            }
+            else
+            {
+                new LogInForm1().Show();
+            }
+            this.Close();
+        }
     }
 }

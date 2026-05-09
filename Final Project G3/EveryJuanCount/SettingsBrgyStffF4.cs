@@ -22,7 +22,7 @@ namespace EveryJuanCount
         {
             if (CurrentPass.PasswordChar == '*')
             {
-                btHideCurrentPass_SettingsF3.BringToFront();
+                btHideCurrentPass_SettingsF4.BringToFront();
                 CurrentPass.PasswordChar = '\0';
             }
         }
@@ -31,7 +31,7 @@ namespace EveryJuanCount
         {
             if (CurrentPass.PasswordChar == '\0')
             {
-                btShowCurrentPass_SettingsF3.BringToFront();
+                btShowCurrentPass_SettingsF4.BringToFront();
                 CurrentPass.PasswordChar = '*';
             }
         }
@@ -40,7 +40,7 @@ namespace EveryJuanCount
         {
             if (NewPass.PasswordChar == '*')
             {
-                btHideNewPass_SettingsF3.BringToFront();
+                btHideNewPass_SettingsF4.BringToFront();
                 NewPass.PasswordChar = '\0';
             }
         }
@@ -49,7 +49,7 @@ namespace EveryJuanCount
         {
             if (NewPass.PasswordChar == '\0')
             {
-                btShowNewPass_SettingsF3.BringToFront();
+                btShowNewPass_SettingsF4.BringToFront();
                 NewPass.PasswordChar = '*';
             }
         }
@@ -58,7 +58,7 @@ namespace EveryJuanCount
         {
             if (ConNewPass.PasswordChar == '*')
             {
-                btHideConNewPass_SettingsF3.BringToFront();
+                btHideConNewPass_SettingsF4.BringToFront();
                 ConNewPass.PasswordChar = '\0';
             }
         }
@@ -67,7 +67,7 @@ namespace EveryJuanCount
         {
             if (ConNewPass.PasswordChar == '\0')
             {
-                btShowConNewPass_SettingsF3.BringToFront();
+                btShowConNewPass_SettingsF4.BringToFront();
                 ConNewPass.PasswordChar = '*';
             
             }
