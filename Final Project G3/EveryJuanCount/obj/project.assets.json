@@ -369,19 +369,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\piney\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\piney\\source\\repos\\Yrish-1\\BarangayManagementSystem\\Final Project G3\\EveryJuanCount\\EveryJuanCount.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Documents\\Ahh\\Final Project G3\\EveryJuanCount\\EveryJuanCount.csproj",
       "projectName": "EveryJuanCount",
-      "projectPath": "C:\\Users\\piney\\source\\repos\\Yrish-1\\BarangayManagementSystem\\Final Project G3\\EveryJuanCount\\EveryJuanCount.csproj",
-      "packagesPath": "C:\\Users\\piney\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\piney\\source\\repos\\Yrish-1\\BarangayManagementSystem\\Final Project G3\\EveryJuanCount\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\OneDrive\\Documents\\Ahh\\Final Project G3\\EveryJuanCount\\EveryJuanCount.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\OneDrive\\Documents\\Ahh\\Final Project G3\\EveryJuanCount\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\piney\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -393,6 +398,7 @@
       },
       "frameworks": {
         "net10.0-windows7.0": {
+          "framework": "net10.0-windows7.0",
           "targetAlias": "net10.0-windows",
           "projectReferences": {}
         }
@@ -411,6 +417,7 @@
     },
     "frameworks": {
       "net10.0-windows7.0": {
+        "framework": "net10.0-windows7.0",
         "targetAlias": "net10.0-windows",
         "dependencies": {
           "Bunifu.UI.WinForms": {
@@ -457,7 +464,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -759,7 +766,7 @@
       "message": "Package 'MaterialSkin 0.2.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "MaterialSkin",
       "targetGraphs": [
-        "net10.0-windows7.0"
+        "net10.0-windows"
       ]
     },
     {
@@ -769,7 +776,7 @@
       "message": "Package 'Siticone.Desktop.UI 2.1.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "Siticone.Desktop.UI",
       "targetGraphs": [
-        "net10.0-windows7.0"
+        "net10.0-windows"
       ]
     }
   ]

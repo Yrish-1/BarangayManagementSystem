@@ -83,6 +83,46 @@ namespace EveryJuanCount.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Approval {
+            get {
+                object obj = ResourceManager.GetObject("Approval", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Approval1 {
+            get {
+                object obj = ResourceManager.GetObject("Approval1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Approval2 {
+            get {
+                object obj = ResourceManager.GetObject("Approval2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Approval3 {
+            get {
+                object obj = ResourceManager.GetObject("Approval3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Baby {
             get {
                 object obj = ResourceManager.GetObject("Baby", resourceCulture);
@@ -243,6 +283,16 @@ namespace EveryJuanCount.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap manage {
+            get {
+                object obj = ResourceManager.GetObject("manage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Megaphone {
             get {
                 object obj = ResourceManager.GetObject("Megaphone", resourceCulture);
@@ -306,6 +356,16 @@ namespace EveryJuanCount.Properties {
         internal static System.Drawing.Bitmap My_Profile1 {
             get {
                 object obj = ResourceManager.GetObject("My Profile1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap population {
+            get {
+                object obj = ResourceManager.GetObject("population", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -396,6 +456,16 @@ namespace EveryJuanCount.Properties {
         internal static System.Drawing.Bitmap Residentsimagefordash {
             get {
                 object obj = ResourceManager.GetObject("Residentsimagefordash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ress {
+            get {
+                object obj = ResourceManager.GetObject("ress", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
