@@ -111,6 +111,7 @@ namespace EveryJuanCount
                 ConNewPass.PasswordChar = '*';
             }
         }
+<<<<<<< HEAD
         #endregion
 
         #region Change Password
@@ -194,3 +195,9 @@ namespace EveryJuanCount
         #endregion
     }
 }
+=======
+        #endregion 
+    }
+
+}
+>>>>>>> e47a04e4267162358d9e8433f8843c6dec143062

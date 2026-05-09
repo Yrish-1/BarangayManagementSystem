@@ -56,14 +56,14 @@
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
+            pbLogo = new PictureBox();
             panel8.SuspendLayout();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbLogo).BeginInit();
             SuspendLayout();
             // 
             // BarTitle
@@ -101,6 +101,7 @@
             // 
             bt1ShowPass.Anchor = AnchorStyles.None;
             bt1ShowPass.BackColor = SystemColors.ScrollBar;
+            bt1ShowPass.Cursor = Cursors.Hand;
             bt1ShowPass.FlatAppearance.BorderSize = 0;
             bt1ShowPass.FlatStyle = FlatStyle.Flat;
             bt1ShowPass.Image = (Image)resources.GetObject("bt1ShowPass.Image");
@@ -115,6 +116,7 @@
             // 
             bt2HidePass.Anchor = AnchorStyles.None;
             bt2HidePass.BackColor = SystemColors.ScrollBar;
+            bt2HidePass.Cursor = Cursors.Hand;
             bt2HidePass.FlatAppearance.BorderSize = 0;
             bt2HidePass.FlatStyle = FlatStyle.Flat;
             bt2HidePass.Image = (Image)resources.GetObject("bt2HidePass.Image");
@@ -130,6 +132,7 @@
             txtB1Username.Anchor = AnchorStyles.None;
             txtB1Username.BackColor = SystemColors.ScrollBar;
             txtB1Username.BorderStyle = BorderStyle.None;
+            txtB1Username.Cursor = Cursors.IBeam;
             txtB1Username.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtB1Username.ForeColor = SystemColors.ActiveCaptionText;
             txtB1Username.Location = new Point(56, 224);
@@ -155,6 +158,7 @@
             // 
             bt4Reg.Anchor = AnchorStyles.None;
             bt4Reg.BackColor = Color.Goldenrod;
+            bt4Reg.Cursor = Cursors.Hand;
             bt4Reg.FlatAppearance.BorderSize = 0;
             bt4Reg.FlatStyle = FlatStyle.Flat;
             bt4Reg.Font = new Font("Segoe UI Black", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -195,6 +199,7 @@
             txtB2Password.Anchor = AnchorStyles.None;
             txtB2Password.BackColor = SystemColors.ScrollBar;
             txtB2Password.BorderStyle = BorderStyle.None;
+            txtB2Password.Cursor = Cursors.IBeam;
             txtB2Password.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtB2Password.ForeColor = SystemColors.ActiveCaptionText;
             txtB2Password.Location = new Point(56, 341);
@@ -232,6 +237,7 @@
             // 
             bt3LogIn.Anchor = AnchorStyles.None;
             bt3LogIn.BackColor = Color.WhiteSmoke;
+            bt3LogIn.Cursor = Cursors.Hand;
             bt3LogIn.FlatAppearance.BorderSize = 0;
             bt3LogIn.Font = new Font("Segoe UI Variable Text", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             bt3LogIn.Location = new Point(107, 405);
@@ -301,7 +307,7 @@
             panel2.Controls.Add(pictureBox4);
             panel2.Controls.Add(pictureBox3);
             panel2.Controls.Add(pictureBox2);
-            panel2.Controls.Add(pictureBox1);
+            panel2.Controls.Add(pbLogo);
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 25);
             panel2.Name = "panel2";
@@ -414,16 +420,18 @@
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             // 
-            // pictureBox1
+            // pbLogo
             // 
-            pictureBox1.Anchor = AnchorStyles.None;
-            pictureBox1.Image = Properties.Resources.EJC_Logo;
-            pictureBox1.Location = new Point(75, 92);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(360, 176);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            pbLogo.Anchor = AnchorStyles.None;
+            pbLogo.Cursor = Cursors.Hand;
+            pbLogo.Image = Properties.Resources.EJC_Logo;
+            pbLogo.Location = new Point(75, 92);
+            pbLogo.Name = "pbLogo";
+            pbLogo.Size = new Size(360, 176);
+            pbLogo.SizeMode = PictureBoxSizeMode.Zoom;
+            pbLogo.TabIndex = 0;
+            pbLogo.TabStop = false;
+            pbLogo.Click += pbLogo_Click;
             // 
             // LogInForm1
             // 
@@ -449,13 +457,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbLogo).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
         private Panel panel2;
-        private PictureBox pictureBox1;
+        private PictureBox pbLogo;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;

@@ -95,3 +95,10 @@ C:\Users\Admin\OneDrive\Documents\Ahh\Final Project G3\EveryJuanCount\bin\Debug\
 C:\Users\Admin\OneDrive\Documents\Ahh\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJua.1DC5555A.Up2Date
 C:\Users\Admin\OneDrive\Documents\Ahh\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.genruntimeconfig.cache
 C:\Users\Admin\OneDrive\Documents\Ahh\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\ref\EveryJuanCount.dll
+C:\Users\Admin\OneDrive\Documents\Ahh\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.SettingsBrgyStffF4.resources
+C:\Users\Admin\OneDrive\Documents\Ahh\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.DashboardBrgyStffF4.resources
+C:\Users\Admin\OneDrive\Documents\Ahh\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.ResidentsBrgyStffF4.resources
+C:\Users\Admin\OneDrive\Documents\Ahh\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.EncodeResidentBrgyStffF4.resources
+C:\Users\Admin\OneDrive\Documents\Ahh\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.SubmitReportBrgyStffF4.resources
+C:\Users\Admin\OneDrive\Documents\Ahh\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.ReportsQueueBrgyStffF4.resources
+C:\Users\Admin\OneDrive\Documents\Ahh\Final Project G3\EveryJuanCount\obj\Debug\net10.0-windows\EveryJuanCount.AnnouncementsBrgyStffF4.resources

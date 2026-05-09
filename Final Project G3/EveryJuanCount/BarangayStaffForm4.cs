@@ -107,6 +107,44 @@ namespace EveryJuanCount
                 activeForm = null;
             }
         }
+
+        #region buttons to open child forms
+        private void btDashboard_BrgyStffF4_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new DashboardBrgyStffF4());
+        }
+
+        private void btResidents_BrgyStffF4_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ResidentsBrgyStffF4());
+        }
+
+        private void btEncodeResident_BrgyStffF4_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new EncodeResidentBrgyStffF4());
+        }
+
+        private void btReportQueue_BrgyStffF4_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ReportsQueueBrgyStffF4());
+        }
+
+        private void btSubmitRep_BrgyStffF4_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new SubmitReportBrgyStffF4());
+        }
+
+        private void btAnnouncements_BrgyStffF4_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new AnnouncementsBrgyStffF4());
+        }
+
+        private void btSettings_BrgyStffF4_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new SettingsBrgyStffF4());
+        }
+        #endregion
     }
+
 
 }

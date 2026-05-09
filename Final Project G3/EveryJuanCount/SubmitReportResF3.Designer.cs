@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubmitReport));
             Welcome = new Label();
             Greetings = new Label();
@@ -107,13 +107,14 @@
             textBox15 = new TextBox();
             label26 = new Label();
             pnIDUp = new Panel();
+            lbFile = new Label();
             label28 = new Label();
-            btUploadID = new Button();
+            btUploadFile = new Button();
             guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             panel7 = new Panel();
             panel8 = new Panel();
             label29 = new Label();
-            ofdID = new OpenFileDialog();
+            openFile = new OpenFileDialog();
             btSubmit_ReportF3 = new Button();
             chkb1Confirm_ReportF3 = new CheckBox();
             panel2.SuspendLayout();
@@ -194,12 +195,12 @@
             guna2Panel1.BorderThickness = 2;
             guna2Panel1.Controls.Add(label1);
             guna2Panel1.Controls.Add(panel4);
-            guna2Panel1.CustomizableEdges = customizableEdges1;
+            guna2Panel1.CustomizableEdges = customizableEdges7;
             guna2Panel1.Dock = DockStyle.Fill;
             guna2Panel1.FillColor = Color.MidnightBlue;
             guna2Panel1.Location = new Point(10, 10);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2Panel1.Size = new Size(995, 294);
             guna2Panel1.TabIndex = 0;
             // 
@@ -234,7 +235,7 @@
             TabCSubmitReport.Controls.Add(MoveOut);
             TabCSubmitReport.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             TabCSubmitReport.ItemSize = new Size(237, 40);
-            TabCSubmitReport.Location = new Point(25, 32);
+            TabCSubmitReport.Location = new Point(20, 26);
             TabCSubmitReport.Name = "TabCSubmitReport";
             TabCSubmitReport.Padding = new Point(3, 3);
             TabCSubmitReport.SelectedIndex = 0;
@@ -256,14 +257,14 @@
             TabCSubmitReport.TabButtonSelectedState.InnerColor = Color.Yellow;
             TabCSubmitReport.TabButtonSize = new Size(237, 40);
             TabCSubmitReport.TabButtonTextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
-            TabCSubmitReport.TabIndex = 20;
+            TabCSubmitReport.TabIndex = 21;
             TabCSubmitReport.TabMenuBackColor = Color.Transparent;
             TabCSubmitReport.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
             // 
             // Birth
             // 
             Birth.AutoScroll = true;
-            Birth.AutoScrollMinSize = new Size(0, 170);
+            Birth.AutoScrollMinSize = new Size(0, 220);
             Birth.BackColor = Color.Transparent;
             Birth.Controls.Add(txtbAdditionalDits);
             Birth.Controls.Add(label4);
@@ -292,8 +293,8 @@
             txtbAdditionalDits.Location = new Point(31, 125);
             txtbAdditionalDits.Multiline = true;
             txtbAdditionalDits.Name = "txtbAdditionalDits";
-            txtbAdditionalDits.PlaceholderText = "Any relevant details about the event";
-            txtbAdditionalDits.Size = new Size(845, 28);
+            txtbAdditionalDits.PlaceholderText = "Any relevant details about the event (Anong nangyari?)";
+            txtbAdditionalDits.Size = new Size(845, 69);
             txtbAdditionalDits.TabIndex = 41;
             // 
             // label4
@@ -301,7 +302,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Arial Narrow", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.FromArgb(0, 0, 64);
-            label4.Location = new Point(6, 99);
+            label4.Location = new Point(9, 102);
             label4.Name = "label4";
             label4.Size = new Size(132, 22);
             label4.TabIndex = 40;
@@ -312,7 +313,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Arial Narrow", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(0, 0, 64);
-            label3.Location = new Point(3, 5);
+            label3.Location = new Point(6, 8);
             label3.Name = "label3";
             label3.Size = new Size(182, 22);
             label3.TabIndex = 39;
@@ -335,7 +336,7 @@
             // 
             lb5LN_BrgyStftb.AutoSize = true;
             lb5LN_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb5LN_BrgyStftb.Location = new Point(456, 30);
+            lb5LN_BrgyStftb.Location = new Point(459, 33);
             lb5LN_BrgyStftb.Name = "lb5LN_BrgyStftb";
             lb5LN_BrgyStftb.Size = new Size(79, 23);
             lb5LN_BrgyStftb.TabIndex = 37;
@@ -358,7 +359,7 @@
             // 
             lb4MN_BrgyStftb.AutoSize = true;
             lb4MN_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb4MN_BrgyStftb.Location = new Point(245, 30);
+            lb4MN_BrgyStftb.Location = new Point(248, 33);
             lb4MN_BrgyStftb.Name = "lb4MN_BrgyStftb";
             lb4MN_BrgyStftb.Size = new Size(99, 23);
             lb4MN_BrgyStftb.TabIndex = 35;
@@ -381,7 +382,7 @@
             // 
             lb3FN_BrgyStftb.AutoSize = true;
             lb3FN_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb3FN_BrgyStftb.Location = new Point(27, 30);
+            lb3FN_BrgyStftb.Location = new Point(30, 33);
             lb3FN_BrgyStftb.Name = "lb3FN_BrgyStftb";
             lb3FN_BrgyStftb.Size = new Size(81, 23);
             lb3FN_BrgyStftb.TabIndex = 33;
@@ -390,6 +391,7 @@
             // dateTimePicker1DOB_BrgyStftb
             // 
             dateTimePicker1DOB_BrgyStftb.CalendarMonthBackground = SystemColors.ButtonFace;
+            dateTimePicker1DOB_BrgyStftb.Cursor = Cursors.Hand;
             dateTimePicker1DOB_BrgyStftb.CustomFormat = "";
             dateTimePicker1DOB_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dateTimePicker1DOB_BrgyStftb.Format = DateTimePickerFormat.Short;
@@ -404,7 +406,7 @@
             // 
             lb6DOB_BrgyStftb.AutoSize = true;
             lb6DOB_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb6DOB_BrgyStftb.Location = new Point(700, 33);
+            lb6DOB_BrgyStftb.Location = new Point(703, 36);
             lb6DOB_BrgyStftb.Name = "lb6DOB_BrgyStftb";
             lb6DOB_BrgyStftb.Size = new Size(96, 21);
             lb6DOB_BrgyStftb.TabIndex = 31;
@@ -413,7 +415,7 @@
             // Death
             // 
             Death.AutoScroll = true;
-            Death.AutoScrollMinSize = new Size(0, 170);
+            Death.AutoScrollMinSize = new Size(0, 220);
             Death.Controls.Add(textBox1);
             Death.Controls.Add(label5);
             Death.Controls.Add(label6);
@@ -441,8 +443,8 @@
             textBox1.Location = new Point(31, 125);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Any relevant details about the event";
-            textBox1.Size = new Size(845, 28);
+            textBox1.PlaceholderText = "Any relevant details about the event (Anong nangyari?)";
+            textBox1.Size = new Size(845, 69);
             textBox1.TabIndex = 52;
             // 
             // label5
@@ -450,7 +452,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Arial Narrow", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.FromArgb(0, 0, 64);
-            label5.Location = new Point(6, 99);
+            label5.Location = new Point(9, 102);
             label5.Name = "label5";
             label5.Size = new Size(132, 22);
             label5.TabIndex = 51;
@@ -461,7 +463,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Arial Narrow", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.FromArgb(0, 0, 64);
-            label6.Location = new Point(3, 5);
+            label6.Location = new Point(6, 8);
             label6.Name = "label6";
             label6.Size = new Size(182, 22);
             label6.TabIndex = 50;
@@ -484,7 +486,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(456, 30);
+            label7.Location = new Point(459, 33);
             label7.Name = "label7";
             label7.Size = new Size(79, 23);
             label7.TabIndex = 48;
@@ -507,7 +509,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(245, 30);
+            label8.Location = new Point(248, 33);
             label8.Name = "label8";
             label8.Size = new Size(99, 23);
             label8.TabIndex = 46;
@@ -530,7 +532,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.Location = new Point(27, 30);
+            label9.Location = new Point(30, 33);
             label9.Name = "label9";
             label9.Size = new Size(81, 23);
             label9.TabIndex = 44;
@@ -539,6 +541,7 @@
             // dateTimePicker1
             // 
             dateTimePicker1.CalendarMonthBackground = SystemColors.ButtonFace;
+            dateTimePicker1.Cursor = Cursors.Hand;
             dateTimePicker1.CustomFormat = "";
             dateTimePicker1.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dateTimePicker1.Format = DateTimePickerFormat.Short;
@@ -553,7 +556,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Franklin Gothic Medium Cond", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.Location = new Point(700, 33);
+            label10.Location = new Point(703, 36);
             label10.Name = "label10";
             label10.Size = new Size(96, 21);
             label10.TabIndex = 42;
@@ -562,7 +565,7 @@
             // MoveIn
             // 
             MoveIn.AutoScroll = true;
-            MoveIn.AutoScrollMinSize = new Size(0, 170);
+            MoveIn.AutoScrollMinSize = new Size(0, 220);
             MoveIn.Controls.Add(textBox5);
             MoveIn.Controls.Add(label11);
             MoveIn.Controls.Add(label12);
@@ -589,8 +592,8 @@
             textBox5.Location = new Point(31, 125);
             textBox5.Multiline = true;
             textBox5.Name = "textBox5";
-            textBox5.PlaceholderText = "Any relevant details about the event";
-            textBox5.Size = new Size(845, 28);
+            textBox5.PlaceholderText = "Any relevant details about the event (Saan at Kailan?)";
+            textBox5.Size = new Size(845, 69);
             textBox5.TabIndex = 52;
             // 
             // label11
@@ -687,6 +690,7 @@
             // dateTimePicker2
             // 
             dateTimePicker2.CalendarMonthBackground = SystemColors.ButtonFace;
+            dateTimePicker2.Cursor = Cursors.Hand;
             dateTimePicker2.CustomFormat = "";
             dateTimePicker2.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dateTimePicker2.Format = DateTimePickerFormat.Short;
@@ -710,7 +714,7 @@
             // MoveOut
             // 
             MoveOut.AutoScroll = true;
-            MoveOut.AutoScrollMinSize = new Size(0, 170);
+            MoveOut.AutoScrollMinSize = new Size(0, 220);
             MoveOut.Controls.Add(textBox9);
             MoveOut.Controls.Add(label17);
             MoveOut.Controls.Add(label18);
@@ -737,8 +741,8 @@
             textBox9.Location = new Point(31, 125);
             textBox9.Multiline = true;
             textBox9.Name = "textBox9";
-            textBox9.PlaceholderText = "Any relevant details about the event";
-            textBox9.Size = new Size(845, 28);
+            textBox9.PlaceholderText = "Any relevant details about the event (Saan at Kailan?)";
+            textBox9.Size = new Size(845, 69);
             textBox9.TabIndex = 52;
             // 
             // label17
@@ -835,6 +839,7 @@
             // dateTimePicker3
             // 
             dateTimePicker3.CalendarMonthBackground = SystemColors.ButtonFace;
+            dateTimePicker3.Cursor = Cursors.Hand;
             dateTimePicker3.CustomFormat = "";
             dateTimePicker3.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dateTimePicker3.Format = DateTimePickerFormat.Short;
@@ -872,12 +877,12 @@
             guna2Panel2.BorderThickness = 2;
             guna2Panel2.Controls.Add(panel6);
             guna2Panel2.Controls.Add(guna2Panel3);
-            guna2Panel2.CustomizableEdges = customizableEdges5;
+            guna2Panel2.CustomizableEdges = customizableEdges11;
             guna2Panel2.Dock = DockStyle.Fill;
             guna2Panel2.FillColor = Color.MidnightBlue;
             guna2Panel2.Location = new Point(10, 10);
             guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2Panel2.Size = new Size(995, 244);
             guna2Panel2.TabIndex = 0;
             // 
@@ -908,7 +913,7 @@
             textBox16.BackColor = SystemColors.ControlDark;
             textBox16.BorderStyle = BorderStyle.None;
             textBox16.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox16.Location = new Point(385, 108);
+            textBox16.Location = new Point(383, 114);
             textBox16.Multiline = true;
             textBox16.Name = "textBox16";
             textBox16.PlaceholderText = " e.g Father, Spouse, Child";
@@ -920,7 +925,7 @@
             label27.Anchor = AnchorStyles.None;
             label27.AutoSize = true;
             label27.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label27.Location = new Point(382, 82);
+            label27.Location = new Point(380, 88);
             label27.Name = "label27";
             label27.Size = new Size(157, 23);
             label27.TabIndex = 95;
@@ -931,11 +936,11 @@
             lb27UploadID_BrgyStftb.Anchor = AnchorStyles.None;
             lb27UploadID_BrgyStftb.AutoSize = true;
             lb27UploadID_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb27UploadID_BrgyStftb.Location = new Point(690, 16);
+            lb27UploadID_BrgyStftb.Location = new Point(688, 22);
             lb27UploadID_BrgyStftb.Name = "lb27UploadID_BrgyStftb";
-            lb27UploadID_BrgyStftb.Size = new Size(75, 23);
+            lb27UploadID_BrgyStftb.Size = new Size(128, 23);
             lb27UploadID_BrgyStftb.TabIndex = 93;
-            lb27UploadID_BrgyStftb.Text = "Upload ID";
+            lb27UploadID_BrgyStftb.Text = "Upload Document";
             // 
             // txtb5ContactN_BrgyStftb
             // 
@@ -943,7 +948,7 @@
             txtb5ContactN_BrgyStftb.BackColor = SystemColors.ControlDark;
             txtb5ContactN_BrgyStftb.BorderStyle = BorderStyle.None;
             txtb5ContactN_BrgyStftb.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtb5ContactN_BrgyStftb.Location = new Point(29, 108);
+            txtb5ContactN_BrgyStftb.Location = new Point(27, 114);
             txtb5ContactN_BrgyStftb.Multiline = true;
             txtb5ContactN_BrgyStftb.Name = "txtb5ContactN_BrgyStftb";
             txtb5ContactN_BrgyStftb.PlaceholderText = " 09xxxxxxxxx";
@@ -955,7 +960,7 @@
             lb10ContactN_BrgyStftb.Anchor = AnchorStyles.None;
             lb10ContactN_BrgyStftb.AutoSize = true;
             lb10ContactN_BrgyStftb.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lb10ContactN_BrgyStftb.Location = new Point(25, 82);
+            lb10ContactN_BrgyStftb.Location = new Point(23, 88);
             lb10ContactN_BrgyStftb.Name = "lb10ContactN_BrgyStftb";
             lb10ContactN_BrgyStftb.Size = new Size(117, 23);
             lb10ContactN_BrgyStftb.TabIndex = 45;
@@ -968,7 +973,7 @@
             textBox13.BorderStyle = BorderStyle.None;
             textBox13.CharacterCasing = CharacterCasing.Upper;
             textBox13.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox13.Location = new Point(454, 42);
+            textBox13.Location = new Point(452, 48);
             textBox13.Multiline = true;
             textBox13.Name = "textBox13";
             textBox13.PlaceholderText = " PINE";
@@ -980,7 +985,7 @@
             label24.Anchor = AnchorStyles.None;
             label24.AutoSize = true;
             label24.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label24.Location = new Point(451, 16);
+            label24.Location = new Point(449, 22);
             label24.Name = "label24";
             label24.Size = new Size(79, 23);
             label24.TabIndex = 43;
@@ -993,7 +998,7 @@
             textBox14.BorderStyle = BorderStyle.None;
             textBox14.CharacterCasing = CharacterCasing.Upper;
             textBox14.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox14.Location = new Point(245, 43);
+            textBox14.Location = new Point(243, 49);
             textBox14.Multiline = true;
             textBox14.Name = "textBox14";
             textBox14.PlaceholderText = " VELEZ";
@@ -1005,7 +1010,7 @@
             label25.Anchor = AnchorStyles.None;
             label25.AutoSize = true;
             label25.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label25.Location = new Point(245, 16);
+            label25.Location = new Point(243, 22);
             label25.Name = "label25";
             label25.Size = new Size(99, 23);
             label25.TabIndex = 41;
@@ -1018,7 +1023,7 @@
             textBox15.BorderStyle = BorderStyle.None;
             textBox15.CharacterCasing = CharacterCasing.Upper;
             textBox15.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox15.Location = new Point(27, 42);
+            textBox15.Location = new Point(25, 48);
             textBox15.Multiline = true;
             textBox15.Name = "textBox15";
             textBox15.PlaceholderText = " MARK BRANDON ";
@@ -1030,7 +1035,7 @@
             label26.Anchor = AnchorStyles.None;
             label26.AutoSize = true;
             label26.Font = new Font("Franklin Gothic Medium Cond", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label26.Location = new Point(27, 16);
+            label26.Location = new Point(25, 22);
             label26.Name = "label26";
             label26.Size = new Size(81, 23);
             label26.TabIndex = 39;
@@ -1041,12 +1046,21 @@
             pnIDUp.Anchor = AnchorStyles.None;
             pnIDUp.BackColor = Color.AliceBlue;
             pnIDUp.BorderStyle = BorderStyle.FixedSingle;
+            pnIDUp.Controls.Add(lbFile);
             pnIDUp.Controls.Add(label28);
-            pnIDUp.Controls.Add(btUploadID);
-            pnIDUp.Location = new Point(690, 42);
+            pnIDUp.Controls.Add(btUploadFile);
+            pnIDUp.Location = new Point(688, 48);
             pnIDUp.Name = "pnIDUp";
             pnIDUp.Size = new Size(284, 94);
             pnIDUp.TabIndex = 94;
+            // 
+            // lbFile
+            // 
+            lbFile.AutoSize = true;
+            lbFile.Location = new Point(7, 64);
+            lbFile.Name = "lbFile";
+            lbFile.Size = new Size(0, 20);
+            lbFile.TabIndex = 57;
             // 
             // label28
             // 
@@ -1058,19 +1072,21 @@
             label28.Size = new Size(0, 16);
             label28.TabIndex = 56;
             // 
-            // btUploadID
+            // btUploadFile
             // 
-            btUploadID.FlatAppearance.BorderColor = Color.AliceBlue;
-            btUploadID.FlatStyle = FlatStyle.Flat;
-            btUploadID.Font = new Font("Sans Serif Collection", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btUploadID.ForeColor = Color.Navy;
-            btUploadID.Location = new Point(1, -8);
-            btUploadID.Name = "btUploadID";
-            btUploadID.Padding = new Padding(3);
-            btUploadID.Size = new Size(276, 120);
-            btUploadID.TabIndex = 0;
-            btUploadID.Text = "Click to Upload ";
-            btUploadID.UseVisualStyleBackColor = true;
+            btUploadFile.Cursor = Cursors.Hand;
+            btUploadFile.FlatAppearance.BorderColor = Color.AliceBlue;
+            btUploadFile.FlatStyle = FlatStyle.Flat;
+            btUploadFile.Font = new Font("Sans Serif Collection", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btUploadFile.ForeColor = Color.Navy;
+            btUploadFile.Location = new Point(-1, 3);
+            btUploadFile.Name = "btUploadFile";
+            btUploadFile.Padding = new Padding(3);
+            btUploadFile.Size = new Size(276, 93);
+            btUploadFile.TabIndex = 0;
+            btUploadFile.Text = "Click to Upload ";
+            btUploadFile.UseVisualStyleBackColor = true;
+            btUploadFile.Click += btUploadFile_Click;
             // 
             // guna2Panel3
             // 
@@ -1079,12 +1095,12 @@
             guna2Panel3.BorderThickness = 2;
             guna2Panel3.Controls.Add(panel7);
             guna2Panel3.Controls.Add(label29);
-            guna2Panel3.CustomizableEdges = customizableEdges3;
+            guna2Panel3.CustomizableEdges = customizableEdges9;
             guna2Panel3.Dock = DockStyle.Top;
             guna2Panel3.FillColor = Color.MidnightBlue;
             guna2Panel3.Location = new Point(0, 0);
             guna2Panel3.Name = "guna2Panel3";
-            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges10;
             guna2Panel3.Size = new Size(995, 58);
             guna2Panel3.TabIndex = 16;
             // 
@@ -1119,14 +1135,15 @@
             label29.TabIndex = 15;
             label29.Text = "REPORTER INFORMATION";
             // 
-            // ofdID
+            // openFile
             // 
-            ofdID.FileName = "openFileDialog_Restb";
+            openFile.FileName = "openFile";
             // 
             // btSubmit_ReportF3
             // 
             btSubmit_ReportF3.Anchor = AnchorStyles.None;
             btSubmit_ReportF3.BackColor = Color.MidnightBlue;
+            btSubmit_ReportF3.Cursor = Cursors.Hand;
             btSubmit_ReportF3.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 64);
             btSubmit_ReportF3.FlatAppearance.BorderSize = 0;
             btSubmit_ReportF3.FlatStyle = FlatStyle.Flat;
@@ -1145,6 +1162,7 @@
             chkb1Confirm_ReportF3.Anchor = AnchorStyles.None;
             chkb1Confirm_ReportF3.AutoSize = true;
             chkb1Confirm_ReportF3.CheckAlign = ContentAlignment.TopLeft;
+            chkb1Confirm_ReportF3.Cursor = Cursors.Hand;
             chkb1Confirm_ReportF3.Font = new Font("Arial Narrow", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             chkb1Confirm_ReportF3.Location = new Point(262, 671);
             chkb1Confirm_ReportF3.Name = "chkb1Confirm_ReportF3";
@@ -1207,58 +1225,9 @@
         private Panel panel3;
         private Panel panel4;
         private Panel panel5;
-        private Guna.UI2.WinForms.Guna2TabControl TabCSubmitReport;
-        private TabPage Birth;
-        private TabPage Death;
-        private TabPage MoveIn;
-        private TabPage MoveOut;
-        private DateTimePicker dateTimePicker1DOB_BrgyStftb;
-        private Label lb6DOB_BrgyStftb;
-        private TextBox txtb3LN_BrgyStftb;
-        private Label lb5LN_BrgyStftb;
-        private TextBox txtb2MN_BrgyStftb;
-        private Label lb4MN_BrgyStftb;
-        private TextBox txtb1FN_BrgyStftb;
-        private Label lb3FN_BrgyStftb;
-        private TextBox txtbAdditionalDits;
-        private Label label4;
-        private Label label3;
-        private TextBox textBox1;
-        private Label label5;
-        private Label label6;
-        private TextBox textBox2;
-        private Label label7;
-        private TextBox textBox3;
-        private Label label8;
-        private TextBox textBox4;
-        private Label label9;
-        private DateTimePicker dateTimePicker1;
-        private Label label10;
-        private TextBox textBox5;
-        private Label label11;
-        private Label label12;
-        private TextBox textBox6;
-        private Label label13;
-        private TextBox textBox7;
-        private Label label14;
-        private TextBox textBox8;
-        private Label label15;
-        private DateTimePicker dateTimePicker2;
-        private Label label16;
-        private TextBox textBox9;
-        private Label label17;
-        private Label label18;
-        private TextBox textBox10;
-        private Label label19;
-        private TextBox textBox11;
-        private Label label20;
-        private TextBox textBox12;
-        private Label label21;
-        private DateTimePicker dateTimePicker3;
-        private Label label22;
         private Panel panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private OpenFileDialog ofdID;
+        private OpenFileDialog openFile;
         private Panel panel6;
         private TextBox textBox16;
         private Label label27;
@@ -1273,12 +1242,62 @@
         private Label label26;
         private Panel pnIDUp;
         private Label label28;
-        private Button btUploadID;
+        private Button btUploadFile;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Panel panel7;
         private Label label29;
         private Panel panel8;
         private Button btSubmit_ReportF3;
         private CheckBox chkb1Confirm_ReportF3;
+        private Guna.UI2.WinForms.Guna2TabControl TabCSubmitReport;
+        private TabPage Birth;
+        private TextBox txtbAdditionalDits;
+        private Label label4;
+        private Label label3;
+        private TextBox txtb3LN_BrgyStftb;
+        private Label lb5LN_BrgyStftb;
+        private TextBox txtb2MN_BrgyStftb;
+        private Label lb4MN_BrgyStftb;
+        private TextBox txtb1FN_BrgyStftb;
+        private Label lb3FN_BrgyStftb;
+        private DateTimePicker dateTimePicker1DOB_BrgyStftb;
+        private Label lb6DOB_BrgyStftb;
+        private TabPage Death;
+        private TextBox textBox1;
+        private Label label5;
+        private Label label6;
+        private TextBox textBox2;
+        private Label label7;
+        private TextBox textBox3;
+        private Label label8;
+        private TextBox textBox4;
+        private Label label9;
+        private DateTimePicker dateTimePicker1;
+        private Label label10;
+        private TabPage MoveIn;
+        private TextBox textBox5;
+        private Label label11;
+        private Label label12;
+        private TextBox textBox6;
+        private Label label13;
+        private TextBox textBox7;
+        private Label label14;
+        private TextBox textBox8;
+        private Label label15;
+        private DateTimePicker dateTimePicker2;
+        private Label label16;
+        private TabPage MoveOut;
+        private TextBox textBox9;
+        private Label label17;
+        private Label label18;
+        private TextBox textBox10;
+        private Label label19;
+        private TextBox textBox11;
+        private Label label20;
+        private TextBox textBox12;
+        private Label label21;
+        private DateTimePicker dateTimePicker3;
+        private Label label22;
+        private Label lbFile;
     }
 }

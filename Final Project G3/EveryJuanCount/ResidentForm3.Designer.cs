@@ -33,6 +33,7 @@
             btLogOut = new Button();
             panel1 = new Panel();
             pnButtons = new Panel();
+            btSettings = new Button();
             panel2 = new Panel();
             btReportHistory = new Button();
             panel6 = new Panel();
@@ -53,7 +54,6 @@
             CenSyLb2 = new Label();
             pnChilForms = new Panel();
             pbLogo = new PictureBox();
-            Settings = new Button();
             pnSlideMenu.SuspendLayout();
             panel1.SuspendLayout();
             pnButtons.SuspendLayout();
@@ -113,7 +113,7 @@
             // 
             // pnButtons
             // 
-            pnButtons.Controls.Add(Settings);
+            pnButtons.Controls.Add(btSettings);
             pnButtons.Controls.Add(panel2);
             pnButtons.Controls.Add(btReportHistory);
             pnButtons.Controls.Add(panel6);
@@ -125,6 +125,28 @@
             pnButtons.Name = "pnButtons";
             pnButtons.Size = new Size(330, 294);
             pnButtons.TabIndex = 1;
+            // 
+            // btSettings
+            // 
+            btSettings.Cursor = Cursors.Hand;
+            btSettings.Dock = DockStyle.Top;
+            btSettings.FlatAppearance.BorderSize = 0;
+            btSettings.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btSettings.FlatAppearance.MouseOverBackColor = Color.Gold;
+            btSettings.FlatStyle = FlatStyle.Flat;
+            btSettings.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btSettings.ForeColor = SystemColors.ControlLightLight;
+            btSettings.Image = Properties.Resources.Settings;
+            btSettings.ImageAlign = ContentAlignment.MiddleLeft;
+            btSettings.Location = new Point(0, 166);
+            btSettings.Name = "btSettings";
+            btSettings.Padding = new Padding(10, 5, 0, 10);
+            btSettings.Size = new Size(330, 42);
+            btSettings.TabIndex = 20;
+            btSettings.Text = "          SETTINGS";
+            btSettings.TextAlign = ContentAlignment.MiddleLeft;
+            btSettings.UseVisualStyleBackColor = true;
+            btSettings.Click += Settings_Click;
             // 
             // panel2
             // 
@@ -301,6 +323,7 @@
             // 
             // btMenuVertical
             // 
+            btMenuVertical.Cursor = Cursors.Hand;
             btMenuVertical.Image = Properties.Resources.Menu;
             btMenuVertical.Location = new Point(10, 0);
             btMenuVertical.Name = "btMenuVertical";
@@ -380,28 +403,6 @@
             pbLogo.TabIndex = 0;
             pbLogo.TabStop = false;
             // 
-            // Settings
-            // 
-            Settings.Cursor = Cursors.Hand;
-            Settings.Dock = DockStyle.Top;
-            Settings.FlatAppearance.BorderSize = 0;
-            Settings.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
-            Settings.FlatAppearance.MouseOverBackColor = Color.Navy;
-            Settings.FlatStyle = FlatStyle.Flat;
-            Settings.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Settings.ForeColor = SystemColors.ControlLightLight;
-            Settings.Image = Properties.Resources.Settings;
-            Settings.ImageAlign = ContentAlignment.MiddleLeft;
-            Settings.Location = new Point(0, 166);
-            Settings.Name = "Settings";
-            Settings.Padding = new Padding(10, 5, 0, 10);
-            Settings.Size = new Size(330, 42);
-            Settings.TabIndex = 20;
-            Settings.Text = "          SETTINGS";
-            Settings.TextAlign = ContentAlignment.MiddleLeft;
-            Settings.UseVisualStyleBackColor = true;
-            Settings.Click += Settings_Click;
-            // 
             // ResidentForm3
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
@@ -457,6 +458,6 @@
         private PictureBox pbLogo;
         private PictureBox btMenuVertical;
         private Panel panel2;
-        private Button Settings;
+        private Button btSettings;
     }
 }

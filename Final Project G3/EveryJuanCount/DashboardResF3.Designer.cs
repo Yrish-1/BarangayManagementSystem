@@ -177,6 +177,7 @@
             panel2.Controls.Add(gunpnReports);
             panel2.Controls.Add(gunapnAnnouncement);
             panel2.Controls.Add(pnTitleBar);
+            panel2.Cursor = Cursors.Default;
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
@@ -191,6 +192,7 @@
             fLpnQuickAccess.Controls.Add(panel7);
             fLpnQuickAccess.Controls.Add(panel8);
             fLpnQuickAccess.Controls.Add(panel9);
+            fLpnQuickAccess.Cursor = Cursors.Default;
             fLpnQuickAccess.Location = new Point(783, 388);
             fLpnQuickAccess.Name = "fLpnQuickAccess";
             fLpnQuickAccess.Size = new Size(232, 385);
@@ -208,6 +210,7 @@
             // 
             guna2Panel3.BorderRadius = 15;
             guna2Panel3.Controls.Add(label4);
+            guna2Panel3.Cursor = Cursors.Default;
             guna2Panel3.CustomizableEdges = customizableEdges1;
             guna2Panel3.Dock = DockStyle.Top;
             guna2Panel3.FillColor = Color.Goldenrod;
@@ -242,6 +245,7 @@
             // pictureBox3
             // 
             pictureBox3.BackColor = SystemColors.ControlDark;
+            pictureBox3.Cursor = Cursors.Hand;
             pictureBox3.Image = Properties.Resources.Baby2;
             pictureBox3.Location = new Point(22, 15);
             pictureBox3.Name = "pictureBox3";
@@ -254,6 +258,7 @@
             // btReportBirth
             // 
             btReportBirth.BackColor = SystemColors.ControlDark;
+            btReportBirth.Cursor = Cursors.Hand;
             btReportBirth.Dock = DockStyle.Top;
             btReportBirth.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btReportBirth.Location = new Point(0, 0);
@@ -278,6 +283,7 @@
             // pictureBox4
             // 
             pictureBox4.BackColor = SystemColors.ControlDark;
+            pictureBox4.Cursor = Cursors.Hand;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(20, 15);
             pictureBox4.Name = "pictureBox4";
@@ -290,6 +296,7 @@
             // btReportDeath
             // 
             btReportDeath.BackColor = SystemColors.ControlDark;
+            btReportDeath.Cursor = Cursors.Hand;
             btReportDeath.Dock = DockStyle.Top;
             btReportDeath.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btReportDeath.Location = new Point(0, 0);
@@ -314,6 +321,7 @@
             // pictureBox5
             // 
             pictureBox5.BackColor = SystemColors.ControlDark;
+            pictureBox5.Cursor = Cursors.Hand;
             pictureBox5.Image = Properties.Resources.House;
             pictureBox5.Location = new Point(22, 18);
             pictureBox5.Name = "pictureBox5";
@@ -326,6 +334,7 @@
             // btMoveIn
             // 
             btMoveIn.BackColor = SystemColors.ControlDark;
+            btMoveIn.Cursor = Cursors.Hand;
             btMoveIn.Dock = DockStyle.Top;
             btMoveIn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btMoveIn.Location = new Point(0, 0);
@@ -350,6 +359,7 @@
             // pictureBox6
             // 
             pictureBox6.BackColor = SystemColors.ControlDark;
+            pictureBox6.Cursor = Cursors.Hand;
             pictureBox6.Image = Properties.Resources.move_out_;
             pictureBox6.Location = new Point(20, 18);
             pictureBox6.Name = "pictureBox6";
@@ -362,6 +372,7 @@
             // btMoveOut
             // 
             btMoveOut.BackColor = SystemColors.ControlDark;
+            btMoveOut.Cursor = Cursors.Hand;
             btMoveOut.Dock = DockStyle.Top;
             btMoveOut.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btMoveOut.Location = new Point(0, 0);
@@ -390,6 +401,7 @@
             MyRecentReports.BorderRadius = 30;
             MyRecentReports.BorderThickness = 5;
             MyRecentReports.Controls.Add(TitleBarMyRecentReports);
+            MyRecentReports.Cursor = Cursors.Default;
             MyRecentReports.CustomizableEdges = customizableEdges5;
             MyRecentReports.Dock = DockStyle.Fill;
             MyRecentReports.FillColor = Color.Silver;
@@ -418,6 +430,7 @@
             // ViewAllRecentReports
             // 
             ViewAllRecentReports.BackColor = Color.Transparent;
+            ViewAllRecentReports.Cursor = Cursors.Hand;
             ViewAllRecentReports.FlatAppearance.BorderColor = Color.White;
             ViewAllRecentReports.FlatAppearance.MouseOverBackColor = Color.Navy;
             ViewAllRecentReports.FlatStyle = FlatStyle.Flat;
@@ -448,6 +461,7 @@
             gunpnReports.Controls.Add(gunaGPApproved);
             gunpnReports.Controls.Add(gunaGPPending);
             gunpnReports.Controls.Add(gunaGPTotalReports);
+            gunpnReports.Cursor = Cursors.Default;
             gunpnReports.CustomizableEdges = customizableEdges13;
             gunpnReports.Dock = DockStyle.Top;
             gunpnReports.Location = new Point(0, 180);
@@ -674,6 +688,7 @@
             AutoScroll = true;
             ClientSize = new Size(1015, 773);
             Controls.Add(panel2);
+            Cursor = Cursors.Hand;
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "DashboardResF3";

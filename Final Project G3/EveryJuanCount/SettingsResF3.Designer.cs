@@ -41,6 +41,7 @@
             Settingss = new Guna.UI2.WinForms.Guna2TabControl();
             tabPage1 = new TabPage();
             panel126 = new Panel();
+            button1 = new Button();
             button2 = new Button();
             panel127 = new Panel();
             panel128 = new Panel();
@@ -416,6 +417,7 @@
             // 
             Settingss.Controls.Add(tabPage1);
             Settingss.Controls.Add(tabPage2);
+            Settingss.Cursor = Cursors.Hand;
             Settingss.Dock = DockStyle.Fill;
             Settingss.Font = new Font("Franklin Gothic Medium Cond", 10.2F);
             Settingss.ItemSize = new Size(495, 50);
@@ -434,7 +436,7 @@
             Settingss.TabButtonIdleState.ForeColor = Color.FromArgb(156, 160, 167);
             Settingss.TabButtonIdleState.InnerColor = Color.FromArgb(33, 42, 57);
             Settingss.TabButtonSelectedState.BorderColor = Color.Empty;
-            Settingss.TabButtonSelectedState.FillColor = Color.Maroon;
+            Settingss.TabButtonSelectedState.FillColor = Color.MidnightBlue;
             Settingss.TabButtonSelectedState.Font = new Font("Segoe UI Semibold", 10F);
             Settingss.TabButtonSelectedState.ForeColor = Color.White;
             Settingss.TabButtonSelectedState.InnerColor = Color.Goldenrod;
@@ -460,6 +462,7 @@
             panel126.AutoScroll = true;
             panel126.AutoScrollMinSize = new Size(0, 600);
             panel126.BackColor = SystemColors.GradientActiveCaption;
+            panel126.Controls.Add(button1);
             panel126.Controls.Add(button2);
             panel126.Controls.Add(panel127);
             panel126.Controls.Add(panel134);
@@ -491,14 +494,30 @@
             panel126.Size = new Size(981, 592);
             panel126.TabIndex = 20;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.Maroon;
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.Control;
+            button1.Location = new Point(462, 565);
+            button1.Name = "button1";
+            button1.Size = new Size(267, 29);
+            button1.TabIndex = 96;
+            button1.Text = "DELETE ACCOUNT";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // button2
             // 
             button2.BackColor = Color.Goldenrod;
+            button2.Cursor = Cursors.Hand;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = SystemColors.Control;
-            button2.Location = new Point(30, 567);
+            button2.Location = new Point(189, 565);
             button2.Name = "button2";
             button2.Size = new Size(267, 29);
             button2.TabIndex = 93;
@@ -1242,7 +1261,7 @@
             label34.BackColor = Color.MidnightBlue;
             label34.Dock = DockStyle.Fill;
             label34.Font = new Font("Franklin Gothic Book", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label34.ForeColor = Color.Gold;
+            label34.ForeColor = SystemColors.Control;
             label34.Location = new Point(0, 0);
             label34.Name = "label34";
             label34.Padding = new Padding(1, 5, 1, 1);
@@ -1775,7 +1794,7 @@
             label44.BackColor = Color.MidnightBlue;
             label44.Dock = DockStyle.Fill;
             label44.Font = new Font("Franklin Gothic Book", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label44.ForeColor = Color.Gold;
+            label44.ForeColor = SystemColors.Control;
             label44.Location = new Point(0, 0);
             label44.Name = "label44";
             label44.Padding = new Padding(0, 5, 0, 0);
@@ -2012,11 +2031,12 @@
             btShowConNewPass_SettingsF3.FlatAppearance.BorderSize = 0;
             btShowConNewPass_SettingsF3.FlatStyle = FlatStyle.Flat;
             btShowConNewPass_SettingsF3.Image = Properties.Resources.eyePass;
-            btShowConNewPass_SettingsF3.Location = new Point(464, -2);
+            btShowConNewPass_SettingsF3.Location = new Point(462, -2);
             btShowConNewPass_SettingsF3.Name = "btShowConNewPass_SettingsF3";
             btShowConNewPass_SettingsF3.Size = new Size(36, 27);
             btShowConNewPass_SettingsF3.TabIndex = 74;
             btShowConNewPass_SettingsF3.UseVisualStyleBackColor = false;
+            btShowConNewPass_SettingsF3.Click += btShowConNewPass_SettingsF3_Click;
             // 
             // btHideConNewPass_SettingsF3
             // 
@@ -2031,11 +2051,13 @@
             btHideConNewPass_SettingsF3.TabIndex = 73;
             btHideConNewPass_SettingsF3.TextAlign = ContentAlignment.TopCenter;
             btHideConNewPass_SettingsF3.UseVisualStyleBackColor = false;
+            btHideConNewPass_SettingsF3.Click += btHideConNewPass_SettingsF3_Click;
             // 
             // ConNewPass
             // 
             ConNewPass.BackColor = SystemColors.ScrollBar;
             ConNewPass.BorderStyle = BorderStyle.None;
+            ConNewPass.Cursor = Cursors.IBeam;
             ConNewPass.Dock = DockStyle.Fill;
             ConNewPass.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ConNewPass.Location = new Point(0, 0);
@@ -2201,11 +2223,12 @@
             btShowNewPass_SettingsF3.FlatAppearance.BorderSize = 0;
             btShowNewPass_SettingsF3.FlatStyle = FlatStyle.Flat;
             btShowNewPass_SettingsF3.Image = Properties.Resources.eyePass;
-            btShowNewPass_SettingsF3.Location = new Point(464, 0);
+            btShowNewPass_SettingsF3.Location = new Point(461, -2);
             btShowNewPass_SettingsF3.Name = "btShowNewPass_SettingsF3";
             btShowNewPass_SettingsF3.Size = new Size(36, 27);
             btShowNewPass_SettingsF3.TabIndex = 73;
             btShowNewPass_SettingsF3.UseVisualStyleBackColor = false;
+            btShowNewPass_SettingsF3.Click += btShowNewPass_SettingsF3_Click;
             // 
             // btHideNewPass_SettingsF3
             // 
@@ -2220,11 +2243,13 @@
             btHideNewPass_SettingsF3.TabIndex = 72;
             btHideNewPass_SettingsF3.TextAlign = ContentAlignment.TopCenter;
             btHideNewPass_SettingsF3.UseVisualStyleBackColor = false;
+            btHideNewPass_SettingsF3.Click += btHideNewPass_SettingsF3_Click;
             // 
             // NewPass
             // 
             NewPass.BackColor = SystemColors.ScrollBar;
             NewPass.BorderStyle = BorderStyle.None;
+            NewPass.Cursor = Cursors.IBeam;
             NewPass.Dock = DockStyle.Fill;
             NewPass.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             NewPass.Location = new Point(0, 0);
@@ -2390,11 +2415,12 @@
             btShowCurrentPass_SettingsF3.FlatAppearance.BorderSize = 0;
             btShowCurrentPass_SettingsF3.FlatStyle = FlatStyle.Flat;
             btShowCurrentPass_SettingsF3.Image = Properties.Resources.eyePass;
-            btShowCurrentPass_SettingsF3.Location = new Point(464, -2);
+            btShowCurrentPass_SettingsF3.Location = new Point(459, -3);
             btShowCurrentPass_SettingsF3.Name = "btShowCurrentPass_SettingsF3";
             btShowCurrentPass_SettingsF3.Size = new Size(36, 27);
             btShowCurrentPass_SettingsF3.TabIndex = 72;
             btShowCurrentPass_SettingsF3.UseVisualStyleBackColor = false;
+            btShowCurrentPass_SettingsF3.Click += btShowCurrentPass_SettingsF3_Click;
             // 
             // btHideCurrentPass_SettingsF3
             // 
@@ -2409,11 +2435,13 @@
             btHideCurrentPass_SettingsF3.TabIndex = 71;
             btHideCurrentPass_SettingsF3.TextAlign = ContentAlignment.TopCenter;
             btHideCurrentPass_SettingsF3.UseVisualStyleBackColor = false;
+            btHideCurrentPass_SettingsF3.Click += btHideCurrentPass_SettingsF3_Click;
             // 
             // CurrentPass
             // 
             CurrentPass.BackColor = SystemColors.ScrollBar;
             CurrentPass.BorderStyle = BorderStyle.None;
+            CurrentPass.Cursor = Cursors.IBeam;
             CurrentPass.Dock = DockStyle.Fill;
             CurrentPass.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             CurrentPass.Location = new Point(0, 0);
@@ -2532,7 +2560,7 @@
             label56.BackColor = Color.MidnightBlue;
             label56.Dock = DockStyle.Fill;
             label56.Font = new Font("Franklin Gothic Book", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label56.ForeColor = Color.Gold;
+            label56.ForeColor = SystemColors.Control;
             label56.Location = new Point(0, 0);
             label56.Name = "label56";
             label56.Padding = new Padding(0, 5, 0, 0);
@@ -2898,5 +2926,6 @@
         private TextBox textBox1;
         private Panel panel3;
         private Panel panel4;
+        private Button button1;
     }
 }

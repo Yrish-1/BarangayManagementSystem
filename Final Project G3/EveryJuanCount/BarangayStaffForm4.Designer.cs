@@ -33,22 +33,22 @@
             pnChilForms = new Panel();
             pbLogo = new PictureBox();
             pnSlideMenu = new Panel();
-            btLogOut = new Button();
+            btLogOut_BrgyStffF4 = new Button();
             panel1 = new Panel();
             pnButtons = new Panel();
-            button3 = new Button();
+            btSettings_BrgyStffF4 = new Button();
             panel4 = new Panel();
-            button2 = new Button();
+            btAnnouncements_BrgyStffF4 = new Button();
             panel2 = new Panel();
-            button1 = new Button();
+            btSubmitRep_BrgyStffF4 = new Button();
             panel7 = new Panel();
-            btReportHistory = new Button();
+            btReportQueue_BrgyStffF4 = new Button();
             panel6 = new Panel();
-            btEncodeResident = new Button();
+            btEncodeResident_BrgyStffF4 = new Button();
             panel5 = new Panel();
-            btResidentsRecords = new Button();
+            btResidents_BrgyStffF4 = new Button();
             panel10 = new Panel();
-            btDashboard = new Button();
+            btDashboard_BrgyStffF4 = new Button();
             panelLogo = new Panel();
             panel3 = new Panel();
             pictureBox4 = new PictureBox();
@@ -58,7 +58,7 @@
             BrgyLb1 = new Label();
             pictureBox2 = new PictureBox();
             panel9 = new Panel();
-            pictureBox1 = new PictureBox();
+            pbLogo_BrgyStffF4 = new PictureBox();
             p1top = new Panel();
             btMenuVertical = new PictureBox();
             sidebarTimer = new System.Windows.Forms.Timer(components);
@@ -71,7 +71,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbLogo_BrgyStffF4).BeginInit();
             p1top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btMenuVertical).BeginInit();
             SuspendLayout();
@@ -102,7 +102,7 @@
             // 
             pnSlideMenu.AutoScroll = true;
             pnSlideMenu.BackColor = Color.FromArgb(0, 0, 64);
-            pnSlideMenu.Controls.Add(btLogOut);
+            pnSlideMenu.Controls.Add(btLogOut_BrgyStffF4);
             pnSlideMenu.Controls.Add(panel1);
             pnSlideMenu.Controls.Add(panelLogo);
             pnSlideMenu.Dock = DockStyle.Left;
@@ -111,27 +111,27 @@
             pnSlideMenu.Size = new Size(330, 794);
             pnSlideMenu.TabIndex = 3;
             // 
-            // btLogOut
+            // btLogOut_BrgyStffF4
             // 
-            btLogOut.Cursor = Cursors.Hand;
-            btLogOut.Dock = DockStyle.Bottom;
-            btLogOut.FlatAppearance.BorderSize = 0;
-            btLogOut.FlatAppearance.MouseDownBackColor = Color.Red;
-            btLogOut.FlatAppearance.MouseOverBackColor = Color.Red;
-            btLogOut.FlatStyle = FlatStyle.Flat;
-            btLogOut.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btLogOut.ForeColor = SystemColors.ControlLightLight;
-            btLogOut.Image = (Image)resources.GetObject("btLogOut.Image");
-            btLogOut.ImageAlign = ContentAlignment.MiddleLeft;
-            btLogOut.Location = new Point(0, 752);
-            btLogOut.Name = "btLogOut";
-            btLogOut.Padding = new Padding(10, 5, 0, 10);
-            btLogOut.Size = new Size(330, 42);
-            btLogOut.TabIndex = 12;
-            btLogOut.Text = "          LOG OUT";
-            btLogOut.TextAlign = ContentAlignment.MiddleLeft;
-            btLogOut.UseVisualStyleBackColor = true;
-            btLogOut.Click += btLogOut_Click_1;
+            btLogOut_BrgyStffF4.Cursor = Cursors.Hand;
+            btLogOut_BrgyStffF4.Dock = DockStyle.Bottom;
+            btLogOut_BrgyStffF4.FlatAppearance.BorderSize = 0;
+            btLogOut_BrgyStffF4.FlatAppearance.MouseDownBackColor = Color.Red;
+            btLogOut_BrgyStffF4.FlatAppearance.MouseOverBackColor = Color.Red;
+            btLogOut_BrgyStffF4.FlatStyle = FlatStyle.Flat;
+            btLogOut_BrgyStffF4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btLogOut_BrgyStffF4.ForeColor = SystemColors.ControlLightLight;
+            btLogOut_BrgyStffF4.Image = (Image)resources.GetObject("btLogOut_BrgyStffF4.Image");
+            btLogOut_BrgyStffF4.ImageAlign = ContentAlignment.MiddleLeft;
+            btLogOut_BrgyStffF4.Location = new Point(0, 752);
+            btLogOut_BrgyStffF4.Name = "btLogOut_BrgyStffF4";
+            btLogOut_BrgyStffF4.Padding = new Padding(10, 5, 0, 10);
+            btLogOut_BrgyStffF4.Size = new Size(330, 42);
+            btLogOut_BrgyStffF4.TabIndex = 12;
+            btLogOut_BrgyStffF4.Text = "          LOG OUT";
+            btLogOut_BrgyStffF4.TextAlign = ContentAlignment.MiddleLeft;
+            btLogOut_BrgyStffF4.UseVisualStyleBackColor = true;
+            btLogOut_BrgyStffF4.Click += btLogOut_Click_1;
             // 
             // panel1
             // 
@@ -144,45 +144,46 @@
             // 
             // pnButtons
             // 
-            pnButtons.Controls.Add(button3);
+            pnButtons.Controls.Add(btSettings_BrgyStffF4);
             pnButtons.Controls.Add(panel4);
-            pnButtons.Controls.Add(button2);
+            pnButtons.Controls.Add(btAnnouncements_BrgyStffF4);
             pnButtons.Controls.Add(panel2);
-            pnButtons.Controls.Add(button1);
+            pnButtons.Controls.Add(btSubmitRep_BrgyStffF4);
             pnButtons.Controls.Add(panel7);
-            pnButtons.Controls.Add(btReportHistory);
+            pnButtons.Controls.Add(btReportQueue_BrgyStffF4);
             pnButtons.Controls.Add(panel6);
-            pnButtons.Controls.Add(btEncodeResident);
+            pnButtons.Controls.Add(btEncodeResident_BrgyStffF4);
             pnButtons.Controls.Add(panel5);
-            pnButtons.Controls.Add(btResidentsRecords);
+            pnButtons.Controls.Add(btResidents_BrgyStffF4);
             pnButtons.Controls.Add(panel10);
-            pnButtons.Controls.Add(btDashboard);
+            pnButtons.Controls.Add(btDashboard_BrgyStffF4);
             pnButtons.Dock = DockStyle.Top;
             pnButtons.Location = new Point(0, 0);
             pnButtons.Name = "pnButtons";
             pnButtons.Padding = new Padding(10, 0, 0, 0);
-            pnButtons.Size = new Size(330, 359);
+            pnButtons.Size = new Size(330, 346);
             pnButtons.TabIndex = 1;
             // 
-            // button3
+            // btSettings_BrgyStffF4
             // 
-            button3.Cursor = Cursors.Hand;
-            button3.Dock = DockStyle.Top;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            button3.FlatAppearance.MouseOverBackColor = Color.Gold;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.ForeColor = SystemColors.ControlLightLight;
-            button3.Image = Properties.Resources.Settings;
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(10, 300);
-            button3.Name = "button3";
-            button3.Size = new Size(320, 40);
-            button3.TabIndex = 23;
-            button3.Text = "          SETTINGS";
-            button3.TextAlign = ContentAlignment.MiddleLeft;
-            button3.UseVisualStyleBackColor = true;
+            btSettings_BrgyStffF4.Cursor = Cursors.Hand;
+            btSettings_BrgyStffF4.Dock = DockStyle.Top;
+            btSettings_BrgyStffF4.FlatAppearance.BorderSize = 0;
+            btSettings_BrgyStffF4.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btSettings_BrgyStffF4.FlatAppearance.MouseOverBackColor = Color.Gold;
+            btSettings_BrgyStffF4.FlatStyle = FlatStyle.Flat;
+            btSettings_BrgyStffF4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btSettings_BrgyStffF4.ForeColor = SystemColors.ControlLightLight;
+            btSettings_BrgyStffF4.Image = Properties.Resources.Settings;
+            btSettings_BrgyStffF4.ImageAlign = ContentAlignment.MiddleLeft;
+            btSettings_BrgyStffF4.Location = new Point(10, 300);
+            btSettings_BrgyStffF4.Name = "btSettings_BrgyStffF4";
+            btSettings_BrgyStffF4.Size = new Size(320, 40);
+            btSettings_BrgyStffF4.TabIndex = 23;
+            btSettings_BrgyStffF4.Text = "          SETTINGS";
+            btSettings_BrgyStffF4.TextAlign = ContentAlignment.MiddleLeft;
+            btSettings_BrgyStffF4.UseVisualStyleBackColor = true;
+            btSettings_BrgyStffF4.Click += btSettings_BrgyStffF4_Click;
             // 
             // panel4
             // 
@@ -192,25 +193,26 @@
             panel4.Size = new Size(320, 10);
             panel4.TabIndex = 22;
             // 
-            // button2
+            // btAnnouncements_BrgyStffF4
             // 
-            button2.Cursor = Cursors.Hand;
-            button2.Dock = DockStyle.Top;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            button2.FlatAppearance.MouseOverBackColor = Color.Gold;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = SystemColors.ControlLightLight;
-            button2.Image = Properties.Resources.Announcement1;
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(10, 250);
-            button2.Name = "button2";
-            button2.Size = new Size(320, 40);
-            button2.TabIndex = 21;
-            button2.Text = "          ANNOUNCEMENTS";
-            button2.TextAlign = ContentAlignment.MiddleLeft;
-            button2.UseVisualStyleBackColor = true;
+            btAnnouncements_BrgyStffF4.Cursor = Cursors.Hand;
+            btAnnouncements_BrgyStffF4.Dock = DockStyle.Top;
+            btAnnouncements_BrgyStffF4.FlatAppearance.BorderSize = 0;
+            btAnnouncements_BrgyStffF4.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btAnnouncements_BrgyStffF4.FlatAppearance.MouseOverBackColor = Color.Gold;
+            btAnnouncements_BrgyStffF4.FlatStyle = FlatStyle.Flat;
+            btAnnouncements_BrgyStffF4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btAnnouncements_BrgyStffF4.ForeColor = SystemColors.ControlLightLight;
+            btAnnouncements_BrgyStffF4.Image = Properties.Resources.Announcement1;
+            btAnnouncements_BrgyStffF4.ImageAlign = ContentAlignment.MiddleLeft;
+            btAnnouncements_BrgyStffF4.Location = new Point(10, 250);
+            btAnnouncements_BrgyStffF4.Name = "btAnnouncements_BrgyStffF4";
+            btAnnouncements_BrgyStffF4.Size = new Size(320, 40);
+            btAnnouncements_BrgyStffF4.TabIndex = 21;
+            btAnnouncements_BrgyStffF4.Text = "          ANNOUNCEMENTS";
+            btAnnouncements_BrgyStffF4.TextAlign = ContentAlignment.MiddleLeft;
+            btAnnouncements_BrgyStffF4.UseVisualStyleBackColor = true;
+            btAnnouncements_BrgyStffF4.Click += btAnnouncements_BrgyStffF4_Click;
             // 
             // panel2
             // 
@@ -220,25 +222,26 @@
             panel2.Size = new Size(320, 10);
             panel2.TabIndex = 20;
             // 
-            // button1
+            // btSubmitRep_BrgyStffF4
             // 
-            button1.Cursor = Cursors.Hand;
-            button1.Dock = DockStyle.Top;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            button1.FlatAppearance.MouseOverBackColor = Color.Gold;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Image = Properties.Resources.Submit_Document;
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(10, 200);
-            button1.Name = "button1";
-            button1.Size = new Size(320, 40);
-            button1.TabIndex = 19;
-            button1.Text = "          SUBMIT REPORT";
-            button1.TextAlign = ContentAlignment.MiddleLeft;
-            button1.UseVisualStyleBackColor = true;
+            btSubmitRep_BrgyStffF4.Cursor = Cursors.Hand;
+            btSubmitRep_BrgyStffF4.Dock = DockStyle.Top;
+            btSubmitRep_BrgyStffF4.FlatAppearance.BorderSize = 0;
+            btSubmitRep_BrgyStffF4.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btSubmitRep_BrgyStffF4.FlatAppearance.MouseOverBackColor = Color.Gold;
+            btSubmitRep_BrgyStffF4.FlatStyle = FlatStyle.Flat;
+            btSubmitRep_BrgyStffF4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btSubmitRep_BrgyStffF4.ForeColor = SystemColors.ControlLightLight;
+            btSubmitRep_BrgyStffF4.Image = Properties.Resources.Submit_Document;
+            btSubmitRep_BrgyStffF4.ImageAlign = ContentAlignment.MiddleLeft;
+            btSubmitRep_BrgyStffF4.Location = new Point(10, 200);
+            btSubmitRep_BrgyStffF4.Name = "btSubmitRep_BrgyStffF4";
+            btSubmitRep_BrgyStffF4.Size = new Size(320, 40);
+            btSubmitRep_BrgyStffF4.TabIndex = 19;
+            btSubmitRep_BrgyStffF4.Text = "          SUBMIT REPORT";
+            btSubmitRep_BrgyStffF4.TextAlign = ContentAlignment.MiddleLeft;
+            btSubmitRep_BrgyStffF4.UseVisualStyleBackColor = true;
+            btSubmitRep_BrgyStffF4.Click += btSubmitRep_BrgyStffF4_Click;
             // 
             // panel7
             // 
@@ -248,25 +251,26 @@
             panel7.Size = new Size(320, 10);
             panel7.TabIndex = 18;
             // 
-            // btReportHistory
+            // btReportQueue_BrgyStffF4
             // 
-            btReportHistory.Cursor = Cursors.Hand;
-            btReportHistory.Dock = DockStyle.Top;
-            btReportHistory.FlatAppearance.BorderSize = 0;
-            btReportHistory.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btReportHistory.FlatAppearance.MouseOverBackColor = Color.Gold;
-            btReportHistory.FlatStyle = FlatStyle.Flat;
-            btReportHistory.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btReportHistory.ForeColor = SystemColors.ControlLightLight;
-            btReportHistory.Image = Properties.Resources.Report_History1;
-            btReportHistory.ImageAlign = ContentAlignment.MiddleLeft;
-            btReportHistory.Location = new Point(10, 150);
-            btReportHistory.Name = "btReportHistory";
-            btReportHistory.Size = new Size(320, 40);
-            btReportHistory.TabIndex = 17;
-            btReportHistory.Text = "          REPORTS QUEUE";
-            btReportHistory.TextAlign = ContentAlignment.MiddleLeft;
-            btReportHistory.UseVisualStyleBackColor = true;
+            btReportQueue_BrgyStffF4.Cursor = Cursors.Hand;
+            btReportQueue_BrgyStffF4.Dock = DockStyle.Top;
+            btReportQueue_BrgyStffF4.FlatAppearance.BorderSize = 0;
+            btReportQueue_BrgyStffF4.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btReportQueue_BrgyStffF4.FlatAppearance.MouseOverBackColor = Color.Gold;
+            btReportQueue_BrgyStffF4.FlatStyle = FlatStyle.Flat;
+            btReportQueue_BrgyStffF4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btReportQueue_BrgyStffF4.ForeColor = SystemColors.ControlLightLight;
+            btReportQueue_BrgyStffF4.Image = Properties.Resources.Report_History1;
+            btReportQueue_BrgyStffF4.ImageAlign = ContentAlignment.MiddleLeft;
+            btReportQueue_BrgyStffF4.Location = new Point(10, 150);
+            btReportQueue_BrgyStffF4.Name = "btReportQueue_BrgyStffF4";
+            btReportQueue_BrgyStffF4.Size = new Size(320, 40);
+            btReportQueue_BrgyStffF4.TabIndex = 17;
+            btReportQueue_BrgyStffF4.Text = "          REPORTS QUEUE";
+            btReportQueue_BrgyStffF4.TextAlign = ContentAlignment.MiddleLeft;
+            btReportQueue_BrgyStffF4.UseVisualStyleBackColor = true;
+            btReportQueue_BrgyStffF4.Click += btReportQueue_BrgyStffF4_Click;
             // 
             // panel6
             // 
@@ -276,25 +280,26 @@
             panel6.Size = new Size(320, 10);
             panel6.TabIndex = 16;
             // 
-            // btEncodeResident
+            // btEncodeResident_BrgyStffF4
             // 
-            btEncodeResident.Cursor = Cursors.Hand;
-            btEncodeResident.Dock = DockStyle.Top;
-            btEncodeResident.FlatAppearance.BorderSize = 0;
-            btEncodeResident.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btEncodeResident.FlatAppearance.MouseOverBackColor = Color.Gold;
-            btEncodeResident.FlatStyle = FlatStyle.Flat;
-            btEncodeResident.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btEncodeResident.ForeColor = SystemColors.ControlLightLight;
-            btEncodeResident.Image = Properties.Resources.Submit_Report;
-            btEncodeResident.ImageAlign = ContentAlignment.MiddleLeft;
-            btEncodeResident.Location = new Point(10, 100);
-            btEncodeResident.Name = "btEncodeResident";
-            btEncodeResident.Size = new Size(320, 40);
-            btEncodeResident.TabIndex = 15;
-            btEncodeResident.Text = "          ENCODE RESIDENT";
-            btEncodeResident.TextAlign = ContentAlignment.MiddleLeft;
-            btEncodeResident.UseVisualStyleBackColor = true;
+            btEncodeResident_BrgyStffF4.Cursor = Cursors.Hand;
+            btEncodeResident_BrgyStffF4.Dock = DockStyle.Top;
+            btEncodeResident_BrgyStffF4.FlatAppearance.BorderSize = 0;
+            btEncodeResident_BrgyStffF4.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btEncodeResident_BrgyStffF4.FlatAppearance.MouseOverBackColor = Color.Gold;
+            btEncodeResident_BrgyStffF4.FlatStyle = FlatStyle.Flat;
+            btEncodeResident_BrgyStffF4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btEncodeResident_BrgyStffF4.ForeColor = SystemColors.ControlLightLight;
+            btEncodeResident_BrgyStffF4.Image = Properties.Resources.Submit_Report;
+            btEncodeResident_BrgyStffF4.ImageAlign = ContentAlignment.MiddleLeft;
+            btEncodeResident_BrgyStffF4.Location = new Point(10, 100);
+            btEncodeResident_BrgyStffF4.Name = "btEncodeResident_BrgyStffF4";
+            btEncodeResident_BrgyStffF4.Size = new Size(320, 40);
+            btEncodeResident_BrgyStffF4.TabIndex = 15;
+            btEncodeResident_BrgyStffF4.Text = "          ENCODE RESIDENT";
+            btEncodeResident_BrgyStffF4.TextAlign = ContentAlignment.MiddleLeft;
+            btEncodeResident_BrgyStffF4.UseVisualStyleBackColor = true;
+            btEncodeResident_BrgyStffF4.Click += btEncodeResident_BrgyStffF4_Click;
             // 
             // panel5
             // 
@@ -304,25 +309,26 @@
             panel5.Size = new Size(320, 10);
             panel5.TabIndex = 14;
             // 
-            // btResidentsRecords
+            // btResidents_BrgyStffF4
             // 
-            btResidentsRecords.Cursor = Cursors.Hand;
-            btResidentsRecords.Dock = DockStyle.Top;
-            btResidentsRecords.FlatAppearance.BorderSize = 0;
-            btResidentsRecords.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btResidentsRecords.FlatAppearance.MouseOverBackColor = Color.Gold;
-            btResidentsRecords.FlatStyle = FlatStyle.Flat;
-            btResidentsRecords.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btResidentsRecords.ForeColor = SystemColors.ControlLightLight;
-            btResidentsRecords.Image = Properties.Resources.resident3;
-            btResidentsRecords.ImageAlign = ContentAlignment.MiddleLeft;
-            btResidentsRecords.Location = new Point(10, 50);
-            btResidentsRecords.Name = "btResidentsRecords";
-            btResidentsRecords.Size = new Size(320, 40);
-            btResidentsRecords.TabIndex = 13;
-            btResidentsRecords.Text = "          RESIDENTS";
-            btResidentsRecords.TextAlign = ContentAlignment.MiddleLeft;
-            btResidentsRecords.UseVisualStyleBackColor = true;
+            btResidents_BrgyStffF4.Cursor = Cursors.Hand;
+            btResidents_BrgyStffF4.Dock = DockStyle.Top;
+            btResidents_BrgyStffF4.FlatAppearance.BorderSize = 0;
+            btResidents_BrgyStffF4.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btResidents_BrgyStffF4.FlatAppearance.MouseOverBackColor = Color.Gold;
+            btResidents_BrgyStffF4.FlatStyle = FlatStyle.Flat;
+            btResidents_BrgyStffF4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btResidents_BrgyStffF4.ForeColor = SystemColors.ControlLightLight;
+            btResidents_BrgyStffF4.Image = Properties.Resources.resident3;
+            btResidents_BrgyStffF4.ImageAlign = ContentAlignment.MiddleLeft;
+            btResidents_BrgyStffF4.Location = new Point(10, 50);
+            btResidents_BrgyStffF4.Name = "btResidents_BrgyStffF4";
+            btResidents_BrgyStffF4.Size = new Size(320, 40);
+            btResidents_BrgyStffF4.TabIndex = 13;
+            btResidents_BrgyStffF4.Text = "          RESIDENTS";
+            btResidents_BrgyStffF4.TextAlign = ContentAlignment.MiddleLeft;
+            btResidents_BrgyStffF4.UseVisualStyleBackColor = true;
+            btResidents_BrgyStffF4.Click += btResidents_BrgyStffF4_Click;
             // 
             // panel10
             // 
@@ -332,25 +338,26 @@
             panel10.Size = new Size(320, 10);
             panel10.TabIndex = 12;
             // 
-            // btDashboard
+            // btDashboard_BrgyStffF4
             // 
-            btDashboard.Cursor = Cursors.Hand;
-            btDashboard.Dock = DockStyle.Top;
-            btDashboard.FlatAppearance.BorderSize = 0;
-            btDashboard.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btDashboard.FlatAppearance.MouseOverBackColor = Color.Gold;
-            btDashboard.FlatStyle = FlatStyle.Flat;
-            btDashboard.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btDashboard.ForeColor = SystemColors.ControlLightLight;
-            btDashboard.Image = Properties.Resources.dash;
-            btDashboard.ImageAlign = ContentAlignment.MiddleLeft;
-            btDashboard.Location = new Point(10, 0);
-            btDashboard.Name = "btDashboard";
-            btDashboard.Size = new Size(320, 40);
-            btDashboard.TabIndex = 6;
-            btDashboard.Text = "          DASHBOARD";
-            btDashboard.TextAlign = ContentAlignment.MiddleLeft;
-            btDashboard.UseVisualStyleBackColor = true;
+            btDashboard_BrgyStffF4.Cursor = Cursors.Hand;
+            btDashboard_BrgyStffF4.Dock = DockStyle.Top;
+            btDashboard_BrgyStffF4.FlatAppearance.BorderSize = 0;
+            btDashboard_BrgyStffF4.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btDashboard_BrgyStffF4.FlatAppearance.MouseOverBackColor = Color.Gold;
+            btDashboard_BrgyStffF4.FlatStyle = FlatStyle.Flat;
+            btDashboard_BrgyStffF4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btDashboard_BrgyStffF4.ForeColor = SystemColors.ControlLightLight;
+            btDashboard_BrgyStffF4.Image = Properties.Resources.dash;
+            btDashboard_BrgyStffF4.ImageAlign = ContentAlignment.MiddleLeft;
+            btDashboard_BrgyStffF4.Location = new Point(10, 0);
+            btDashboard_BrgyStffF4.Name = "btDashboard_BrgyStffF4";
+            btDashboard_BrgyStffF4.Size = new Size(320, 40);
+            btDashboard_BrgyStffF4.TabIndex = 6;
+            btDashboard_BrgyStffF4.Text = "          DASHBOARD";
+            btDashboard_BrgyStffF4.TextAlign = ContentAlignment.MiddleLeft;
+            btDashboard_BrgyStffF4.UseVisualStyleBackColor = true;
+            btDashboard_BrgyStffF4.Click += btDashboard_BrgyStffF4_Click;
             // 
             // panelLogo
             // 
@@ -362,7 +369,7 @@
             panelLogo.Controls.Add(BrgyLb1);
             panelLogo.Controls.Add(pictureBox2);
             panelLogo.Controls.Add(panel9);
-            panelLogo.Controls.Add(pictureBox1);
+            panelLogo.Controls.Add(pbLogo_BrgyStffF4);
             panelLogo.Controls.Add(p1top);
             panelLogo.Dock = DockStyle.Top;
             panelLogo.Location = new Point(0, 0);
@@ -460,18 +467,18 @@
             panel9.Size = new Size(330, 17);
             panel9.TabIndex = 16;
             // 
-            // pictureBox1
+            // pbLogo_BrgyStffF4
             // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            pictureBox1.Cursor = Cursors.Hand;
-            pictureBox1.Image = Properties.Resources.EJC_Logo;
-            pictureBox1.Location = new Point(0, 37);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(330, 169);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 9;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click_1;
+            pbLogo_BrgyStffF4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pbLogo_BrgyStffF4.Cursor = Cursors.Hand;
+            pbLogo_BrgyStffF4.Image = Properties.Resources.EJC_Logo;
+            pbLogo_BrgyStffF4.Location = new Point(0, 37);
+            pbLogo_BrgyStffF4.Name = "pbLogo_BrgyStffF4";
+            pbLogo_BrgyStffF4.Size = new Size(330, 169);
+            pbLogo_BrgyStffF4.SizeMode = PictureBoxSizeMode.Zoom;
+            pbLogo_BrgyStffF4.TabIndex = 9;
+            pbLogo_BrgyStffF4.TabStop = false;
+            pbLogo_BrgyStffF4.Click += pictureBox1_Click_1;
             // 
             // p1top
             // 
@@ -515,7 +522,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbLogo_BrgyStffF4).EndInit();
             p1top.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)btMenuVertical).EndInit();
             ResumeLayout(false);
@@ -526,17 +533,17 @@
         private Panel pnChilForms;
         private PictureBox pbLogo;
         private Panel pnSlideMenu;
-        private Button btLogOut;
+        private Button btLogOut_BrgyStffF4;
         private Panel panel1;
         private Panel pnButtons;
         private Panel panel7;
-        private Button btReportHistory;
+        private Button btReportQueue_BrgyStffF4;
         private Panel panel6;
-        private Button btEncodeResident;
+        private Button btEncodeResident_BrgyStffF4;
         private Panel panel5;
-        private Button btResidentsRecords;
+        private Button btResidents_BrgyStffF4;
         private Panel panel10;
-        private Button btDashboard;
+        private Button btDashboard_BrgyStffF4;
         private Panel panelLogo;
         private Panel panel3;
         private Label Lb32026;
@@ -546,14 +553,14 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private Panel panel9;
-        private PictureBox pictureBox1;
+        private PictureBox pbLogo_BrgyStffF4;
         private Panel p1top;
         private PictureBox btMenuVertical;
-        private Button button1;
+        private Button btSubmitRep_BrgyStffF4;
         private System.Windows.Forms.Timer sidebarTimer;
-        private Button button2;
+        private Button btAnnouncements_BrgyStffF4;
         private Panel panel2;
-        private Button button3;
+        private Button btSettings_BrgyStffF4;
         private Panel panel4;
     }
 }

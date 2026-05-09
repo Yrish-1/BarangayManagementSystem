@@ -53,6 +53,15 @@ namespace EveryJuanCount
             // Update label every second
             labelClock.Text = DateTime.Now.ToString("dddd,  MMMM dd, yyyy   hh:mm:ss tt");
         }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (clockTimer != null)
+            {
+                clockTimer.Stop();
+                clockTimer.Dispose();
+            }
+        }
 
 
         #endregion
@@ -66,15 +75,7 @@ namespace EveryJuanCount
             }
         }
 
-        protected override void OnFormClosing(FormClosingEventArgs e)
-        {
-            base.OnFormClosing(e);
-            if (clockTimer != null)
-            {
-                clockTimer.Stop();
-                clockTimer.Dispose();
-            }
-        }
+        
 
         #region QuickAccessButtons
         private void btReportBirth_Click(object sender, EventArgs e)
