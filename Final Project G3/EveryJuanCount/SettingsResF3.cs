@@ -13,10 +13,51 @@ namespace EveryJuanCount
         public SettingsResF3()
         {
             InitializeComponent();
+            this.Load += SettingsResF3_Load;
+            button3.Click += button3_Click;
+
+            // Eye buttons
+            btShowCurrentPass_SettingsF3.Click += btShowCurrentPass_SettingsF3_Click;
+            btHideCurrentPass_SettingsF3.Click += btHideCurrentPass_SettingsF3_Click;
+            btShowNewPass_SettingsF3.Click += btShowNewPass_SettingsF3_Click;
+            btHideNewPass_SettingsF3.Click += btHideNewPass_SettingsF3_Click;
+            btShowConNewPass_SettingsF3.Click += btShowConNewPass_SettingsF3_Click;
+            btHideConNewPass_SettingsF3.Click += btHideConNewPass_SettingsF3_Click;
         }
 
-        #region ChangePasswordButtons
+        #region Load Personal Information
+        private void SettingsResF3_Load(object sender, EventArgs e)
+        {
+            LoadResidentInfo();
+        }
 
+        private void LoadResidentInfo()
+        {
+            Resident r = SessionData.CurrentResident;
+
+            // Personal Information
+            textBox14.Text = r.FirstName;
+            textBox13.Text = r.MiddleName;
+            textBox12.Text = r.LastName;
+            textBox11.Text = r.DateOfBirth.ToString("MM/dd/yyyy");
+            textBox10.Text = r.Age.ToString();
+            textBox9.Text = r.ContactNumber;
+            textBox8.Text = r.Email;
+
+            // Address / Household
+            textBox7.Text = r.HouseStreet;
+            textBox6.Text = r.Purok;
+            textBox5.Text = r.Barangay;
+            textBox4.Text = r.Municipality;
+            textBox3.Text = r.Province;
+            textBox2.Text = r.PostalCode;
+            textBox1.Text = r.HouseholdRole;
+            textBox15.Text = r.ResidencyStatus;
+            textBox16.Text = r.HouseholdMembers.ToString();
+        }
+        #endregion
+
+        #region Show/Hide Password Buttons
         private void btShowCurrentPass_SettingsF3_Click(object sender, EventArgs e)
         {
             if (CurrentPass.PasswordChar == '*')
@@ -52,6 +93,7 @@ namespace EveryJuanCount
                 NewPass.PasswordChar = '*';
             }
         }
+
         private void btShowConNewPass_SettingsF3_Click(object sender, EventArgs e)
         {
             if (ConNewPass.PasswordChar == '*')
@@ -60,6 +102,7 @@ namespace EveryJuanCount
                 ConNewPass.PasswordChar = '\0';
             }
         }
+
         private void btHideConNewPass_SettingsF3_Click(object sender, EventArgs e)
         {
             if (ConNewPass.PasswordChar == '\0')
@@ -70,7 +113,84 @@ namespace EveryJuanCount
         }
         #endregion
 
+        #region Change Password
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string current = CurrentPass.Text.Trim();
+            string newPass = NewPass.Text.Trim();
+            string confirm = ConNewPass.Text.Trim();
 
-        
+            // Check if fields are empty
+            if (string.IsNullOrEmpty(current) || string.IsNullOrEmpty(newPass) || string.IsNullOrEmpty(confirm))
+            {
+                MessageBox.Show("Please fill in all password fields.", "Missing Fields",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Check current password
+            if (current != SessionData.Password)
+            {
+                MessageBox.Show("Current password is incorrect.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Check new password is different from current
+            if (newPass == current)
+            {
+                MessageBox.Show("New password must be different from your current password.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Validate new password requirements
+            if (!IsValidPassword(newPass))
+            {
+                MessageBox.Show(
+                    "New password must:\n" +
+                    "● At least 8 characters long\n" +
+                    "● Contains at least one number (0–9)\n" +
+                    "● Contains at least one special character (!@#$%)\n" +
+                    "● Must be different from your current password",
+                    "Invalid Password", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Check if new password matches confirm
+            if (newPass != confirm)
+            {
+                MessageBox.Show("New password and confirm password do not match.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // All good — update password
+            SessionData.Password = newPass;
+            MessageBox.Show("Password changed successfully!", "Success",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            // Clear fields
+            CurrentPass.Text = "";
+            NewPass.Text = "";
+            ConNewPass.Text = "";
+        }
+
+        private bool IsValidPassword(string password)
+        {
+            if (password.Length < 8) return false;
+
+            bool hasNumber = false;
+            bool hasSpecial = false;
+
+            foreach (char c in password)
+            {
+                if (char.IsDigit(c)) hasNumber = true;
+                if ("!@#$%^&*".Contains(c)) hasSpecial = true;
+            }
+
+            return hasNumber && hasSpecial;
+        }
+        #endregion
     }
 }
