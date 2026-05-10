@@ -8,7 +8,6 @@ namespace EveryJuanCount
         // Currently logged-in resident
         public static Resident CurrentResident { get; set; } = new Resident
         {
-            // Dummy data for testing (replace with real DB data later)
             FirstName = "Mark Brandon",
             MiddleName = "Velez",
             LastName = "Pine",
@@ -26,13 +25,9 @@ namespace EveryJuanCount
             HouseholdMembers = 0
         };
 
-        // Password (replace with DB check later)
+        public static int CurrentResidentId { get; set; } = 0;
         public static string Password { get; set; } = "Test@1234";
-
-        // Reports submitted by the resident
         public static List<Report> Reports { get; set; } = new List<Report>();
-
-        // Add inside SessionData class
         public static string CurrentRole { get; set; } = "";
 
         public static List<(string Username, string Password, string Role)> Accounts =

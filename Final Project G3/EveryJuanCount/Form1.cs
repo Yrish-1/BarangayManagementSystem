@@ -75,16 +75,65 @@ namespace EveryJuanCount
         #region LogInButton
         private void bt3LogIn_Click(object sender, EventArgs e)
         {
-            //hide Form 1
-            this.Hide();
-            //create an instance of Form 3
-            ResidentForm3 f2 = new ResidentForm3();
-            //show Form 2
-            f2.ShowDialog();
-            //dispose Form 2 after it is closed
-            f2 = null;
-            //show form1 again
+            string username = txtB1Username.Text.Trim();
+            string password = txtB2Password.Text.Trim();
 
+            // Check if fields are empty
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Please enter your username and password.",
+                    "Missing Fields", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Check against DATABASE
+            var (success, role) = DatabaseHelper.Login(username, password);
+
+            if (!success)
+            {
+                MessageBox.Show("Invalid username or password.",
+                    "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Set current role
+            SessionData.CurrentRole = role;
+
+            // Redirect based on role
+            this.Hide();
+
+            if (role == "Resident")
+            {
+                // Load resident data from DB
+                Resident resident = DatabaseHelper.GetResident(username);
+                if (resident != null)
+                {
+                    SessionData.CurrentResident = resident;
+                    SessionData.CurrentResidentId = DatabaseHelper.GetResidentId(username);
+                }
+
+                ResidentForm3 f = new ResidentForm3();
+                f.ShowDialog();
+                f = null;
+            }
+            else if (role == "Staff")
+            {
+                BarangayStaffForm4 f = new BarangayStaffForm4();
+                f.ShowDialog();
+                f = null;
+            }
+            else if (role == "Admin")
+            {
+                // AdminForm5 f = new AdminForm5();
+                // f.ShowDialog();
+                // f = null;
+                MessageBox.Show("Admin form coming soon!", "Info",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Show();
+                return;
+            }
+
+            this.Show();
         }
 
         #endregion
