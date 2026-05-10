@@ -69,6 +69,7 @@ A general `User` base class contains shared attributes like name, email, and pas
 ```
 User (Base Class)
 ├── Resident
+├── Barangay Staff
 └── Admin
 
 EventReport (Base Class)
