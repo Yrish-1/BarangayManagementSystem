@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "opL1qcNhbCU=",
+=======
+  "dgSpecHash": "BTxs5aiFhBg=",
+>>>>>>> Stashed changes
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\OneDrive\\Documents\\Ahh\\Final Project G3\\EveryJuanCount\\EveryJuanCount.csproj",
   "expectedPackageFiles": [
