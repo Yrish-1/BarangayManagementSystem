@@ -79,7 +79,7 @@ EventReport (Base Class)
 ```
 
 ### 🔁 Polymorphism
-Both `Resident` and `Admin` users can call a `Submit()` method — but the behavior differs. A resident submits a population update report, while an admin submits an approval or rejection decision. The same method name is used, but the implementation changes depending on who is performing the action.
+Both `Resident`, `Barangay Staff` and `Admin` users can call a `Submit()` method — but the behavior differs. A resident submits a population update report, while an admin submits an approval or rejection decision. The same method name is used, but the implementation changes depending on who is performing the action.
 
 ### 🎭 Abstraction
 Complex backend processes — such as document verification, population count updates, and status notifications — are hidden from the user. Residents simply fill out a form and submit; the system handles all processing behind the scenes through abstract interfaces and base classes.
@@ -106,15 +106,83 @@ The project follows a **3-layer architecture**:
 ### 📁 Folder Structure
 
 ```
-EveryJuanCounts/
+EveryJuanCount/
+│
+├── bin/
+├── obj/
+├── Properties/
+├── Resources/
 │
 ├── Forms/
-│   ├── LoginForm.cs
-│   ├── DashboardForm.cs
-│   ├── ResidentInfoForm.cs
-│   ├── ResidentListForm.cs
-│   ├── ReportUpdateForm.cs
-│   └── AdminApprovalForm.cs
+│   │
+│   ├── [Admin - F5]
+│   │   ├── AdminForm5.cs
+│   │   ├── AdminForm5.Designer.cs
+│   │   ├── AdminForm5.resx
+│   │   ├── AnnouncementsAdF5.cs
+│   │   ├── AnnouncementsAdF5.Designer.cs
+│   │   ├── AnnouncementsAdF5.resx
+│   │   ├── DashboardAdF5.cs
+│   │   ├── DashboardAdF5.Designer.cs
+│   │   ├── DashboardAdF5.resx
+│   │   ├── ManageStaffAdF5.cs
+│   │   ├── ManageStaffAdF5.Designer.cs
+│   │   ├── ManageStaffAdF5.resx
+│   │   ├── PopulationReportAdF5.cs
+│   │   ├── PopulationReportAdF5.Designer.cs
+│   │   ├── PopulationReportAdF5.resx
+│   │   ├── ReportApprovalAdF5.cs
+│   │   ├── ReportApprovalAdF5.Designer.cs
+│   │   ├── ReportApprovalAdF5.resx
+│   │   ├── ResidentsAdF5.cs
+│   │   ├── ResidentsAdF5.Designer.cs
+│   │   ├── ResidentsAdF5.resx
+│   │   ├── SettingsAdF5.cs
+│   │   ├── SettingsAdF5.Designer.cs
+│   │   └── SettingsAdF5.resx
+│   │
+│   ├── [Barangay Staff - F4]
+│   │   ├── AnnouncementsBrgyStffF4.cs
+│   │   ├── AnnouncementsBrgyStffF4.Designer.cs
+│   │   ├── AnnouncementsBrgyStffF4.resx
+│   │   ├── BarangayStaffForm4.cs
+│   │   ├── BarangayStaffForm4.Designer.cs
+│   │   ├── BarangayStaffForm4.resx
+│   │   ├── DashboardBrgyStffF4.cs
+│   │   ├── DashboardBrgyStffF4.Designer.cs
+│   │   ├── DashboardBrgyStffF4.resx
+│   │   ├── EncodeResidentBrgyStffF4.cs
+│   │   ├── EncodeResidentBrgyStffF4.Designer.cs
+│   │   ├── EncodeResidentBrgyStffF4.resx
+│   │   ├── ReportsQueueBrgyStffF4.cs
+│   │   ├── ReportsQueueBrgyStffF4.Designer.cs
+│   │   ├── ReportsQueueBrgyStffF4.resx
+│   │   ├── ResidentsBrgyStffF4.cs
+│   │   ├── ResidentsBrgyStffF4.Designer.cs
+│   │   ├── ResidentsBrgyStffF4.resx
+│   │   ├── SettingsBrgyStffF4.cs
+│   │   ├── SettingsBrgyStffF4.Designer.cs
+│   │   ├── SettingsBrgyStffF4.resx
+│   │   ├── SubmitReportBrgyStffF4.cs
+│   │   ├── SubmitReportBrgyStffF4.Designer.cs
+│   │   └── SubmitReportBrgyStffF4.resx
+│   │
+│   └── [Resident - F3]
+│       ├── DashboardResF3.cs
+│       ├── DashboardResF3.Designer.cs
+│       ├── DashboardResF3.resx
+│       ├── ReportHistoryResF3.cs
+│       ├── ReportHistoryResF3.Designer.cs
+│       ├── ReportHistoryResF3.resx
+│       ├── ResidentForm3.cs
+│       ├── ResidentForm3.Designer.cs
+│       ├── ResidentForm3.resx
+│       ├── SettingsResF3.cs
+│       ├── SettingsResF3.Designer.cs
+│       ├── SettingsResF3.resx
+│       ├── SubmitReportResF3.cs
+│       ├── SubmitReportResF3.Designer.cs
+│       └── SubmitReportResF3.resx
 │
 ├── Models/
 │   ├── User.cs
@@ -142,8 +210,17 @@ EveryJuanCounts/
 │   ├── SequenceDiagram.png
 │   └── ERDiagram.png
 │
-├── README.md
-└── EveryJuanCounts.sln
+├── Form1.cs                        ← Login Form
+├── Form1.Designer.cs
+├── Form1.resx
+├── Form2.cs                        ← Registration/ Sign Up
+├── Form2.Designer.cs
+├── Form2.resx
+├── Program.cs
+├── EveryJuanCount.csproj
+├── EveryJuanCount.csproj.user
+├── EveryJuanCount.slnx
+└── README.md
 ```
 
 ---
@@ -154,13 +231,29 @@ The system is composed of **six interconnected Windows Forms**:
 
 | Form | Purpose | Key Controls |
 |---|---|---|
-| **Login Form** | Secure entry point for both user roles | `TextBox`, `Button`, `CheckBox`, `LinkLabel`, `PictureBox` |
-| **Population Dashboard** | Main control center with real-time stats | `Panel`, `GroupBox`, `Label`, `MenuStrip`, `DateTimePicker` |
-| **Resident Information Form** | Create and update resident records | `TextBox`, `DateTimePicker`, `ComboBox`, `Button` |
-| **Resident List View** | Searchable table of all registered residents | `DataGridView`, `TextBox` (search), `Button` |
-| **Report & Update Form** | Submit vital event reports | `RadioButton`, `TextBox`, `DateTimePicker`, `OpenFileDialog` |
-| **Admin Approval Form** | Review and act on submitted reports | `DataGridView`, `RichTextBox`, `ComboBox`, `Button` |
-
+| **Form1** *(Login)* | Secure entry point for all user roles | `TextBox`, `Button`, `PictureBox` |
+| **Form2** *(Main Entry / Splash)* | Initial landing or role-selection screen | `Panel`, `Label`, `Button`, `PictureBox` |
+| **DashboardAdF5** *(Admin Dashboard)* | Admin control center with navigation and stats | `Panel`, `GroupBox`, `Label`, `MenuStrip`, `Button` |
+| **DashboardBrgyStffF4** *(Barangay Staff Dashboard)* | Staff control center with navigation | `Panel`, `GroupBox`, `Label`, `MenuStrip`, `Button` |
+| **DashboardResF3** *(Resident Dashboard)* | Resident portal with available actions | `Panel`, `Label`, `Button`, `PictureBox` |
+| **BarangayStaffForm4** | Staff account management and registration | `TextBox`, `ComboBox`, `Button`, `DateTimePicker` |
+| **ResidentForm3** | Create and update resident records | `TextBox`, `DateTimePicker`, `ComboBox`, `Button` |
+| **EncodeResidentBrgyStffF4** | Staff-side resident data encoding | `TextBox`, `ComboBox`, `DateTimePicker`, `Button` |
+| **ResidentsAdF5** | Admin view of all registered residents | `DataGridView`, `TextBox` *(search)*, `Button` |
+| **ResidentsBrgyStffF4** | Staff view of all registered residents | `DataGridView`, `TextBox` *(search)*, `Button` |
+| **SubmitReportResF3** | Resident submits vital event reports | `RadioButton`, `TextBox`, `DateTimePicker`, `OpenFileDialog`, `Button` |
+| **SubmitReportBrgyStffF4** | Staff submits vital event reports | `RadioButton`, `TextBox`, `DateTimePicker`, `OpenFileDialog`, `Button` |
+| **ReportApprovalAdF5** | Admin reviews and acts on submitted reports | `DataGridView`, `RichTextBox`, `ComboBox`, `Button` |
+| **ReportsQueueBrgyStffF4** | Staff views queue of pending reports | `DataGridView`, `Label`, `Button` |
+| **ReportHistoryResF3** | Resident views their past submitted reports | `DataGridView`, `Label`, `Button` |
+| **PopulationReportAdF5** | Admin views population statistics and trends | `DataGridView`, `Chart`, `Label`, `DateTimePicker` |
+| **AnnouncementsAdF5** | Admin creates and manages announcements | `RichTextBox`, `TextBox`, `Button`, `DateTimePicker` |
+| **AnnouncementsBrgyStffF4** | Staff views barangay announcements | `Label`, `RichTextBox`, `Panel` |
+| **ManageStaffAdF5** | Admin manages barangay staff accounts | `DataGridView`, `TextBox`, `ComboBox`, `Button` |
+| **AdminForm5** | Admin profile and account settings | `TextBox`, `Button`, `PictureBox` |
+| **SettingsAdF5** | Admin system settings and preferences | `CheckBox`, `ComboBox`, `TextBox`, `Button` |
+| **SettingsBrgyStffF4** | Staff account settings | `CheckBox`, `ComboBox`, `TextBox`, `Button` |
+| **SettingsResF3** | Resident account settings | `CheckBox`, `ComboBox`, `TextBox`, `Button` |
 ---
 
 ## 🚀 Getting Started
@@ -171,6 +264,8 @@ The system is composed of **six interconnected Windows Forms**:
 - [Visual Studio 2022](https://visualstudio.microsoft.com/) with **.NET Desktop Development** workload installed
 - [.NET 6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) or later
 - SQL Server Express or SQLite
+- Pichon - A vast collection of 1.5 MILLION pixel-perfect icons and curated graphics in one tiny desktop app
+- Lunacy - a free, next-gen vector graphic design app for Windows, macOS, and Linux, primarily used for UI/UX and web design
 
 ### Installation
 
@@ -216,19 +311,35 @@ The system is composed of **six interconnected Windows Forms**:
 
 ## 👥 User Roles
 
-### 🏘 Resident
-- Register an account and log in
-- View and manage household profile
-- Submit reports for births, deaths, move-ins, and move-outs
-- Attach supporting documents (birth certificate, death certificate, etc.)
-- Track the status of submitted reports
+### 🏘 Resident *(ResF3)*
+- Register an account and log in via **Form1/Form2**
+- View personal dashboard via **DashboardResF3**
+- View and manage own resident profile via **ResidentForm3**
+- Submit vital event reports via **SubmitReportResF3**
+- Track the status of submitted reports via **ReportHistoryResF3**
+- View barangay announcements
+- Manage account settings via **SettingsResF3**
 
-### 🏛 Barangay Administrator
-- Log in with admin credentials
-- View the real-time population dashboard
-- Review all pending reports in the approval queue
-- Approve, reject, or return reports for revision with remarks
-- Monitor population statistics by event type and date range
+### 🏛 Barangay Staff *(BrgyStffF4)*
+- Log in with staff credentials via **Form1/Form2**
+- View staff dashboard via **DashboardBrgyStffF4**
+- Encode and manage resident records via **EncodeResidentBrgyStffF4**
+- Browse the full resident list via **ResidentsBrgyStffF4**
+- Submit vital event reports on behalf of residents via **SubmitReportBrgyStffF4**
+- Monitor the reports queue via **ReportsQueueBrgyStffF4**
+- View barangay announcements via **AnnouncementsBrgyStffF4**
+- Manage account settings via **SettingsBrgyStffF4**
+
+### 👑 Admin *(AdF5)*
+- Log in with admin credentials via **Form1/Form2**
+- View the real-time population dashboard via **DashboardAdF5**
+- Review and act on submitted reports via **ReportApprovalAdF5**
+- Monitor population statistics via **PopulationReportAdF5**
+- Manage barangay staff accounts via **ManageStaffAdF5**
+- Browse and manage all resident records via **ResidentsAdF5**
+- Post and manage announcements via **AnnouncementsAdF5**
+- Manage admin profile via **AdminForm5**
+- Configure system settings via **SettingsAdF5**
 
 ---
 
