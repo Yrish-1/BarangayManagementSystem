@@ -211,16 +211,20 @@ EveryJuanCount/
 │   ├── SequenceDiagram.png
 │   └── ERDiagram.png
 │
-├── Form1.cs                        ← Login Form
-├── Form1.Designer.cs
-├── Form1.resx
-├── Form2.cs                        ← Registration/ Sign Up
-├── Form2.Designer.cs
-├── Form2.resx
-├── Program.cs
-├── EveryJuanCount.csproj
-├── EveryJuanCount.csproj.user
-├── EveryJuanCount.slnx
+├── Root/
+│   ├── Form1.cs                        ← Login Form
+│   ├── Form1.Designer.cs
+│   ├── Form1.resx
+│   ├── Form2.cs                        ← Registration/ Sign Up
+│   ├── Form2.Designer.cs
+│   ├── Form2.resx
+│   ├── Program.cs
+│   ├── EveryJuanCount.csproj
+│   ├── EveryJuanCount.csproj.user
+│   └── EveryJuanCount.slnx
+|
+├──.gitignore
+├── EJC Logo.png
 └── README.md
 ```
 
