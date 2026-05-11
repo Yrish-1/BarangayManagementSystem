@@ -5,7 +5,8 @@ namespace EveryJuanCount
     public class Report
     {
         public int ReportId { get; set; }
-        public string EventType { get; set; }  // "Birth", "Death", "Move In", "Move Out"
+        public int ResidentId { get; set; }
+        public string EventType { get; set; }
 
         // Person involved in the event
         public string FirstName { get; set; }
@@ -23,7 +24,7 @@ namespace EveryJuanCount
         public string UploadedIDPath { get; set; }
 
         // Status tracking
-        public string Status { get; set; } = "Pending"; // "Pending", "Approved", "Rejected"
+        public string Status { get; set; } = "Pending";
         public DateTime DateSubmitted { get; set; } = DateTime.Now;
         public string AdminRemarks { get; set; }
     }

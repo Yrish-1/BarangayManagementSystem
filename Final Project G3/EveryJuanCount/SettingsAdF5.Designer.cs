@@ -417,6 +417,7 @@
             Settingss.TabIndex = 0;
             Settingss.TabMenuBackColor = Color.FromArgb(33, 42, 57);
             Settingss.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
+            Settingss.Click += btChangePAssword_Click;
             // 
             // tabPage1
             // 

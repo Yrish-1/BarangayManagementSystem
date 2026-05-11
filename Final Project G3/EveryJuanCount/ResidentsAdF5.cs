@@ -11,20 +11,17 @@ namespace EveryJuanCount
         public ResidentsAdF5()
         {
             InitializeComponent();
-            LoadStats();
-            // Wire up search and filter events
+            LoadData();
             txtbFineRes.TextChanged += (s, e) => FilterResidents();
             cbFilterBy.SelectedIndexChanged += (s, e) => FilterResidents();
         }
 
-        private void LoadStats()
+        private void LoadData()
         {
             _residents = DatabaseHelper.GetAllResidents();
             var allReports = DatabaseHelper.GetAllReports("All");
 
             int total = _residents.Count;
-            int newRegistered = _residents.FindAll(r =>
-                DateTime.TryParse(r.DateOfBirth.ToString(), out _)).Count; // placeholder
             int approved = allReports.FindAll(r => r.Status == "Approved").Count;
             int deaths = allReports.FindAll(r => r.EventType == "Death").Count;
 
@@ -33,44 +30,28 @@ namespace EveryJuanCount
             lbApproved.Text = $"Approved ( {approved} )";
             lbRejected.Text = $"Total Deaths ( {deaths} )";
 
-            LoadGrid(_residents);
+            PopulateGrid(_residents);
         }
 
-        private void LoadGrid(List<Resident> list)
+        private void PopulateGrid(List<Resident> list)
         {
-            // Check if dgvResidents exists — add it in designer first!
-            if (!this.Controls.ContainsKey("dgvResidents") &&
-                !panel6.Controls.ContainsKey("dgvResidents"))
+            dgvResidents.Rows.Clear();
+
+            if (dgvResidents.Columns.Count == 0)
             {
-                var dgv = new DataGridView();
-                dgv.Name = "dgvResidents";
-                dgv.Dock = DockStyle.Fill;
-                dgv.BackgroundColor = System.Drawing.Color.MidnightBlue;
-                dgv.ForeColor = System.Drawing.Color.White;
-                dgv.ColumnHeadersDefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(0, 0, 64);
-                dgv.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.Color.Gold;
-                dgv.EnableHeadersVisualStyles = false;
-                dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-                dgv.ReadOnly = true;
-                dgv.AllowUserToAddRows = false;
-                dgv.Columns.Add("ResidentId", "ID");
-                dgv.Columns.Add("LastName", "Last Name");
-                dgv.Columns.Add("FirstName", "First Name");
-                dgv.Columns.Add("MiddleName", "Middle Name");
-                dgv.Columns.Add("DateOfBirth", "Date of Birth");
-                dgv.Columns.Add("Age", "Age");
-                dgv.Columns.Add("ContactNumber", "Contact No.");
-                dgv.Columns.Add("Barangay", "Barangay");
-                dgv.Columns.Add("Purok", "Purok");
-                dgv.Columns.Add("ResidencyStatus", "Status");
-                panel6.Controls.Add(dgv);
-                dgv.BringToFront();
+                dgvResidents.Columns.Add("ColId", "ID");
+                dgvResidents.Columns.Add("ColLast", "Last Name");
+                dgvResidents.Columns.Add("ColFirst", "First Name");
+                dgvResidents.Columns.Add("ColMiddle", "Middle Name");
+                dgvResidents.Columns.Add("ColDOB", "Date of Birth");
+                dgvResidents.Columns.Add("ColAge", "Age");
+                dgvResidents.Columns.Add("ColContact", "Contact No.");
+                dgvResidents.Columns.Add("ColBarangay", "Barangay");
+                dgvResidents.Columns.Add("ColPurok", "Purok");
+                dgvResidents.Columns.Add("ColStatus", "Status");
+                dgvResidents.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             }
 
-            var dgvResidents = panel6.Controls["dgvResidents"] as DataGridView;
-            if (dgvResidents == null) return;
-
-            dgvResidents.Rows.Clear();
             foreach (var r in list)
             {
                 int age = DateTime.Today.Year - r.DateOfBirth.Year;
@@ -108,7 +89,7 @@ namespace EveryJuanCount
                 return matchesSearch && matchesFilter;
             });
 
-            LoadGrid(filtered);
+            PopulateGrid(filtered);
         }
     }
 }

@@ -15,12 +15,10 @@ namespace EveryJuanCount
             using var connection = new SqliteConnection(connectionString);
             connection.Open();
 
-            // Disable foreign key enforcement
             var pragmaFK = connection.CreateCommand();
             pragmaFK.CommandText = "PRAGMA foreign_keys = OFF;";
             pragmaFK.ExecuteNonQuery();
 
-            // Create Users table
             var createUsers = connection.CreateCommand();
             createUsers.CommandText = @"
                 CREATE TABLE IF NOT EXISTS Users (
@@ -31,7 +29,6 @@ namespace EveryJuanCount
                 );";
             createUsers.ExecuteNonQuery();
 
-            // Create Residents table
             var createResidents = connection.CreateCommand();
             createResidents.CommandText = @"
                 CREATE TABLE IF NOT EXISTS Residents (
@@ -55,7 +52,6 @@ namespace EveryJuanCount
                 );";
             createResidents.ExecuteNonQuery();
 
-            // Create Reports table
             var createReports = connection.CreateCommand();
             createReports.CommandText = @"
                 CREATE TABLE IF NOT EXISTS Reports (
@@ -79,7 +75,6 @@ namespace EveryJuanCount
                 );";
             createReports.ExecuteNonQuery();
 
-            // Create Announcements table
             var createAnnouncements = connection.CreateCommand();
             createAnnouncements.CommandText = @"
                 CREATE TABLE IF NOT EXISTS Announcements (
@@ -91,7 +86,6 @@ namespace EveryJuanCount
                 );";
             createAnnouncements.ExecuteNonQuery();
 
-            // Insert default accounts
             var insertAdmin = connection.CreateCommand();
             insertAdmin.CommandText = @"
                 INSERT OR IGNORE INTO Users (Username, Password, Role) VALUES
@@ -100,7 +94,6 @@ namespace EveryJuanCount
                 ('admin1', 'Admin@1234', 'Admin');";
             insertAdmin.ExecuteNonQuery();
 
-            // Insert default resident record
             var insertResident = connection.CreateCommand();
             insertResident.CommandText = @"
                 INSERT OR IGNORE INTO Residents (UserId, FirstName, MiddleName, LastName, 
@@ -158,6 +151,7 @@ namespace EveryJuanCount
             {
                 return new Resident
                 {
+                    ResidentId = Convert.ToInt32(reader["ResidentId"]),
                     FirstName = reader["FirstName"].ToString(),
                     MiddleName = reader["MiddleName"].ToString(),
                     LastName = reader["LastName"].ToString(),
@@ -193,6 +187,42 @@ namespace EveryJuanCount
             var result = command.ExecuteScalar();
             return result != null ? Convert.ToInt32(result) : 0;
         }
+
+        public static List<Resident> GetAllResidents()
+        {
+            using var connection = new SqliteConnection(connectionString);
+            connection.Open();
+            var command = connection.CreateCommand();
+            command.CommandText = @"
+                SELECT r.*, u.Username FROM Residents r
+                JOIN Users u ON r.UserId = u.UserId
+                ORDER BY r.LastName, r.FirstName";
+            var list = new List<Resident>();
+            using var reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                list.Add(new Resident
+                {
+                    ResidentId = Convert.ToInt32(reader["ResidentId"]),
+                    FirstName = reader["FirstName"].ToString(),
+                    MiddleName = reader["MiddleName"].ToString(),
+                    LastName = reader["LastName"].ToString(),
+                    DateOfBirth = DateTime.TryParse(reader["DateOfBirth"].ToString(), out var dob) ? dob : DateTime.MinValue,
+                    ContactNumber = reader["ContactNumber"].ToString(),
+                    Email = reader["Email"].ToString(),
+                    HouseStreet = reader["HouseStreet"].ToString(),
+                    Purok = reader["Purok"].ToString(),
+                    Barangay = reader["Barangay"].ToString(),
+                    Municipality = reader["Municipality"].ToString(),
+                    Province = reader["Province"].ToString(),
+                    PostalCode = reader["PostalCode"].ToString(),
+                    HouseholdRole = reader["HouseholdRole"].ToString(),
+                    ResidencyStatus = reader["ResidencyStatus"].ToString(),
+                    HouseholdMembers = Convert.ToInt32(reader["HouseholdMembers"])
+                });
+            }
+            return list;
+        }
         #endregion
 
         #region Report Operations
@@ -201,7 +231,6 @@ namespace EveryJuanCount
             using var connection = new SqliteConnection(connectionString);
             connection.Open();
 
-            // Disable foreign key enforcement
             var pragma = connection.CreateCommand();
             pragma.CommandText = "PRAGMA foreign_keys = OFF;";
             pragma.ExecuteNonQuery();
@@ -239,74 +268,6 @@ namespace EveryJuanCount
             command.ExecuteNonQuery();
         }
 
-        #region Registration Operations
-        public static bool RegisterResident(string username, string password,
-            string firstName, string middleName, string lastName,
-            DateTime dateOfBirth, string contactNumber, string email,
-            string houseStreet, string purok, string barangay,
-            string municipality, string province, string postalCode,
-            string householdRole, string residencyStatus, int householdMembers)
-        {
-            using var connection = new SqliteConnection(connectionString);
-            connection.Open();
-
-            var pragma = connection.CreateCommand();
-            pragma.CommandText = "PRAGMA foreign_keys = OFF;";
-            pragma.ExecuteNonQuery();
-
-            // Check if username already exists
-            var checkUser = connection.CreateCommand();
-            checkUser.CommandText = "SELECT COUNT(*) FROM Users WHERE Username = $username";
-            checkUser.Parameters.AddWithValue("$username", username);
-            int count = Convert.ToInt32(checkUser.ExecuteScalar());
-            if (count > 0) return false;
-
-            // Insert user
-            var insertUser = connection.CreateCommand();
-            insertUser.CommandText = @"
-        INSERT INTO Users (Username, Password, Role) 
-        VALUES ($username, $password, 'Resident')";
-            insertUser.Parameters.AddWithValue("$username", username);
-            insertUser.Parameters.AddWithValue("$password", password);
-            insertUser.ExecuteNonQuery();
-
-            // Get new UserId
-            var getUserId = connection.CreateCommand();
-            getUserId.CommandText = "SELECT last_insert_rowid()";
-            int userId = Convert.ToInt32(getUserId.ExecuteScalar());
-
-            // Insert resident
-            var insertResident = connection.CreateCommand();
-            insertResident.CommandText = @"
-        INSERT INTO Residents (UserId, FirstName, MiddleName, LastName,
-            DateOfBirth, ContactNumber, Email, HouseStreet, Purok, Barangay,
-            Municipality, Province, PostalCode, HouseholdRole, ResidencyStatus, HouseholdMembers)
-        VALUES ($userId, $firstName, $middleName, $lastName,
-            $dateOfBirth, $contactNumber, $email, $houseStreet, $purok, $barangay,
-            $municipality, $province, $postalCode, $householdRole, $residencyStatus, $householdMembers)";
-
-            insertResident.Parameters.AddWithValue("$userId", userId);
-            insertResident.Parameters.AddWithValue("$firstName", firstName);
-            insertResident.Parameters.AddWithValue("$middleName", middleName ?? "");
-            insertResident.Parameters.AddWithValue("$lastName", lastName);
-            insertResident.Parameters.AddWithValue("$dateOfBirth", dateOfBirth.ToString("yyyy-MM-dd"));
-            insertResident.Parameters.AddWithValue("$contactNumber", contactNumber ?? "");
-            insertResident.Parameters.AddWithValue("$email", email ?? "");
-            insertResident.Parameters.AddWithValue("$houseStreet", houseStreet ?? "");
-            insertResident.Parameters.AddWithValue("$purok", purok ?? "");
-            insertResident.Parameters.AddWithValue("$barangay", barangay ?? "");
-            insertResident.Parameters.AddWithValue("$municipality", municipality ?? "");
-            insertResident.Parameters.AddWithValue("$province", province ?? "");
-            insertResident.Parameters.AddWithValue("$postalCode", postalCode ?? "");
-            insertResident.Parameters.AddWithValue("$householdRole", householdRole ?? "Not Applicable");
-            insertResident.Parameters.AddWithValue("$residencyStatus", residencyStatus ?? "Not Applicable");
-            insertResident.Parameters.AddWithValue("$householdMembers", householdMembers);
-            insertResident.ExecuteNonQuery();
-
-            return true;
-        }
-        #endregion
-
         public static List<Report> GetReports(int residentId, string filter = "All")
         {
             using var connection = new SqliteConnection(connectionString);
@@ -336,25 +297,142 @@ namespace EveryJuanCount
                 reports.Add(new Report
                 {
                     ReportId = Convert.ToInt32(reader["ReportId"]),
+                    ResidentId = Convert.ToInt32(reader["ResidentId"]),
                     EventType = reader["EventType"].ToString(),
                     FirstName = reader["FirstName"].ToString(),
                     MiddleName = reader["MiddleName"].ToString(),
                     LastName = reader["LastName"].ToString(),
-                    DateOfEvent = DateTime.Parse(reader["DateOfEvent"].ToString()),
+                    DateOfEvent = DateTime.TryParse(reader["DateOfEvent"].ToString(), out var d) ? d : DateTime.MinValue,
                     AdditionalDetails = reader["AdditionalDetails"].ToString(),
                     ReporterFirstName = reader["ReporterFirstName"].ToString(),
                     ReporterContact = reader["ReporterContact"].ToString(),
                     Status = reader["Status"].ToString(),
-                    DateSubmitted = DateTime.Parse(reader["DateSubmitted"].ToString()),
+                    DateSubmitted = DateTime.TryParse(reader["DateSubmitted"].ToString(), out var ds) ? ds : DateTime.MinValue,
                     AdminRemarks = reader["AdminRemarks"].ToString()
                 });
             }
             return reports;
         }
+
+        public static List<Report> GetAllReports(string filter = "All")
+        {
+            using var connection = new SqliteConnection(connectionString);
+            connection.Open();
+            var command = connection.CreateCommand();
+            if (filter == "All")
+                command.CommandText = "SELECT * FROM Reports ORDER BY DateSubmitted DESC";
+            else
+            {
+                command.CommandText = "SELECT * FROM Reports WHERE Status = $status ORDER BY DateSubmitted DESC";
+                command.Parameters.AddWithValue("$status", filter);
+            }
+            var list = new List<Report>();
+            using var reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                list.Add(new Report
+                {
+                    ReportId = Convert.ToInt32(reader["ReportId"]),
+                    ResidentId = Convert.ToInt32(reader["ResidentId"]),
+                    EventType = reader["EventType"].ToString(),
+                    FirstName = reader["FirstName"].ToString(),
+                    MiddleName = reader["MiddleName"].ToString(),
+                    LastName = reader["LastName"].ToString(),
+                    DateOfEvent = DateTime.TryParse(reader["DateOfEvent"].ToString(), out var d) ? d : DateTime.MinValue,
+                    AdditionalDetails = reader["AdditionalDetails"].ToString(),
+                    ReporterFirstName = reader["ReporterFirstName"].ToString(),
+                    ReporterLastName = reader["ReporterLastName"].ToString(),
+                    ReporterContact = reader["ReporterContact"].ToString(),
+                    RelationshipToPerson = reader["RelationshipToPerson"].ToString(),
+                    UploadedIDPath = reader["UploadedIDPath"].ToString(),
+                    Status = reader["Status"].ToString(),
+                    DateSubmitted = DateTime.TryParse(reader["DateSubmitted"].ToString(), out var ds) ? ds : DateTime.MinValue,
+                    AdminRemarks = reader["AdminRemarks"].ToString()
+                });
+            }
+            return list;
+        }
+
+        public static void UpdateReportStatus(int reportId, string status, string remarks)
+        {
+            using var connection = new SqliteConnection(connectionString);
+            connection.Open();
+            var cmd = connection.CreateCommand();
+            cmd.CommandText = @"
+                UPDATE Reports SET Status = $s, AdminRemarks = $r 
+                WHERE ReportId = $id";
+            cmd.Parameters.AddWithValue("$s", status);
+            cmd.Parameters.AddWithValue("$r", remarks ?? "");
+            cmd.Parameters.AddWithValue("$id", reportId);
+            cmd.ExecuteNonQuery();
+        }
+        #endregion
+
+        #region Registration Operations
+        public static bool RegisterResident(string username, string password,
+            string firstName, string middleName, string lastName,
+            DateTime dateOfBirth, string contactNumber, string email,
+            string houseStreet, string purok, string barangay,
+            string municipality, string province, string postalCode,
+            string householdRole, string residencyStatus, int householdMembers)
+        {
+            using var connection = new SqliteConnection(connectionString);
+            connection.Open();
+
+            var pragma = connection.CreateCommand();
+            pragma.CommandText = "PRAGMA foreign_keys = OFF;";
+            pragma.ExecuteNonQuery();
+
+            var checkUser = connection.CreateCommand();
+            checkUser.CommandText = "SELECT COUNT(*) FROM Users WHERE Username = $username";
+            checkUser.Parameters.AddWithValue("$username", username);
+            int count = Convert.ToInt32(checkUser.ExecuteScalar());
+            if (count > 0) return false;
+
+            var insertUser = connection.CreateCommand();
+            insertUser.CommandText = @"
+                INSERT INTO Users (Username, Password, Role) 
+                VALUES ($username, $password, 'Resident')";
+            insertUser.Parameters.AddWithValue("$username", username);
+            insertUser.Parameters.AddWithValue("$password", password);
+            insertUser.ExecuteNonQuery();
+
+            var getUserId = connection.CreateCommand();
+            getUserId.CommandText = "SELECT last_insert_rowid()";
+            int userId = Convert.ToInt32(getUserId.ExecuteScalar());
+
+            var insertResident = connection.CreateCommand();
+            insertResident.CommandText = @"
+                INSERT INTO Residents (UserId, FirstName, MiddleName, LastName,
+                    DateOfBirth, ContactNumber, Email, HouseStreet, Purok, Barangay,
+                    Municipality, Province, PostalCode, HouseholdRole, ResidencyStatus, HouseholdMembers)
+                VALUES ($userId, $firstName, $middleName, $lastName,
+                    $dateOfBirth, $contactNumber, $email, $houseStreet, $purok, $barangay,
+                    $municipality, $province, $postalCode, $householdRole, $residencyStatus, $householdMembers)";
+
+            insertResident.Parameters.AddWithValue("$userId", userId);
+            insertResident.Parameters.AddWithValue("$firstName", firstName);
+            insertResident.Parameters.AddWithValue("$middleName", middleName ?? "");
+            insertResident.Parameters.AddWithValue("$lastName", lastName);
+            insertResident.Parameters.AddWithValue("$dateOfBirth", dateOfBirth.ToString("yyyy-MM-dd"));
+            insertResident.Parameters.AddWithValue("$contactNumber", contactNumber ?? "");
+            insertResident.Parameters.AddWithValue("$email", email ?? "");
+            insertResident.Parameters.AddWithValue("$houseStreet", houseStreet ?? "");
+            insertResident.Parameters.AddWithValue("$purok", purok ?? "");
+            insertResident.Parameters.AddWithValue("$barangay", barangay ?? "");
+            insertResident.Parameters.AddWithValue("$municipality", municipality ?? "");
+            insertResident.Parameters.AddWithValue("$province", province ?? "");
+            insertResident.Parameters.AddWithValue("$postalCode", postalCode ?? "");
+            insertResident.Parameters.AddWithValue("$householdRole", householdRole ?? "Not Applicable");
+            insertResident.Parameters.AddWithValue("$residencyStatus", residencyStatus ?? "Not Applicable");
+            insertResident.Parameters.AddWithValue("$householdMembers", householdMembers);
+            insertResident.ExecuteNonQuery();
+
+            return true;
+        }
         #endregion
 
         #region Admin / Staff Operations
-
         public static List<(int UserId, string Username, string Role)> GetAllStaff()
         {
             using var connection = new SqliteConnection(connectionString);
@@ -407,96 +485,6 @@ namespace EveryJuanCount
         }
         #endregion
 
-        #region All Residents (Admin/Staff)
-        public static List<Resident> GetAllResidents()
-        {
-            using var connection = new SqliteConnection(connectionString);
-            connection.Open();
-            var command = connection.CreateCommand();
-            command.CommandText = @"
-        SELECT r.*, u.Username FROM Residents r
-        JOIN Users u ON r.UserId = u.UserId
-        ORDER BY r.LastName, r.FirstName";
-            var list = new List<Resident>();
-            using var reader = command.ExecuteReader();
-            while (reader.Read())
-            {
-                list.Add(new Resident
-                {
-                    ResidentId = Convert.ToInt32(reader["ResidentId"]),
-                    FirstName = reader["FirstName"].ToString(),
-                    MiddleName = reader["MiddleName"].ToString(),
-                    LastName = reader["LastName"].ToString(),
-                    DateOfBirth = DateTime.TryParse(reader["DateOfBirth"].ToString(), out var dob) ? dob : DateTime.MinValue,
-                    ContactNumber = reader["ContactNumber"].ToString(),
-                    Email = reader["Email"].ToString(),
-                    HouseStreet = reader["HouseStreet"].ToString(),
-                    Purok = reader["Purok"].ToString(),
-                    Barangay = reader["Barangay"].ToString(),
-                    Municipality = reader["Municipality"].ToString(),
-                    Province = reader["Province"].ToString(),
-                    PostalCode = reader["PostalCode"].ToString(),
-                    HouseholdRole = reader["HouseholdRole"].ToString(),
-                    ResidencyStatus = reader["ResidencyStatus"].ToString(),
-                    HouseholdMembers = Convert.ToInt32(reader["HouseholdMembers"])
-                });
-            }
-            return list;
-        }
-        #endregion
-
-        #region All Reports (Admin)
-        public static List<Report> GetAllReports(string filter = "All")
-        {
-            using var connection = new SqliteConnection(connectionString);
-            connection.Open();
-            var command = connection.CreateCommand();
-            if (filter == "All")
-                command.CommandText = "SELECT * FROM Reports ORDER BY DateSubmitted DESC";
-            else
-            {
-                command.CommandText = "SELECT * FROM Reports WHERE Status = $status ORDER BY DateSubmitted DESC";
-                command.Parameters.AddWithValue("$status", filter);
-            }
-            var list = new List<Report>();
-            using var reader = command.ExecuteReader();
-            while (reader.Read())
-            {
-                list.Add(new Report
-                {
-                    ReportId = Convert.ToInt32(reader["ReportId"]),
-                    EventType = reader["EventType"].ToString(),
-                    FirstName = reader["FirstName"].ToString(),
-                    MiddleName = reader["MiddleName"].ToString(),
-                    LastName = reader["LastName"].ToString(),
-                    DateOfEvent = DateTime.TryParse(reader["DateOfEvent"].ToString(), out var d) ? d : DateTime.MinValue,
-                    AdditionalDetails = reader["AdditionalDetails"].ToString(),
-                    ReporterFirstName = reader["ReporterFirstName"].ToString(),
-                    ReporterLastName = reader["ReporterLastName"].ToString(),
-                    ReporterContact = reader["ReporterContact"].ToString(),
-                    RelationshipToPerson = reader["RelationshipToPerson"].ToString(),
-                    UploadedIDPath = reader["UploadedIDPath"].ToString(),
-                    Status = reader["Status"].ToString(),
-                    DateSubmitted = DateTime.TryParse(reader["DateSubmitted"].ToString(), out var ds) ? ds : DateTime.MinValue,
-                    AdminRemarks = reader["AdminRemarks"].ToString()
-                });
-            }
-            return list;
-        }
-
-        public static bool UpdateReportStatus(int reportId, string status, string remarks)
-        {
-            using var connection = new SqliteConnection(connectionString);
-            connection.Open();
-            var cmd = connection.CreateCommand();
-            cmd.CommandText = "UPDATE Reports SET Status = $s, AdminRemarks = $r WHERE ReportId = $id";
-            cmd.Parameters.AddWithValue("$s", status);
-            cmd.Parameters.AddWithValue("$r", remarks ?? "");
-            cmd.Parameters.AddWithValue("$id", reportId);
-            return cmd.ExecuteNonQuery() > 0;
-        }
-        #endregion
-
         #region Announcements
         public static List<(int Id, string Title, string Content, string DatePosted, string PostedBy)> GetAnnouncements()
         {
@@ -522,8 +510,9 @@ namespace EveryJuanCount
             using var connection = new SqliteConnection(connectionString);
             connection.Open();
             var cmd = connection.CreateCommand();
-            cmd.CommandText = @"INSERT INTO Announcements (Title, Content, DatePosted, PostedBy)
-                        VALUES ($t, $c, $d, $p)";
+            cmd.CommandText = @"
+                INSERT INTO Announcements (Title, Content, DatePosted, PostedBy)
+                VALUES ($t, $c, $d, $p)";
             cmd.Parameters.AddWithValue("$t", title);
             cmd.Parameters.AddWithValue("$c", content);
             cmd.Parameters.AddWithValue("$d", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));

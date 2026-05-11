@@ -125,13 +125,9 @@ namespace EveryJuanCount
             }
             else if (role == "Admin")
             {
-                // AdminForm5 f = new AdminForm5();
-                // f.ShowDialog();
-                // f = null;
-                MessageBox.Show("Admin form coming soon!", "Info",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Show();
-                return;
+                AdminForm5 f = new AdminForm5();
+                f.ShowDialog();
+                f = null;
             }
 
             this.Show();
