@@ -28,6 +28,31 @@ namespace EveryJuanCount
             pictureBox6.Click += pictureBox6_Click;
         }
 
+        private void LoadAnnouncement()
+        {
+            try
+            {
+                var announcements = DatabaseHelper.GetAnnouncements();
+                if (announcements.Count > 0)
+                {
+                    // Show the most recent announcement
+                    var latest = announcements[0];
+                    lbAnnouncement.Text = "ANNOUNCEMENT!";
+                    Announcement.Text = latest.Title;
+                    gunapnAnnouncement.Visible = true;
+                }
+                else
+                {
+                    // Hide the announcement panel if no announcements
+                    gunapnAnnouncement.Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading announcement: " + ex.Message);
+            }
+        }
+
         #region Load
         private void DashboardResF3_Load(object sender, EventArgs e)
         {
@@ -35,6 +60,7 @@ namespace EveryJuanCount
             UpdateStats();
             SetupRecentReportsGrid();
             LoadRecentReports();
+            LoadAnnouncement();
         }
 
         private void LoadGreeting()
@@ -231,5 +257,6 @@ namespace EveryJuanCount
                 parentForm.OpenChildForm(new SubmitReport());
         }
         #endregion
+
     }
 }
