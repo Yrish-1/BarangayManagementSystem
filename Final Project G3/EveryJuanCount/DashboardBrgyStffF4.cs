@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace EveryJuanCount
@@ -13,142 +9,99 @@ namespace EveryJuanCount
         public DashboardBrgyStffF4()
         {
             InitializeComponent();
-            InitializeClockLabel();
+            LoadDashboardStats();
             StartClock();
-        }
-
-        #region Timer
-
-        private void InitializeClockLabel()
-        {
-            labelClock.AutoSize = true;
-            labelClock.BackColor = Color.Transparent;
-            labelClock.ForeColor = Color.White;
-            labelClock.Font = new Font("Arial Narrow", 10f, FontStyle.Bold);
-            labelClock.Text = DateTime.Now.ToString("dddd,  MMMM dd, yyyy   hh:mm:ss tt");
-
-            // ── Position to the right side ──────────────────────────────
-            labelClock.TextAlign = ContentAlignment.MiddleRight;
-            labelClock.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-
-            // Adjust X (right margin) and Y (vertical position) as needed
-            labelClock.Location = new Point(
-                this.ClientSize.Width - labelClock.Width - 20,  // 20px from right edge
-                labelClock.Location.Y                            // keep same vertical position
-            );
         }
 
         private void StartClock()
         {
-            clockTimer = new System.Windows.Forms.Timer();
             clockTimer.Interval = 1000;
             clockTimer.Tick += ClockTimer_Tick;
             clockTimer.Start();
+            labelClock.Text = DateTime.Now.ToString("dddd,  MMMM dd, yyyy   hh:mm:ss tt");
         }
 
         private void ClockTimer_Tick(object sender, EventArgs e)
         {
-            // Update label every second
             labelClock.Text = DateTime.Now.ToString("dddd,  MMMM dd, yyyy   hh:mm:ss tt");
         }
 
-        protected override void OnFormClosing(FormClosingEventArgs e)
+        private void LoadDashboardStats()
         {
-            base.OnFormClosing(e);
-            if (clockTimer != null)
+            try
             {
-                clockTimer.Stop();
-                clockTimer.Dispose();
+                Greetings.Text = $"GOOD DAY, {SessionData.CurrentUsername.ToUpper()}!";
+
+                var allReports = DatabaseHelper.GetAllReports("All");
+                int pending = allReports.FindAll(r => r.Status == "Pending").Count;
+
+                var reportCounts = DatabaseHelper.GetReportCountsByType();
+                int births = reportCounts.ContainsKey("Birth") ? reportCounts["Birth"] : 0;
+                int moveIn = reportCounts.ContainsKey("Move In") ? reportCounts["Move In"] : 0;
+
+                var residents = DatabaseHelper.GetAllResidents();
+
+                // Blue card → Total Residents
+                lbReports.Text = residents.Count.ToString();
+
+                // Red card → Pending Reports
+                label1.Text = pending.ToString();
+
+                // Yellow card → Birth Reports
+                label4.Text = births.ToString();
+
+                // Green card → Move-In Reports
+                label7.Text = moveIn.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading dashboard: " + ex.Message);
             }
         }
-        #endregion
-
 
         private void ViewAllRecentReports_Click(object sender, EventArgs e)
         {
+            // Navigate to Reports Queue
             var parentForm = this.ParentForm as BarangayStaffForm4;
-            if (parentForm != null)
-            {
-                parentForm.OpenChildForm(new ReportsQueueBrgyStffF4());
-            }
+            parentForm?.OpenChildForm(new ReportsQueueBrgyStffF4());
         }
 
-        #region QuickAccessButtons
+        #region Quick Access Buttons
         private void btReportBirth_Click(object sender, EventArgs e)
         {
             var parentForm = this.ParentForm as BarangayStaffForm4;
-            if (parentForm != null)
-            {
-                parentForm.OpenChildForm(new SubmitReportBrgyStffF4());
-            }
+            parentForm?.OpenChildForm(new SubmitReportBrgyStffF4());
         }
 
         private void btReportDeath_Click(object sender, EventArgs e)
         {
             var parentForm = this.ParentForm as BarangayStaffForm4;
-            if (parentForm != null)
-            {
-                parentForm.OpenChildForm(new SubmitReportBrgyStffF4());
-            }
+            parentForm?.OpenChildForm(new SubmitReportBrgyStffF4());
         }
 
         private void btMoveIn_Click(object sender, EventArgs e)
         {
             var parentForm = this.ParentForm as BarangayStaffForm4;
-            if (parentForm != null)
-            {
-                parentForm.OpenChildForm(new SubmitReportBrgyStffF4());
-            }
+            parentForm?.OpenChildForm(new SubmitReportBrgyStffF4());
         }
 
         private void btMoveOut_Click(object sender, EventArgs e)
         {
             var parentForm = this.ParentForm as BarangayStaffForm4;
-            if (parentForm != null)
-            {
-                parentForm.OpenChildForm(new SubmitReportBrgyStffF4());
-            }
+            parentForm?.OpenChildForm(new SubmitReportBrgyStffF4());
         }
+
+        private void pictureBox6_Click(object sender, EventArgs e) => btReportBirth_Click(sender, e);
+        private void pictureBox7_Click(object sender, EventArgs e) => btReportDeath_Click(sender, e);
+        private void pictureBox8_Click(object sender, EventArgs e) => btMoveIn_Click(sender, e);
+        private void pictureBox9_Click(object sender, EventArgs e) => btMoveOut_Click(sender, e);
         #endregion
 
-        #region QuickAccessPictureBoxes
-        private void pictureBox6_Click(object sender, EventArgs e)
+        protected override void OnFormClosing(FormClosingEventArgs e)
         {
-            var parentForm = this.ParentForm as BarangayStaffForm4;
-            if (parentForm != null)
-            {
-                parentForm.OpenChildForm(new ReportsQueueBrgyStffF4());
-            }
+            base.OnFormClosing(e);
+            clockTimer?.Stop();
+            clockTimer?.Dispose();
         }
-
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-            var parentForm = this.ParentForm as BarangayStaffForm4;
-            if (parentForm != null)
-            {
-                parentForm.OpenChildForm(new ReportsQueueBrgyStffF4());
-            }
-        }
-
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-            var parentForm = this.ParentForm as BarangayStaffForm4;
-            if (parentForm != null)
-            {
-                parentForm.OpenChildForm(new ReportsQueueBrgyStffF4());
-            }
-        }
-
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-            var parentForm = this.ParentForm as BarangayStaffForm4;
-            if (parentForm != null)
-            {
-                parentForm.OpenChildForm(new ReportsQueueBrgyStffF4());
-            }
-        }
-        #endregion
-
-
     }
 }

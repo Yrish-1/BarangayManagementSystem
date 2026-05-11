@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EveryJuanCount")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a39ab34a47dabcd2f3c35a9eefdc480915c6091")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c081a13da13fcdd083b9a940a69610cbea9942b")]
 [assembly: System.Reflection.AssemblyProductAttribute("EveryJuanCount")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EveryJuanCount")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
