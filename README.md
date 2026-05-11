@@ -374,9 +374,8 @@ The system is composed of **six interconnected Windows Forms**:
 
 | # | Name | Role | Responsibilities |
 |---|---|---|---|
-| 1 | **Deduque, Julianne Antoinette** | Lead Developer | Responsible for coding and the logic behind the project |
+| 1 | **Pine, Yrish** | Lead Developer | Responsible for coding and the logic behind the project |
 | 2 | **Espartinez, Elaiza** | GUI Lead | Design plan and project interface |
-| 3 | **Pine, Yrish** | Project Manager | Oversees project progress and supports all roles |
 
 **Section:** CS 2201 — CS 222 Advanced Object-Oriented Programming, 2nd Semester AY 2025–2026
 
