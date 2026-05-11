@@ -98,6 +98,7 @@ namespace EveryJuanCount
 
             // Set current role
             SessionData.CurrentRole = role;
+            SessionData.CurrentUsername = txtB1Username.Text.Trim();
 
             // Redirect based on role
             this.Hide();

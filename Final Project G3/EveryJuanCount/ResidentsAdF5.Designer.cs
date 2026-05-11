@@ -44,6 +44,9 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ResidentsAdF5));
             panel2 = new Panel();
             panel5 = new Panel();
@@ -70,6 +73,7 @@
             guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             panel8 = new Panel();
             label29 = new Label();
+            dgvResidents = new DataGridView();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             Rejected.SuspendLayout();
@@ -81,6 +85,7 @@
             panel6.SuspendLayout();
             panel4.SuspendLayout();
             guna2Panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvResidents).BeginInit();
             SuspendLayout();
             // 
             // panel2
@@ -269,6 +274,7 @@
             // panel6
             // 
             panel6.BackColor = Color.MidnightBlue;
+            panel6.Controls.Add(dgvResidents);
             panel6.Controls.Add(panel7);
             panel6.Controls.Add(panel4);
             panel6.Dock = DockStyle.Fill;
@@ -408,6 +414,42 @@
             label29.TabIndex = 15;
             label29.Text = "RESIDENTS RECORD";
             // 
+            // dgvResidents
+            // 
+            dgvResidents.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = Color.Navy;
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dgvResidents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dgvResidents.BackgroundColor = Color.MidnightBlue;
+            dgvResidents.BorderStyle = BorderStyle.None;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.MidnightBlue;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.Gold;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgvResidents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dgvResidents.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvResidents.Dock = DockStyle.Fill;
+            dgvResidents.EnableHeadersVisualStyles = false;
+            dgvResidents.GridColor = Color.Gold;
+            dgvResidents.Location = new Point(0, 62);
+            dgvResidents.Name = "dgvResidents";
+            dgvResidents.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.MidnightBlue;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgvResidents.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dgvResidents.RowHeadersWidth = 51;
+            dgvResidents.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvResidents.Size = new Size(995, 463);
+            dgvResidents.TabIndex = 20;
+            // 
             // ResidentsAdF5
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -438,6 +480,7 @@
             panel4.PerformLayout();
             guna2Panel3.ResumeLayout(false);
             guna2Panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvResidents).EndInit();
             ResumeLayout(false);
         }
 
@@ -468,5 +511,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Panel panel8;
         private Label label29;
+        private DataGridView dgvResidents;
     }
 }

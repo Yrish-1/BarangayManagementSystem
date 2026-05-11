@@ -29,6 +29,7 @@ namespace EveryJuanCount
         public static string Password { get; set; } = "Test@1234";
         public static List<Report> Reports { get; set; } = new List<Report>();
         public static string CurrentRole { get; set; } = "";
+        public static string CurrentUsername { get; set; } = "";
 
         public static List<(string Username, string Password, string Role)> Accounts =
             new List<(string, string, string)>

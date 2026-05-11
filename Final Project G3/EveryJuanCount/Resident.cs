@@ -12,6 +12,7 @@ namespace EveryJuanCount
         public int Age => CalculateAge();
         public string ContactNumber { get; set; }
         public string Email { get; set; }
+        public int ResidentId { get; set; }
 
         // Address / Household
         public string HouseStreet { get; set; }

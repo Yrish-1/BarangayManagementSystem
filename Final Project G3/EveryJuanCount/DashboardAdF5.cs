@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace EveryJuanCount
@@ -13,54 +9,59 @@ namespace EveryJuanCount
         public DashboardAdF5()
         {
             InitializeComponent();
-            InitializeClockLabel();
+            LoadDashboardStats();
             StartClock();
-        }
-
-        #region Timer
-
-        private void InitializeClockLabel()
-        {
-            labelClock.AutoSize = true;
-            labelClock.BackColor = Color.Transparent;
-            labelClock.ForeColor = Color.White;
-            labelClock.Font = new Font("Arial Narrow", 10f, FontStyle.Bold);
-            labelClock.Text = DateTime.Now.ToString("dddd,  MMMM dd, yyyy   hh:mm:ss tt");
-
-            // ── Position to the right side ──────────────────────────────
-            labelClock.TextAlign = ContentAlignment.MiddleRight;
-            labelClock.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-
-            // Adjust X (right margin) and Y (vertical position) as needed
-            labelClock.Location = new Point(
-                this.ClientSize.Width - labelClock.Width - 20,  // 20px from right edge
-                labelClock.Location.Y                            // keep same vertical position
-            );
         }
 
         private void StartClock()
         {
-            clockTimer = new System.Windows.Forms.Timer();
             clockTimer.Interval = 1000;
-            clockTimer.Tick += ClockTimer_Tick;
+            clockTimer.Tick += (s, e) =>
+                labelClock.Text = DateTime.Now.ToString("dddd,  MMMM dd, yyyy   hh:mm:ss tt");
             clockTimer.Start();
+            labelClock.Text = DateTime.Now.ToString("dddd,  MMMM dd, yyyy   hh:mm:ss tt");
         }
 
-        private void ClockTimer_Tick(object sender, EventArgs e)
+        private void LoadDashboardStats()
         {
-            // Update label every second
-            labelClock.Text = DateTime.Now.ToString("dddd,  MMMM dd, yyyy   hh:mm:ss tt");
+            try
+            {
+                // Update greeting
+                Greetings.Text = $"WELCOME, {SessionData.CurrentUsername.ToUpper()}!";
+
+                // Load stats
+                var allReports = DatabaseHelper.GetAllReports("All");
+                int pending = allReports.FindAll(r => r.Status == "Pending").Count;
+
+                var reportCounts = DatabaseHelper.GetReportCountsByType();
+                int births = reportCounts.ContainsKey("Birth") ? reportCounts["Birth"] : 0;
+                int deaths = reportCounts.ContainsKey("Death") ? reportCounts["Death"] : 0;
+
+                var residents = DatabaseHelper.GetAllResidents();
+
+                // Total Residents card → lbReports
+                lbReports.Text = residents.Count.ToString();
+
+                // Pending Reports card → label1
+                label1.Text = pending.ToString();
+
+                // Birth Reports card → label4
+                label4.Text = births.ToString();
+
+                // Death Reports card → label7
+                label7.Text = deaths.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading dashboard: " + ex.Message);
+            }
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             base.OnFormClosing(e);
-            if (clockTimer != null)
-            {
-                clockTimer.Stop();
-                clockTimer.Dispose();
-            }
+            clockTimer?.Stop();
+            clockTimer?.Dispose();
         }
-        #endregion
     }
 }

@@ -133,51 +133,87 @@ namespace EveryJuanCount
         #region SubmitbuttonRestb
         private void btSubmit_Restb_Click_1(object sender, EventArgs e)
         {
-            // Check if declaration checkbox is checked
+            // Check declaration
             if (!chkb1Confirm_Restb.Checked)
             {
-                MessageBox.Show(
-                    "Please confirm the declaration before submitting.",
-                    "Declaration Required",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning
-                );
+                MessageBox.Show("Please confirm the declaration before submitting.",
+                    "Declaration Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            //Check if ID file was uploaded
+            // Check ID file
             if (string.IsNullOrEmpty(selectedIDFilePath))
             {
-                MessageBox.Show(
-                    "Please upload a photo or file of your valid ID.",
-                    "ID Required",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning
-                );
+                MessageBox.Show("Please upload a photo or file of your valid ID.",
+                    "ID Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Show success message
+            // Validate required fields
+            if (string.IsNullOrEmpty(txtb1FN_Residenttb.Text) ||
+                string.IsNullOrEmpty(txtb3LN_Residenttb.Text) ||
+                string.IsNullOrEmpty(txtb13Username_Restb.Text) ||
+                string.IsNullOrEmpty(txtb14Password_Restb.Text))
+            {
+                MessageBox.Show("Please fill in all required fields (First Name, Last Name, Username, Password).",
+                    "Required Fields", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Validate password match
+            if (txtb14Password_Restb.Text != txtb15ConfirmPass_Restb.Text)
+            {
+                MessageBox.Show("Passwords do not match.", "Password Mismatch",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Validate password strength
+            string pwd = txtb14Password_Restb.Text;
+            if (pwd.Length < 8 || !pwd.Any(char.IsDigit) || !pwd.Any(c => "!@#$%^&*".Contains(c)))
+            {
+                MessageBox.Show("Password must be at least 8 characters with a number and special character.",
+                    "Weak Password", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Register in database
+            bool success = DatabaseHelper.RegisterResident(
+                txtb13Username_Restb.Text.Trim(),
+                txtb14Password_Restb.Text,
+                txtb1FN_Residenttb.Text.Trim(),
+                txtb2MN_Residenttb.Text.Trim(),
+                txtb3LN_Residenttb.Text.Trim(),
+                dateTimePicker1_Restb.Value,
+                txtb5CN_Restb.Text.Trim(),
+                txtb6EA_Restb.Text.Trim(),
+                txtb7House_Restb.Text.Trim(),
+                txtb8Purok_Restb.Text.Trim(),
+                txtb9Brgy_Restb.Text.Trim(),
+                txtb10city_Restb.Text.Trim(),
+                txtb11Province_Restb.Text.Trim(),
+                txtb12Postal_Restb.Text.Trim(),
+                cb4HouseRole_Restb.SelectedItem?.ToString() ?? "Not Applicable",
+                cb3ResStat_Restb.SelectedItem?.ToString() ?? "Not Applicable",
+                (int)numericUpDownHM_Restb.Value
+            );
+
+            if (!success)
+            {
+                MessageBox.Show("Username already exists. Please choose a different username.",
+                    "Username Taken", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             MessageBox.Show(
                 "Registration submitted successfully!\n\n" +
-                "Please wait for barangay admin approval.\n" +
-                "You will be notified once your account is activated.",
-                "Registration Submitted",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information
-            );
+                "You can now log in with your username and password.",
+                "Registration Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             // Go back to Login Form
             var form1 = Application.OpenForms.OfType<LogInForm1>().FirstOrDefault();
-            if (form1 != null)
-            {
-                form1.Show();
-                form1.BringToFront();
-            }
-            else
-            {
-                new LogInForm1().Show();
-            }
+            if (form1 != null) { form1.Show(); form1.BringToFront(); }
+            else new LogInForm1().Show();
             this.Close();
         }
         #endregion
